@@ -1,10 +1,10 @@
 ﻿import "./byeie"; // loučíme se s IE
+import "preact/debug";
+import { h, render, Component, Fragment } from "preact";
+//import { useEffect, useState } from "preact/compat";
 
-/*
-// snadné načtení souboru pro každého!
-fetch("https://blabla.cz/blabla.json")
-  .then(response => response.json()) // nebo .text(), když to není json
-  .then(data => {
-    // tady jde provést s daty cokoliv
-  });
-*/
+function App() {
+  return <>Čauky mňauky</>;
+}
+
+render(<App />, document.getElementById("app"));

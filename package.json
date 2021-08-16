@@ -21,10 +21,15 @@
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.15.3",
     "babel-loader": "^8.0.6",
     "clean-css": "^4.2.1",
     "js-yaml": "^3.13.1",
     "marked": "^0.7.0",
+    "preact": "^10.5.14",
     "webpack": "^5.48.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.0"
   }
 }

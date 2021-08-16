@@ -26,118 +26,12 @@
 
   <div class="row-main row-main--narrow">
     
-    
+    </div><div class="row-main row-main--article"><div id="app"></div></div><div class="row-main row-main--narrow">
+
     <p class="meta meta--right meta--big">
       <!--[[ZPRAVY_SNOWFALL_AUTHORS:FOOTER]]-->
     </p>
   </div>
   <!--[[ZPRAVY_SNOWFALL_RELATED:ARTICLES]]-->
 </div>
-<script>/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./js/byeie.js":
-/*!*********************!*\
-  !*** ./js/byeie.js ***!
-  \*********************/
-/***/ (() => {
-
-eval("if (navigator.appName === \"Microsoft Internet Explorer\" || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {\n  var warn = document.createElement(\"div\");\n  warn.innerHTML = \"Používáte zastaralý Internet Explorer, takže vám části tohoto webu nemusí fungovat. Navíc to <a target=\\\"_blank\\\" style=\\\"color:white;\\\" rel=\\\"noopener noreferrer\\\" href=\\\"https://www.zive.cz/clanky/microsoft-internet-explorer-neni-prohlizec-prestante-ho-tak-pouzivat/sc-3-a-197149/default.aspx\\\">není bezpečné</a>, zvažte přechod na <a target=\\\"_blank\\\" style=\\\"color:white;\\\" rel=\\\"noopener noreferrer\\\" href=\\\"https://www.mozilla.org/cs/firefox/new/\\\">jiný prohlížeč</a>.\";\n  warn.style.cssText = \"text-align:center;position:absolute;width:100%;height:auto;opacity:1;z-index:100;background-color:#d52834;top:37px;padding-top:4px;padding-bottom:3px;color:white;\";\n  document.body.appendChild(warn);\n}\n\n//# sourceURL=webpack://samizdat-snodefall/./js/byeie.js?");
-
-/***/ }),
-
-/***/ "./js/script.js":
-/*!**********************!*\
-  !*** ./js/script.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _byeie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./byeie */ \"./js/byeie.js\");\n/* harmony import */ var _byeie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_byeie__WEBPACK_IMPORTED_MODULE_0__);\n // loučíme se s IE\n\n/*\n// snadné načtení souboru pro každého!\nfetch(\"https://blabla.cz/blabla.json\")\n  .then(response => response.json()) // nebo .text(), když to není json\n  .then(data => {\n    // tady jde provést s daty cokoliv\n  });\n*/\n\n//# sourceURL=webpack://samizdat-snodefall/./js/script.js?");
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./js/script.js");
-/******/ 	
-/******/ })()
-;</script>
+<script>(()=>{var e={43:()=>{if("Microsoft Internet Explorer"===navigator.appName||navigator.userAgent.match(/Trident/)||navigator.userAgent.match(/rv:11/)){var e=document.createElement("div");e.innerHTML='Používáte zastaralý Internet Explorer, takže vám části tohoto webu nemusí fungovat. Navíc to <a target="_blank" style="color:white;" rel="noopener noreferrer" href="https://www.zive.cz/clanky/microsoft-internet-explorer-neni-prohlizec-prestante-ho-tak-pouzivat/sc-3-a-197149/default.aspx">není bezpečné</a>, zvažte přechod na <a target="_blank" style="color:white;" rel="noopener noreferrer" href="https://www.mozilla.org/cs/firefox/new/">jiný prohlížeč</a>.',e.style.cssText="text-align:center;position:absolute;width:100%;height:auto;opacity:1;z-index:100;background-color:#d52834;top:37px;padding-top:4px;padding-bottom:3px;color:white;",document.body.appendChild(e)}}},n={};function t(o){var r=n[o];if(void 0!==r)return r.exports;var l=n[o]={exports:{}};return e[o](l,l.exports,t),l.exports}(()=>{"use strict";t(43);var e,n,o,r,l,_,i={},a=[],u=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;function s(e,n){for(var t in n)e[t]=n[t];return e}function p(e){var n=e.parentNode;n&&n.removeChild(e)}function c(n,t,o){var r,l,_,i={};for(_ in t)"key"==_?r=t[_]:"ref"==_?l=t[_]:i[_]=t[_];if(arguments.length>2&&(i.children=arguments.length>3?e.call(arguments,2):o),"function"==typeof n&&null!=n.defaultProps)for(_ in n.defaultProps)void 0===i[_]&&(i[_]=n.defaultProps[_]);return f(n,i,r,l,null)}function f(e,t,r,l,_){var i={type:e,props:t,key:r,ref:l,__k:null,__:null,__b:0,__e:null,__d:void 0,__c:null,__h:null,constructor:void 0,__v:null==_?++o:_};return null!=n.vnode&&n.vnode(i),i}function d(e){return e.children}function h(e,n){this.props=e,this.context=n}function y(e,n){if(null==n)return e.__?y(e.__,e.__.__k.indexOf(e)+1):null;for(var t;n<e.__k.length;n++)if(null!=(t=e.__k[n])&&null!=t.__e)return t.__e;return"function"==typeof e.type?y(e):null}function v(e){var n,t;if(null!=(e=e.__)&&null!=e.__c){for(e.__e=e.__c.base=null,n=0;n<e.__k.length;n++)if(null!=(t=e.__k[n])&&null!=t.__e){e.__e=e.__c.base=t.__e;break}return v(e)}}function m(e){(!e.__d&&(e.__d=!0)&&r.push(e)&&!g.__r++||_!==n.debounceRendering)&&((_=n.debounceRendering)||l)(g)}function g(){for(var e;g.__r=r.length;)e=r.sort((function(e,n){return e.__v.__b-n.__v.__b})),r=[],e.some((function(e){var n,t,o,r,l,_;e.__d&&(l=(r=(n=e).__v).__e,(_=n.__P)&&(t=[],(o=s({},r)).__v=r.__v+1,C(_,r,o,n.__n,void 0!==_.ownerSVGElement,null!=r.__h?[l]:null,t,null==l?y(r):l,r.__h),P(t,r),r.__e!=l&&v(r)))}))}function b(e,n,t,o,r,l,_,u,s,p){var c,h,v,m,g,b,x,E=o&&o.__k||a,T=E.length;for(t.__k=[],c=0;c<n.length;c++)if(null!=(m=t.__k[c]=null==(m=n[c])||"boolean"==typeof m?null:"string"==typeof m||"number"==typeof m||"bigint"==typeof m?f(null,m,null,null,m):Array.isArray(m)?f(d,{children:m},null,null,null):m.__b>0?f(m.type,m.props,m.key,null,m.__v):m)){if(m.__=t,m.__b=t.__b+1,null===(v=E[c])||v&&m.key==v.key&&m.type===v.type)E[c]=void 0;else for(h=0;h<T;h++){if((v=E[h])&&m.key==v.key&&m.type===v.type){E[h]=void 0;break}v=null}C(e,m,v=v||i,r,l,_,u,s,p),g=m.__e,(h=m.ref)&&v.ref!=h&&(x||(x=[]),v.ref&&x.push(v.ref,null,m),x.push(h,m.__c||g,m)),null!=g?(null==b&&(b=g),"function"==typeof m.type&&null!=m.__k&&m.__k===v.__k?m.__d=s=k(m,s,e):s=w(e,m,v,E,g,s),p||"option"!==t.type?"function"==typeof t.type&&(t.__d=s):e.value=""):s&&v.__e==s&&s.parentNode!=e&&(s=y(v))}for(t.__e=b,c=T;c--;)null!=E[c]&&("function"==typeof t.type&&null!=E[c].__e&&E[c].__e==t.__d&&(t.__d=y(o,c+1)),U(E[c],E[c]));if(x)for(c=0;c<x.length;c++)N(x[c],x[++c],x[++c])}function k(e,n,t){var o,r;for(o=0;o<e.__k.length;o++)(r=e.__k[o])&&(r.__=e,n="function"==typeof r.type?k(r,n,t):w(t,r,r,e.__k,r.__e,n));return n}function w(e,n,t,o,r,l){var _,i,a;if(void 0!==n.__d)_=n.__d,n.__d=void 0;else if(null==t||r!=l||null==r.parentNode)e:if(null==l||l.parentNode!==e)e.appendChild(r),_=null;else{for(i=l,a=0;(i=i.nextSibling)&&a<o.length;a+=2)if(i==r)break e;e.insertBefore(r,l),_=l}return void 0!==_?_:r.nextSibling}function x(e,n,t){"-"===n[0]?e.setProperty(n,t):e[n]=null==t?"":"number"!=typeof t||u.test(n)?t:t+"px"}function E(e,n,t,o,r){var l;e:if("style"===n)if("string"==typeof t)e.style.cssText=t;else{if("string"==typeof o&&(e.style.cssText=o=""),o)for(n in o)t&&n in t||x(e.style,n,"");if(t)for(n in t)o&&t[n]===o[n]||x(e.style,n,t[n])}else if("o"===n[0]&&"n"===n[1])l=n!==(n=n.replace(/Capture$/,"")),n=n.toLowerCase()in e?n.toLowerCase().slice(2):n.slice(2),e.l||(e.l={}),e.l[n+l]=t,t?o||e.addEventListener(n,l?S:T,l):e.removeEventListener(n,l?S:T,l);else if("dangerouslySetInnerHTML"!==n){if(r)n=n.replace(/xlink[H:h]/,"h").replace(/sName$/,"s");else if("href"!==n&&"list"!==n&&"form"!==n&&"tabIndex"!==n&&"download"!==n&&n in e)try{e[n]=null==t?"":t;break e}catch(e){}"function"==typeof t||(null!=t&&(!1!==t||"a"===n[0]&&"r"===n[1])?e.setAttribute(n,t):e.removeAttribute(n))}}function T(e){this.l[e.type+!1](n.event?n.event(e):e)}function S(e){this.l[e.type+!0](n.event?n.event(e):e)}function C(e,t,o,r,l,_,i,a,u){var p,c,f,y,v,m,g,k,w,x,E,T=t.type;if(void 0!==t.constructor)return null;null!=o.__h&&(u=o.__h,a=t.__e=o.__e,t.__h=null,_=[a]),(p=n.__b)&&p(t);try{e:if("function"==typeof T){if(k=t.props,w=(p=T.contextType)&&r[p.__c],x=p?w?w.props.value:p.__:r,o.__c?g=(c=t.__c=o.__c).__=c.__E:("prototype"in T&&T.prototype.render?t.__c=c=new T(k,x):(t.__c=c=new h(k,x),c.constructor=T,c.render=M),w&&w.sub(c),c.props=k,c.state||(c.state={}),c.context=x,c.__n=r,f=c.__d=!0,c.__h=[]),null==c.__s&&(c.__s=c.state),null!=T.getDerivedStateFromProps&&(c.__s==c.state&&(c.__s=s({},c.__s)),s(c.__s,T.getDerivedStateFromProps(k,c.__s))),y=c.props,v=c.state,f)null==T.getDerivedStateFromProps&&null!=c.componentWillMount&&c.componentWillMount(),null!=c.componentDidMount&&c.__h.push(c.componentDidMount);else{if(null==T.getDerivedStateFromProps&&k!==y&&null!=c.componentWillReceiveProps&&c.componentWillReceiveProps(k,x),!c.__e&&null!=c.shouldComponentUpdate&&!1===c.shouldComponentUpdate(k,c.__s,x)||t.__v===o.__v){c.props=k,c.state=c.__s,t.__v!==o.__v&&(c.__d=!1),c.__v=t,t.__e=o.__e,t.__k=o.__k,t.__k.forEach((function(e){e&&(e.__=t)})),c.__h.length&&i.push(c);break e}null!=c.componentWillUpdate&&c.componentWillUpdate(k,c.__s,x),null!=c.componentDidUpdate&&c.__h.push((function(){c.componentDidUpdate(y,v,m)}))}c.context=x,c.props=k,c.state=c.__s,(p=n.__r)&&p(t),c.__d=!1,c.__v=t,c.__P=e,p=c.render(c.props,c.state,c.context),c.state=c.__s,null!=c.getChildContext&&(r=s(s({},r),c.getChildContext())),f||null==c.getSnapshotBeforeUpdate||(m=c.getSnapshotBeforeUpdate(y,v)),E=null!=p&&p.type===d&&null==p.key?p.props.children:p,b(e,Array.isArray(E)?E:[E],t,o,r,l,_,i,a,u),c.base=t.__e,t.__h=null,c.__h.length&&i.push(c),g&&(c.__E=c.__=null),c.__e=!1}else null==_&&t.__v===o.__v?(t.__k=o.__k,t.__e=o.__e):t.__e=O(o.__e,t,o,r,l,_,i,u);(p=n.diffed)&&p(t)}catch(e){t.__v=null,(u||null!=_)&&(t.__e=a,t.__h=!!u,_[_.indexOf(a)]=null),n.__e(e,t,o)}}function P(e,t){n.__c&&n.__c(t,e),e.some((function(t){try{e=t.__h,t.__h=[],e.some((function(e){e.call(t)}))}catch(e){n.__e(e,t.__v)}}))}function O(n,t,o,r,l,_,a,u){var s,c,f,d=o.props,h=t.props,v=t.type,m=0;if("svg"===v&&(l=!0),null!=_)for(;m<_.length;m++)if((s=_[m])&&(s===n||(v?s.localName==v:3==s.nodeType))){n=s,_[m]=null;break}if(null==n){if(null===v)return document.createTextNode(h);n=l?document.createElementNS("http://www.w3.org/2000/svg",v):document.createElement(v,h.is&&h),_=null,u=!1}if(null===v)d===h||u&&n.data===h||(n.data=h);else{if(_=_&&e.call(n.childNodes),c=(d=o.props||i).dangerouslySetInnerHTML,f=h.dangerouslySetInnerHTML,!u){if(null!=_)for(d={},m=0;m<n.attributes.length;m++)d[n.attributes[m].name]=n.attributes[m].value;(f||c)&&(f&&(c&&f.__html==c.__html||f.__html===n.innerHTML)||(n.innerHTML=f&&f.__html||""))}if(function(e,n,t,o,r){var l;for(l in t)"children"===l||"key"===l||l in n||E(e,l,null,t[l],o);for(l in n)r&&"function"!=typeof n[l]||"children"===l||"key"===l||"value"===l||"checked"===l||t[l]===n[l]||E(e,l,n[l],t[l],o)}(n,h,d,l,u),f)t.__k=[];else if(m=t.props.children,b(n,Array.isArray(m)?m:[m],t,o,r,l&&"foreignObject"!==v,_,a,_?_[0]:o.__k&&y(o,0),u),null!=_)for(m=_.length;m--;)null!=_[m]&&p(_[m]);u||("value"in h&&void 0!==(m=h.value)&&(m!==n.value||"progress"===v&&!m)&&E(n,"value",m,d.value,!1),"checked"in h&&void 0!==(m=h.checked)&&m!==n.checked&&E(n,"checked",m,d.checked,!1))}return n}function N(e,t,o){try{"function"==typeof e?e(t):e.current=t}catch(e){n.__e(e,o)}}function U(e,t,o){var r,l;if(n.unmount&&n.unmount(e),(r=e.ref)&&(r.current&&r.current!==e.__e||N(r,null,t)),null!=(r=e.__c)){if(r.componentWillUnmount)try{r.componentWillUnmount()}catch(e){n.__e(e,t)}r.base=r.__P=null}if(r=e.__k)for(l=0;l<r.length;l++)r[l]&&U(r[l],t,"function"!=typeof e.type);o||null==e.__e||p(e.__e),e.__e=e.__d=void 0}function M(e,n,t){return this.constructor(e,t)}e=a.slice,n={__e:function(e,n){for(var t,o,r;n=n.__;)if((t=n.__c)&&!t.__)try{if((o=t.constructor)&&null!=o.getDerivedStateFromError&&(t.setState(o.getDerivedStateFromError(e)),r=t.__d),null!=t.componentDidCatch&&(t.componentDidCatch(e),r=t.__d),r)return t.__E=t}catch(n){e=n}throw e}},o=0,h.prototype.setState=function(e,n){var t;t=null!=this.__s&&this.__s!==this.state?this.__s:this.__s=s({},this.state),"function"==typeof e&&(e=e(s({},t),this.props)),e&&s(t,e),null!=e&&this.__v&&(n&&this.__h.push(n),m(this))},h.prototype.forceUpdate=function(e){this.__v&&(this.__e=!0,e&&this.__h.push(e),m(this))},h.prototype.render=d,r=[],l="function"==typeof Promise?Promise.prototype.then.bind(Promise.resolve()):setTimeout,g.__r=0,"undefined"!=typeof window&&window.__PREACT_DEVTOOLS__&&window.__PREACT_DEVTOOLS__.attachPreact("10.5.14",n,{Fragment:d,Component:h});var D={};function z(e){return e.type===d?"Fragment":"function"==typeof e.type?e.type.displayName||e.type.name:"string"==typeof e.type?e.type:"#text"}var A=[],I=[];function L(){return A.length>0?A[A.length-1]:null}var W=!1;function j(e){return"function"==typeof e.type&&e.type!=d}function F(e){for(var n=[e],t=e;null!=t.__o;)n.push(t.__o),t=t.__o;return n.reduce((function(e,n){e+="  in "+z(n);var t=n.__source;return t?e+=" (at "+t.fileName+":"+t.lineNumber+")":W||(W=!0,console.warn("Add @babel/plugin-transform-react-jsx-source to get a more detailed component stack. Note that you should not add it to production builds of your App for bundle size reasons.")),e+"\n"}),"")}var R="function"==typeof WeakMap,H=h.prototype.setState;h.prototype.setState=function(e,n){return null==this.__v?null==this.state&&console.warn('Calling "this.setState" inside the constructor of a component is a no-op and might be a bug in your application. Instead, set "this.state = {}" directly.\n\n'+F(L())):null==this.__P&&console.warn('Can\'t call "this.setState" on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.\n\n'+F(this.__v)),H.call(this,e,n)};var Y=h.prototype.forceUpdate;function B(e){var n=e.props,t=z(e),o="";for(var r in n)if(n.hasOwnProperty(r)&&"children"!==r){var l=n[r];"function"==typeof l&&(l="function "+(l.displayName||l.name)+"() {}"),l=Object(l)!==l||l.toString?l+"":Object.prototype.toString.call(l),o+=" "+r+"="+JSON.stringify(l)}var _=n.children;return"<"+t+o+(_&&_.length?">..</"+t+">":" />")}h.prototype.forceUpdate=function(e){return null==this.__v?console.warn('Calling "this.forceUpdate" inside the constructor of a component is a no-op and might be a bug in your application.\n\n'+F(L())):null==this.__P&&console.warn('Can\'t call "this.forceUpdate" on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.\n\n'+F(this.__v)),Y.call(this,e)},function(){!function(){var e=n.__b,t=n.diffed,o=n.__,r=n.vnode,l=n.__r;n.diffed=function(e){j(e)&&I.pop(),A.pop(),t&&t(e)},n.__b=function(n){j(n)&&A.push(n),e&&e(n)},n.__=function(e,n){I=[],o&&o(e,n)},n.vnode=function(e){e.__o=I.length>0?I[I.length-1]:null,r&&r(e)},n.__r=function(e){j(e)&&I.push(e),l&&l(e)}}();var e=!1,t=n.__b,o=n.diffed,r=n.vnode,l=n.__e,_=n.__,i=n.__h,a=R?{useEffect:new WeakMap,useLayoutEffect:new WeakMap,lazyPropTypes:new WeakMap}:null,u=[];n.__e=function(e,n,t){if(n&&n.__c&&"function"==typeof e.then){var o=e;e=new Error("Missing Suspense. The throwing component was: "+z(n));for(var r=n;r;r=r.__)if(r.__c&&r.__c.__c){e=o;break}if(e instanceof Error)throw e}try{l(e,n,t),"function"!=typeof e.then&&setTimeout((function(){throw e}))}catch(e){throw e}},n.__=function(e,n){if(!n)throw new Error("Undefined parent passed to render(), this is the second argument.\nCheck if the element is available in the DOM/has the correct id.");var t;switch(n.nodeType){case 1:case 11:case 9:t=!0;break;default:t=!1}if(!t){var o=z(e);throw new Error("Expected a valid HTML node as a second argument to render.\tReceived "+n+" instead: render(<"+o+" />, "+n+");")}_&&_(e,n)},n.__b=function(n){var o=n.type,r=function e(n){return n?"function"==typeof n.type?e(n.__):n:{}}(n.__);if(e=!0,void 0===o)throw new Error("Undefined component passed to createElement()\n\nYou likely forgot to export your component or might have mixed up default and named imports"+B(n)+"\n\n"+F(n));if(null!=o&&"object"==typeof o){if(void 0!==o.__k&&void 0!==o.__e)throw new Error("Invalid type passed to createElement(): "+o+"\n\nDid you accidentally pass a JSX literal as JSX twice?\n\n  let My"+z(n)+" = "+B(o)+";\n  let vnode = <My"+z(n)+" />;\n\nThis usually happens when you export a JSX literal and not the component.\n\n"+F(n));throw new Error("Invalid type passed to createElement(): "+(Array.isArray(o)?"array":o))}if("thead"!==o&&"tfoot"!==o&&"tbody"!==o||"table"===r.type?"tr"===o&&"thead"!==r.type&&"tfoot"!==r.type&&"tbody"!==r.type&&"table"!==r.type?console.error("Improper nesting of table. Your <tr> should have a <thead/tbody/tfoot/table> parent."+B(n)+"\n\n"+F(n)):"td"===o&&"tr"!==r.type?console.error("Improper nesting of table. Your <td> should have a <tr> parent."+B(n)+"\n\n"+F(n)):"th"===o&&"tr"!==r.type&&console.error("Improper nesting of table. Your <th> should have a <tr>."+B(n)+"\n\n"+F(n)):console.error("Improper nesting of table. Your <thead/tbody/tfoot> should have a <table> parent."+B(n)+"\n\n"+F(n)),void 0!==n.ref&&"function"!=typeof n.ref&&"object"!=typeof n.ref&&!("$$typeof"in n))throw new Error('Component\'s "ref" property should be a function, or an object created by createRef(), but got ['+typeof n.ref+"] instead\n"+B(n)+"\n\n"+F(n));if("string"==typeof n.type)for(var l in n.props)if("o"===l[0]&&"n"===l[1]&&"function"!=typeof n.props[l]&&null!=n.props[l])throw new Error("Component's \""+l+'" property should be a function, but got ['+typeof n.props[l]+"] instead\n"+B(n)+"\n\n"+F(n));if("function"==typeof n.type&&n.type.propTypes){if("Lazy"===n.type.displayName&&a&&!a.lazyPropTypes.has(n.type)){var _="PropTypes are not supported on lazy(). Use propTypes on the wrapped component itself. ";try{var i=n.type();a.lazyPropTypes.set(n.type,!0),console.warn(_+"Component wrapped in lazy() is "+z(i))}catch(n){console.warn(_+"We will log the wrapped component's name once it is loaded.")}}var u=n.props;n.type.__f&&delete(u=function(e,n){for(var t in n)e[t]=n[t];return e}({},u)).ref,function(e,n,t,o,r){Object.keys(e).forEach((function(t){var l;try{l=e[t](n,t,o,"prop",null,"SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED")}catch(e){l=e}!l||l.message in D||(D[l.message]=!0,console.error("Failed prop type: "+l.message+(r&&"\n"+r()||"")))}))}(n.type.propTypes,u,0,z(n),(function(){return F(n)}))}t&&t(n)},n.__h=function(n,t,o){if(!n||!e)throw new Error("Hook can only be invoked from render methods.");i&&i(n,t,o)};var s=function(e,n){return{get:function(){var t="get"+e+n;u&&u.indexOf(t)<0&&(u.push(t),console.warn("getting vnode."+e+" is deprecated, "+n))},set:function(){var t="set"+e+n;u&&u.indexOf(t)<0&&(u.push(t),console.warn("setting vnode."+e+" is not allowed, "+n))}}},p={nodeName:s("nodeName","use vnode.type"),attributes:s("attributes","use vnode.props"),children:s("children","use vnode.props.children")},c=Object.create({},p);n.vnode=function(e){var n=e.props;if(null!==e.type&&null!=n&&("__source"in n||"__self"in n)){var t=e.props={};for(var o in n){var l=n[o];"__source"===o?e.__source=l:"__self"===o?e.__self=l:t[o]=l}}e.__proto__=c,r&&r(e)},n.diffed=function(n){if(n.__k&&n.__k.forEach((function(e){if(e&&void 0===e.type){delete e.__,delete e.__b;var t=Object.keys(e).join(",");throw new Error("Objects are not valid as a child. Encountered an object with the keys {"+t+"}.\n\n"+F(n))}})),e=!1,o&&o(n),null!=n.__k)for(var t=[],r=0;r<n.__k.length;r++){var l=n.__k[r];if(l&&null!=l.key){var _=l.key;if(-1!==t.indexOf(_)){console.error('Following component has two or more children with the same key attribute: "'+_+'". This may cause glitches and misbehavior in rendering process. Component: \n\n'+B(n)+"\n\n"+F(n));break}t.push(_)}}}}(),function(t,o,r){var l,_,a;n.__&&n.__(t,o),_=(l="function"==typeof r)?null:r&&r.__k||o.__k,a=[],C(o,t=(!l&&r||o).__k=c(d,null,[t]),_||i,i,void 0!==o.ownerSVGElement,!l&&r?[r]:_?null:o.firstChild?e.call(o.childNodes):null,a,!l&&r?r:_?_.__e:o.firstChild,l),P(a,t)}(c((function(){return c(d,null,"Čauky mňauky")}),null),document.getElementById("app"))})()})();</script>

@@ -1,7 +1,7 @@
 title: "Proklikejte si kandidátky"
 perex: ""
 coverimg_note: "Foto <a href='https://ctk.cz'>ČTK</a>"
-styles: []
+styles: ["https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"]
 libraries: [] #jquery, d3, highcharts, datatables
 options: [noheader, nopic] #wide, noheader (, nopic)
 

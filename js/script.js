@@ -1,10 +1,6 @@
 ﻿import "./byeie"; // loučíme se s IE
 import "preact/debug";
-import { h, render, Component, Fragment } from "preact";
-//import { useEffect, useState } from "preact/compat";
-
-function App() {
-  return <>Čauky mňauky</>;
-}
+import { h, render } from "preact";
+import App from "./App.jsx";
 
 render(<App />, document.getElementById("app"));

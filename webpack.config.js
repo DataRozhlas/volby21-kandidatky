@@ -26,7 +26,10 @@ module.exports = {
               "@babel/preset-env",
               ["@babel/preset-react", { pragma: "h", pragmaFrag: "Fragment" }],
             ],
-            plugins: ["@babel/plugin-transform-runtime"],
+            plugins: [
+              "@babel/plugin-transform-runtime",
+              "babel-plugin-transform-hook-names",
+            ],
           },
         },
       },

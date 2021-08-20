@@ -1,6 +1,31 @@
 import { h, render, Component, Fragment } from "preact";
 import { useEffect, useState } from "preact/compat";
-import { Button } from "@material-ui/core";
+import { Container, AppBar } from "@material-ui/core";
+import {
+  makeStyles,
+  ThemeProvider,
+  createTheme,
+} from "@material-ui/core/styles";
+
+const isMobile = window.innerWidth < 769;
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#F8F8F8",
+    },
+  },
+  overrides: {
+    MuiAppBar: {
+      root: {
+        boxShadow: "none",
+        width: isMobile ? "unset" : "100%",
+        marginLeft: isMobile ? "-15px" : null,
+        marginRight: isMobile ? "-15px" : null,
+      },
+    },
+  },
+});
 
 const getData = async (nazev) => {
   try {
@@ -31,14 +56,16 @@ function App() {
   }, []);
 
   useEffect(async () => {
-    const result = await getData(rok);
-    setKandidati(result);
+    const kandidati = await getData(rok);
+    setKandidati(kandidati);
   }, [rok]);
 
   return (
-    <Button variant="contained" color="primary">
-      Hello World
-    </Button>
+    <ThemeProvider theme={theme}>
+      <Container disableGutters={true}>
+        <AppBar position="static">Ahoj</AppBar>
+      </Container>
+    </ThemeProvider>
   );
 }
 

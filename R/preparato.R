@@ -27,9 +27,11 @@ data %>%
 
 # číselník volebních stran
 
-data %>%
+t <- data %>%
   select(VSTRANA, ZKRATKAV8, ZKRATKAV30) %>%
-  distinct() %>%
+  distinct(VSTRANA, ZKRATKAV30)
+
+%>%
   write_json("../data/vstrany.json")
 
 # číselník navrhujících stran

@@ -50,25 +50,47 @@ const getData = async (nazev) => {
 };
 
 function App() {
-  const [kraje, setKraje] = useState([]);
-  const [nstrany, setNstrany] = useState([]);
-  const [vstrany, setVstrany] = useState([]);
+  // const [kraje, setKraje] = useState([]);
+  // const [nstrany, setNstrany] = useState([]);
+  // const [vstrany, setVstrany] = useState([]);
+  const [ciselniky, setCiselniky] = useState({
+    kraje: [],
+    nstrany: [],
+    vstrany: [],
+  });
   const [rok, setRok] = useState(2017);
   const [kandidati, setKandidati] = useState([]);
+  const [vybraniKandidati, setVybraniKandidati] = useState([]);
 
+  const [filtr, setFiltr] = useState({
+    changed: false,
+    vybranyKraj: 0,
+  });
+
+  // na zacatku nacti ciselniky
   useEffect(async () => {
     const kraje = await getData("kraje");
     const nstrany = await getData("nstrany");
     const vstrany = await getData("vstrany");
-    setKraje(kraje);
-    setNstrany(nstrany);
-    setVstrany(vstrany);
+    setCiselniky({
+      kraje: kraje,
+      nstrany: nstrany,
+      vstrany: vstrany,
+    });
   }, []);
 
+  // kdyz se zmeni rok, nacti kandidaty
   useEffect(async () => {
     const kandidati = await getData(rok);
     setKandidati(kandidati);
   }, [rok]);
+
+  // kdyz se zmeni filtr, vyber kandidaty
+  useEffect(() => {
+    if (kandidati.length > 0 && filtr.changed) {
+      setVybraniKandidati(kandidati.filter((k) => k.k === filtr.vybranyKraj));
+    }
+  }, [filtr, kandidati]);
 
   return (
     <ThemeProvider theme={theme}>
@@ -86,15 +108,70 @@ function App() {
                 onChange={(e) => setRok(Number(e.target.value))}
                 disableUnderline={true}
               >
-                <option value={2006}>2006</option>
-                <option value={2010}>2010</option>
-                <option value={2013}>2013</option>
-                <option value={2017}>2017</option>
+                {roky.map((i) => (
+                  <option key={i} value={i}>
+                    {i}
+                  </option>
+                ))}
+              </Select>
+            </FormControl>
+            <FormControl>
+              <InputLabel id="select-kraj-label">KRAJ</InputLabel>
+              <Select
+                native
+                id="select-kraj"
+                labelId="select-kraj-label"
+                value={filtr.vybranyKraj}
+                onChange={(e) =>
+                  setFiltr({
+                    ...filtr,
+                    changed: true,
+                    vybranyKraj: Number(e.target.value),
+                  })
+                }
+                disableUnderline={true}
+              >
+                <option key={0} value={0}>
+                  Všechny
+                </option>
+                {ciselniky.kraje.map((i) => (
+                  <option key={i.VOLKRAJ} value={i.VOLKRAJ}>
+                    {i.NAZVOLKRAJ}
+                  </option>
+                ))}
+              </Select>
+            </FormControl>
+            <FormControl>
+              <InputLabel id="select-vstrana-label">KANDIDÁTKA</InputLabel>
+              <Select
+                native
+                id="select-vstrana"
+                labelId="select-vstrana-label"
+                value={filtr.vybranaKandidatka}
+                onChange={(e) =>
+                  setFiltr({
+                    ...filtr,
+                    changed: true,
+                    vybranaVstrana: Number(e.target.value),
+                  })
+                }
+                disableUnderline={true}
+              >
+                <option key={0} value={0}>
+                  Všechny
+                </option>
+                {ciselniky.vstrany.map((i) => (
+                  <option key={i.VSTRANA} value={i.VSTRANA}>
+                    {i.ZKRATKAV30}
+                  </option>
+                ))}
               </Select>
             </FormControl>
           </Toolbar>
         </AppBar>
-        <p>{kandidati.length} kandidatu</p>
+        <p>
+          {vybraniKandidati.length} z {kandidati.length} kandidatu
+        </p>
       </Container>
     </ThemeProvider>
   );

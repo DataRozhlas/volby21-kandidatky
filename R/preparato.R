@@ -13,7 +13,8 @@ roky <- c(2006, 2010, 2013, 2017)
 for (i in roky) {
   data %>%
     filter(ROK==i) %>%
-    select(k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA, id=paste0(VOLKRAJ, VSTRANA, PORCISLO) %>%
+    mutate(id=row_number()) %>%
+    select(id, k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA) %>%
     write_json(paste0("../data/", i, ".json"))
 }
 

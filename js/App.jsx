@@ -65,6 +65,8 @@ function App() {
   const [filtr, setFiltr] = useState({
     changed: false,
     vybranyKraj: 0,
+    vybranaNstrana: 0,
+    vybranaVstrana: 0,
   });
 
   // na zacatku nacti ciselniky
@@ -88,7 +90,13 @@ function App() {
   // kdyz se zmeni filtr, vyber kandidaty
   useEffect(() => {
     if (kandidati.length > 0 && filtr.changed) {
-      setVybraniKandidati(kandidati.filter((k) => k.k === filtr.vybranyKraj));
+      setVybraniKandidati(
+        kandidati
+          .filter((k) => filtr.vybranyKraj === 0 || k.k === filtr.vybranyKraj)
+          .filter(
+            (k) => filtr.vybranaVstrana === 0 || k.v === filtr.vybranaVstrana
+          )
+      );
     }
   }, [filtr, kandidati]);
 
@@ -105,7 +113,14 @@ function App() {
                 id="select-rok"
                 labelId="select-rok-label"
                 value={rok}
-                onChange={(e) => setRok(Number(e.target.value))}
+                onChange={(e) => {
+                  setRok(Number(e.target.value));
+                  setFiltr({
+                    vybranyKraj: 0,
+                    vybranaVstrana: 0,
+                    vybranaNstrana: 0,
+                  });
+                }}
                 disableUnderline={true}
               >
                 {roky.map((i) => (
@@ -134,13 +149,23 @@ function App() {
                 <option key={0} value={0}>
                   Všechny
                 </option>
-                {ciselniky.kraje.map((i) => (
-                  <option key={i.VOLKRAJ} value={i.VOLKRAJ}>
-                    {i.NAZVOLKRAJ}
-                  </option>
-                ))}
+                {ciselniky.kraje
+                  .filter(
+                    (i) =>
+                      filtr.vybranaVstrana === 0 ||
+                      kandidati
+                        .filter((k) => k.v === filtr.vybranaVstrana)
+                        .map((k) => k.k)
+                        .includes(i.VOLKRAJ)
+                  )
+                  .map((i) => (
+                    <option key={i.VOLKRAJ} value={i.VOLKRAJ}>
+                      {i.NAZVOLKRAJ}
+                    </option>
+                  ))}
               </Select>
             </FormControl>
+
             <FormControl>
               <InputLabel id="select-vstrana-label">KANDIDÁTKA</InputLabel>
               <Select
@@ -162,9 +187,47 @@ function App() {
                 </option>
                 {ciselniky.vstrany
                   .filter((i) => i.ROK === rok)
+                  .filter(
+                    (i) =>
+                      filtr.vybranyKraj === 0 ||
+                      kandidati
+                        .filter((k) => k.k === filtr.vybranyKraj)
+                        .map((k) => k.v)
+                        .includes(i.VSTRANA)
+                  )
                   .map((i) => (
                     <option key={i.VSTRANA} value={i.VSTRANA}>
                       {i.ZKRATKAV30}
+                    </option>
+                  ))}
+              </Select>
+            </FormControl>
+            <FormControl>
+              <InputLabel id="select-nstrana-label">
+                NAVRHUJÍCÍ STRANA
+              </InputLabel>
+              <Select
+                native
+                id="select-nstrana"
+                labelId="select-nstrana-label"
+                value={filtr.vybranaNstrana}
+                onChange={(e) =>
+                  setFiltr({
+                    ...filtr,
+                    changed: true,
+                    vybranaNstrana: Number(e.target.value),
+                  })
+                }
+                disableUnderline={true}
+              >
+                <option key={0} value={0}>
+                  Všechny
+                </option>
+                {ciselniky.nstrany
+                  .filter((i) => i.ROK === rok)
+                  .map((i) => (
+                    <option key={i.NSTRANA} value={i.NSTRANA}>
+                      {i.ZKRATKAN30}
                     </option>
                   ))}
               </Select>

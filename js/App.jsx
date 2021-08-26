@@ -1,6 +1,14 @@
 import { h, render, Component, Fragment } from "preact";
 import { useEffect, useState } from "preact/compat";
-import { Container, AppBar } from "@material-ui/core";
+import {
+  Container,
+  AppBar,
+  Toolbar,
+  FormControl,
+  InputLabel,
+  Select,
+} from "@material-ui/core";
+import { Autocomplete } from "@material-ui/lab";
 import {
   makeStyles,
   ThemeProvider,
@@ -26,6 +34,8 @@ const theme = createTheme({
     },
   },
 });
+
+const roky = [2006, 2010, 2013, 2017];
 
 const getData = async (nazev) => {
   try {
@@ -63,7 +73,28 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container disableGutters={true}>
-        <AppBar position="static">Ahoj</AppBar>
+        <AppBar position="static">
+          <Toolbar>
+            <FormControl>
+              <InputLabel id="select-rok-label">ROK</InputLabel>
+
+              <Select
+                native
+                id="select-rok"
+                labelId="select-rok-label"
+                value={rok}
+                onChange={(e) => setRok(Number(e.target.value))}
+                disableUnderline={true}
+              >
+                <option value={2006}>2006</option>
+                <option value={2010}>2010</option>
+                <option value={2013}>2013</option>
+                <option value={2017}>2017</option>
+              </Select>
+            </FormControl>
+          </Toolbar>
+        </AppBar>
+        <p>{kandidati.length} kandidatu</p>
       </Container>
     </ThemeProvider>
   );

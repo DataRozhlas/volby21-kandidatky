@@ -1,5 +1,7 @@
-import { h, render, Component, Fragment } from "preact";
-import { useEffect, useState } from "preact/compat";
+//import { h, render, Component, Fragment } from "preact";
+//import { useEffect, useState } from "preact/compat";
+import React, { useState, useEffect } from "react";
+
 import {
   Container,
   AppBar,
@@ -8,12 +10,12 @@ import {
   InputLabel,
   Select,
 } from "@material-ui/core";
-import { Autocomplete } from "@material-ui/lab";
 import {
   makeStyles,
   ThemeProvider,
   createTheme,
 } from "@material-ui/core/styles";
+import { DataGrid } from "@material-ui/data-grid";
 
 const isMobile = window.innerWidth < 769;
 
@@ -49,10 +51,53 @@ const getData = async (nazev) => {
   }
 };
 
+const columns = [
+  { field: "id", headerName: "ID", width: 90 },
+  {
+    field: "firstName",
+    headerName: "First name",
+    width: 150,
+    editable: true,
+  },
+  {
+    field: "lastName",
+    headerName: "Last name",
+    width: 150,
+    editable: true,
+  },
+  {
+    field: "age",
+    headerName: "Age",
+    type: "number",
+    width: 110,
+    editable: true,
+  },
+  {
+    field: "fullName",
+    headerName: "Full name",
+    description: "This column has a value getter and is not sortable.",
+    sortable: false,
+    width: 160,
+    valueGetter: (params) =>
+      `${params.getValue(params.id, "firstName") || ""} ${
+        params.getValue(params.id, "lastName") || ""
+      }`,
+  },
+];
+
+const rows = [
+  { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
+  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
+  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
+  { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
+  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
+  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
+  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
+  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
+  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
+];
+
 function App() {
-  // const [kraje, setKraje] = useState([]);
-  // const [nstrany, setNstrany] = useState([]);
-  // const [vstrany, setVstrany] = useState([]);
   const [ciselniky, setCiselniky] = useState({
     kraje: [],
     nstrany: [],
@@ -81,13 +126,13 @@ function App() {
     });
   }, []);
 
-  // kdyz se zmeni rok, nacti kandidaty
+  // kdyz se zmeni rok, nacti nove kandidaty
   useEffect(async () => {
     const kandidati = await getData(rok);
     setKandidati(kandidati);
   }, [rok]);
 
-  // kdyz se zmeni filtr, vyber kandidaty
+  // kdyz se zmeni filtr, aktualizuj vybrane kandidaty
   useEffect(() => {
     if (kandidati.length > 0 && filtr.changed) {
       setVybraniKandidati(
@@ -98,7 +143,7 @@ function App() {
           )
       );
     }
-  }, [filtr, kandidati]);
+  }, [filtr, rok]);
 
   return (
     <ThemeProvider theme={theme}>
@@ -115,19 +160,26 @@ function App() {
                 value={rok}
                 onChange={(e) => {
                   setRok(Number(e.target.value));
-                  setFiltr({
-                    vybranyKraj: 0,
-                    vybranaVstrana: 0,
-                    vybranaNstrana: 0,
-                  });
+                  // setFiltr({
+                  //   ...filtr,
+                  //   vybranyKraj: 0,
+                  //   vybranaVstrana: 0,
+                  //   vybranaNstrana: 0,
+                  // });
                 }}
                 disableUnderline={true}
               >
-                {roky.map((i) => (
-                  <option key={i} value={i}>
-                    {i}
-                  </option>
-                ))}
+                {roky
+                  .filter(
+                    (r) =>
+                      filtr.vybranaNstrana === 0 ||
+                      ciselniky.nstrany.map((s) => s.ROK).includes(r)
+                  )
+                  .map((i) => (
+                    <option key={i} value={i}>
+                      {i}
+                    </option>
+                  ))}
               </Select>
             </FormControl>
             <FormControl>
@@ -234,6 +286,17 @@ function App() {
             </FormControl>
           </Toolbar>
         </AppBar>
+        <div style={{ height: 400, width: "100%" }}>
+          <DataGrid
+            rows={kandidati}
+            columns={columns}
+            pageSize={5}
+            rowsPerPageOptions={[5]}
+            checkboxSelection
+            disableSelectionOnClick
+          />
+        </div>
+
         <p>
           {vybraniKandidati.length} z {kandidati.length} kandidatu
         </p>

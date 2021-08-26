@@ -160,11 +160,13 @@ function App() {
                 <option key={0} value={0}>
                   Všechny
                 </option>
-                {ciselniky.vstrany.map((i) => (
-                  <option key={i.VSTRANA} value={i.VSTRANA}>
-                    {i.ZKRATKAV30}
-                  </option>
-                ))}
+                {ciselniky.vstrany
+                  .filter((i) => i.ROK === rok)
+                  .map((i) => (
+                    <option key={i.VSTRANA} value={i.VSTRANA}>
+                      {i.ZKRATKAV30}
+                    </option>
+                  ))}
               </Select>
             </FormControl>
           </Toolbar>

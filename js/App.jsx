@@ -37,7 +37,7 @@ const theme = createTheme({
   },
 });
 
-const roky = [2006, 2010, 2013, 2017];
+const roky = [2006, 2010, 2013, 2017, 2021];
 
 const getData = async (nazev) => {
   try {

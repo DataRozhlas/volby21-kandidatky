@@ -1,25 +1,27 @@
 import React from "react";
-import { DataGrid } from "@material-ui/data-grid";
+import { DataGrid, csCZ } from "@material-ui/data-grid";
 
 const columns = [
   {
     field: "j",
     headerName: "Jméno",
     width: 150,
-    editable: true,
   },
   {
     field: "p",
     headerName: "Příjmení",
     width: 150,
-    editable: true,
   },
   {
     field: "a",
     headerName: "Věk",
     type: "number",
-    width: 110,
-    editable: true,
+    width: 20,
+  },
+  {
+    field: "z",
+    headerName: "Povolání",
+    width: 210,
   },
 ];
 
@@ -27,6 +29,8 @@ const Tablica = ({ kandidati, vybraniKandidati }) => {
   return (
     <div style={{ height: 400, width: "100%" }}>
       <DataGrid
+        localeText={csCZ.props.MuiDataGrid.localeText}
+        density={"compact"}
         rows={vybraniKandidati.length > 0 ? vybraniKandidati : kandidati}
         columns={columns}
         pageSize={20}

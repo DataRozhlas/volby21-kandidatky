@@ -8,7 +8,7 @@ data <- read_csv("../data/data.csv")
 
 # rozděl podle roku a ulož jako JSON
 
-roky <- c(2006, 2010, 2013, 2017)
+roky <- c(2006, 2010, 2013, 2017, 2021)
 
 for (i in roky) {
   data %>%

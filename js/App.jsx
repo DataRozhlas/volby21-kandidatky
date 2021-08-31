@@ -2,20 +2,14 @@
 //import { useEffect, useState } from "preact/compat";
 import React, { useState, useEffect } from "react";
 
-import {
-  Container,
-  AppBar,
-  Toolbar,
-  FormControl,
-  InputLabel,
-  Select,
-} from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import {
   makeStyles,
   ThemeProvider,
   createTheme,
 } from "@material-ui/core/styles";
 import Tablica from "./Tablica.jsx";
+import HorniMenu from "./HorniMenu.jsx";
 
 const isMobile = window.innerWidth < 769;
 
@@ -37,8 +31,6 @@ const theme = createTheme({
   },
 });
 
-const roky = [2006, 2010, 2013, 2017, 2021];
-
 const getData = async (nazev) => {
   try {
     const response = await fetch(
@@ -57,16 +49,15 @@ function App() {
     nstrany: [],
     vstrany: [],
   });
-  const [rok, setRok] = useState(2021);
-  const [kandidati, setKandidati] = useState([]);
-  const [vybraniKandidati, setVybraniKandidati] = useState([]);
-
   const [filtr, setFiltr] = useState({
     changed: false,
     vybranyKraj: 0,
     vybranaNstrana: 0,
     vybranaVstrana: 0,
+    rok: 2021,
   });
+  const [kandidati, setKandidati] = useState([]);
+  const [vybraniKandidati, setVybraniKandidati] = useState([]);
 
   // na zacatku nacti ciselniky
   useEffect(async () => {
@@ -82,11 +73,11 @@ function App() {
 
   // kdyz se zmeni rok, nacti nove kandidaty
   useEffect(async () => {
-    const kandidati = await getData(rok);
+    const kandidati = await getData(filtr.rok);
     setKandidati(kandidati);
-  }, [rok]);
+  }, [filtr.rok]);
 
-  // kdyz se zmeni filtr, aktualizuj vybrane kandidaty
+  // kdyz se zmeni filtr nebo rok, aktualizuj vybrane kandidaty
   useEffect(() => {
     if (kandidati.length > 0 && filtr.changed) {
       setVybraniKandidati(
@@ -97,149 +88,17 @@ function App() {
           )
       );
     }
-  }, [filtr, rok]);
+  }, [filtr, filtr.rok]);
 
   return (
     <ThemeProvider theme={theme}>
       <Container disableGutters={true}>
-        <AppBar position="static">
-          <Toolbar>
-            <FormControl>
-              <InputLabel id="select-rok-label">ROK</InputLabel>
-
-              <Select
-                native
-                id="select-rok"
-                labelId="select-rok-label"
-                value={rok}
-                onChange={(e) => {
-                  setRok(Number(e.target.value));
-                  // setFiltr({
-                  //   ...filtr,
-                  //   vybranyKraj: 0,
-                  //   vybranaVstrana: 0,
-                  //   vybranaNstrana: 0,
-                  // });
-                }}
-                disableUnderline={true}
-              >
-                {roky
-                  .filter(
-                    (r) =>
-                      filtr.vybranaNstrana === 0 ||
-                      ciselniky.nstrany.map((s) => s.ROK).includes(r)
-                  )
-                  .map((i) => (
-                    <option key={i} value={i}>
-                      {i}
-                    </option>
-                  ))}
-              </Select>
-            </FormControl>
-            <FormControl>
-              <InputLabel id="select-kraj-label">KRAJ</InputLabel>
-              <Select
-                native
-                id="select-kraj"
-                labelId="select-kraj-label"
-                value={filtr.vybranyKraj}
-                onChange={(e) =>
-                  setFiltr({
-                    ...filtr,
-                    changed: true,
-                    vybranyKraj: Number(e.target.value),
-                  })
-                }
-                disableUnderline={true}
-              >
-                <option key={0} value={0}>
-                  Všechny
-                </option>
-                {ciselniky.kraje
-                  .filter(
-                    (i) =>
-                      filtr.vybranaVstrana === 0 ||
-                      kandidati
-                        .filter((k) => k.v === filtr.vybranaVstrana)
-                        .map((k) => k.k)
-                        .includes(i.VOLKRAJ)
-                  )
-                  .map((i) => (
-                    <option key={i.VOLKRAJ} value={i.VOLKRAJ}>
-                      {i.NAZVOLKRAJ}
-                    </option>
-                  ))}
-              </Select>
-            </FormControl>
-
-            <FormControl>
-              <InputLabel id="select-vstrana-label">KANDIDÁTKA</InputLabel>
-              <Select
-                native
-                id="select-vstrana"
-                labelId="select-vstrana-label"
-                value={filtr.vybranaKandidatka}
-                onChange={(e) =>
-                  setFiltr({
-                    ...filtr,
-                    changed: true,
-                    vybranaVstrana: Number(e.target.value),
-                  })
-                }
-                disableUnderline={true}
-              >
-                <option key={0} value={0}>
-                  Všechny
-                </option>
-                {ciselniky.vstrany
-                  .filter((i) => i.ROK === rok)
-                  .filter(
-                    (i) =>
-                      filtr.vybranyKraj === 0 ||
-                      kandidati
-                        .filter((k) => k.k === filtr.vybranyKraj)
-                        .map((k) => k.v)
-                        .includes(i.VSTRANA)
-                  )
-                  .map((i) => (
-                    <option key={i.VSTRANA} value={i.VSTRANA}>
-                      {i.ZKRATKAV30}
-                    </option>
-                  ))}
-              </Select>
-            </FormControl>
-            <FormControl>
-              <InputLabel id="select-nstrana-label">
-                NAVRHUJÍCÍ STRANA
-              </InputLabel>
-              <Select
-                native
-                id="select-nstrana"
-                labelId="select-nstrana-label"
-                value={filtr.vybranaNstrana}
-                onChange={(e) =>
-                  setFiltr({
-                    ...filtr,
-                    changed: true,
-                    vybranaNstrana: Number(e.target.value),
-                  })
-                }
-                disableUnderline={true}
-              >
-                <option key={0} value={0}>
-                  Všechny
-                </option>
-                {ciselniky.nstrany
-                  .filter((i) => i.ROK === rok)
-                  .map((i) => (
-                    <option key={i.NSTRANA} value={i.NSTRANA}>
-                      {i.ZKRATKAN30}
-                    </option>
-                  ))}
-              </Select>
-            </FormControl>
-          </Toolbar>
-        </AppBar>
+        <HorniMenu
+          filtr={filtr}
+          setFiltr={setFiltr}
+          ciselniky={ciselniky}
+          kandidati={kandidati}
+        />
         <Tablica kandidati={kandidati} vybraniKandidati={vybraniKandidati} />
         <p>
           {vybraniKandidati.length} z {kandidati.length} kandidatu

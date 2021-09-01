@@ -29,12 +29,12 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
               .filter(
                 (r) =>
                   filtr.vybranaVstrana === 0 || //kdyz neni vybrana strana, ukaz vsechny roky
-                  ciselniky.vstrany
+                  ciselniky.vstrany //kdyz je vybrana strana, koukni se do ciselniku a ukaz jen roky, kdy kandidovala
+
                     .filter((s) => s.VSTRANA === filtr.vybranaVstrana)
                     .map((s) => s.ROK)
                     .includes(r)
               )
-              //kdyz je vybrana strana, koukni se do ciselniku a ukaz jen roky, kdy kandidovala
               .map((i) => (
                 <option key={i} value={i}>
                   {i}
@@ -63,8 +63,8 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
             {ciselniky.kraje
               .filter(
                 (i) =>
-                  filtr.vybranaVstrana === 0 ||
-                  kandidati
+                  filtr.vybranaVstrana === 0 || //kdyz neni vybrana strana, ukaz vsechny kraje
+                  kandidati //kdyz je vybrana strana, koukni se do ciselniku a ukaz jen kraje, kde kandidovala
                     .filter((k) => k.v === filtr.vybranaVstrana)
                     .map((k) => k.k)
                     .includes(i.VOLKRAJ)
@@ -78,7 +78,7 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
         </FormControl>
 
         <FormControl>
-          <InputLabel id="select-vstrana-label">KANDIDÁTKA</InputLabel>
+          <InputLabel id="select-vstrana-label">VOLEBNÍ STRANA</InputLabel>
           <Select
             native
             id="select-vstrana"
@@ -96,14 +96,14 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
               Všechny
             </option>
             {ciselniky.vstrany
-              .filter((i) => i.ROK === rok)
+              .filter((i) => i.ROK === rok) // jen volební strany z aktuálně vybraného roku
               .filter(
                 (i) =>
-                  filtr.vybranyKraj === 0 ||
-                  kandidati
-                    .filter((k) => k.k === filtr.vybranyKraj)
+                  filtr.vybranyKraj === 0 || // pokud není vybraný žádný kraj, ukaž všechny strany
+                  kandidati // jinak se podívej na kandidáty
+                    .filter((k) => k.k === filtr.vybranyKraj) // z vybraného kraje
                     .map((k) => k.v)
-                    .includes(i.VSTRANA)
+                    .includes(i.VSTRANA) // a ukaž jen vstrany, které se tam vyskytují
               )
               .map((i) => (
                 <option key={i.VSTRANA} value={i.VSTRANA}>
@@ -112,34 +112,38 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
               ))}
           </Select>
         </FormControl>
-        <FormControl>
-          <InputLabel id="select-nstrana-label">NAVRHUJÍCÍ STRANA</InputLabel>
-          <Select
-            native
-            id="select-nstrana"
-            labelId="select-nstrana-label"
-            value={filtr.vybranaNstrana}
-            onChange={(e) =>
-              setFiltr({
-                ...filtr,
-                changed: true,
-                vybranaNstrana: Number(e.target.value),
-              })
-            }
-            disableUnderline={true}
-          >
-            <option key={0} value={0}>
-              Všechny
-            </option>
-            {ciselniky.nstrany
-              .filter((i) => i.ROK === rok)
-              .map((i) => (
-                <option key={i.NSTRANA} value={i.NSTRANA}>
-                  {i.ZKRATKAN30}
-                </option>
-              ))}
-          </Select>
-        </FormControl>
+        {[338, 1327, 1350].includes(filtr.vybranaVstrana) && (
+          <FormControl>
+            <InputLabel id="select-nstrana-label">NAVRHUJÍCÍ STRANA</InputLabel>
+            <Select
+              native
+              id="select-nstrana"
+              labelId="select-nstrana-label"
+              value={filtr.vybranaNstrana}
+              onChange={(e) =>
+                setFiltr({
+                  ...filtr,
+                  vybranaNstrana: Number(e.target.value),
+                })
+              }
+              disableUnderline={true}
+            >
+              <option key={0} value={0}>
+                Všechny
+              </option>
+              {ciselniky.nstrany
+                .filter((s) => s.ROK === rok)
+                .filter((s) =>
+                  [...new Set(kandidati.map((k) => k.n))].includes(s.NSTRANA)
+                )
+                .map((i) => (
+                  <option key={i.NSTRANA} value={i.NSTRANA}>
+                    {i.ZKRATKAN30}
+                  </option>
+                ))}
+            </Select>
+          </FormControl>
+        )}
       </Toolbar>
     </AppBar>
   );

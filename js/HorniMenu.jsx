@@ -22,6 +22,10 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
             value={rok}
             onChange={(e) => {
               setRok(Number(e.target.value));
+              setFiltr({
+                ...filtr,
+                vybranaNstrana: 0,
+              });
             }}
             disableUnderline={true}
           >
@@ -88,6 +92,7 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
               setFiltr({
                 ...filtr,
                 vybranaVstrana: Number(e.target.value),
+                vybranaNstrana: 0,
               })
             }
             disableUnderline={true}
@@ -133,9 +138,7 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
               </option>
               {ciselniky.nstrany
                 .filter((s) => s.ROK === rok)
-                .filter((s) =>
-                  [...new Set(kandidati.map((k) => k.n))].includes(s.NSTRANA)
-                )
+                .filter((s) => s.VSTRANA === filtr.vybranaVstrana)
                 .map((i) => (
                   <option key={i.NSTRANA} value={i.NSTRANA}>
                     {i.ZKRATKAN30}

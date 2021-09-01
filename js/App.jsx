@@ -45,55 +45,64 @@ const getData = async (nazev) => {
 
 function App() {
   const [ciselniky, setCiselniky] = useState({
+    roky: [2006, 2010, 2013, 2017, 2021],
     kraje: [],
     nstrany: [],
     vstrany: [],
   });
   const [filtr, setFiltr] = useState({
-    changed: false,
     vybranyKraj: 0,
     vybranaNstrana: 0,
     vybranaVstrana: 0,
-    rok: 2021,
+    nactenyRok: 2021,
   });
+  const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
 
-  // na zacatku nacti ciselniky
+  // na zacatku nacti data do ciselniku
   useEffect(async () => {
     const kraje = await getData("kraje");
     const nstrany = await getData("nstrany");
     const vstrany = await getData("vstrany");
     setCiselniky({
+      ...ciselniky,
       kraje: kraje,
       nstrany: nstrany,
       vstrany: vstrany,
     });
   }, []);
 
-  // kdyz se zmeni rok, nacti nove kandidaty
+  // kdyz se zmeni rok, nacti data
   useEffect(async () => {
-    const kandidati = await getData(filtr.rok);
-    setKandidati(kandidati);
-  }, [filtr.rok]);
+    const vsichni = await getData(rok);
+    setKandidati(vsichni);
+    setFiltr({ ...filtr, nactenyRok: rok });
+  }, [rok]);
 
-  // kdyz se zmeni filtr nebo rok, aktualizuj vybrane kandidaty
+  // kdyz se zmeni filtr, nebo kandidati, aktualizuj vybrane kandidaty
   useEffect(() => {
-    if (kandidati.length > 0 && filtr.changed) {
-      setVybraniKandidati(
-        kandidati
-          .filter((k) => filtr.vybranyKraj === 0 || k.k === filtr.vybranyKraj)
-          .filter(
-            (k) => filtr.vybranaVstrana === 0 || k.v === filtr.vybranaVstrana
-          )
-      );
+    if (kandidati.length > 0) {
+      console.log("filtruju");
+      const vybrani = kandidati
+        .filter((k) => filtr.vybranyKraj === 0 || k.k === filtr.vybranyKraj)
+        .filter(
+          (k) => filtr.vybranaVstrana === 0 || k.v === filtr.vybranaVstrana
+        )
+        .filter(
+          (k) => filtr.vybranaNstrana === 0 || k.n === filtr.vybranaNstrana
+        );
+
+      setVybraniKandidati(vybrani);
     }
-  }, [filtr, filtr.rok]);
+  }, [filtr]);
 
   return (
     <ThemeProvider theme={theme}>
       <Container disableGutters={true}>
         <HorniMenu
+          rok={rok}
+          setRok={setRok}
           filtr={filtr}
           setFiltr={setFiltr}
           ciselniky={ciselniky}
@@ -103,6 +112,7 @@ function App() {
         <p>
           {vybraniKandidati.length} z {kandidati.length} kandidatu
         </p>
+        <p>{JSON.stringify(filtr)}</p>
       </Container>
     </ThemeProvider>
   );

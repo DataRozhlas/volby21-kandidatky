@@ -8,9 +8,7 @@ import {
   Select,
 } from "@material-ui/core";
 
-const roky = [2006, 2010, 2013, 2017, 2021];
-
-const HorniMenu = ({ filtr, setFiltr, ciselniky, kandidati }) => {
+const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
   return (
     <AppBar position="static">
       <Toolbar>
@@ -21,22 +19,22 @@ const HorniMenu = ({ filtr, setFiltr, ciselniky, kandidati }) => {
             native
             id="select-rok"
             labelId="select-rok-label"
-            value={filtr.rok}
+            value={rok}
             onChange={(e) => {
-              setFiltr({
-                ...filtr,
-                changed: true,
-                rok: Number(e.target.value),
-              });
+              setRok(Number(e.target.value));
             }}
             disableUnderline={true}
           >
-            {roky
+            {ciselniky.roky
               .filter(
                 (r) =>
-                  filtr.vybranaNstrana === 0 ||
-                  ciselniky.nstrany.map((s) => s.ROK).includes(r)
+                  filtr.vybranaVstrana === 0 || //kdyz neni vybrana strana, ukaz vsechny roky
+                  ciselniky.vstrany
+                    .filter((s) => s.VSTRANA === filtr.vybranaVstrana)
+                    .map((s) => s.ROK)
+                    .includes(r)
               )
+              //kdyz je vybrana strana, koukni se do ciselniku a ukaz jen roky, kdy kandidovala
               .map((i) => (
                 <option key={i} value={i}>
                   {i}
@@ -54,7 +52,6 @@ const HorniMenu = ({ filtr, setFiltr, ciselniky, kandidati }) => {
             onChange={(e) =>
               setFiltr({
                 ...filtr,
-                changed: true,
                 vybranyKraj: Number(e.target.value),
               })
             }
@@ -90,7 +87,6 @@ const HorniMenu = ({ filtr, setFiltr, ciselniky, kandidati }) => {
             onChange={(e) =>
               setFiltr({
                 ...filtr,
-                changed: true,
                 vybranaVstrana: Number(e.target.value),
               })
             }
@@ -100,7 +96,7 @@ const HorniMenu = ({ filtr, setFiltr, ciselniky, kandidati }) => {
               Všechny
             </option>
             {ciselniky.vstrany
-              .filter((i) => i.ROK === filtr.rok)
+              .filter((i) => i.ROK === rok)
               .filter(
                 (i) =>
                   filtr.vybranyKraj === 0 ||
@@ -136,7 +132,7 @@ const HorniMenu = ({ filtr, setFiltr, ciselniky, kandidati }) => {
               Všechny
             </option>
             {ciselniky.nstrany
-              .filter((i) => i.ROK === filtr.rok)
+              .filter((i) => i.ROK === rok)
               .map((i) => (
                 <option key={i.NSTRANA} value={i.NSTRANA}>
                   {i.ZKRATKAN30}

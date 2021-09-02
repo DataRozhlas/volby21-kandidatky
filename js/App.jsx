@@ -3,11 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Container } from "@material-ui/core";
-import {
-  makeStyles,
-  ThemeProvider,
-  createTheme,
-} from "@material-ui/core/styles";
+import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 import Tablica from "./Tablica.jsx";
 import HorniMenu from "./HorniMenu.jsx";
 
@@ -26,6 +22,19 @@ const theme = createTheme({
         width: isMobile ? "unset" : "100%",
         marginLeft: isMobile ? "-15px" : null,
         marginRight: isMobile ? "-15px" : null,
+      },
+    },
+    MuiToolbar: {
+      root: {
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+      },
+    },
+    MuiFormLabel: {
+      root: {
+        "&$focused": {
+          color: "rgba(0, 0, 0, 0.54)",
+        },
       },
     },
   },

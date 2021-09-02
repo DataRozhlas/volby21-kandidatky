@@ -1,4 +1,5 @@
 import React from "react";
+import { makeStyles } from "@material-ui/styles";
 
 import {
   AppBar,
@@ -8,11 +9,19 @@ import {
   Select,
 } from "@material-ui/core";
 
+const isMobile = window.innerWidth < 769;
+
+const useStyles = makeStyles({
+  largeSelect: { flexGrow: 2, flexBasis: isMobile ? "100%" : 0 },
+  smallSelect: { flexGrow: 1, flexBasis: isMobile ? "50%" : 0 },
+});
+
 const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
+  const classes = useStyles();
   return (
     <AppBar position="static">
       <Toolbar>
-        <FormControl>
+        <FormControl className={classes.smallSelect}>
           <InputLabel id="select-rok-label">ROK</InputLabel>
 
           <Select
@@ -46,7 +55,7 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
               ))}
           </Select>
         </FormControl>
-        <FormControl>
+        <FormControl className={classes.smallSelect}>
           <InputLabel id="select-kraj-label">KRAJ</InputLabel>
           <Select
             native
@@ -81,7 +90,7 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
           </Select>
         </FormControl>
 
-        <FormControl>
+        <FormControl className={classes.largeSelect}>
           <InputLabel id="select-vstrana-label">VOLEBNÍ STRANA</InputLabel>
           <Select
             native
@@ -117,8 +126,8 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
               ))}
           </Select>
         </FormControl>
-        {[338, 1327, 1350].includes(filtr.vybranaVstrana) && (
-          <FormControl>
+        {[338, 1327, 1350].includes(filtr.vybranaVstrana) ? (
+          <FormControl className={classes.largeSelect}>
             <InputLabel id="select-nstrana-label">NAVRHUJÍCÍ STRANA</InputLabel>
             <Select
               native
@@ -146,6 +155,8 @@ const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
                 ))}
             </Select>
           </FormControl>
+        ) : (
+          <div className={classes.largeSelect}></div>
         )}
       </Toolbar>
     </AppBar>

@@ -5,23 +5,22 @@ const columns = [
   {
     field: "j",
     headerName: "Jméno",
-    width: 150,
+    width: 130,
   },
   {
     field: "p",
     headerName: "Příjmení",
-    width: 150,
+    width: 130,
   },
   {
     field: "a",
     headerName: "Věk",
-    type: "number",
-    width: 20,
+    width: 130,
   },
   {
     field: "z",
     headerName: "Povolání",
-    width: 210,
+    width: 350,
   },
 ];
 

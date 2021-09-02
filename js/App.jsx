@@ -11,6 +11,8 @@ import {
 import EditIcon from "@material-ui/icons/Edit";
 import Tablica from "./Tablica.jsx";
 import HorniMenu from "./HorniMenu.jsx";
+import BocniMenu from "./BocniMenu.jsx";
+
 import Modal from "./Modal.jsx";
 
 const isMobile = window.innerWidth < 769;
@@ -20,8 +22,17 @@ const theme = createTheme({
     primary: {
       main: "#F8F8F8",
     },
+    secondary: {
+      main: "#3f50b5",
+    },
   },
   overrides: {
+    // MuiContainer: {
+    //   root: {
+    //     display: "flex",
+    //     flexDirection: "column",
+    //   },
+    // },
     MuiAppBar: {
       root: {
         boxShadow: "none",
@@ -85,10 +96,13 @@ function App() {
     vybranaNstrana: 0,
     vybranaVstrana: 0,
     nactenyRok: 2021,
+    muzi: true,
+    zeny: true,
   });
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
+  // const [isLoading, setIsLoading] = useState(true);
 
   // na zacatku nacti data do ciselniku
   useEffect(async () => {
@@ -101,6 +115,7 @@ function App() {
       nstrany: nstrany,
       vstrany: vstrany,
     });
+    // setIsLoading(false);
   }, []);
 
   // kdyz se zmeni rok, nacti data
@@ -121,7 +136,9 @@ function App() {
         )
         .filter(
           (k) => filtr.vybranaNstrana === 0 || k.n === filtr.vybranaNstrana
-        );
+        )
+        .filter((k) => filtr.zeny === true || k.s === "M")
+        .filter((k) => filtr.muzi === true || k.s === "F");
 
       setVybraniKandidati(vybrani);
     }
@@ -135,6 +152,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      {/* {!isLoading && ( */}
       <Container disableGutters={true}>
         <HorniMenu
           rok={rok}
@@ -145,7 +163,7 @@ function App() {
           kandidati={kandidati}
           classes={classes}
         />
-        {isMobile && (
+        {isMobile ? (
           <>
             <Button
               onClick={handleClickOpen}
@@ -159,14 +177,32 @@ function App() {
             >
               Prozkoumej kandidáty podle atributů
             </Button>
-            <Modal
-              filtr={filtr}
-              setFiltr={setFiltr}
-              open={open}
-              setOpen={setOpen}
-            ></Modal>
-            }
+            {open && (
+              <Modal
+                filtr={filtr}
+                setFiltr={setFiltr}
+                open={open}
+                setOpen={setOpen}
+                theme={theme}
+              ></Modal>
+            )}
           </>
+        ) : (
+          <Container
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              width: "100%",
+              padding: 0,
+            }}
+          >
+            <Container style={{ width: "20%" }}>
+              <BocniMenu filtr={filtr} setFiltr={setFiltr} />
+            </Container>
+            <Container style={{ width: "80%", backgroundColor: "#D6D6D6" }}>
+              g
+            </Container>
+          </Container>
         )}
         <Tablica kandidati={kandidati} vybraniKandidati={vybraniKandidati} />
         <p>
@@ -174,6 +210,7 @@ function App() {
         </p>
         <p>{JSON.stringify(filtr)}</p>
       </Container>
+      {/* )} */}
     </ThemeProvider>
   );
 }

@@ -11,6 +11,7 @@ import {
 import EditIcon from "@material-ui/icons/Edit";
 import Tablica from "./Tablica.jsx";
 import HorniMenu from "./HorniMenu.jsx";
+import Modal from "./Modal.jsx";
 
 const isMobile = window.innerWidth < 769;
 
@@ -126,9 +127,11 @@ function App() {
     }
   }, [filtr]);
 
-  const buttonClicked = () => {
-    console.log("cau");
+  // modal
+  const handleClickOpen = () => {
+    setOpen(true);
   };
+  const [open, setOpen] = useState(false);
 
   return (
     <ThemeProvider theme={theme}>
@@ -143,18 +146,27 @@ function App() {
           classes={classes}
         />
         {isMobile && (
-          <Button
-            onClick={buttonClicked}
-            startIcon={<EditIcon />}
-            variant="contained"
-            style={{
-              fontSize: "0.65rem",
-              marginTop: "0.75rem",
-              marginBottom: "0.75rem",
-            }}
-          >
-            Prozkoumej kandidáty podle atributů
-          </Button>
+          <>
+            <Button
+              onClick={handleClickOpen}
+              startIcon={<EditIcon />}
+              variant="contained"
+              style={{
+                fontSize: "0.65rem",
+                marginTop: "0.75rem",
+                marginBottom: "0.75rem",
+              }}
+            >
+              Prozkoumej kandidáty podle atributů
+            </Button>
+            <Modal
+              filtr={filtr}
+              setFiltr={setFiltr}
+              open={open}
+              setOpen={setOpen}
+            ></Modal>
+            }
+          </>
         )}
         <Tablica kandidati={kandidati} vybraniKandidati={vybraniKandidati} />
         <p>

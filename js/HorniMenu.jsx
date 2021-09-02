@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 
 import {
   AppBar,
@@ -9,15 +8,15 @@ import {
   Select,
 } from "@material-ui/core";
 
-const isMobile = window.innerWidth < 769;
-
-const useStyles = makeStyles({
-  largeSelect: { flexGrow: 2, flexBasis: isMobile ? "100%" : 0 },
-  smallSelect: { flexGrow: 1, flexBasis: isMobile ? "50%" : 0 },
-});
-
-const HorniMenu = ({ rok, setRok, filtr, setFiltr, ciselniky, kandidati }) => {
-  const classes = useStyles();
+const HorniMenu = ({
+  rok,
+  setRok,
+  filtr,
+  setFiltr,
+  ciselniky,
+  kandidati,
+  classes,
+}) => {
   return (
     <AppBar position="static">
       <Toolbar>

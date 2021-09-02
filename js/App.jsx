@@ -2,8 +2,13 @@
 //import { useEffect, useState } from "preact/compat";
 import React, { useState, useEffect } from "react";
 
-import { Container } from "@material-ui/core";
-import { ThemeProvider, createTheme } from "@material-ui/core/styles";
+import { Container, Button } from "@material-ui/core";
+import {
+  ThemeProvider,
+  createTheme,
+  makeStyles,
+} from "@material-ui/core/styles";
+import EditIcon from "@material-ui/icons/Edit";
 import Tablica from "./Tablica.jsx";
 import HorniMenu from "./HorniMenu.jsx";
 
@@ -40,6 +45,19 @@ const theme = createTheme({
   },
 });
 
+const useStyles = makeStyles({
+  largeSelect: {
+    flexGrow: 2,
+    flexBasis: isMobile ? "100%" : 0,
+    marginTop: "0.5rem",
+  },
+  smallSelect: {
+    flexGrow: 1,
+    flexBasis: isMobile ? "50%" : 0,
+    marginTop: "0.5rem",
+  },
+});
+
 const getData = async (nazev) => {
   try {
     const response = await fetch(
@@ -53,6 +71,8 @@ const getData = async (nazev) => {
 };
 
 function App() {
+  const classes = useStyles();
+
   const [ciselniky, setCiselniky] = useState({
     roky: [2006, 2010, 2013, 2017, 2021],
     kraje: [],
@@ -106,6 +126,10 @@ function App() {
     }
   }, [filtr]);
 
+  const buttonClicked = () => {
+    console.log("cau");
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Container disableGutters={true}>
@@ -116,7 +140,22 @@ function App() {
           setFiltr={setFiltr}
           ciselniky={ciselniky}
           kandidati={kandidati}
+          classes={classes}
         />
+        {isMobile && (
+          <Button
+            onClick={buttonClicked}
+            startIcon={<EditIcon />}
+            variant="contained"
+            style={{
+              fontSize: "0.65rem",
+              marginTop: "0.75rem",
+              marginBottom: "0.75rem",
+            }}
+          >
+            Prozkoumej kandidáty podle atributů
+          </Button>
+        )}
         <Tablica kandidati={kandidati} vybraniKandidati={vybraniKandidati} />
         <p>
           {vybraniKandidati.length} z {kandidati.length} kandidatu

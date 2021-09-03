@@ -141,6 +141,7 @@ function App() {
     mba: true,
     jiny: true,
     zadny: true,
+    poradiNaKand: [1, 36],
   });
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
@@ -250,7 +251,10 @@ function App() {
           } else {
             return true;
           }
-        });
+        })
+        .filter(
+          (k) => k.c >= filtr.poradiNaKand[0] && k.c <= filtr.poradiNaKand[1]
+        );
       setVybraniKandidati(vybrani);
     }
   }, [filtr]);

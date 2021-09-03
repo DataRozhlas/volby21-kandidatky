@@ -7,11 +7,16 @@ import {
   FormGroup,
   FormControlLabel,
   Checkbox,
+  Slider,
 } from "@material-ui/core";
 
 const BocniMenu = ({ filtr, setFiltr, classes }) => {
   const handleChange = (e) => {
     setFiltr({ ...filtr, [e.target.name]: e.target.checked });
+  };
+
+  const handleSliderChange = (e, newValue) => {
+    setFiltr({ ...filtr, poradiNaKand: newValue });
   };
 
   return (
@@ -206,6 +211,20 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             }
             label="žádný"
           />
+        </FormGroup>
+      </FormControl>
+      <FormControl className={classes.bocniFieldset}>
+        <FormLabel component="legend">Pořadí na kandidátce</FormLabel>
+        <FormGroup className={classes.bocniCheckBoxGroup}>
+          <Slider
+            style={{ width: "85%", marginLeft: "0.3rem" }}
+            value={filtr.poradiNaKand}
+            onChange={handleSliderChange}
+            min={1}
+            max={36}
+            valueLabelDisplay="auto"
+            color="secondary"
+          ></Slider>
         </FormGroup>
       </FormControl>
     </Toolbar>

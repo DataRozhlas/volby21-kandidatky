@@ -11,7 +11,7 @@ import {
 import CloseIcon from "@material-ui/icons/Close";
 import BocniMenu from "./BocniMenu.jsx";
 
-const Modal = ({ open, setOpen, filtr, setFiltr, theme }) => {
+const Modal = ({ open, setOpen, filtr, setFiltr, classes }) => {
   const handleClose = () => {
     setOpen(false);
   };
@@ -30,7 +30,7 @@ const Modal = ({ open, setOpen, filtr, setFiltr, theme }) => {
         </IconButton>
       </DialogTitle>
       <DialogContent>
-        <BocniMenu filtr={filtr} setFiltr={setFiltr} />
+        <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
       </DialogContent>
 
       <DialogActions>

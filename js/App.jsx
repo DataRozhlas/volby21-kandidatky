@@ -300,7 +300,7 @@ function App() {
                 setFiltr={setFiltr}
                 open={open}
                 setOpen={setOpen}
-                theme={theme}
+                classes={classes}
               ></Modal>
             )}
           </>

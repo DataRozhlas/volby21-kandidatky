@@ -19,7 +19,7 @@ const HorniMenu = ({
 }) => {
   return (
     <AppBar position="static">
-      <Toolbar>
+      <Toolbar className={classes.horniMenu}>
         <FormControl className={classes.smallSelect}>
           <InputLabel id="select-rok-label">ROK</InputLabel>
 

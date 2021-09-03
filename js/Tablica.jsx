@@ -3,6 +3,16 @@ import { DataGrid, csCZ } from "@material-ui/data-grid";
 
 const columns = [
   {
+    field: "c",
+    headerName: "Pořadí",
+    width: 130,
+  },
+  {
+    field: "t1",
+    headerName: "Titul před",
+    width: 130,
+  },
+  {
     field: "j",
     headerName: "Jméno",
     width: 130,
@@ -12,6 +22,12 @@ const columns = [
     headerName: "Příjmení",
     width: 130,
   },
+  {
+    field: "t2",
+    headerName: "Titul za",
+    width: 130,
+  },
+
   {
     field: "a",
     headerName: "Věk",

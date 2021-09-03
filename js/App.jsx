@@ -27,24 +27,12 @@ const theme = createTheme({
     },
   },
   overrides: {
-    // MuiContainer: {
-    //   root: {
-    //     display: "flex",
-    //     flexDirection: "column",
-    //   },
-    // },
     MuiAppBar: {
       root: {
         boxShadow: "none",
         width: isMobile ? "unset" : "100%",
         marginLeft: isMobile ? "-15px" : null,
         marginRight: isMobile ? "-15px" : null,
-      },
-    },
-    MuiToolbar: {
-      root: {
-        flexWrap: "wrap",
-        justifyContent: "space-between",
       },
     },
     MuiFormLabel: {
@@ -56,6 +44,9 @@ const theme = createTheme({
     },
     MuiFormControlLabel: {
       label: { fontSize: "0.85rem" },
+    },
+    MuiCheckbox: {
+      root: { padding: "1px 9px" },
     },
   },
 });
@@ -71,6 +62,24 @@ const useStyles = makeStyles({
     flexBasis: isMobile ? "50%" : 0,
     marginTop: "0.5rem",
   },
+  horniMenu: {
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+  },
+  bocniMenu: {
+    flexDirection: "column",
+  },
+  bocniFieldset: {
+    width: "100%",
+    marginTop: "0.7rem",
+    marginLeft: "0.3rem",
+  },
+  bocniCheckBoxGroup: {
+    flexDirection: "row",
+  },
+  bocniCheckBox: {
+    width: "45%",
+  },
 });
 
 const getData = async (nazev) => {
@@ -82,6 +91,24 @@ const getData = async (nazev) => {
     return result;
   } catch (error) {
     console.log(error);
+  }
+};
+
+const filtrNaTituly = (k, titul, filtr) => {
+  if (filtr[titul] === true) {
+    return true;
+  } else if (
+    typeof k.t1 !== "undefined" &&
+    k.t1.toUpperCase().includes(titul.toUpperCase())
+  ) {
+    return false;
+  } else if (
+    typeof k.t2 !== "undefined" &&
+    k.t2.toUpperCase().includes(titul.toUpperCase())
+  ) {
+    return false;
+  } else {
+    return true;
   }
 };
 
@@ -101,6 +128,19 @@ function App() {
     nactenyRok: 2021,
     muzi: true,
     zeny: true,
+    ing: true,
+    mgr: true,
+    bc: true,
+    mudr: true,
+    judr: true,
+    phdr: true,
+    rndr: true,
+    paeddr: true,
+    phd: true,
+    csc: true,
+    mba: true,
+    jiny: true,
+    zadny: true,
   });
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
@@ -140,9 +180,62 @@ function App() {
         .filter(
           (k) => filtr.vybranaNstrana === 0 || k.n === filtr.vybranaNstrana
         )
-        .filter((k) => filtr.zeny === true || k.s === "M")
-        .filter((k) => filtr.muzi === true || k.s === "F");
-
+        .filter((k) => filtr.zeny === true || k.s !== "F")
+        .filter((k) => filtr.muzi === true || k.s !== "M")
+        .filter((k) => filtrNaTituly(k, "ing", filtr))
+        .filter((k) => filtrNaTituly(k, "mgr", filtr))
+        .filter((k) => filtrNaTituly(k, "bc", filtr))
+        .filter((k) => filtrNaTituly(k, "mudr", filtr))
+        .filter((k) => filtrNaTituly(k, "judr", filtr))
+        .filter((k) => filtrNaTituly(k, "phdr", filtr))
+        .filter((k) => filtrNaTituly(k, "rndr", filtr))
+        .filter((k) => filtrNaTituly(k, "paeddr", filtr))
+        .filter((k) => filtrNaTituly(k, "csc", filtr))
+        .filter((k) => filtrNaTituly(k, "mba", filtr))
+        .filter((k) => {
+          if (filtr.phd === true) {
+            return true;
+          } else if (
+            typeof k.t1 !== "undefined" &&
+            k.t1.toUpperCase().includes("PH.D")
+          ) {
+            return false;
+          } else if (
+            typeof k.t2 !== "undefined" &&
+            k.t2.toUpperCase().includes("PH.D")
+          ) {
+            return false;
+          } else {
+            return true;
+          }
+        })
+        .filter(
+          (k) =>
+            filtr.zadny === true ||
+            !(typeof k.t1 === "undefined" && typeof k.t2 === "undefined")
+        )
+        .filter((k) => {
+          if (filtr.jiny === true) {
+            return true;
+          } else if (
+            typeof k.t1 !== "undefined" &&
+            !k.t1.toUpperCase().includes("PH.D") &&
+            !k.t1.toUpperCase().includes("MBA") &&
+            !k.t1.toUpperCase().includes("CSC") &&
+            !k.t1.toUpperCase().includes("PAEDDR") &&
+            !k.t1.toUpperCase().includes("PH.D") &&
+            !k.t1.toUpperCase().includes("RNDR") &&
+            !k.t1.toUpperCase().includes("PHDR") &&
+            !k.t1.toUpperCase().includes("MUDR") &&
+            !k.t1.toUpperCase().includes("BC") &&
+            !k.t1.toUpperCase().includes("MGR") &&
+            !k.t1.toUpperCase().includes("ING")
+          ) {
+            return false;
+          } else {
+            return true;
+          }
+        });
       setVybraniKandidati(vybrani);
     }
   }, [filtr]);
@@ -199,7 +292,7 @@ function App() {
               padding: 0,
             }}
           >
-            <Container style={{ width: "20%" }}>
+            <Container style={{ width: "20%" }} disableGutters={true}>
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
             <Container style={{ width: "80%", backgroundColor: "#D6D6D6" }}>

@@ -54,6 +54,9 @@ const theme = createTheme({
         },
       },
     },
+    MuiFormControlLabel: {
+      label: { fontSize: "0.85rem" },
+    },
   },
 });
 
@@ -197,7 +200,7 @@ function App() {
             }}
           >
             <Container style={{ width: "20%" }}>
-              <BocniMenu filtr={filtr} setFiltr={setFiltr} />
+              <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
             <Container style={{ width: "80%", backgroundColor: "#D6D6D6" }}>
               g

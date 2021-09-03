@@ -9,20 +9,14 @@ import {
   Checkbox,
 } from "@material-ui/core";
 
-const BocniMenu = ({ filtr, setFiltr }) => {
+const BocniMenu = ({ filtr, setFiltr, classes }) => {
   const handleChange = (e) => {
     setFiltr({ ...filtr, [e.target.name]: e.target.checked });
   };
 
   return (
     <Toolbar>
-      <FormControl
-        component="fieldset"
-        size="small"
-        variant="outlined"
-        fullWidth={true}
-        margin="dense"
-      >
+      <FormControl component="fieldset">
         <FormLabel component="legend">Pohlaví</FormLabel>
 
         <FormGroup>
@@ -32,6 +26,7 @@ const BocniMenu = ({ filtr, setFiltr }) => {
                 checked={filtr.zeny}
                 onChange={handleChange}
                 name="zeny"
+                size="small"
               />
             }
             label="ženy"
@@ -42,6 +37,7 @@ const BocniMenu = ({ filtr, setFiltr }) => {
                 checked={filtr.muzi}
                 onChange={handleChange}
                 name="muzi"
+                size="small"
               />
             }
             label="muži"

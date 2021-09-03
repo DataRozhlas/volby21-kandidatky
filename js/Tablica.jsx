@@ -30,7 +30,7 @@ const Tablica = ({ kandidati, vybraniKandidati }) => {
       <DataGrid
         localeText={csCZ.props.MuiDataGrid.localeText}
         density={"compact"}
-        rows={vybraniKandidati.length > 0 ? vybraniKandidati : kandidati}
+        rows={vybraniKandidati}
         columns={columns}
         pageSize={20}
         rowsPerPageOptions={[20]}

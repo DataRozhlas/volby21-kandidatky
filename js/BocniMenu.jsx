@@ -16,7 +16,6 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
   };
 
   const handlePoradiChange = (e, newValue) => {
-    c;
     setFiltr({ ...filtr, poradiNaKand: newValue });
   };
 

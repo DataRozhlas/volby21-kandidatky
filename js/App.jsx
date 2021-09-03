@@ -142,6 +142,7 @@ function App() {
     jiny: true,
     zadny: true,
     poradiNaKand: [1, 36],
+    vek: [21, 94],
   });
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
@@ -254,7 +255,8 @@ function App() {
         })
         .filter(
           (k) => k.c >= filtr.poradiNaKand[0] && k.c <= filtr.poradiNaKand[1]
-        );
+        )
+        .filter((k) => k.a >= filtr.vek[0] && k.a <= filtr.vek[1]);
       setVybraniKandidati(vybrani);
     }
   }, [filtr]);

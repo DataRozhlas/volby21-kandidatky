@@ -232,6 +232,21 @@ function App() {
             !k.t1.toUpperCase().includes("ING")
           ) {
             return false;
+          } else if (
+            typeof k.t2 !== "undefined" &&
+            !k.t2.toUpperCase().includes("PH.D") &&
+            !k.t2.toUpperCase().includes("MBA") &&
+            !k.t2.toUpperCase().includes("CSC") &&
+            !k.t2.toUpperCase().includes("PAEDDR") &&
+            !k.t2.toUpperCase().includes("PH.D") &&
+            !k.t2.toUpperCase().includes("RNDR") &&
+            !k.t2.toUpperCase().includes("PHDR") &&
+            !k.t2.toUpperCase().includes("MUDR") &&
+            !k.t2.toUpperCase().includes("BC") &&
+            !k.t2.toUpperCase().includes("MGR") &&
+            !k.t2.toUpperCase().includes("ING")
+          ) {
+            return false;
           } else {
             return true;
           }

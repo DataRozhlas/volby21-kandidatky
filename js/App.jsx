@@ -316,8 +316,15 @@ function App() {
             <Container style={{ width: "20%" }} disableGutters={true}>
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
-            <Container style={{ width: "80%", backgroundColor: "#D6D6D6" }}>
-              g
+            <Container
+              style={{
+                width: "80%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              graf
             </Container>
           </Container>
         )}

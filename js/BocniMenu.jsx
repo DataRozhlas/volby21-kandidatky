@@ -15,8 +15,13 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
     setFiltr({ ...filtr, [e.target.name]: e.target.checked });
   };
 
-  const handleSliderChange = (e, newValue) => {
+  const handlePoradiChange = (e, newValue) => {
+    c;
     setFiltr({ ...filtr, poradiNaKand: newValue });
+  };
+
+  const handleVekChange = (e, newValue) => {
+    setFiltr({ ...filtr, vek: newValue });
   };
 
   return (
@@ -219,9 +224,23 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
           <Slider
             style={{ width: "85%", marginLeft: "0.3rem" }}
             value={filtr.poradiNaKand}
-            onChange={handleSliderChange}
+            onChange={handlePoradiChange}
             min={1}
             max={36}
+            valueLabelDisplay="auto"
+            color="secondary"
+          ></Slider>
+        </FormGroup>
+      </FormControl>
+      <FormControl className={classes.bocniFieldset}>
+        <FormLabel component="legend">Věk</FormLabel>
+        <FormGroup className={classes.bocniCheckBoxGroup}>
+          <Slider
+            style={{ width: "85%", marginLeft: "0.3rem" }}
+            value={filtr.vek}
+            onChange={handleVekChange}
+            min={21}
+            max={94}
             valueLabelDisplay="auto"
             color="secondary"
           ></Slider>

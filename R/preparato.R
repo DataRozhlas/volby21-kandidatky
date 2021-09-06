@@ -8,13 +8,26 @@ data <- read_csv("../data/data.csv")
 
 # rozděl podle roku a ulož jako JSON
 
+ rekniMandat <- function(MANDAT, PORCISLO, PORADIMAND) {
+   if (MANDAT > 0 && PORADIMAND < PORCISLO) {
+     2 
+   } else MANDAT
+ }
+
+
 roky <- c(2006, 2010, 2013, 2017, 2021)
 
 for (i in roky) {
   data %>%
     filter(ROK==i) %>%
     mutate(id=row_number()) %>%
-    select(id, k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA, m=MANDAT) %>%
+    mutate(MANDAT2 = rekniMandat(MANDAT, PORCISLO, PORADIMAND)) %>% filter(MANDAT2==2) %>% print()
+  
+}
+  
+  
+  
+    select(id, k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA, m=MANDAT2) %>%
     arrange(v, c) %>%
     write_json(paste0("../data/", i, ".json"))
 }
@@ -68,4 +81,5 @@ data %>% select(PORCISLO) %>% max()
 data %>% select(VEK) %>% min()
 
 # preferenční hlasy
-data %>% filter(MANDAT==1) %>% filter(POCPROCVSE==T)
+
+data %>% filter(MANDAT==1) %>% filter(PORADIMAND>PORCISLO)

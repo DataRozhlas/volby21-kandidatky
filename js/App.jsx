@@ -145,6 +145,7 @@ function App() {
     vek: [21, 94],
     mandatAno: true,
     mandatNe: true,
+    mandatPref: true,
   });
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
@@ -260,7 +261,8 @@ function App() {
         )
         .filter((k) => k.a >= filtr.vek[0] && k.a <= filtr.vek[1])
         .filter((k) => filtr.mandatAno === true || k.m !== 1)
-        .filter((k) => filtr.mandatNe === true || k.m !== 0);
+        .filter((k) => filtr.mandatNe === true || k.m !== 0)
+        .filter((k) => filtr.mandatPref === true || k.m !== 2);
       setVybraniKandidati(vybrani);
     }
   }, [filtr]);

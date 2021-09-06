@@ -245,38 +245,52 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
           ></Slider>
         </FormGroup>
       </FormControl>
-      <FormControl component="fieldset" className={classes.bocniFieldset}>
-        <FormLabel component="legend">
-          Mandát v roce {filtr.nactenyRok}
-        </FormLabel>
+      {filtr.nactenyRok != 2021 && (
+        <FormControl component="fieldset" className={classes.bocniFieldset}>
+          <FormLabel component="legend">
+            Mandát v roce {filtr.nactenyRok}
+          </FormLabel>
 
-        <FormGroup className={classes.bocniCheckBoxGroup}>
-          <FormControlLabel
-            className={classes.bocniCheckBox}
-            control={
-              <Checkbox
-                checked={filtr.mandatAno}
-                onChange={handleChange}
-                name="mandatAno"
-                size="small"
-              />
-            }
-            label="získali"
-          />
-          <FormControlLabel
-            className={classes.bocniCheckBox}
-            control={
-              <Checkbox
-                checked={filtr.mandatNe}
-                onChange={handleChange}
-                name="mandatNe"
-                size="small"
-              />
-            }
-            label="nezískali"
-          />
-        </FormGroup>
-      </FormControl>
+          <FormGroup className={classes.bocniCheckBoxGroup}>
+            <FormControlLabel
+              className={classes.bocniCheckBox}
+              control={
+                <Checkbox
+                  checked={filtr.mandatAno}
+                  onChange={handleChange}
+                  name="mandatAno"
+                  size="small"
+                />
+              }
+              label="získali standardně"
+            />
+            <FormControlLabel
+              className={classes.bocniCheckBox}
+              control={
+                <Checkbox
+                  checked={filtr.mandatPref}
+                  onChange={handleChange}
+                  name="mandatPref"
+                  size="small"
+                />
+              }
+              label="získali díky preferenčním hlasům"
+            />
+            <FormControlLabel
+              className={classes.bocniCheckBox}
+              control={
+                <Checkbox
+                  checked={filtr.mandatNe}
+                  onChange={handleChange}
+                  name="mandatNe"
+                  size="small"
+                />
+              }
+              label="nezískali"
+            />
+          </FormGroup>
+        </FormControl>
+      )}
     </Toolbar>
   );
 };

@@ -27,7 +27,16 @@ const columns = [
     headerName: "Titul za",
     width: 130,
   },
-
+  {
+    field: "b",
+    headerName: "Bydliště",
+    width: 130,
+  },
+  {
+    field: "o",
+    headerName: "Počet obyvatel",
+    width: 130,
+  },
   {
     field: "a",
     headerName: "Věk",

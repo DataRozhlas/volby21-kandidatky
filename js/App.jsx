@@ -77,8 +77,11 @@ const useStyles = makeStyles({
   bocniCheckBoxGroup: {
     flexDirection: "row",
   },
-  bocniCheckBox: {
+  bocniCheckBoxDvaSloupce: {
     width: "45%",
+  },
+  bocniCheckBox: {
+    width: "100%",
   },
 });
 
@@ -146,6 +149,11 @@ function App() {
     mandatAno: true,
     mandatNe: true,
     mandatPref: true,
+    do1k: true,
+    do10k: true,
+    do50k: true,
+    nad50k: true,
+    praha: true,
   });
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
@@ -262,7 +270,13 @@ function App() {
         .filter((k) => k.a >= filtr.vek[0] && k.a <= filtr.vek[1])
         .filter((k) => filtr.mandatAno === true || k.m !== 1)
         .filter((k) => filtr.mandatNe === true || k.m !== 0)
-        .filter((k) => filtr.mandatPref === true || k.m !== 2);
+        .filter((k) => filtr.mandatPref === true || k.m !== 2)
+        .filter((k) => filtr.do1k === true || k.o >= 999)
+        .filter((k) => filtr.do10k === true || k.o < 1000 || k.o > 9999)
+        .filter((k) => filtr.do50k === true || k.o < 10000 || k.o > 49999)
+        .filter((k) => filtr.nad50k === true || k.o < 50000 || k.o > 999999)
+        .filter((k) => filtr.praha === true || k.o < 999999);
+
       setVybraniKandidati(vybrani);
     }
   }, [filtr]);

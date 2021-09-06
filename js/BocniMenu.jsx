@@ -30,7 +30,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
 
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.zeny}
@@ -42,7 +42,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="ženy"
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.muzi}
@@ -60,7 +60,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
 
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.ing}
@@ -72,7 +72,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="Ing."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.mgr}
@@ -84,7 +84,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="Mgr."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.bc}
@@ -96,7 +96,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="Bc."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.mudr}
@@ -108,7 +108,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="MUDr."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.judr}
@@ -120,7 +120,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="JUDr."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.phdr}
@@ -132,7 +132,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="PhDr."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.rndr}
@@ -144,7 +144,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="RNDr."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.paeddr}
@@ -156,7 +156,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="PaedDr."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.phd}
@@ -168,7 +168,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="Ph.D."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.csc}
@@ -180,7 +180,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="CSc."
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.mba}
@@ -192,7 +192,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="MBA"
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.jiny}
@@ -204,7 +204,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             label="jiný"
           />
           <FormControlLabel
-            className={classes.bocniCheckBox}
+            className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
                 checked={filtr.zadny}
@@ -291,6 +291,72 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
           </FormGroup>
         </FormControl>
       )}
+      <FormControl component="fieldset" className={classes.bocniFieldset}>
+        <FormLabel component="legend">Velikost místa bydliště</FormLabel>
+
+        <FormGroup className={classes.bocniCheckBoxGroup}>
+          <FormControlLabel
+            className={classes.bocniCheckBox}
+            control={
+              <Checkbox
+                checked={filtr.do1k}
+                onChange={handleChange}
+                name="do1k"
+                size="small"
+              />
+            }
+            label="do tisíce obyvatel"
+          />
+          <FormControlLabel
+            className={classes.do10k}
+            control={
+              <Checkbox
+                checked={filtr.do10k}
+                onChange={handleChange}
+                name="do10k"
+                size="small"
+              />
+            }
+            label="do 10 tisíc obyvatel"
+          />
+          <FormControlLabel
+            className={classes.do50k}
+            control={
+              <Checkbox
+                checked={filtr.do50k}
+                onChange={handleChange}
+                name="do50k"
+                size="small"
+              />
+            }
+            label="do 50 tisíc obyvatel"
+          />
+          <FormControlLabel
+            className={classes.nad50k}
+            control={
+              <Checkbox
+                checked={filtr.nad50k}
+                onChange={handleChange}
+                name="nad50k"
+                size="small"
+              />
+            }
+            label="nad 50 tisíc obyvatel"
+          />
+          <FormControlLabel
+            className={classes.praha}
+            control={
+              <Checkbox
+                checked={filtr.praha}
+                onChange={handleChange}
+                name="praha"
+                size="small"
+              />
+            }
+            label="Praha"
+          />
+        </FormGroup>
+      </FormControl>
     </Toolbar>
   );
 };

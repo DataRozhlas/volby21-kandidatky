@@ -14,7 +14,8 @@ for (i in roky) {
   data %>%
     filter(ROK==i) %>%
     mutate(id=row_number()) %>%
-    select(id, k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA) %>%
+    select(id, k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA, m=MANDAT) %>%
+    arrange(v, c) %>%
     write_json(paste0("../data/", i, ".json"))
 }
 
@@ -36,6 +37,35 @@ data %>%
 # číselník navrhujících stran
 
 data %>%
-  select(ROK, NSTRANA, ZKRATKAN8, ZKRATKAN30) %>%
+  select(ROK, VSTRANA, NSTRANA, ZKRATKAN8, ZKRATKAN30) %>%
   distinct() %>%
   write_json("../data/nstrany.json")
+
+# kódy všech koalic
+
+data %>%
+  filter(POCSTRVKO>1) %>%
+  distinct(VSTRANA)
+
+# nejdelší povolání
+
+summary(nchar(data$POVOLANI))
+
+# tituly
+
+data %>%
+  select(TITULPRED, TITULZA) %>%
+  group_by(TITULZA) %>%
+  summarise(pocet=n()) %>%
+  arrange(desc(pocet)) %>%
+  slice(1:20)
+
+# nej poradi na kandi
+
+data %>% select(PORCISLO) %>% max()
+
+# nej vek
+data %>% select(VEK) %>% min()
+
+# preferenční hlasy
+data %>% filter(MANDAT==1) %>% filter(POCPROCVSE==T)

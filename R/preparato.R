@@ -6,28 +6,23 @@ Sys.setlocale("LC_ALL","cz_CZ.UTF8")
 data <- read_csv("../data/data.csv")
 
 
-# rozděl podle roku a ulož jako JSON
 
- rekniMandat <- function(MANDAT, PORCISLO, PORADIMAND) {
-   if (MANDAT > 0 && PORADIMAND < PORCISLO) {
-     2 
-   } else MANDAT
- }
+# rozděl podle roku a ulož jako JSON
 
 
 roky <- c(2006, 2010, 2013, 2017, 2021)
+
+data$MANDAT2 <- ifelse((data$PORADIMAND < data$PORCISLO & data$MANDAT > 0), 2, data$MANDAT)
+
+data$OBYVKAT2 <- as.factor(data$OBYVKAT)
+
+levels(data$OBYVKAT2) <- c()
 
 for (i in roky) {
   data %>%
     filter(ROK==i) %>%
     mutate(id=row_number()) %>%
-    mutate(MANDAT2 = rekniMandat(MANDAT, PORCISLO, PORADIMAND)) %>% filter(MANDAT2==2) %>% print()
-  
-}
-  
-  
-  
-    select(id, k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA, m=MANDAT2) %>%
+    select(id, k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA, m=MANDAT2, b=BYDLISTEN, o=OBYV) %>%
     arrange(v, c) %>%
     write_json(paste0("../data/", i, ".json"))
 }

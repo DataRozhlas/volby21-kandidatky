@@ -32,7 +32,9 @@ for (i in roky) {
 data %>%
   select(VOLKRAJ, NAZVOLKRAJ) %>%
   distinct() %>%
-  write_json("../data/kraje.json")
+  #write_json("../data/kraje.json")
+  write_tsv("../data/kraje.json")
+
 
 
 # číselník volebních stran
@@ -40,14 +42,14 @@ data %>%
 data %>%
   select(ROK, VSTRANA, ZKRATKAV8, ZKRATKAV30) %>%
   distinct() %>%
-  write_json("../data/vstrany.json")
+  write_tsv("../data/vstrany.json")
 
 # číselník navrhujících stran
 
 data %>%
   select(ROK, VSTRANA, NSTRANA, ZKRATKAN8, ZKRATKAN30) %>%
   distinct() %>%
-  write_json("../data/nstrany.json")
+  write_tsv("../data/nstrany.json")
 
 # kódy všech koalic
 

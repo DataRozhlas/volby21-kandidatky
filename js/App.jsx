@@ -2,7 +2,7 @@
 //import { useEffect, useState } from "preact/compat";
 import React, { useState, useEffect } from "react";
 
-import * as d3 from "d3";
+import d3 from "./d3Importer.js";
 
 import { Container, Button } from "@material-ui/core";
 import {
@@ -92,7 +92,8 @@ const getData = async (nazev) => {
     const response = await fetch(
       `https://data.irozhlas.cz/volby21-kandidatky/data/${nazev}.tsv`
     );
-    const result = await d3.tsvParse(response);
+    const text = await response.text();
+    const result = await d3.tsvParse(text);
     return result;
   } catch (error) {
     console.log(error);

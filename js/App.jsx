@@ -14,8 +14,8 @@ import EditIcon from "@material-ui/icons/Edit";
 import Tablica from "./Tablica.jsx";
 import HorniMenu from "./HorniMenu.jsx";
 import BocniMenu from "./BocniMenu.jsx";
-
 import Modal from "./Modal.jsx";
+import Graf from "./Graf.jsx";
 
 const isMobile = window.innerWidth < 769;
 
@@ -339,16 +339,11 @@ function App() {
             <Container style={{ width: "20%" }} disableGutters={true}>
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
-            <Container
-              style={{
-                width: "80%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              graf
-            </Container>
+            <Graf
+              vybraniKandidati={vybraniKandidati}
+              kandidati={kandidati}
+              filtr={filtr}
+            />
           </Container>
         )}
         <Tablica kandidati={kandidati} vybraniKandidati={vybraniKandidati} />

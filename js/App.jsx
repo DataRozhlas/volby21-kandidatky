@@ -2,6 +2,8 @@
 //import { useEffect, useState } from "preact/compat";
 import React, { useState, useEffect } from "react";
 
+import * as d3 from "d3";
+
 import { Container, Button } from "@material-ui/core";
 import {
   ThemeProvider,
@@ -88,9 +90,9 @@ const useStyles = makeStyles({
 const getData = async (nazev) => {
   try {
     const response = await fetch(
-      `https://data.irozhlas.cz/volby21-kandidatky/data/${nazev}.json`
+      `https://data.irozhlas.cz/volby21-kandidatky/data/${nazev}.tsv`
     );
-    const result = await response.json();
+    const result = await d3.tsvParse(response);
     return result;
   } catch (error) {
     console.log(error);

@@ -49,7 +49,7 @@ const columns = [
   },
 ];
 
-const Tablica = ({ kandidati, vybraniKandidati }) => {
+const Tablica = ({ vybraniKandidati }) => {
   return (
     <div style={{ height: 400, width: "100%" }}>
       <DataGrid

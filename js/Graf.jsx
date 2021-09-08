@@ -9,9 +9,20 @@ const useStyles = makeStyles({
   grafContainer: {
     width: "80%",
   },
+  tooltip: {
+    position: "absolute",
+    textAlign: "center",
+    width: "110px",
+    padding: "10px",
+    font: "12px sans-serif",
+    background: "lightsteelblue",
+    border: 0,
+    borderRadius: "8px",
+    pointerEvents: "none",
+  },
 });
 
-const Graf = ({ kandidati, vybraniKandidati, filtr }) => {
+const Graf = ({ kandidati, filtr }) => {
   const classes = useStyles();
 
   const containerRef = useRef(null);
@@ -23,13 +34,13 @@ const Graf = ({ kandidati, vybraniKandidati, filtr }) => {
       const { destroy } = GrafGenerator(
         containerRef.current,
         kandidati,
-        vybraniKandidati,
-        filtr
+        filtr,
+        classes
       );
       destroyFn = destroy;
     }
     return destroyFn;
-  }, []);
+  }, [kandidati]);
 
   return (
     <Container ref={containerRef} className={classes.grafContainer}>

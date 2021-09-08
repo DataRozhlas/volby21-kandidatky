@@ -339,14 +339,10 @@ function App() {
             <Container style={{ width: "20%" }} disableGutters={true}>
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
-            <Graf
-              vybraniKandidati={vybraniKandidati}
-              kandidati={kandidati}
-              filtr={filtr}
-            />
+            <Graf kandidati={kandidati} filtr={filtr} />)
           </Container>
         )}
-        <Tablica kandidati={kandidati} vybraniKandidati={vybraniKandidati} />
+        <Tablica vybraniKandidati={vybraniKandidati} />
         <p>
           {vybraniKandidati.length} z {kandidati.length} kandidatu
         </p>

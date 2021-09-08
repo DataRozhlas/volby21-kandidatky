@@ -184,7 +184,7 @@ function App() {
     setFiltr({ ...filtr, nactenyRok: rok });
   }, [rok]);
 
-  // kdyz se zmeni filtr, nebo kandidati, aktualizuj vybrane kandidaty
+  // kdyz se zmeni filtr, aktualizuj vybrane kandidaty
   useEffect(() => {
     if (kandidati.length > 0) {
       console.log("filtruju");

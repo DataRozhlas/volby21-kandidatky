@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 
-import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import GrafGenerator from "./GrafGenerator.jsx";
@@ -30,7 +29,7 @@ const Graf = ({ kandidati, filtr }) => {
   useEffect(() => {
     let destroyFn;
 
-    if (containerRef.current) {
+    if (containerRef.current && kandidati.length > 0) {
       const { destroy } = GrafGenerator(
         containerRef.current,
         kandidati,
@@ -40,13 +39,9 @@ const Graf = ({ kandidati, filtr }) => {
       destroyFn = destroy;
     }
     return destroyFn;
-  }, [kandidati]);
+  }, [filtr]);
 
-  return (
-    <Container ref={containerRef} className={classes.grafContainer}>
-      graf
-    </Container>
-  );
+  return <div ref={containerRef} className={classes.grafContainer}></div>;
 };
 
 export default Graf;

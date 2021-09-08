@@ -11,6 +11,31 @@ const GrafGenerator = (container, kandidati, filtr, classes) => {
     return "#9D00A0";
   };
 
+  const drag = (simulation) => {
+    const dragstarted = (d) => {
+      if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    };
+
+    const dragged = (d) => {
+      d.fx = d3.event.x;
+      d.fy = d3.event.y;
+    };
+
+    const dragended = (d) => {
+      if (!d3.event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    };
+
+    return d3
+      .drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended);
+  };
+
   const tooltip = document.querySelector("#graph-tooltip");
   if (!tooltip) {
     const tooltipDiv = document.createElement("div");
@@ -52,9 +77,22 @@ const GrafGenerator = (container, kandidati, filtr, classes) => {
     .data(nodes)
     .join("circle")
     .attr("r", 12)
-    .attr("fill", color);
+    .attr("fill", color)
+    .call(drag(simulation));
 
-  return <div></div>;
+  simulation.on("tick", () => {
+    // update node positions
+    node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+  });
+
+  return {
+    destroy: () => {
+      simulation.stop();
+    },
+    nodes: () => {
+      return svg.node();
+    },
+  };
 };
 
 export default GrafGenerator;

@@ -21,7 +21,20 @@ const useStyles = makeStyles({
   },
 });
 
-const Graf = ({ kandidati, filtr }) => {
+const vyberKulicky = (kandidati, filtr) => {
+  let meritko;
+  kandidati.length > 1000
+    ? (meritko = 50)
+    : vybraniKandidati.length > 100
+    ? (meritko = 10)
+    : (meritko = 1);
+  const pocet = Math.floor(kandidati.length / meritko);
+  return Array.apply(null, Array(pocet)).map(function (x, i) {
+    return { id: i };
+  });
+};
+
+const Graf = ({ vybraniKandidati, filtr }) => {
   const classes = useStyles();
 
   const containerRef = useRef(null);
@@ -29,17 +42,14 @@ const Graf = ({ kandidati, filtr }) => {
   useEffect(() => {
     let destroyFn;
 
-    if (containerRef.current && kandidati.length > 0) {
-      const { destroy } = GrafGenerator(
-        containerRef.current,
-        kandidati,
-        filtr,
-        classes
-      );
+    if (containerRef.current && vybraniKandidati.length > 0) {
+      const kulicky = vyberKulicky(vybraniKandidati, filtr);
+      console.log(kulicky);
+      const { destroy } = GrafGenerator(containerRef.current, kulicky, classes);
       destroyFn = destroy;
     }
     return destroyFn;
-  }, [filtr]);
+  }, [vybraniKandidati]);
 
   return <div ref={containerRef} className={classes.grafContainer}></div>;
 };

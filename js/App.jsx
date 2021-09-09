@@ -87,13 +87,55 @@ const useStyles = makeStyles({
   },
 });
 
+const dataFormat = (nazev, d) => {
+  if (/\d{4}/.test(nazev)) {
+    return {
+      id: +d.id,
+      k: +d.k,
+      c: +d.c,
+      t1: d.t1,
+      t2: d.t2,
+      j: d.j,
+      p: d.p,
+      a: +d.a,
+      s: d.s,
+      z: d.z,
+      v: +d.v,
+      n: +d.n,
+      m: +d.m,
+      b: d.b,
+      o: +d.o,
+    };
+  } else if (nazev === "vstrany") {
+    return {
+      ROK: +d.ROK,
+      VSTRANA: +d.VSTRANA,
+      ZKRATKAV8: d.ZKRATKAV8,
+      ZKRATKAV30: d.ZKRATKAV30,
+    };
+  } else if (nazev === "nstrany") {
+    return {
+      ROK: +d.ROK,
+      VSTRANA: +d.VSTRANA,
+      NSTRANA: +d.NSTRANA,
+      ZKRATKAN8: d.ZKRATKAN8,
+      ZKRATKAN30: d.ZKRATKAN30,
+    };
+  } else if (nazev === "kraje") {
+    return {
+      VOLKRAJ: +d.VOLKRAJ,
+      NAZVOLKRAJ: d.NAZVOLKRAJ,
+    };
+  }
+};
+
 const getData = async (nazev) => {
   try {
     const response = await fetch(
       `https://data.irozhlas.cz/volby21-kandidatky/data/${nazev}.tsv`
     );
     const text = await response.text();
-    const result = await d3.tsvParse(text);
+    const result = await d3.tsvParse(text, (d) => dataFormat(nazev, d));
     return result;
   } catch (error) {
     console.log(error);
@@ -339,7 +381,7 @@ function App() {
             <Container style={{ width: "20%" }} disableGutters={true}>
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
-            <Graf kandidati={kandidati} filtr={filtr} />)
+            {/*  <Graf vybraniKandidati={vybraniKandidati} filtr={filtr} /> */})
           </Container>
         )}
         <Tablica vybraniKandidati={vybraniKandidati} />

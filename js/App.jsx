@@ -409,6 +409,7 @@ function App() {
               <Graf
                 vybraniKandidati={vybraniKandidati}
                 vybraniVybraniKandidati={vybraniVybraniKandidati}
+                isMobile={isMobile}
               />
             )}
           </>

@@ -8,16 +8,13 @@ import GrafGenerator from "./GrafGenerator.jsx";
 const useStyles = makeStyles({
   grafContainer: {
     width: "100%",
+    minHeight: window.innerHeight / 2,
   },
 });
 
 const vyrobKulicky = (vybraniKandidati, vybraniVybraniKandidati) => {
   let meritko;
-  vybraniKandidati.length > 1000
-    ? (meritko = 20)
-    : vybraniKandidati.length > 500
-    ? (meritko = 10)
-    : (meritko = 1);
+  vybraniKandidati.length > 621 ? (meritko = 10) : (meritko = 1);
   const pocet = Math.floor(vybraniKandidati.length / meritko);
   const vybranych = Math.floor(vybraniVybraniKandidati.length / meritko);
   return Array.apply(null, Array(pocet)).map(function (x, i) {
@@ -25,7 +22,7 @@ const vyrobKulicky = (vybraniKandidati, vybraniVybraniKandidati) => {
   });
 };
 
-const Graf = ({ vybraniKandidati, vybraniVybraniKandidati }) => {
+const Graf = ({ vybraniKandidati, vybraniVybraniKandidati, isMobile }) => {
   const classes = useStyles();
 
   const containerRef = useRef(null);
@@ -38,7 +35,11 @@ const Graf = ({ vybraniKandidati, vybraniVybraniKandidati }) => {
 
     if (containerRef.current) {
       //console.log(kulicky);
-      const { destroy } = GrafGenerator(containerRef.current, kulicky);
+      const { destroy } = GrafGenerator(
+        containerRef.current,
+        kulicky,
+        isMobile
+      );
       destroyFn = destroy;
     }
     return destroyFn;

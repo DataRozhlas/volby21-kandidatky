@@ -1,16 +1,19 @@
 import React from "react";
 import d3 from "./d3Importer.js";
 
-const GrafGenerator = (container, kulicky) => {
+const GrafGenerator = (container, kulicky, isMobile) => {
   const nodes = kulicky.map((d) => Object.assign({}, d));
   const containerRect = container.getBoundingClientRect();
   const height = containerRect.height;
   const width = containerRect.width;
-  // console.log(container, containerRect, height, width);
+  console.log(container, containerRect, height, width);
 
   const simulation = d3
     .forceSimulation(nodes)
-    .force("charge", d3.forceManyBody().strength(-13))
+    .force(
+      "charge",
+      d3.forceManyBody().strength(isMobile ? -width / 100 : -width / 95)
+    )
     .force("x", d3.forceX())
     .force("y", d3.forceY());
 
@@ -27,7 +30,7 @@ const GrafGenerator = (container, kulicky) => {
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", 9)
+    .attr("r", isMobile ? width / 60 : width / 115)
     .attr("fill", (d) => (d.vyb ? "#3f50b5" : "#C8C8C8"));
 
   simulation.on("tick", () => {

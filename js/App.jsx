@@ -405,6 +405,12 @@ function App() {
                 classes={classes}
               ></Modal>
             )}
+            {vybraniKandidati.length > 0 && (
+              <Graf
+                vybraniKandidati={vybraniKandidati}
+                vybraniVybraniKandidati={vybraniVybraniKandidati}
+              />
+            )}
           </>
         ) : (
           <Container

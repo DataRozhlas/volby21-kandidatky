@@ -1,7 +1,7 @@
 import React from "react";
 import d3 from "./d3Importer.js";
 
-const GrafGenerator = (container, kulicky, classes) => {
+const GrafGenerator = (container, kulicky) => {
   const nodes = kulicky.map((d) => Object.assign({}, d));
   const containerRect = container.getBoundingClientRect();
   const height = containerRect.height;

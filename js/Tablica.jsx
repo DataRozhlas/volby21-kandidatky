@@ -49,13 +49,13 @@ const columns = [
   },
 ];
 
-const Tablica = ({ vybraniKandidati }) => {
+const Tablica = ({ vybraniVybraniKandidati }) => {
   return (
     <div style={{ height: 400, width: "100%" }}>
       <DataGrid
         localeText={csCZ.props.MuiDataGrid.localeText}
         density={"compact"}
-        rows={vybraniKandidati}
+        rows={vybraniVybraniKandidati}
         columns={columns}
         pageSize={20}
         rowsPerPageOptions={[20]}

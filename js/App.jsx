@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 import d3 from "./d3Importer.js";
 
-import { Container, Button } from "@material-ui/core";
+import { Container, Button, Typography } from "@material-ui/core";
 import {
   ThemeProvider,
   createTheme,
@@ -203,6 +203,7 @@ function App() {
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
+  const [vybraniVybraniKandidati, setVybraniVybraniKandidati] = useState([]);
   // const [isLoading, setIsLoading] = useState(true);
 
   // na zacatku nacti data do ciselniku
@@ -237,7 +238,17 @@ function App() {
         )
         .filter(
           (k) => filtr.vybranaNstrana === 0 || k.n === filtr.vybranaNstrana
-        )
+        );
+      setVybraniKandidati(vybrani);
+    }
+  }, [filtr]);
+
+  // vybrani vybrani
+
+  useEffect(() => {
+    if (vybraniKandidati.length > 0) {
+      console.log("filtruju filtruju");
+      const vybraniVybrani = vybraniKandidati
         .filter((k) => filtr.zeny === true || k.s !== "F")
         .filter((k) => filtr.muzi === true || k.s !== "M")
         .filter((k) => filtrNaTituly(k, "ing", filtr))
@@ -321,10 +332,36 @@ function App() {
         .filter((k) => filtr.do50k === true || k.o < 10000 || k.o > 49999)
         .filter((k) => filtr.nad50k === true || k.o < 50000 || k.o > 999999)
         .filter((k) => filtr.praha === true || k.o < 999999);
-
-      setVybraniKandidati(vybrani);
+      setVybraniVybraniKandidati(vybraniVybrani);
     }
-  }, [filtr]);
+  }, [
+    filtr.muzi,
+    filtr.zeny,
+    filtr.ing,
+    filtr.mgr,
+    filtr.bc,
+    filtr.mudr,
+    filtr.judr,
+    filtr.phdr,
+    filtr.rndr,
+    filtr.paeddr,
+    filtr.phd,
+    filtr.csc,
+    filtr.mba,
+    filtr.jiny,
+    filtr.zadny,
+    filtr.poradiNaKand,
+    filtr.vek,
+    filtr.mandatAno,
+    filtr.mandatNe,
+    filtr.mandatPref,
+    filtr.do1k,
+    filtr.do10k,
+    filtr.do50k,
+    filtr.nad50k,
+    filtr.praha,
+    vybraniKandidati,
+  ]);
 
   // modal
   const handleClickOpen = () => {
@@ -381,13 +418,33 @@ function App() {
             <Container style={{ width: "20%" }} disableGutters={true}>
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
-            {/*  <Graf vybraniKandidati={vybraniKandidati} filtr={filtr} /> */})
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-around",
+              }}
+            >
+              {/* <Typography
+                variant="subtitle2"
+                style={{ textDecoration: "none" }}
+              >
+                {vybraniKandidati.length} kandidátů
+                {kandidati.length}
+                {vybraniKandidati.length}
+                {vybraniVybraniKandidati.length}
+              </Typography> */}
+              {vybraniKandidati.length > 0 && (
+                <Graf
+                  vybraniKandidati={vybraniKandidati}
+                  vybraniVybraniKandidati={vybraniVybraniKandidati}
+                />
+              )}
+            </div>
           </Container>
         )}
-        <Tablica vybraniKandidati={vybraniKandidati} />
-        <p>
-          {vybraniKandidati.length} z {kandidati.length} kandidatu
-        </p>
+        <Tablica vybraniVybraniKandidati={vybraniVybraniKandidati} />
         <p>{JSON.stringify(filtr)}</p>
       </Container>
       {/* )} */}

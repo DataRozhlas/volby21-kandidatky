@@ -3,38 +3,24 @@ import React, { useRef, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import GrafGenerator from "./GrafGenerator.jsx";
+import { container } from "webpack";
 
-const useStyles = makeStyles({
-  grafContainer: {
-    width: "80%",
-  },
-  tooltip: {
-    position: "absolute",
-    textAlign: "center",
-    width: "110px",
-    padding: "10px",
-    font: "12px sans-serif",
-    background: "lightsteelblue",
-    border: 0,
-    borderRadius: "8px",
-    pointerEvents: "none",
-  },
-});
+const useStyles = makeStyles({});
 
-const vyberKulicky = (kandidati, filtr) => {
+const vyberKulicky = (vybraniKandidati, vybraniVybraniKandidati) => {
   let meritko;
-  kandidati.length > 1000
+  vybraniKandidati.length > 1000
     ? (meritko = 50)
     : vybraniKandidati.length > 100
     ? (meritko = 10)
     : (meritko = 1);
-  const pocet = Math.floor(kandidati.length / meritko);
+  const pocet = Math.floor(vybraniKandidati.length / meritko);
   return Array.apply(null, Array(pocet)).map(function (x, i) {
     return { id: i };
   });
 };
 
-const Graf = ({ vybraniKandidati, filtr }) => {
+const Graf = ({ vybraniKandidati, vybraniVybraniKandidati }) => {
   const classes = useStyles();
 
   const containerRef = useRef(null);
@@ -42,14 +28,13 @@ const Graf = ({ vybraniKandidati, filtr }) => {
   useEffect(() => {
     let destroyFn;
 
-    if (containerRef.current && vybraniKandidati.length > 0) {
-      const kulicky = vyberKulicky(vybraniKandidati, filtr);
-      console.log(kulicky);
-      const { destroy } = GrafGenerator(containerRef.current, kulicky, classes);
+    if (containerRef.current) {
+      //console.log(kulicky);
+      const { destroy } = GrafGenerator(containerRef.current, vybraniKandidati);
       destroyFn = destroy;
     }
     return destroyFn;
-  }, [vybraniKandidati]);
+  }, []);
 
   return <div ref={containerRef} className={classes.grafContainer}></div>;
 };

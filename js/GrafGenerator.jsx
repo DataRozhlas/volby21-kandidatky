@@ -6,6 +6,7 @@ const GrafGenerator = (container, kulicky) => {
   const containerRect = container.getBoundingClientRect();
   const height = containerRect.height;
   const width = containerRect.width;
+  // console.log(container, containerRect, height, width);
 
   const color = () => {
     return "#3f50b5";
@@ -20,7 +21,8 @@ const GrafGenerator = (container, kulicky) => {
   const svg = d3
     .select(container)
     .append("svg")
-    .attr("viewBox", [-width / 2, -height / 2, width, height]);
+    .attr("viewBox", [-width / 2, -height / 2, width, height])
+    .attr("id", "graf");
 
   const node = svg
     .append("g")

@@ -1,12 +1,17 @@
 import React, { useRef, useEffect } from "react";
+import d3 from "./d3Importer.js";
 
 import { makeStyles } from "@material-ui/core/styles";
 
 import GrafGenerator from "./GrafGenerator.jsx";
 
-const useStyles = makeStyles({});
+const useStyles = makeStyles({
+  grafContainer: {
+    width: "100%",
+  },
+});
 
-const vyberKulicky = (vybraniKandidati, vybraniVybraniKandidati) => {
+const vyrobKulicky = (vybraniKandidati, vybraniVybraniKandidati) => {
   let meritko;
   vybraniKandidati.length > 1000
     ? (meritko = 50)
@@ -25,15 +30,18 @@ const Graf = ({ vybraniKandidati, vybraniVybraniKandidati }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
+    d3.selectAll("#graf").remove();
     let destroyFn;
+    const kulicky = vyrobKulicky(vybraniKandidati, vybraniVybraniKandidati);
+    console.log(kulicky);
 
     if (containerRef.current) {
       //console.log(kulicky);
-      const { destroy } = GrafGenerator(containerRef.current, vybraniKandidati);
+      const { destroy } = GrafGenerator(containerRef.current, kulicky);
       destroyFn = destroy;
     }
     return destroyFn;
-  }, []);
+  }, [vybraniKandidati, vybraniVybraniKandidati]);
 
   return <div ref={containerRef} className={classes.grafContainer}></div>;
 };

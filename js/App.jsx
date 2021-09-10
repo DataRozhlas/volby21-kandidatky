@@ -419,14 +419,7 @@ function App() {
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
 
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-around",
-              }}
-            >
-              {/* <Typography
+            {/* <Typography
                 variant="subtitle2"
                 style={{ textDecoration: "none" }}
               >
@@ -435,13 +428,13 @@ function App() {
                 {vybraniKandidati.length}
                 {vybraniVybraniKandidati.length}
               </Typography> */}
-              {vybraniKandidati.length > 0 && (
-                <Graf
-                  vybraniKandidati={vybraniKandidati}
-                  vybraniVybraniKandidati={vybraniVybraniKandidati}
-                />
-              )}
-            </div>
+
+            {vybraniKandidati.length > 0 && (
+              <Graf
+                vybraniKandidati={vybraniKandidati}
+                vybraniVybraniKandidati={vybraniVybraniKandidati}
+              />
+            )}
           </Container>
         )}
         <Tablica vybraniVybraniKandidati={vybraniVybraniKandidati} />

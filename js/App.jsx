@@ -35,10 +35,12 @@ const theme = createTheme({
         width: isMobile ? "unset" : "100%",
         marginLeft: isMobile ? "-15px" : null,
         marginRight: isMobile ? "-15px" : null,
+        marginBottom: isMobile ? null : "2rem",
       },
     },
     MuiFormLabel: {
       root: {
+        letterSpacing: "0.1rem",
         "&$focused": {
           color: "rgba(0, 0, 0, 0.54)",
         },
@@ -67,11 +69,13 @@ const useStyles = makeStyles({
     flexGrow: 2,
     flexBasis: isMobile ? "100%" : 0,
     marginTop: "0.5rem",
+    marginRight: isMobile ? null : "2rem",
   },
   smallSelect: {
     flexGrow: 1,
     flexBasis: isMobile ? "50%" : 0,
     marginTop: "0.5rem",
+    marginRight: isMobile ? null : "2rem",
   },
   horniMenu: {
     flexWrap: "wrap",
@@ -93,6 +97,12 @@ const useStyles = makeStyles({
   },
   bocniCheckBox: {
     width: "100%",
+  },
+  bocniLabel: {
+    position: "unset",
+    transform: "unset",
+    fontSize: "0.75rem",
+    marginBottom: "0.3rem",
   },
 });
 

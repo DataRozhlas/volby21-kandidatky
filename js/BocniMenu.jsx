@@ -8,6 +8,7 @@ import {
   FormControlLabel,
   Checkbox,
   Slider,
+  InputLabel,
 } from "@material-ui/core";
 
 const BocniMenu = ({ filtr, setFiltr, classes }) => {
@@ -26,7 +27,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
   return (
     <Toolbar disableGutters={true} className={classes.bocniMenu}>
       <FormControl component="fieldset" className={classes.bocniFieldset}>
-        <FormLabel component="legend">Pohlaví</FormLabel>
+        <InputLabel className={classes.bocniLabel}>POHLAVÍ</InputLabel>
 
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <FormControlLabel
@@ -56,7 +57,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
         </FormGroup>
       </FormControl>
       <FormControl component="fieldset" className={classes.bocniFieldset}>
-        <FormLabel component="legend">Tituly</FormLabel>
+        <InputLabel className={classes.bocniLabel}>TITULY</InputLabel>
 
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <FormControlLabel
@@ -218,7 +219,9 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
         </FormGroup>
       </FormControl>
       <FormControl className={classes.bocniFieldset}>
-        <FormLabel component="legend">Pořadí na kandidátce</FormLabel>
+        <InputLabel className={classes.bocniLabel}>
+          POŘADÍ NA KANDIDÁTCE
+        </InputLabel>
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <Slider
             style={{ width: "85%", marginLeft: "0.3rem" }}
@@ -232,7 +235,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
         </FormGroup>
       </FormControl>
       <FormControl className={classes.bocniFieldset}>
-        <FormLabel component="legend">Věk</FormLabel>
+        <InputLabel className={classes.bocniLabel}>VĚK</InputLabel>
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <Slider
             style={{ width: "85%", marginLeft: "0.3rem" }}
@@ -247,9 +250,9 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
       </FormControl>
       {filtr.nactenyRok != 2021 && (
         <FormControl component="fieldset" className={classes.bocniFieldset}>
-          <FormLabel component="legend">
-            Mandát v roce {filtr.nactenyRok}
-          </FormLabel>
+          <InputLabel className={classes.bocniLabel}>
+            MANDÁT V ROCE {filtr.nactenyRok}
+          </InputLabel>
 
           <FormGroup className={classes.bocniCheckBoxGroup}>
             <FormControlLabel
@@ -292,7 +295,9 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
         </FormControl>
       )}
       <FormControl component="fieldset" className={classes.bocniFieldset}>
-        <FormLabel component="legend">Velikost místa bydliště</FormLabel>
+        <InputLabel className={classes.bocniLabel}>
+          VELIKOST BYDLIŠTĚ
+        </InputLabel>
 
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <FormControlLabel

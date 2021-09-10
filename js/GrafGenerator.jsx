@@ -26,11 +26,11 @@ const GrafGenerator = (container, kulicky, isMobile) => {
   const node = svg
     .append("g")
     .attr("stroke", "#fff")
-    .attr("stroke-width", 2)
+    .attr("stroke-width", isMobile ? 1 : 2)
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", isMobile ? width / 60 : width / 115)
+    .attr("r", isMobile ? width / 65 : width / 115)
     .attr("fill", (d) => (d.vyb ? "#3f50b5" : "#C8C8C8"));
 
   simulation.on("tick", () => {

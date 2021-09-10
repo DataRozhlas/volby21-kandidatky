@@ -3,7 +3,6 @@ import React, { useRef, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import GrafGenerator from "./GrafGenerator.jsx";
-import { container } from "webpack";
 
 const useStyles = makeStyles({});
 

@@ -38,13 +38,6 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  resolve: {
-    fallback: {
-      fs: false,
-      child_process: false,
-      worker_threads: false,
-    },
-  },
   entry: "./js/script.js",
   output: {
     path: path.resolve(__dirname),

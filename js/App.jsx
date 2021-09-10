@@ -50,6 +50,15 @@ const theme = createTheme({
     MuiCheckbox: {
       root: { padding: "1px 9px" },
     },
+    MuiSlider: {
+      valueLabel: {
+        "& span": {
+          "& span": {
+            color: "white",
+          },
+        },
+      },
+    },
   },
 });
 

@@ -14,13 +14,14 @@ const useStyles = makeStyles({
 const vyrobKulicky = (vybraniKandidati, vybraniVybraniKandidati) => {
   let meritko;
   vybraniKandidati.length > 1000
-    ? (meritko = 50)
-    : vybraniKandidati.length > 100
+    ? (meritko = 20)
+    : vybraniKandidati.length > 500
     ? (meritko = 10)
     : (meritko = 1);
   const pocet = Math.floor(vybraniKandidati.length / meritko);
+  const vybranych = Math.floor(vybraniVybraniKandidati.length / meritko);
   return Array.apply(null, Array(pocet)).map(function (x, i) {
-    return { id: i };
+    return { id: i, vyb: i < vybranych ? true : false };
   });
 };
 

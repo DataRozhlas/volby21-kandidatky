@@ -8,13 +8,9 @@ const GrafGenerator = (container, kulicky) => {
   const width = containerRect.width;
   // console.log(container, containerRect, height, width);
 
-  const color = () => {
-    return "#3f50b5";
-  };
-
   const simulation = d3
     .forceSimulation(nodes)
-    .force("charge", d3.forceManyBody().strength(-25))
+    .force("charge", d3.forceManyBody().strength(-13))
     .force("x", d3.forceX())
     .force("y", d3.forceY());
 
@@ -31,8 +27,8 @@ const GrafGenerator = (container, kulicky) => {
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", 12)
-    .attr("fill", color);
+    .attr("r", 9)
+    .attr("fill", (d) => (d.vyb ? "#3f50b5" : "#C8C8C8"));
 
   simulation.on("tick", () => {
     // update node positions

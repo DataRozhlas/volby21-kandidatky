@@ -53,15 +53,20 @@ const columns = [
 const Tablica = ({ vybraniVybraniKandidati, classes }) => {
   return (
     <div className={classes.tabulka}>
-      <DataGrid
-        localeText={csCZ.props.MuiDataGrid.localeText}
-        density={"compact"}
-        rows={vybraniVybraniKandidati}
-        columns={columns}
-        pageSize={20}
-        rowsPerPageOptions={[20]}
-        disableSelectionOnClick
-      />
+      <div style={{ display: "flex", height: "100%" }}>
+        <div style={{ flexGrow: 1 }}>
+          <DataGrid
+            autoHeight
+            localeText={csCZ.props.MuiDataGrid.localeText}
+            density={"compact"}
+            rows={vybraniVybraniKandidati}
+            columns={columns}
+            pageSize={20}
+            rowsPerPageOptions={[20]}
+            disableSelectionOnClick
+          />
+        </div>
+      </div>
     </div>
   );
 };

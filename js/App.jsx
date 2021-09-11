@@ -110,7 +110,6 @@ const useStyles = makeStyles({
   tabulka: {
     width: "100%",
     marginTop: isMobile ? null : "1.6rem",
-    height: window.innerHeight / 1.8,
   },
 });
 

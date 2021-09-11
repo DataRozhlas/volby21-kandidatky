@@ -31,7 +31,7 @@ const Graf = ({ vybraniKandidati, vybraniVybraniKandidati, isMobile }) => {
     d3.selectAll("#graf").remove();
     let destroyFn;
     const kulicky = vyrobKulicky(vybraniKandidati, vybraniVybraniKandidati);
-    console.log(kulicky);
+    //console.log(kulicky);
 
     if (containerRef.current) {
       //console.log(kulicky);

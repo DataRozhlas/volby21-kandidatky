@@ -35,7 +35,7 @@ const theme = createTheme({
         width: isMobile ? "unset" : "100%",
         marginLeft: isMobile ? "-15px" : null,
         marginRight: isMobile ? "-15px" : null,
-        marginBottom: isMobile ? null : "2rem",
+        marginBottom: isMobile ? null : "0.8rem",
       },
     },
     MuiFormLabel: {
@@ -102,7 +102,15 @@ const useStyles = makeStyles({
     position: "unset",
     transform: "unset",
     fontSize: "0.75rem",
-    marginBottom: "0.3rem",
+    marginTop: "0.8rem",
+  },
+  vybratVse: {
+    fontSize: "0.75rem",
+  },
+  tabulka: {
+    width: "100%",
+    marginTop: isMobile ? null : "1.6rem",
+    height: window.innerHeight / 1.8,
   },
 });
 
@@ -463,7 +471,10 @@ function App() {
             )}
           </Container>
         )}
-        <Tablica vybraniVybraniKandidati={vybraniVybraniKandidati} />
+        <Tablica
+          vybraniVybraniKandidati={vybraniVybraniKandidati}
+          classes={classes}
+        />
         <p>{JSON.stringify(filtr)}</p>
       </Container>
       {/* )} */}

@@ -1,5 +1,6 @@
 import React from "react";
 import { DataGrid, csCZ } from "@material-ui/data-grid";
+import { mergeClasses } from "@material-ui/styles";
 
 const columns = [
   {
@@ -49,9 +50,9 @@ const columns = [
   },
 ];
 
-const Tablica = ({ vybraniVybraniKandidati }) => {
+const Tablica = ({ vybraniVybraniKandidati, classes }) => {
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <div className={classes.tabulka}>
       <DataGrid
         localeText={csCZ.props.MuiDataGrid.localeText}
         density={"compact"}

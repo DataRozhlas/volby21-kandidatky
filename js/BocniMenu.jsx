@@ -11,6 +11,8 @@ import {
   InputLabel,
 } from "@material-ui/core";
 
+import VybratVse from "./VybratVse.jsx";
+
 const BocniMenu = ({ filtr, setFiltr, classes }) => {
   const handleChange = (e) => {
     setFiltr({ ...filtr, [e.target.name]: e.target.checked });
@@ -28,7 +30,12 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
     <Toolbar disableGutters={true} className={classes.bocniMenu}>
       <FormControl component="fieldset" className={classes.bocniFieldset}>
         <InputLabel className={classes.bocniLabel}>POHLAVÍ</InputLabel>
-
+        <VybratVse
+          items={["zeny", "muzi"]}
+          filtr={filtr}
+          setFiltr={setFiltr}
+          classes={classes}
+        />
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <FormControlLabel
             className={classes.bocniCheckBoxDvaSloupce}
@@ -58,7 +65,26 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
       </FormControl>
       <FormControl component="fieldset" className={classes.bocniFieldset}>
         <InputLabel className={classes.bocniLabel}>TITULY</InputLabel>
-
+        <VybratVse
+          items={[
+            "ing",
+            "mgr",
+            "bc",
+            "mudr",
+            "judr",
+            "phdr",
+            "rndr",
+            "paeddr",
+            "phd",
+            "csc",
+            "mba",
+            "jiny",
+            "zadny",
+          ]}
+          filtr={filtr}
+          setFiltr={setFiltr}
+          classes={classes}
+        />
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <FormControlLabel
             className={classes.bocniCheckBoxDvaSloupce}
@@ -253,7 +279,12 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
           <InputLabel className={classes.bocniLabel}>
             MANDÁT V ROCE {filtr.nactenyRok}
           </InputLabel>
-
+          <VybratVse
+            items={["mandatAno", "mandatPref", "mandatNe"]}
+            filtr={filtr}
+            setFiltr={setFiltr}
+            classes={classes}
+          />
           <FormGroup className={classes.bocniCheckBoxGroup}>
             <FormControlLabel
               className={classes.bocniCheckBox}
@@ -298,6 +329,12 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
         <InputLabel className={classes.bocniLabel}>
           VELIKOST BYDLIŠTĚ
         </InputLabel>
+        <VybratVse
+          items={["do1k", "do10k", "do50k", "nad50k", "praha"]}
+          filtr={filtr}
+          setFiltr={setFiltr}
+          classes={classes}
+        />
 
         <FormGroup className={classes.bocniCheckBoxGroup}>
           <FormControlLabel

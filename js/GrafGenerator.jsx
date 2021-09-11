@@ -6,7 +6,7 @@ const GrafGenerator = (container, kulicky, isMobile) => {
   const containerRect = container.getBoundingClientRect();
   const height = containerRect.height;
   const width = containerRect.width;
-  console.log(container, containerRect, height, width);
+  //console.log(container, containerRect, height, width);
 
   const simulation = d3
     .forceSimulation(nodes)

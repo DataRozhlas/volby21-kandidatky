@@ -120,8 +120,8 @@ const dataFormat = (nazev, d) => {
       id: +d.id,
       k: +d.k,
       c: +d.c,
-      t1: d.t1,
-      t2: d.t2,
+      t1: d.t1 === "" ? undefined : d.t1,
+      t2: d.t2 === "" ? undefined : d.t2,
       j: d.j,
       p: d.p,
       a: +d.a,
@@ -273,6 +273,7 @@ function App() {
   // vybrani vybrani
 
   useEffect(() => {
+    console.log(vybraniKandidati);
     if (vybraniKandidati.length > 0) {
       console.log("filtruju filtruju");
       const vybraniVybrani = vybraniKandidati

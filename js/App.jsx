@@ -411,18 +411,20 @@ function App() {
         />
         {isMobile ? (
           <>
-            <Button
-              onClick={handleClickOpen}
-              startIcon={<EditIcon />}
-              variant="contained"
-              style={{
-                fontSize: "0.65rem",
-                marginTop: "0.75rem",
-                marginBottom: "0.75rem",
-              }}
-            >
-              Prozkoumej kandidáty podle atributů
-            </Button>
+            <Container style={{ display: "flex", justifyContent: "center" }}>
+              <Button
+                onClick={handleClickOpen}
+                startIcon={<EditIcon />}
+                variant="contained"
+                style={{
+                  fontSize: "0.65rem",
+                  marginTop: "0.75rem",
+                  marginBottom: "0.75rem",
+                }}
+              >
+                Prozkoumej kandidáty podle atributů
+              </Button>
+            </Container>
             {open && (
               <Modal
                 filtr={filtr}

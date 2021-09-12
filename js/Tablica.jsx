@@ -14,7 +14,9 @@ const getFullName = (params) => {
         params.getValue(params.id, "t2") || ""
       }`}
     >
-      <Typography style={{ cursor: "help" }}>
+      <Typography
+        style={{ cursor: "help", overflow: "hidden", textOverflow: "ellipsis" }}
+      >
         <span style={{ fontSize: "70%" }}>
           {typeof prvniTitul === "undefined" ? "" : prvniTitul + "\xa0"}
         </span>
@@ -88,11 +90,23 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
       field: "n",
       headerName: "Strana",
       description: "navrhující strana",
-      valueGetter: (params) => {
+      renderCell: (params) => {
         const strana = ciselniky.nstrany.filter(
           (s) => s.NSTRANA === params.value
+        )[0];
+        return (
+          <Tooltip arrow enterTouchDelay={0} title={strana.ZKRATKAN30}>
+            <Typography
+              style={{
+                cursor: "help",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
+              {strana.ZKRATKAN8}
+            </Typography>
+          </Tooltip>
         );
-        return strana[0].ZKRATKAN8;
       },
       disableColumnMenu: true,
       minWidth: 100,
@@ -165,6 +179,7 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
             density={"compact"}
             rows={vybraniVybraniKandidati}
             columns={columns}
+            rowsPerPageOptions={[20]}
             pageSize={isMobile ? 10 : 20}
             disableSelectionOnClick
           />

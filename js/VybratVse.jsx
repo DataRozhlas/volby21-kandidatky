@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 import { useTheme } from "@material-ui/core/styles";
 
@@ -19,14 +19,16 @@ const VybratVse = ({ items, filtr, setFiltr, classes }) => {
 
   const makeLink = (variant) => {
     return (
-      <Link
-        href="#"
+      <Button
+        size="small"
+        variant="text"
         color="secondary"
+        disableRipple={true}
         className={classes.vybratVse}
         onClick={() => handleClick(variant, items, filtr, setFiltr)}
       >
         {variant}
-      </Link>
+      </Button>
     );
   };
 

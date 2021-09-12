@@ -29,6 +29,13 @@ const theme = createTheme({
     },
   },
   overrides: {
+    MuiButton: {
+      textSecondary: {
+        "&:hover": {
+          backgroundColor: "transparent",
+        },
+      },
+    },
     MuiAppBar: {
       root: {
         boxShadow: "none",
@@ -105,7 +112,9 @@ const useStyles = makeStyles({
     marginTop: "0.8rem",
   },
   vybratVse: {
-    fontSize: "0.75rem",
+    fontSize: "0.65rem",
+    paddingLeft: "0rem",
+    paddingTop: "0rem",
   },
   tabulka: {
     width: "100%",
@@ -114,7 +123,7 @@ const useStyles = makeStyles({
   chartContainer: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-evenly",
+    justifyContent: "space-around",
   },
 });
 
@@ -443,7 +452,18 @@ function App() {
               ></Modal>
             )}
             <Container disableGutters className={classes.chartContainer}>
-              <Container disableGutters></Container>
+              <Container disableGutters>
+                <Typography align="center">
+                  <strong>{vybraniVybraniKandidati.length} kandidátů</strong> (z{" "}
+                  {vybraniKandidati.length})
+                </Typography>
+                <Typography align="center">
+                  <span style={{ color: "#C8C8C8" }}>{"\u25CF\xa0"}</span>
+                  {vybraniKandidati.length > 621
+                    ? "1 kulička = 10 kandidátů"
+                    : "1 kulička = 1 kandidát"}
+                </Typography>
+              </Container>
               {vybraniKandidati.length > 0 && (
                 <Graf
                   vybraniKandidati={vybraniKandidati}
@@ -473,6 +493,7 @@ function App() {
                   {vybraniKandidati.length})
                 </Typography>
                 <Typography align="center">
+                  <span style={{ color: "#C8C8C8" }}>{"\u25CF\xa0"}</span>
                   {vybraniKandidati.length > 621
                     ? "1 kulička = 10 kandidátů"
                     : "1 kulička = 1 kandidát"}

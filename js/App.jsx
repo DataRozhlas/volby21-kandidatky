@@ -532,6 +532,7 @@ function App() {
         )}
         {/* <p>{JSON.stringif(filtr)}</p> */}
       </Container>
+      <br />
     </ThemeProvider>
   );
 }

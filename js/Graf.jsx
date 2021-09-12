@@ -8,7 +8,7 @@ import GrafGenerator from "./GrafGenerator.jsx";
 const useStyles = makeStyles({
   grafContainer: {
     width: "100%",
-    minHeight: window.innerHeight / 2,
+    minHeight: window.innerHeight / 1.79,
   },
 });
 

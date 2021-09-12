@@ -120,7 +120,7 @@ const useStyles = makeStyles({
     width: "100%",
     marginTop: isMobile ? null : "1.6rem",
   },
-  chartContainer: {
+  kolemGrafu: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
@@ -451,7 +451,7 @@ function App() {
                 classes={classes}
               ></Modal>
             )}
-            <Container disableGutters className={classes.chartContainer}>
+            <Container disableGutters className={classes.kolemGrafu}>
               <Container disableGutters>
                 <Typography align="center">
                   <strong>{vybraniVybraniKandidati.length} kandidátů</strong> (z{" "}
@@ -486,7 +486,7 @@ function App() {
             <Container style={{ width: "20%" }} disableGutters={true}>
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
-            <Container disableGutters className={classes.chartContainer}>
+            <Container disableGutters className={classes.kolemGrafu}>
               <Container disableGutters>
                 <Typography align="center">
                   <strong>{vybraniVybraniKandidati.length} kandidátů</strong> (z{" "}

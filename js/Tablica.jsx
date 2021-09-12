@@ -81,6 +81,7 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
         return kraj[0].NAZVOLKRAJ;
       },
       disableColumnMenu: true,
+      minWidth=100,
       flex: 2,
     },
     {
@@ -110,12 +111,14 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
       headerName: "Povolání",
       flex: 5,
       renderCell: ukazPovolani,
+      minWidth: 160
     },
     {
       field: "b",
       headerName: "Bydliště",
       description: "bydliště kandidáta",
       flex: 3,
+      minWidth: 100
     },
 
     {

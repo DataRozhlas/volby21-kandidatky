@@ -22,9 +22,9 @@ for (i in roky) {
     filter(ROK==i) %>%
     mutate(id=row_number()) %>%
     select(id, k=VOLKRAJ, c=PORCISLO, t1=TITULPRED, t2=TITULZA, j=JMENO, p=PRIJMENI, a=VEK, s=POHLAVI, z=POVOLANI, v=VSTRANA, n=NSTRANA, m=MANDAT2, b=BYDLISTEN, o=OBYV) %>%
-    arrange(v, c) %>%
+    arrange(c, k, v) %>%
    # write_json(paste0("../data/", i, ".json"))
-     write_tsv(paste0("../data/", i, ".tsv"))
+     write_tsv(paste0("../data/", i, ".tsv"), na="")
 }
 
 # číselník krajů

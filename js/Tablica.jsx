@@ -69,8 +69,8 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
             cellParams1.api.getCellValue(cellParams2.id, "p"),
             "cs-CZ"
           ),
-      flex: 4,
-      minWidth: 160,
+      flex: 3,
+      minWidth: 120,
     },
     {
       field: "k",
@@ -109,16 +109,16 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
     {
       field: "z",
       headerName: "Povolání",
-      flex: 5,
+      flex: 4,
       renderCell: ukazPovolani,
-      minWidth: 160,
+      minWidth: 120,
     },
     {
       field: "b",
       headerName: "Bydliště",
       description: "bydliště kandidáta",
       flex: 3,
-      minWidth: 100,
+      minWidth: 120,
     },
 
     {

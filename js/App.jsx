@@ -331,11 +331,12 @@ function App() {
             typeof k.t1 !== "undefined" &&
             !k.t1.toUpperCase().includes("PH.D") &&
             !k.t1.toUpperCase().includes("MBA") &&
-            !k.t1.toUpperCase().includes("CSC") &&
+            !k.t1.toUpperCase().includes("CSC.") &&
             !k.t1.toUpperCase().includes("PAEDDR") &&
-            !k.t1.toUpperCase().includes("PH.D") &&
+            !k.t1.toUpperCase().includes("PH.D.") &&
             !k.t1.toUpperCase().includes("RNDR") &&
             !k.t1.toUpperCase().includes("PHDR") &&
+            !k.t1.toUpperCase().includes("JUDR") &&
             !k.t1.toUpperCase().includes("MUDR") &&
             !k.t1.toUpperCase().includes("BC") &&
             !k.t1.toUpperCase().includes("MGR") &&
@@ -346,11 +347,12 @@ function App() {
             typeof k.t2 !== "undefined" &&
             !k.t2.toUpperCase().includes("PH.D") &&
             !k.t2.toUpperCase().includes("MBA") &&
-            !k.t2.toUpperCase().includes("CSC") &&
+            !k.t2.toUpperCase().includes("CSC.") &&
             !k.t2.toUpperCase().includes("PAEDDR") &&
-            !k.t2.toUpperCase().includes("PH.D") &&
+            !k.t2.toUpperCase().includes("PH.D.") &&
             !k.t2.toUpperCase().includes("RNDR") &&
             !k.t2.toUpperCase().includes("PHDR") &&
+            !k.t2.toUpperCase().includes("JUDR") &&
             !k.t2.toUpperCase().includes("MUDR") &&
             !k.t2.toUpperCase().includes("BC") &&
             !k.t2.toUpperCase().includes("MGR") &&
@@ -530,7 +532,7 @@ function App() {
             ciselniky={ciselniky}
           />
         )}
-        {/* <p>{JSON.stringif(filtr)}</p> */}
+        <p>{JSON.stringify(filtr)}</p>
       </Container>
       <br />
     </ThemeProvider>

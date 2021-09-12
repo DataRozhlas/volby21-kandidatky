@@ -264,7 +264,16 @@ function App() {
   useEffect(async () => {
     const vsichni = await getData(rok);
     setKandidati(vsichni);
-    setFiltr({ ...filtr, nactenyRok: rok });
+    // fix na případy, kdy z předchozích let zůstane nastavený filtr na mandáty
+    const settings =
+      rok === 2021
+        ? { mandatAno: true, mandatNe: true, mandatPref: true }
+        : {
+            mandatAno: filtr.mandatAno,
+            mandatNe: filtr.mandatNe,
+            mandatPref: filtr.mandatPref,
+          };
+    setFiltr({ ...filtr, nactenyRok: rok, ...settings });
   }, [rok]);
 
   // kdyz se zmeni filtr, aktualizuj vybrane kandidaty

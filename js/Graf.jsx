@@ -69,7 +69,7 @@ const Graf = ({
     for (let i = 0; i < doplnitModrych; i++) {
       kulickyVybarvene.push({
         id: counter,
-        col: "#3f50b5",
+        col: "#349DB2",
       });
       counter++;
     }

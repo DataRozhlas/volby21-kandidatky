@@ -1,56 +1,152 @@
 import React from "react";
 import { DataGrid, csCZ } from "@material-ui/data-grid";
-import { mergeClasses } from "@material-ui/styles";
+import { Tooltip, Typography } from "@material-ui/core";
 
-const columns = [
-  {
-    field: "c",
-    headerName: "Pořadí",
-    width: 130,
-  },
-  {
-    field: "t1",
-    headerName: "Titul před",
-    width: 130,
-  },
-  {
-    field: "j",
-    headerName: "Jméno",
-    width: 130,
-  },
-  {
-    field: "p",
-    headerName: "Příjmení",
-    width: 130,
-  },
-  {
-    field: "t2",
-    headerName: "Titul za",
-    width: 130,
-  },
-  {
-    field: "b",
-    headerName: "Bydliště",
-    width: 130,
-  },
-  {
-    field: "o",
-    headerName: "Počet obyvatel",
-    width: 130,
-  },
-  {
-    field: "a",
-    headerName: "Věk",
-    width: 130,
-  },
-  {
-    field: "z",
-    headerName: "Povolání",
-    width: 350,
-  },
-];
+const getFullName = (params) => {
+  const prvniTitul = params.getValue(params.id, "t1");
+  return (
+    <Tooltip
+      arrow
+      title={`${params.getValue(params.id, "t1") || ""} ${
+        params.getValue(params.id, "j") || ""
+      } ${params.getValue(params.id, "p") || ""} ${
+        params.getValue(params.id, "t2") || ""
+      }`}
+    >
+      <Typography style={{ cursor: "help" }}>
+        <span style={{ fontSize: "70%" }}>
+          {typeof prvniTitul === "undefined" ? "" : prvniTitul + "\xa0"}
+        </span>
+        {params.getValue(params.id, "j") || ""}&nbsp;
+        <strong>{params.getValue(params.id, "p") || ""}</strong>&nbsp;
+        <span style={{ fontSize: "70%" }}>
+          {params.getValue(params.id, "t2") || ""}
+        </span>
+      </Typography>
+    </Tooltip>
+  );
+};
 
-const Tablica = ({ vybraniVybraniKandidati, classes }) => {
+const ukazPovolani = (params) => {
+  return (
+    <Tooltip arrow title={params.getValue(params.id, "z")}>
+      <span
+        style={{
+          fontSize: "70%",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          cursor: "help",
+        }}
+      >
+        {params.getValue(params.id, "z")}
+      </span>
+    </Tooltip>
+  );
+};
+
+const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
+  const columns = [
+    {
+      field: "c",
+      headerName: "#",
+      description: "pořadí na kandidátce",
+      type: "number",
+      flex: 1,
+      minWidth: 70,
+      disableColumnMenu: true,
+    },
+    {
+      field: "fullName",
+      headerName: "Celé jméno",
+      // valueGetter: getFullName,
+      // valueFormatter: getFullName,
+      renderCell: getFullName,
+      sortComparator: (v1, v2, cellParams1, cellParams2) =>
+        cellParams1.api
+          .getCellValue(cellParams1.id, "p")
+          .localeCompare(
+            cellParams1.api.getCellValue(cellParams2.id, "p"),
+            "cs-CZ"
+          ),
+      flex: 4,
+      minWidth: 160,
+    },
+    {
+      field: "k",
+      headerName: "Volební kraj",
+      valueGetter: (params) => {
+        const kraj = ciselniky.kraje.filter((k) => k.VOLKRAJ === params.value);
+        return kraj[0].NAZVOLKRAJ;
+      },
+      disableColumnMenu: true,
+      flex: 2,
+    },
+    {
+      field: "n",
+      headerName: "Strana",
+      valueGetter: (params) => {
+        const strana = ciselniky.nstrany.filter(
+          (s) => s.NSTRANA === params.value
+        );
+        return strana[0].ZKRATKAN8;
+      },
+      disableColumnMenu: true,
+      flex: 1,
+    },
+    {
+      field: "a",
+      headerName: "Věk",
+      type: "number",
+      flex: 1,
+      disableColumnMenu: true,
+      minWidth: 90,
+    },
+    {
+      field: "z",
+      headerName: "Povolání",
+      flex: 5,
+      renderCell: ukazPovolani,
+    },
+    {
+      field: "b",
+      headerName: "Bydliště",
+      flex: 3,
+    },
+
+    {
+      field: "t1",
+      headerName: "Titul před jménem",
+      flex: 1,
+      hide: true,
+    },
+    {
+      field: "j",
+      headerName: "Jméno",
+      flex: 2,
+      hide: true,
+    },
+    {
+      field: "p",
+      headerName: "Příjmení",
+      flex: 2,
+      hide: true,
+    },
+    {
+      field: "t2",
+      headerName: "Titul za jménem",
+      flex: 1,
+      hide: true,
+    },
+
+    {
+      field: "o",
+      headerName: "Počet obyvatel",
+      flex: 2,
+      hide: true,
+      type: "number",
+    },
+  ];
+
   return (
     <div className={classes.tabulka}>
       <div style={{ display: "flex", height: "100%" }}>
@@ -61,8 +157,7 @@ const Tablica = ({ vybraniVybraniKandidati, classes }) => {
             density={"compact"}
             rows={vybraniVybraniKandidati}
             columns={columns}
-            pageSize={20}
-            rowsPerPageOptions={[20]}
+            pageSize={isMobile ? 10 : 20}
             disableSelectionOnClick
           />
         </div>

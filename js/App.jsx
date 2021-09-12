@@ -471,10 +471,14 @@ function App() {
             )}
           </Container>
         )}
-        <Tablica
-          vybraniVybraniKandidati={vybraniVybraniKandidati}
-          classes={classes}
-        />
+        {ciselniky.kraje.length > 0 && ciselniky.nstrany.length > 0 && (
+          <Tablica
+            vybraniVybraniKandidati={vybraniVybraniKandidati}
+            classes={classes}
+            isMobile={isMobile}
+            ciselniky={ciselniky}
+          />
+        )}
         <p>{JSON.stringify(filtr)}</p>
       </Container>
       {/* )} */}

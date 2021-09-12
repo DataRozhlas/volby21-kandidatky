@@ -7,6 +7,7 @@ const getFullName = (params) => {
   return (
     <Tooltip
       arrow
+      enterTouchDelay={0}
       title={`${params.getValue(params.id, "t1") || ""} ${
         params.getValue(params.id, "j") || ""
       } ${params.getValue(params.id, "p") || ""} ${
@@ -29,7 +30,7 @@ const getFullName = (params) => {
 
 const ukazPovolani = (params) => {
   return (
-    <Tooltip arrow title={params.getValue(params.id, "z")}>
+    <Tooltip arrow enterTouchDelay={0} title={params.getValue(params.id, "z")}>
       <span
         style={{
           fontSize: "70%",
@@ -73,7 +74,8 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
     },
     {
       field: "k",
-      headerName: "Volební kraj",
+      headerName: "Kraj",
+      description: "volební kraj",
       valueGetter: (params) => {
         const kraj = ciselniky.kraje.filter((k) => k.VOLKRAJ === params.value);
         return kraj[0].NAZVOLKRAJ;
@@ -84,6 +86,7 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
     {
       field: "n",
       headerName: "Strana",
+      description: "navrhující strana",
       valueGetter: (params) => {
         const strana = ciselniky.nstrany.filter(
           (s) => s.NSTRANA === params.value
@@ -91,6 +94,7 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
         return strana[0].ZKRATKAN8;
       },
       disableColumnMenu: true,
+      minWidth: 100,
       flex: 1,
     },
     {
@@ -110,6 +114,7 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
     {
       field: "b",
       headerName: "Bydliště",
+      description: "bydliště kandidáta",
       flex: 3,
     },
 

@@ -52,6 +52,8 @@ const Graf = ({
         const pocetKulicek = Math.floor(s.pocet / meritko);
         return { ...s, pocet: pocetKulicek };
       });
+
+    setVybarveneStrany(kandidatiPodleBarev);
     // vytvor barevne
     let kulickyVybarvene = [];
     let counter = 0;

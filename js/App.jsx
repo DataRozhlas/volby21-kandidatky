@@ -16,6 +16,7 @@ import HorniMenu from "./HorniMenu.jsx";
 import BocniMenu from "./BocniMenu.jsx";
 import Modal from "./Modal.jsx";
 import Graf from "./Graf.jsx";
+import Legenda from "./Legenda.jsx";
 
 const isMobile = window.innerWidth < 769;
 
@@ -264,7 +265,7 @@ function App() {
   useEffect(async () => {
     const vsichni = await getData(rok);
     setKandidati(vsichni);
-    // fix na případy, kdy z předchozích let zůstane nastavený filtr na mandáty
+    // fix pro případy, kdy z předchozích let zůstane nastavený filtr na mandáty
     const settings =
       rok === 2021
         ? { mandatAno: true, mandatNe: true, mandatPref: true }
@@ -485,7 +486,10 @@ function App() {
                 />
               )}
               <Container disableGutters>
-                <></>
+                <Legenda
+                  vybarveneStrany={vybarveneStrany}
+                  vybranychKandidatu={vybraniKandidati.length}
+                />
               </Container>
             </Container>
           </>
@@ -528,7 +532,10 @@ function App() {
                 />
               )}
               <Container disableGutters>
-                <></>
+                <Legenda
+                  vybarveneStrany={vybarveneStrany}
+                  vybranychKandidatu={vybraniKandidati.length}
+                />
               </Container>
             </Container>
           </Container>

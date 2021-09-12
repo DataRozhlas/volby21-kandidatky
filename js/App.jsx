@@ -245,7 +245,7 @@ function App() {
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
   const [vybraniVybraniKandidati, setVybraniVybraniKandidati] = useState([]);
   // const [isLoading, setIsLoading] = useState(true);
-
+  const [vybarveneStrany, setVybarveneStrany] = useState([]);
   // na zacatku nacti data do ciselniku
   useEffect(async () => {
     const kraje = await getData("kraje");
@@ -286,7 +286,7 @@ function App() {
   // vybrani vybrani
 
   useEffect(() => {
-    console.log(vybraniKandidati);
+    //console.log(vybraniKandidati);
     if (vybraniKandidati.length > 0) {
       console.log("filtruju filtruju");
       const vybraniVybrani = vybraniKandidati
@@ -469,9 +469,13 @@ function App() {
                   vybraniKandidati={vybraniKandidati}
                   vybraniVybraniKandidati={vybraniVybraniKandidati}
                   isMobile={isMobile}
+                  vybarveneStrany={vybarveneStrany}
+                  setVybarveneStrany={setVybarveneStrany}
                 />
               )}
-              <Container disableGutters></Container>
+              <Container disableGutters>
+                <></>
+              </Container>
             </Container>
           </>
         ) : (
@@ -503,9 +507,14 @@ function App() {
                 <Graf
                   vybraniKandidati={vybraniKandidati}
                   vybraniVybraniKandidati={vybraniVybraniKandidati}
+                  isMobile={isMobile}
+                  vybarveneStrany={vybarveneStrany}
+                  setVybarveneStrany={setVybarveneStrany}
                 />
               )}
-              <Container disableGutters></Container>
+              <Container disableGutters>
+                <></>
+              </Container>
             </Container>
           </Container>
         )}

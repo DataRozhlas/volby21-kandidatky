@@ -1,17 +1,17 @@
-[{"nazev": "KDU-ČSL", "barva": "#F3CE53", "vstrana": 1},
-    {"nazev": "Zelení", "barva": "#76C973", "vstrana": 5},
-    {"nazev" : "ČSSD", "barva": "#F88268", "vstrana": 7},
-    {"nazev" : "KSČM", "barva": "#C22034", "vstrana": 47},
-    {"nazev" : "ODS", "barva": "#3985DB", "vstrana": 53},
-    {"nazev" : "Věci veřejné", "barva": "#84A3D6", "vstrana": 144},
-    {"nazev" : "STAN", "barva": "#7897A5", "vstrana": 166},
-    {"nazev" : "Piráti", "barva": "#5C5C5C", "vstrana": 720},
-    {"nazev" : "TOP09", "barva": "#B577BF", "vstrana": 721},
-    {"nazev" : "ANO", "barva": "#4F4CAD", "vstrana": 768},
-    {"nazev" : "SPD", "barva": "#4F4CAD", "vstrana": 1114},
-    {"nazev" : "Úsvit", "barva": "#D29332", "vstrana": 792},
-    {"nazev" : "KDU+ODS+TOP 09", "barva": "#B577BF", "vstrana": 1327},
-    {"nazev" : "STAN+Piráti", "barva": "#5C5C5C", "vstrana": 1350}
+[{"nazev": "KDU-ČSL", "barva": "#F3CE53", "vstrana": 1, "pocet": 0},
+    {"nazev": "Zelení", "barva": "#76C973", "vstrana": 5, "pocet": 0},
+    {"nazev" : "ČSSD", "barva": "#F88268", "vstrana": 7, "pocet": 0},
+    {"nazev" : "KSČM", "barva": "#C22034", "vstrana": 47, "pocet": 0},
+    {"nazev" : "ODS", "barva": "#3985DB", "vstrana": 53, "pocet": 0},
+    {"nazev" : "Věci veřejné", "barva": "#84A3D6", "vstrana": 144, "pocet": 0},
+    {"nazev" : "STAN", "barva": "#7897A5", "vstrana": 166, "pocet": 0},
+    {"nazev" : "Piráti", "barva": "#5C5C5C", "vstrana": 720, "pocet": 0},
+    {"nazev" : "TOP09", "barva": "#B577BF", "vstrana": 721, "pocet": 0},
+    {"nazev" : "ANO", "barva": "#4F4CAD", "vstrana": 768, "pocet": 0},
+    {"nazev" : "SPD", "barva": "#D29332", "vstrana": 1114, "pocet": 0},
+    {"nazev" : "Úsvit", "barva": "#D29332", "vstrana": 792, "pocet": 0},
+    {"nazev" : "KDU+ODS+TOP 09", "barva": "#B577BF", "vstrana": 1327, "pocet": 0},
+    {"nazev" : "STAN+Piráti", "barva": "#5C5C5C", "vstrana": 1350, "pocet": 0}
 ]
 
 

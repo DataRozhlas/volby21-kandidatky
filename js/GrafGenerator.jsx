@@ -31,7 +31,7 @@ const GrafGenerator = (container, kulicky, isMobile) => {
     .data(nodes)
     .join("circle")
     .attr("r", isMobile ? width / 65 : width / 115)
-    .attr("fill", (d) => (d.vyb ? "#3f50b5" : "#C8C8C8"));
+    .attr("fill", (d) => d.col);
 
   simulation.on("tick", () => {
     // update node positions

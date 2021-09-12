@@ -72,7 +72,7 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
             "cs-CZ"
           ),
       flex: 3,
-      minWidth: 120,
+      minWidth: 140,
     },
     {
       field: "k",
@@ -179,7 +179,6 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
             density={"compact"}
             rows={vybraniVybraniKandidati}
             columns={columns}
-            rowsPerPageOptions={[20]}
             pageSize={isMobile ? 10 : 20}
             disableSelectionOnClick
           />

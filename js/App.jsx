@@ -493,8 +493,12 @@ function App() {
             <Container disableGutters className={classes.kolemGrafu}>
               <Container disableGutters>
                 <Typography align="center">
-                  <strong>{vybraniVybraniKandidati.length} kandidátů</strong> (z{" "}
-                  {vybraniKandidati.length})
+                  <strong>{vybraniVybraniKandidati.length} kandidátů</strong> (
+                  {Math.round(
+                    (vybraniVybraniKandidati.length / vybraniKandidati.length) *
+                      100
+                  )}{" "}
+                  % z {vybraniKandidati.length})
                 </Typography>
                 <Typography align="center">
                   <span style={{ color: "#C8C8C8" }}>{"\u25CF\xa0"}</span>

@@ -182,7 +182,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             }
             label="PaedDr."
           />
-          <FormControlLabel
+          {/* <FormControlLabel
             className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
@@ -205,7 +205,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
               />
             }
             label="CSc."
-          />
+          /> */}
           <FormControlLabel
             className={classes.bocniCheckBoxDvaSloupce}
             control={

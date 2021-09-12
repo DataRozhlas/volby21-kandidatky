@@ -224,8 +224,8 @@ function App() {
     phdr: true,
     rndr: true,
     paeddr: true,
-    phd: true,
-    csc: true,
+    // phd: true,
+    // csc: true,
     mba: true,
     jiny: true,
     zadny: true,
@@ -300,25 +300,25 @@ function App() {
         .filter((k) => filtrNaTituly(k, "phdr", filtr))
         .filter((k) => filtrNaTituly(k, "rndr", filtr))
         .filter((k) => filtrNaTituly(k, "paeddr", filtr))
-        .filter((k) => filtrNaTituly(k, "csc", filtr))
+        // .filter((k) => filtrNaTituly(k, "csc", filtr))
         .filter((k) => filtrNaTituly(k, "mba", filtr))
-        .filter((k) => {
-          if (filtr.phd === true) {
-            return true;
-          } else if (
-            typeof k.t1 !== "undefined" &&
-            k.t1.toUpperCase().includes("PH.D")
-          ) {
-            return false;
-          } else if (
-            typeof k.t2 !== "undefined" &&
-            k.t2.toUpperCase().includes("PH.D")
-          ) {
-            return false;
-          } else {
-            return true;
-          }
-        })
+        // .filter((k) => {
+        //   if (filtr.phd === true) {
+        //     return true;
+        //   } else if (
+        //     typeof k.t1 !== "undefined" &&
+        //     k.t1.toUpperCase().includes("PH.D")
+        //   ) {
+        //     return false;
+        //   } else if (
+        //     typeof k.t2 !== "undefined" &&
+        //     k.t2.toUpperCase().includes("PH.D")
+        //   ) {
+        //     return false;
+        //   } else {
+        //     return true;
+        //   }
+        // })
         .filter(
           (k) =>
             filtr.zadny === true ||
@@ -331,9 +331,9 @@ function App() {
             typeof k.t1 !== "undefined" &&
             !k.t1.toUpperCase().includes("PH.D") &&
             !k.t1.toUpperCase().includes("MBA") &&
-            !k.t1.toUpperCase().includes("CSC.") &&
+            // !k.t1.toUpperCase().includes("CSC.") &&
             !k.t1.toUpperCase().includes("PAEDDR") &&
-            !k.t1.toUpperCase().includes("PH.D.") &&
+            // !k.t1.toUpperCase().includes("PH.D.") &&
             !k.t1.toUpperCase().includes("RNDR") &&
             !k.t1.toUpperCase().includes("PHDR") &&
             !k.t1.toUpperCase().includes("JUDR") &&
@@ -347,9 +347,9 @@ function App() {
             typeof k.t2 !== "undefined" &&
             !k.t2.toUpperCase().includes("PH.D") &&
             !k.t2.toUpperCase().includes("MBA") &&
-            !k.t2.toUpperCase().includes("CSC.") &&
+            // !k.t2.toUpperCase().includes("CSC.") &&
             !k.t2.toUpperCase().includes("PAEDDR") &&
-            !k.t2.toUpperCase().includes("PH.D.") &&
+            // !k.t2.toUpperCase().includes("PH.D.") &&
             !k.t2.toUpperCase().includes("RNDR") &&
             !k.t2.toUpperCase().includes("PHDR") &&
             !k.t2.toUpperCase().includes("JUDR") &&
@@ -388,8 +388,8 @@ function App() {
     filtr.phdr,
     filtr.rndr,
     filtr.paeddr,
-    filtr.phd,
-    filtr.csc,
+    // filtr.phd,
+    // filtr.csc,
     filtr.mba,
     filtr.jiny,
     filtr.zadny,
@@ -532,7 +532,6 @@ function App() {
             ciselniky={ciselniky}
           />
         )}
-        <p>{JSON.stringify(filtr)}</p>
       </Container>
       <br />
     </ThemeProvider>

@@ -111,6 +111,11 @@ const useStyles = makeStyles({
     width: "100%",
     marginTop: isMobile ? null : "1.6rem",
   },
+  chartContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-evenly",
+  },
 });
 
 const dataFormat = (nazev, d) => {
@@ -411,7 +416,10 @@ function App() {
         />
         {isMobile ? (
           <>
-            <Container style={{ display: "flex", justifyContent: "center" }}>
+            <Container
+              disableGutters
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               <Button
                 onClick={handleClickOpen}
                 startIcon={<EditIcon />}
@@ -434,13 +442,17 @@ function App() {
                 classes={classes}
               ></Modal>
             )}
-            {vybraniKandidati.length > 0 && (
-              <Graf
-                vybraniKandidati={vybraniKandidati}
-                vybraniVybraniKandidati={vybraniVybraniKandidati}
-                isMobile={isMobile}
-              />
-            )}
+            <Container disableGutters className={classes.chartContainer}>
+              <Container disableGutters></Container>
+              {vybraniKandidati.length > 0 && (
+                <Graf
+                  vybraniKandidati={vybraniKandidati}
+                  vybraniVybraniKandidati={vybraniVybraniKandidati}
+                  isMobile={isMobile}
+                />
+              )}
+              <Container disableGutters></Container>
+            </Container>
           </>
         ) : (
           <Container
@@ -454,23 +466,26 @@ function App() {
             <Container style={{ width: "20%" }} disableGutters={true}>
               <BocniMenu filtr={filtr} setFiltr={setFiltr} classes={classes} />
             </Container>
-
-            {/* <Typography
-                variant="subtitle2"
-                style={{ textDecoration: "none" }}
-              >
-                {vybraniKandidati.length} kandidátů
-                {kandidati.length}
-                {vybraniKandidati.length}
-                {vybraniVybraniKandidati.length}
-              </Typography> */}
-
-            {vybraniKandidati.length > 0 && (
-              <Graf
-                vybraniKandidati={vybraniKandidati}
-                vybraniVybraniKandidati={vybraniVybraniKandidati}
-              />
-            )}
+            <Container disableGutters className={classes.chartContainer}>
+              <Container disableGutters>
+                <Typography align="center">
+                  <strong>{vybraniVybraniKandidati.length} kandidátů</strong> (z{" "}
+                  {vybraniKandidati.length})
+                </Typography>
+                <Typography align="center">
+                  {vybraniKandidati.length > 621
+                    ? "1 kulička = 10 kandidátů"
+                    : "1 kulička = 1 kandidát"}
+                </Typography>
+              </Container>
+              {vybraniKandidati.length > 0 && (
+                <Graf
+                  vybraniKandidati={vybraniKandidati}
+                  vybraniVybraniKandidati={vybraniVybraniKandidati}
+                />
+              )}
+              <Container disableGutters></Container>
+            </Container>
           </Container>
         )}
         {ciselniky.kraje.length > 0 && ciselniky.nstrany.length > 0 && (
@@ -481,9 +496,8 @@ function App() {
             ciselniky={ciselniky}
           />
         )}
-        <p>{JSON.stringify(filtr)}</p>
+        {/* <p>{JSON.stringif(filtr)}</p> */}
       </Container>
-      {/* )} */}
     </ThemeProvider>
   );
 }

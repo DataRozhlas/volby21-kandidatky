@@ -32,7 +32,7 @@ Ve srovnání s minulými sněmovními volbami naopak omládla většina stran, 
 
 V poslanecké sněmovně dnes zasedá čtyřicet poslanců mladších čtyřiceti let. V mezinárodním i evropském kontextu patří česká dolní komora k těm starším a nezdá se, že by to letošní volby měly změnit.
 
-TLAČÍTKO PODÍVEJTE SE V KANDIDÁTKÁCH (boční filtr: věk 0-40)
+<div style="display:flex;flex-direction:row;justify-content:center"><a href="#obal"><button id="vek">Podívejte se v kandidátkách</button></a></div>
 
 ## Na východ od železné opony
 
@@ -61,7 +61,7 @@ Proti proudu jde TOP 09, která letos nasadí žen méně než v roce 2010, kdy 
 „Kandidátky pro minulé volby sestavoval ještě bývalý předseda strany Bohuslav Sobotka. Na zastoupení žen v poslaneckém klubu se to ale nijak zvlášť neprojevilo,“ upozorňuje politolog.
 Voliči reagují po svém: poslankyně častěji než poslanci vděčí za mandát preferenčním hlasům. U mužů rozhodovaly preference v 16 procentech případů, u žen ve 22 procentech.
 
-TLAČÍTKO PODÍVEJTE SE V KANDIDÁTKÁCH (boční filtr: ženy)
+<div style="display:flex;flex-direction:row;justify-content:center"><a href="#obal"><button id="zeny">Podívejte se v kandidátkách</button></a></div>
 
 ## Covid nezměnil trend, lékařů kandiduje méně
 
@@ -85,6 +85,8 @@ Pátým nejčastějším titulem je _JUDr._ Právníci jsou také téměř nejú
 
 „U titulů jako _RSDr._ jde o dědictví minulosti. Často šlo o předsedy okresních výborů, kteří sestavovali kandidátky a postavili se nahoru,“ osvětluje jejich úspěch Balík.
 
-TLAČÍTKO PODÍVEJTE SE V KANDIDÁTKÁCH (boční filtr: MUDr.)
+<div style="display:flex;flex-direction:row;justify-content:center"><a href="#obal"><button id="mudr">Podívejte se v kandidátkách</button></a></div>
 
-<wide><div id="app"></div></wide>
+<br><br>
+
+<wide><div id="obal"><div id="app"></div></div></wide>

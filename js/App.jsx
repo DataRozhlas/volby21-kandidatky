@@ -201,7 +201,7 @@ const filtrNaTituly = (k, titul, filtr) => {
   }
 };
 
-function App() {
+function App({ defaultFiltr }) {
   const classes = useStyles();
 
   const [ciselniky, setCiselniky] = useState({
@@ -210,37 +210,7 @@ function App() {
     nstrany: [],
     vstrany: [],
   });
-  const [filtr, setFiltr] = useState({
-    vybranyKraj: 0,
-    vybranaNstrana: 0,
-    vybranaVstrana: 0,
-    nactenyRok: 2021,
-    muzi: true,
-    zeny: true,
-    ing: true,
-    mgr: true,
-    bc: true,
-    mudr: true,
-    judr: true,
-    phdr: true,
-    rndr: true,
-    paeddr: true,
-    // phd: true,
-    // csc: true,
-    mba: true,
-    jiny: true,
-    zadny: true,
-    poradiNaKand: [1, 36],
-    vek: [21, 94],
-    mandatAno: true,
-    mandatNe: true,
-    mandatPref: true,
-    do1k: true,
-    do10k: true,
-    do50k: true,
-    nad50k: true,
-    praha: true,
-  });
+  const [filtr, setFiltr] = useState(defaultFiltr);
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
@@ -280,7 +250,7 @@ function App() {
   // kdyz se zmeni filtr, aktualizuj vybrane kandidaty
   useEffect(() => {
     if (kandidati.length > 0) {
-      console.log("filtruju");
+      // console.log("filtruju");
       const vybrani = kandidati
         .filter((k) => filtr.vybranyKraj === 0 || k.k === filtr.vybranyKraj)
         .filter(
@@ -298,7 +268,7 @@ function App() {
   useEffect(() => {
     //console.log(vybraniKandidati);
     if (vybraniKandidati.length > 0) {
-      console.log("filtruju filtruju");
+      // console.log("filtruju filtruju");
       const vybraniVybrani = vybraniKandidati
         .filter((k) => filtr.zeny === true || k.s !== "F")
         .filter((k) => filtr.muzi === true || k.s !== "M")

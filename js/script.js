@@ -48,7 +48,7 @@ document.getElementById("vek").addEventListener("click", () => {
   document.getElementById("app").remove();
   const newApp = document.createElement("div");
   newApp.setAttribute("id", "app");
-  document.getElementById("obal").appendChild(newApp);
+  document.getElementById("aplikaceinteraktivnikandidatky").appendChild(newApp);
   ReactDOM.render(
     <App
       defaultFiltr={{
@@ -91,7 +91,7 @@ document.getElementById("zeny").addEventListener("click", () => {
   document.getElementById("app").remove();
   const newApp = document.createElement("div");
   newApp.setAttribute("id", "app");
-  document.getElementById("obal").appendChild(newApp);
+  document.getElementById("aplikaceinteraktivnikandidatky").appendChild(newApp);
   ReactDOM.render(
     <App
       defaultFiltr={{
@@ -134,7 +134,7 @@ document.getElementById("mudr").addEventListener("click", () => {
   document.getElementById("app").remove();
   const newApp = document.createElement("div");
   newApp.setAttribute("id", "app");
-  document.getElementById("obal").appendChild(newApp);
+  document.getElementById("aplikaceinteraktivnikandidatky").appendChild(newApp);
   ReactDOM.render(
     <App
       defaultFiltr={{

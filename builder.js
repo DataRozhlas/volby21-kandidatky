@@ -2,6 +2,7 @@ const fs = require("fs");
 const md = require("marked");
 const yaml = require("js-yaml").safeLoad;
 const webpack = require("webpack");
+const WebpackDevServer = require("webpack-dev-server");
 const CleanCSS = require("clean-css");
 const webpackConfig = require("./webpack.config");
 
@@ -17,7 +18,7 @@ function uvozovky(text) {
   let isTag = false;
   let uvozovkyCount = 0;
   let outText = "";
-  const srcText = text.replace(/&quot;/g, "\"");
+  const srcText = text.replace(/&quot;/g, '"');
   [...srcText].forEach((letter) => {
     switch (letter) {
       case "„":
@@ -25,7 +26,7 @@ function uvozovky(text) {
         uvozovkyCount += 1;
         outText += letter;
         break;
-      case "\"":
+      case '"':
         if (!isTag) {
           outText += uvozovkyCount % 2 ? "“" : "„";
           uvozovkyCount += 1;
@@ -46,11 +47,11 @@ function uvozovky(text) {
 }
 
 function pevneMezery(text) {
-  [' a ', ' i ', ' o ', ' u ', ' k ', ' s ', ' v ', ' z '].forEach(pr => {
-    const re = new RegExp(pr, 'g');
-    text = text.replace(re, ' ' + pr.replace(/ /g, '') + '&nbsp;')
-  })
-  return text
+  [" a ", " i ", " o ", " u ", " k ", " s ", " v ", " z "].forEach((pr) => {
+    const re = new RegExp(pr, "g");
+    text = text.replace(re, " " + pr.replace(/ /g, "") + "&nbsp;");
+  });
+  return text;
 }
 
 const build = async (mode) => {
@@ -62,8 +63,7 @@ const build = async (mode) => {
   const header = yaml(sourceParts[0]);
   let body = sourceParts[1];
 
-  body = pevneMezery(body)
-
+  body = pevneMezery(body);
 
   // setting up external libraries and styles set in the header
   let libLinks = "";
@@ -71,10 +71,14 @@ const build = async (mode) => {
 
   header.libraries.forEach((library) => {
     if (library === "datatables") {
-      libLinks += "<script src=\"https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js\"></script>\n";
-      libLinks += "<script src=\"https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js\"></script>\n";
-      styleLinks += "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css\">\n";
-      styleLinks += "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css\">\n";
+      libLinks +=
+        '<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>\n';
+      libLinks +=
+        '<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>\n';
+      styleLinks +=
+        '<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">\n';
+      styleLinks +=
+        '<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">\n';
     } else if (library in libraryPresets) {
       libLinks += `<script src="${libraryPresets[library]}"></script>\n`;
     } else {
@@ -98,13 +102,25 @@ const build = async (mode) => {
   header.styles += `<style>${new CleanCSS().minify(styleInput).styles}</style>`;
 
   // replacing pseudotags in the body
-  body = body.replace(new RegExp("<wide>", "g"), "</div><div class=\"row-main row-main--article\">");
-  body = body.replace(new RegExp("</wide>", "g"), "</div><div class=\"row-main row-main--narrow\">");
+  body = body.replace(
+    new RegExp("<wide>", "g"),
+    '</div><div class="row-main row-main--article">'
+  );
+  body = body.replace(
+    new RegExp("</wide>", "g"),
+    '</div><div class="row-main row-main--narrow">'
+  );
 
-  body = body.replace(new RegExp("<left>", "g"), "<div class=\"b-inline b-inline--left\"><div class=\"b-inline__wrap\"><div class=\"b-inline__content\"><div class=\"text-sm\">");
+  body = body.replace(
+    new RegExp("<left>", "g"),
+    '<div class="b-inline b-inline--left"><div class="b-inline__wrap"><div class="b-inline__content"><div class="text-sm">'
+  );
   body = body.replace(new RegExp("</left>", "g"), "</div></div></div></div>");
 
-  body = body.replace(new RegExp("<right>", "g"), "<div class=\"b-inline b-inline--right\"><div class=\"b-inline__wrap\"><div class=\"b-inline__content\"><div class=\"text-sm\">");
+  body = body.replace(
+    new RegExp("<right>", "g"),
+    '<div class="b-inline b-inline--right"><div class="b-inline__wrap"><div class="b-inline__content"><div class="text-sm">'
+  );
   body = body.replace(new RegExp("</right>", "g"), "</div></div></div></div>");
 
   // applying markdown to the body
@@ -131,14 +147,17 @@ const build = async (mode) => {
 
   // the wide option
   if (header.options.includes("wide")) {
-    header.column = "<div class=\"row-main row-main--article\">";
+    header.column = '<div class="row-main row-main--article">';
   } else {
-    header.column = "<div class=\"row-main row-main--narrow\">";
+    header.column = '<div class="row-main row-main--narrow">';
   }
 
   // filling the template
   template.match(/{(.*?)}/g).forEach((variable) => {
-    template = template.replace(variable, header[variable.substring(1, variable.length - 1)]);
+    template = template.replace(
+      variable,
+      header[variable.substring(1, variable.length - 1)]
+    );
   });
 
   // webpacking
@@ -146,7 +165,10 @@ const build = async (mode) => {
 
   const promise = new Promise((resolve) => {
     compiler.run((err, stats) => {
-      const message = (stats.compilation.errors.length > 0) ? `Chyba!\n${stats.compilation.errors}` : "Zabaleno...";
+      const message =
+        stats.compilation.errors.length > 0
+          ? `Chyba!\n${stats.compilation.errors}`
+          : "Zabaleno...";
       process.stdout.write(message);
       resolve(fs.readFileSync("output.js", "utf8"));
     });
@@ -186,12 +208,30 @@ async function main() {
         }
       });
     });
+    const devServerOptions = {
+      ...webpackConfig.devServer,
+      open: true,
+      compress: true,
+      static: { directory: __dirname },
+      liveReload: true,
+    };
+    const server = new WebpackDevServer(
+      devServerOptions,
+      webpack(webpackConfig)
+    );
+    server.startCallback(() => {
+      console.log("Pouštím devserver na http://localhost:8080");
+    });
   } else if (process.argv[2] === "build") {
     process.stdout.write("Buildování... ");
     const built = await build("production");
-    process.stdout.write(`\n${built} Zkopírujte obsah output.html do redakčního systému.`);
+    process.stdout.write(
+      `\n${built} Zkopírujte obsah output.html do redakčního systému.`
+    );
   } else {
-    process.stdout.write("Build spusťte přes npm run watch (sledování) / npm run build");
+    process.stdout.write(
+      "Build spusťte přes npm run watch (sledování) / npm run build"
+    );
   }
 }
 

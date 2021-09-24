@@ -10,6 +10,8 @@ data <- read_csv("../data/data.csv")
 
 # rozděl podle roku a ulož jako JSON
 
+data %>% filter(ROK==2021)
+
 
 data%>%select(OBYVKAT)%>%as.factor()%>%print()
 

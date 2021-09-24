@@ -38,6 +38,7 @@
     "webpack": "^5.52.0"
   },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.15.0"
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "webpack-dev-server": "^4.2.1"
   }
 }

@@ -1,5 +1,5 @@
-title: "Kandidáti do sněmovny zestárli. Transformace stranického systému skončila, říká politolog"
-perex: "Průměrný věk kandidátů a kandidátek do poslanecké sněmovny osciloval mezi volbami 2006 a 2017 kolem 46 let. Letos vyskočil o 2,5 roku výš. Strany a koalice zároveň daly zatím největší prostor ženám, a to i na místech krajských lídryň."
+title: "Kandidáti do sněmovny zestárli. ‚Transformace stranického systému skončila,‘ říká politolog"
+perex: "Průměrný věk kandidátů a kandidátek do Poslanecké sněmovny osciloval mezi volbami 2006 a 2017 kolem 46 let. Letos vyskočil o 2,5 roku výš. Strany a koalice zároveň daly zatím největší prostor ženám, a to i na místech krajských lídryň. Ukazuje to analýza datových novinářů serveru iROZHLAS.cz."
 coverimg: https://interaktivni.rozhlas.cz/brexit/media/cover.jpg
 coverimg_note: "Foto <a href='https://ctk.cz'>ČTK</a>"
 styles: ["https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"]
@@ -8,7 +8,7 @@ options: [noheader, nopic] #wide, noheader (, nopic)
 
 ---
 
-_Popisované trendy ilustrujeme [v interaktivních kandidátkách na konci článku](#app)._
+_Popisované trendy ilustrujeme [v interaktivních kandidátkách na konci článku](#aplikaceinteraktivnikandidatky)._
 
 ## Kandidáti stárnou, změny končí
 
@@ -20,25 +20,25 @@ Kandidátní listiny zestárly ve srovnání s minulými volbami v průměru o 2
 
 <div id="kandidatky-vek" class="snf-chart"></div>
 
-„Slabá obměna kandidátů je jeden ze signálů, že končí zajímavá etapa vývoje stranického systému,“ komentuje politolog a děkan Fakulty sociálních studií Masarykovy univerzity Stanislav Balík. „Relativně dlouhá transformace u nás začala rokem 2010 a trvala do roku 2017. Byla to přechodová doba, kdy do politiky vpadly nové strany a už v ní zůstaly.“
+„Slabá obměna kandidátů je jeden ze signálů, že končí zajímavá etapa vývoje stranického systému,“ komentuje to pro iROZHLAS.cz politolog a děkan Fakulty sociálních studií Masarykovy univerzity Stanislav Balík. „Relativně dlouhá transformace u nás začala rokem 2010 a trvala do roku 2017. Byla to přechodová doba, kdy do politiky vpadly nové strany a už v ní zůstaly.“
 
 V uvedených sedmi letech se do sněmovny nově dostaly TOP 09, Starostové a nezávislí, Věci veřejné, ANO 2011, Úsvit a později SPD Tomia Okamury a také Česká pirátská strana.
 
-„Plus mínus jsme schopni odhadnout koaliční vztahy po volbách, zhruba tušíme, kdo s kým může sestavit vládu,“ pokračuje. „Před čtyřmi lety jsme to nevěděli. Jsou tady stabilní aktéři, žádná nová velká raketa. Těžko říct, jak to bude se Šlachtovou Přísahou. Celý systém je mnohem předvídatelnější než v minulých volbách.“
+„Plus minus jsme schopni odhadnout koaliční vztahy po volbách, zhruba tušíme, kdo s kým může sestavit vládu,“ pokračuje Balík. „Před čtyřmi lety jsme to nevěděli. Jsou tady stabilní aktéři, žádná nová velká raketa. Těžko říct, jak to bude se Šlachtovou Přísahou. Celý systém je mnohem předvídatelnější než v minulých volbách.“
 
 „Jestli to vydrží, nevíme,“ dodává Balík. „Obzvlášť u celků jako SPD nebo ANO, postavených na jednom člověku, stačí jedna tragická událost. Najednou bychom tu měli rozsypaný celý segment a začala by válka o dědictví voličské základny.“
 
 Ve srovnání s minulými sněmovními volbami naopak omládla většina stran, které se spojily do koalic. ODS, KDU-ČSL a TOP 09 o 2,4 až 3,2 roku, STAN o 2,8 roku. U poslední zmíněné je to podle Balíka důsledkem generační obměny v komunální politice.
 
-V poslanecké sněmovně dnes zasedá čtyřicet poslanců mladších čtyřiceti let. V mezinárodním i evropském kontextu patří česká dolní komora k těm starším a nezdá se, že by to letošní volby měly změnit.
+V Poslanecké sněmovně momentálně zasedá čtyřicet poslanců mladších čtyřiceti let. V mezinárodním i evropském kontextu patří česká dolní komora k těm starším a nezdá se, že by to letošní volby měly změnit.
 
-<div style="display:flex;flex-direction:row;justify-content:center"><a href="#obal"><button id="vek">Podívejte se v kandidátkách</button></a></div>
+<div style="display:flex;flex-direction:row;justify-content:center"><a href="#aplikaceinteraktivnikandidatky"><button id="vek">Podívejte se v kandidátkách</button></a></div>
 
 ## Na východ od železné opony
 
 Letos bude na kandidátkách nejvyšší podíl žen od roku 2006, téměř třetina. Proti předchozím sněmovním volbám je to mírný nárůst.
 
-O zapojení žen do politiky ale lépe vypovídá, kolik z nich se do sněmovny opravdu dostane. Tady už se projevuje dominance mužů: k mandátu se probije každý třicátý kandidující muž, ale jen každá padesátá žena. Podíl žen ve sněmovně dodnes kopíruje rozdělení Evropy železnou oponou a Česko není výjimka, patří na východ.
+O zapojení žen do politiky ale lépe vypovídá, kolik z nich se do sněmovny opravdu dostane. Tady už se projevuje dominance mužů: k mandátu se probije každý třicátý kandidující muž, ale jen každá padesátá žena. Podíl žen ve sněmovně dodnes kopíruje rozdělení Evropy železnou oponou a Česko není výjimkou – patří na východ.
 
 Důvodů, proč mají ženy souboj o mandát těžší, je víc. Za prvé: častěji je najdeme na kandidátkách malých stran; naopak tam, kde je slušná šance na mandát, převažují muži. Tradičně vyvážené bývají například kandidátky Strany zelených, letos na nich je 46 procent žen. Sněmovní strany tvoří blok se 17 až 31 procenty žen. Zvlášť patrná bývá dominance mužů u pravice a konzervativců – letos vyčnívá koalice Trikolora Svobodní Soukromníci se 14 procenty žen.
 
@@ -58,10 +58,9 @@ I tady se ale časy pomalu mění a počty krajských lídryň se za 15 let zvý
 
 Proti proudu jde TOP 09, která letos nasadí žen méně než v roce 2010, kdy kandidovala poprvé. Zajímavou anomálií byla ČSSD, která ve sněmovních volbách 2017 nasadila 45 procent žen. Letos se strana vrátila k tradičním 25 procentům.
 
-„Kandidátky pro minulé volby sestavoval ještě bývalý předseda strany Bohuslav Sobotka. Na zastoupení žen v poslaneckém klubu se to ale nijak zvlášť neprojevilo,“ upozorňuje politolog.
-Voliči reagují po svém: poslankyně častěji než poslanci vděčí za mandát preferenčním hlasům. U mužů rozhodovaly preference v 16 procentech případů, u žen ve 22 procentech.
+„Kandidátky pro minulé volby sestavoval ještě bývalý předseda strany Bohuslav Sobotka. Na zastoupení žen v poslaneckém klubu se to ale nijak zvlášť neprojevilo,“ upozorňuje politolog. Voliči reagují po svém: poslankyně častěji než poslanci vděčí za mandát preferenčním hlasům. U mužů rozhodovaly preference v 16 procentech případů, u žen ve 22 procentech.
 
-<div style="display:flex;flex-direction:row;justify-content:center"><a href="#obal"><button id="zeny">Podívejte se v kandidátkách</button></a></div>
+<div style="display:flex;flex-direction:row;justify-content:center"><a href="#aplikaceinteraktivnikandidatky"><button id="zeny">Podívejte se v kandidátkách</button></a></div>
 
 ## Covid nezměnil trend, lékařů kandiduje méně
 
@@ -73,7 +72,7 @@ Skutečný rozdíl je mezi vysokoškoláky a kandidáty bez titulu. V prvním p�
 
 <div id="kandidatky-tituly" class="snf-chart"></div>
 
-Nejčastěji na kandidátkách najdete inženýry a magistry. Zatímco prvních volby od voleb ubývá, druhé číslo roste. Převaha inženýrů odráží vysoký průměrný věk kandidátů: často vystudovali ještě před revolucí, kdy technické obory jasně dominovaly nad ostatními směry vzdělání.
+Nejčastěji na kandidátkách najdete inženýry a magistry. Zatímco prvních postupně ubývá, druhé číslo roste. Převaha inženýrů odráží vysoký průměrný věk kandidátů: často vystudovali ještě před revolucí, kdy technické obory jasně dominovaly nad ostatními směry vzdělání.
 
 Pátým nejčastějším titulem je _JUDr._ Právníci jsou také téměř nejúspěšnější v proměňování mandátových mečbolů na poslanecká křesla – mají skoro dvakrát vyšší šanci než ostatní vysokoškoláci.
 
@@ -83,10 +82,10 @@ Pátým nejčastějším titulem je _JUDr._ Právníci jsou také téměř nejú
 
 Úspěšnější než právníci jsou pouze absolventi Vysoké školy politické ÚV KSČ s trojnásobnou šancí na zvolení než ostatní vysokoškoláci. Kandidují obvykle za KSČM, z politiky ale vzhledem k vyššímu věku mizí. Letos jich je na kandidátkách jen desítka.
 
-„U titulů jako _RSDr._ jde o dědictví minulosti. Často šlo o předsedy okresních výborů, kteří sestavovali kandidátky a postavili se nahoru,“ osvětluje jejich úspěch Balík.
+„U titulů jako RSDr. jde o dědictví minulosti. Často šlo o předsedy okresních výborů, kteří sestavovali kandidátky a postavili se nahoru,“ osvětluje jejich úspěch Balík.
 
-<div style="display:flex;flex-direction:row;justify-content:center"><a href="#obal"><button id="mudr">Podívejte se v kandidátkách</button></a></div>
+<div style="display:flex;flex-direction:row;justify-content:center"><a href="#aplikaceinteraktivnikandidatky"><button id="mudr">Podívejte se v kandidátkách</button></a></div>
 
 <br><br>
 
-<wide><div id="obal"><div id="app"></div></div></wide>
+<wide><div id="aplikaceinteraktivnikandidatky"><div id="app"></div></div></wide>

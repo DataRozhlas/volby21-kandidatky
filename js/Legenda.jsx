@@ -6,7 +6,7 @@ const Legenda = ({ vybarveneStrany, vybranychKandidatu }) => {
     return acc + curr.pocet;
   }, 0);
   const legendData =
-    vybranychKandidatu > pocetVybarvenych
+    vybranychKandidatu > pocetVybarvenych && pocetVybarvenych > 0
       ? [...vybarveneStrany, { nazev: "Ostatní", barva: "#349DB2", vstrana: 0 }]
       : vybarveneStrany;
   return (

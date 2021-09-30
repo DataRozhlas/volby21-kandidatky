@@ -47,7 +47,7 @@ const ukazPovolani = (params) => {
   );
 };
 
-const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
+const Tablica = ({ vybarveniKandidati, classes, isMobile, ciselniky }) => {
   const columns = [
     {
       field: "c",
@@ -177,8 +177,9 @@ const Tablica = ({ vybraniVybraniKandidati, classes, isMobile, ciselniky }) => {
             autoHeight
             localeText={csCZ.props.MuiDataGrid.localeText}
             density={"compact"}
-            rows={vybraniVybraniKandidati}
+            rows={vybarveniKandidati}
             columns={columns}
+            rowsPerPageOptions={isMobile ? [10] : [20]}
             pageSize={isMobile ? 10 : 20}
             disableSelectionOnClick
           />

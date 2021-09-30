@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 
 const Graf = ({
   vybraniKandidati,
-  vybraniVybraniKandidati,
+  vybarveniKandidati,
   isMobile,
   vybarveneStrany,
   setVybarveneStrany,
@@ -26,16 +26,16 @@ const Graf = ({
 
   const vyrobKulicky = (
     vybraniKandidati,
-    vybraniVybraniKandidati,
+    vybarveniKandidati,
     barvickyZdroj,
     setVybarveneStrany
   ) => {
     const meritko = vybraniKandidati.length > 621 ? 10 : 1;
     const barvicky = barvickyZdroj.map((d) => Object.assign({}, d));
     const zobrazCelkem = Math.floor(vybraniKandidati.length / meritko);
-    const vybarviCelkem = Math.floor(vybraniVybraniKandidati.length / meritko);
+    const vybarviCelkem = Math.floor(vybarveniKandidati.length / meritko);
 
-    const kandidatiPodleBarev = vybraniVybraniKandidati
+    const kandidatiPodleBarev = vybarveniKandidati
       .reduce((acc, curr) => {
         const barvicka = acc.filter((b) => b.vstrana === curr.v)[0];
         const index = acc.indexOf(barvicka);
@@ -96,7 +96,7 @@ const Graf = ({
     let destroyFn;
     const kulicky = vyrobKulicky(
       vybraniKandidati,
-      vybraniVybraniKandidati,
+      vybarveniKandidati,
       barvickyZdroj,
       setVybarveneStrany
     );
@@ -110,9 +110,10 @@ const Graf = ({
         isMobile
       );
       destroyFn = destroy;
+      // console.log(destroyFn);
     }
     return destroyFn;
-  }, [vybraniKandidati, vybraniVybraniKandidati]);
+  }, [vybraniKandidati, vybarveniKandidati]);
 
   return <div ref={containerRef} className={classes.grafContainer}></div>;
 };

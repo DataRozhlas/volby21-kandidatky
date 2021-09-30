@@ -77,6 +77,8 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             "paeddr",
             "phd",
             "csc",
+            "prof",
+            "rsdr",
             "mba",
             "jiny",
             "zadny",
@@ -182,7 +184,31 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             }
             label="PaedDr."
           />
-          {/* <FormControlLabel
+          <FormControlLabel
+            className={classes.bocniCheckBoxDvaSloupce}
+            control={
+              <Checkbox
+                checked={filtr.prof}
+                onChange={handleChange}
+                name="prof"
+                size="small"
+              />
+            }
+            label="prof."
+          />
+          <FormControlLabel
+            className={classes.bocniCheckBoxDvaSloupce}
+            control={
+              <Checkbox
+                checked={filtr.rsdr}
+                onChange={handleChange}
+                name="rsdr"
+                size="small"
+              />
+            }
+            label="RSDr."
+          />
+          <FormControlLabel
             className={classes.bocniCheckBoxDvaSloupce}
             control={
               <Checkbox
@@ -205,7 +231,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
               />
             }
             label="CSc."
-          /> */}
+          />
           <FormControlLabel
             className={classes.bocniCheckBoxDvaSloupce}
             control={

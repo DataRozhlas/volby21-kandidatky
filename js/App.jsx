@@ -183,22 +183,140 @@ const getData = async (nazev) => {
   }
 };
 
-const filtrNaTituly = (k, titul, filtr) => {
-  if (filtr[titul] === true) {
+const vyfiltrujKandidaty = (kandidati, filtr) => {
+  console.log("filtruju");
+  return kandidati
+    .filter((k) => filtr.vybranyKraj === 0 || k.k === filtr.vybranyKraj)
+    .filter((k) => filtr.vybranaVstrana === 0 || k.v === filtr.vybranaVstrana)
+    .filter((k) => filtr.vybranaNstrana === 0 || k.n === filtr.vybranaNstrana);
+};
+
+const filtrNaTituly = (kandidat, filtr) => {
+  if (
+    filtr.ing &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("Ing.")
+  ) {
     return true;
   } else if (
-    typeof k.t1 !== "undefined" &&
-    k.t1.toUpperCase().includes(titul.toUpperCase())
+    filtr.mgr &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("Mgr.")
   ) {
-    return false;
+    return true;
   } else if (
-    typeof k.t2 !== "undefined" &&
-    k.t2.toUpperCase().includes(titul.toUpperCase())
+    filtr.bc &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("Bc.")
   ) {
-    return false;
+    return true;
+  } else if (
+    filtr.mudr &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("MUDr.")
+  ) {
+    return true;
+  } else if (
+    filtr.judr &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("JUDr.")
+  ) {
+    return true;
+  } else if (
+    filtr.phdr &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("PhDr.")
+  ) {
+    return true;
+  } else if (
+    filtr.rndr &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("RNDr.")
+  ) {
+    return true;
+  } else if (
+    filtr.paeddr &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("PaedDr.")
+  ) {
+    return true;
+  } else if (
+    filtr.prof &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("prof.")
+  ) {
+    return true;
+  } else if (
+    filtr.rsdr &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("RSDr.")
+  ) {
+    return true;
+  } else if (
+    filtr.phd &&
+    typeof kandidat.t2 !== "undefined" &&
+    kandidat.t2.includes("Ph.D.")
+  ) {
+    return true;
+  } else if (
+    filtr.csc &&
+    typeof kandidat.t2 !== "undefined" &&
+    kandidat.t2.includes("CSc.")
+  ) {
+    return true;
+  } else if (
+    filtr.mba &&
+    typeof kandidat.t2 !== "undefined" &&
+    kandidat.t2.includes("MBA")
+  ) {
+    return true;
+  } else if (
+    (filtr.jiny &&
+      typeof kandidat.t1 !== "undefined" &&
+      !kandidat.t1.includes("Ing.") &&
+      !kandidat.t1.includes("Mgr.") &&
+      !kandidat.t1.includes("Bc.") &&
+      !kandidat.t1.includes("MUDr.") &&
+      !kandidat.t1.includes("JUDr.") &&
+      !kandidat.t1.includes("PhDr.") &&
+      !kandidat.t1.includes("RNDr.") &&
+      !kandidat.t1.includes("PaedDr.") &&
+      !kandidat.t1.includes("prof.") &&
+      !kandidat.t1.includes("RSDr.")) ||
+    (typeof kandidat.t2 !== "undefined" &&
+      !kandidat.t2.includes("Ph.D.") &&
+      !kandidat.t2.includes("CSc.") &&
+      !kandidat.t2.includes("MBA"))
+  ) {
+    return true;
+  } else if (
+    filtr.zadny &&
+    typeof kandidat.t1 === "undefined" &&
+    typeof kandidat.t2 === "undefined"
+  ) {
+    return true;
   } else {
-    return true;
+    return false;
   }
+};
+
+const vyfiltrujObarveneKandidaty = (vybraniKandidati, filtr) => {
+  console.log("obarvuju");
+  const result = vybraniKandidati
+    .filter((k) => filtr.zeny === true || k.s === "M")
+    .filter((k) => filtr.muzi === true || k.s === "F")
+    .filter((k) => k.c >= filtr.poradiNaKand[0] && k.c <= filtr.poradiNaKand[1])
+    .filter((k) => k.a >= filtr.vek[0] && k.a <= filtr.vek[1])
+    .filter((k) => filtr.mandatAno === true || k.m !== 1)
+    .filter((k) => filtr.mandatNe === true || k.m !== 0)
+    .filter((k) => filtr.mandatPref === true || k.m !== 2)
+    .filter((k) => filtr.do1k === true || k.o >= 999)
+    .filter((k) => filtr.do10k === true || k.o < 1000 || k.o > 9999)
+    .filter((k) => filtr.do50k === true || k.o < 10000 || k.o > 49999)
+    .filter((k) => filtr.nad50k === true || k.o < 50000 || k.o > 999999)
+    .filter((k) => filtr.praha === true || k.o < 999999)
+    .filter((k) => filtrNaTituly(k, filtr));
+  return result;
 };
 
 function App({ defaultFiltr }) {
@@ -214,9 +332,9 @@ function App({ defaultFiltr }) {
   const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
-  const [vybraniVybraniKandidati, setVybraniVybraniKandidati] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
+  const [vybarveniKandidati, setVybarveniKandidati] = useState([]);
   const [vybarveneStrany, setVybarveneStrany] = useState([]);
+
   // na zacatku nacti data do ciselniku
   useEffect(async () => {
     const kraje = await getData("kraje");
@@ -233,6 +351,7 @@ function App({ defaultFiltr }) {
 
   // kdyz se zmeni rok, nacti data
   useEffect(async () => {
+    console.log("načítám");
     const vsichni = await getData(rok);
     setKandidati(vsichni);
     // fix pro případy, kdy z předchozích let zůstane nastavený filtr na mandáty
@@ -247,115 +366,25 @@ function App({ defaultFiltr }) {
     setFiltr({ ...filtr, nactenyRok: rok, ...settings });
   }, [rok]);
 
-  // kdyz se zmeni filtr, aktualizuj vybrane kandidaty
+  // kdyz se zmeni horni filtr, vyfiltruj kandidáty a aktualizuj s nimi vybrane kandidaty
   useEffect(() => {
     if (kandidati.length > 0) {
-      // console.log("filtruju");
-      const vybrani = kandidati
-        .filter((k) => filtr.vybranyKraj === 0 || k.k === filtr.vybranyKraj)
-        .filter(
-          (k) => filtr.vybranaVstrana === 0 || k.v === filtr.vybranaVstrana
-        )
-        .filter(
-          (k) => filtr.vybranaNstrana === 0 || k.n === filtr.vybranaNstrana
-        );
+      const vybrani = vyfiltrujKandidaty(kandidati, filtr);
       setVybraniKandidati(vybrani);
     }
-  }, [filtr]);
+  }, [
+    kandidati,
+    filtr.vybranyKraj,
+    filtr.vybranaVstrana,
+    filtr.vybranaNstrana,
+  ]);
 
-  // vybrani vybrani
+  // kdyz se zmeni bocni filtr nebo vybrani kandidati, projdi vybrane a vyber z nich obarvene
 
   useEffect(() => {
-    //console.log(vybraniKandidati);
     if (vybraniKandidati.length > 0) {
-      // console.log("filtruju filtruju");
-      const vybraniVybrani = vybraniKandidati
-        .filter((k) => filtr.zeny === true || k.s !== "F")
-        .filter((k) => filtr.muzi === true || k.s !== "M")
-        .filter((k) => filtrNaTituly(k, "ing", filtr))
-        .filter((k) => filtrNaTituly(k, "mgr", filtr))
-        .filter((k) => filtrNaTituly(k, "bc", filtr))
-        .filter((k) => filtrNaTituly(k, "mudr", filtr))
-        .filter((k) => filtrNaTituly(k, "judr", filtr))
-        .filter((k) => filtrNaTituly(k, "phdr", filtr))
-        .filter((k) => filtrNaTituly(k, "rndr", filtr))
-        .filter((k) => filtrNaTituly(k, "paeddr", filtr))
-        // .filter((k) => filtrNaTituly(k, "csc", filtr))
-        .filter((k) => filtrNaTituly(k, "mba", filtr))
-        // .filter((k) => {
-        //   if (filtr.phd === true) {
-        //     return true;
-        //   } else if (
-        //     typeof k.t1 !== "undefined" &&
-        //     k.t1.toUpperCase().includes("PH.D")
-        //   ) {
-        //     return false;
-        //   } else if (
-        //     typeof k.t2 !== "undefined" &&
-        //     k.t2.toUpperCase().includes("PH.D")
-        //   ) {
-        //     return false;
-        //   } else {
-        //     return true;
-        //   }
-        // })
-        .filter(
-          (k) =>
-            filtr.zadny === true ||
-            !(typeof k.t1 === "undefined" && typeof k.t2 === "undefined")
-        )
-        .filter((k) => {
-          if (filtr.jiny === true) {
-            return true;
-          } else if (
-            typeof k.t1 !== "undefined" &&
-            !k.t1.toUpperCase().includes("PH.D") &&
-            !k.t1.toUpperCase().includes("MBA") &&
-            // !k.t1.toUpperCase().includes("CSC.") &&
-            !k.t1.toUpperCase().includes("PAEDDR") &&
-            // !k.t1.toUpperCase().includes("PH.D.") &&
-            !k.t1.toUpperCase().includes("RNDR") &&
-            !k.t1.toUpperCase().includes("PHDR") &&
-            !k.t1.toUpperCase().includes("JUDR") &&
-            !k.t1.toUpperCase().includes("MUDR") &&
-            !k.t1.toUpperCase().includes("BC") &&
-            !k.t1.toUpperCase().includes("MGR") &&
-            !k.t1.toUpperCase().includes("ING")
-          ) {
-            return false;
-          } else if (
-            typeof k.t2 !== "undefined" &&
-            !k.t2.toUpperCase().includes("PH.D") &&
-            !k.t2.toUpperCase().includes("MBA") &&
-            // !k.t2.toUpperCase().includes("CSC.") &&
-            !k.t2.toUpperCase().includes("PAEDDR") &&
-            // !k.t2.toUpperCase().includes("PH.D.") &&
-            !k.t2.toUpperCase().includes("RNDR") &&
-            !k.t2.toUpperCase().includes("PHDR") &&
-            !k.t2.toUpperCase().includes("JUDR") &&
-            !k.t2.toUpperCase().includes("MUDR") &&
-            !k.t2.toUpperCase().includes("BC") &&
-            !k.t2.toUpperCase().includes("MGR") &&
-            !k.t2.toUpperCase().includes("ING")
-          ) {
-            return false;
-          } else {
-            return true;
-          }
-        })
-        .filter(
-          (k) => k.c >= filtr.poradiNaKand[0] && k.c <= filtr.poradiNaKand[1]
-        )
-        .filter((k) => k.a >= filtr.vek[0] && k.a <= filtr.vek[1])
-        .filter((k) => filtr.mandatAno === true || k.m !== 1)
-        .filter((k) => filtr.mandatNe === true || k.m !== 0)
-        .filter((k) => filtr.mandatPref === true || k.m !== 2)
-        .filter((k) => filtr.do1k === true || k.o >= 999)
-        .filter((k) => filtr.do10k === true || k.o < 1000 || k.o > 9999)
-        .filter((k) => filtr.do50k === true || k.o < 10000 || k.o > 49999)
-        .filter((k) => filtr.nad50k === true || k.o < 50000 || k.o > 999999)
-        .filter((k) => filtr.praha === true || k.o < 999999);
-      setVybraniVybraniKandidati(vybraniVybrani);
+      const vybarveni = vyfiltrujObarveneKandidaty(vybraniKandidati, filtr);
+      setVybarveniKandidati(vybarveni);
     }
   }, [
     filtr.muzi,
@@ -368,8 +397,10 @@ function App({ defaultFiltr }) {
     filtr.phdr,
     filtr.rndr,
     filtr.paeddr,
-    // filtr.phd,
-    // filtr.csc,
+    filtr.phd,
+    filtr.csc,
+    filtr.prof,
+    filtr.rsdr,
     filtr.mba,
     filtr.jiny,
     filtr.zadny,
@@ -436,7 +467,7 @@ function App({ defaultFiltr }) {
             <Container disableGutters className={classes.kolemGrafu}>
               <Container disableGutters>
                 <Typography align="center">
-                  <strong>{vybraniVybraniKandidati.length} kandidátů</strong> (z{" "}
+                  <strong>{vybarveniKandidati.length} kandidátů</strong> (z{" "}
                   {vybraniKandidati.length})
                 </Typography>
                 <Typography align="center">
@@ -449,7 +480,7 @@ function App({ defaultFiltr }) {
               {vybraniKandidati.length > 0 && (
                 <Graf
                   vybraniKandidati={vybraniKandidati}
-                  vybraniVybraniKandidati={vybraniVybraniKandidati}
+                  vybarveniKandidati={vybarveniKandidati}
                   isMobile={isMobile}
                   vybarveneStrany={vybarveneStrany}
                   setVybarveneStrany={setVybarveneStrany}
@@ -478,10 +509,9 @@ function App({ defaultFiltr }) {
             <Container disableGutters className={classes.kolemGrafu}>
               <Container disableGutters>
                 <Typography align="center">
-                  <strong>{vybraniVybraniKandidati.length} kandidátů</strong> (
+                  <strong>{vybarveniKandidati.length} kandidátů</strong> (
                   {Math.round(
-                    (vybraniVybraniKandidati.length / vybraniKandidati.length) *
-                      100
+                    (vybarveniKandidati.length / vybraniKandidati.length) * 100
                   )}{" "}
                   % z {vybraniKandidati.length})
                 </Typography>
@@ -495,7 +525,7 @@ function App({ defaultFiltr }) {
               {vybraniKandidati.length > 0 && (
                 <Graf
                   vybraniKandidati={vybraniKandidati}
-                  vybraniVybraniKandidati={vybraniVybraniKandidati}
+                  vybarveniKandidati={vybarveniKandidati}
                   isMobile={isMobile}
                   vybarveneStrany={vybarveneStrany}
                   setVybarveneStrany={setVybarveneStrany}
@@ -512,7 +542,7 @@ function App({ defaultFiltr }) {
         )}
         {ciselniky.kraje.length > 0 && ciselniky.nstrany.length > 0 && (
           <Tablica
-            vybraniVybraniKandidati={vybraniVybraniKandidati}
+            vybarveniKandidati={vybarveniKandidati}
             classes={classes}
             isMobile={isMobile}
             ciselniky={ciselniky}

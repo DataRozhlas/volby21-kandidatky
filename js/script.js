@@ -23,6 +23,7 @@ ReactDOM.render(
       judr: true,
       phdr: true,
       rndr: true,
+      mvdr: true,
       paeddr: true,
       phd: true,
       csc: true,

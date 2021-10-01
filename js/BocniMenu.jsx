@@ -74,6 +74,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
             "judr",
             "phdr",
             "rndr",
+            "mvdr",
             "paeddr",
             "phd",
             "csc",
@@ -171,6 +172,18 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
               />
             }
             label="RNDr."
+          />
+          <FormControlLabel
+            className={classes.bocniCheckBoxDvaSloupce}
+            control={
+              <Checkbox
+                checked={filtr.mvdr}
+                onChange={handleChange}
+                name="mvdr"
+                size="small"
+              />
+            }
+            label="MVDr."
           />
           <FormControlLabel
             className={classes.bocniCheckBoxDvaSloupce}

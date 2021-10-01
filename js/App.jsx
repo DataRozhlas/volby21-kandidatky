@@ -235,6 +235,12 @@ const filtrNaTituly = (kandidat, filtr) => {
   ) {
     return true;
   } else if (
+    filtr.mvdr &&
+    typeof kandidat.t1 !== "undefined" &&
+    kandidat.t1.includes("MVDr.")
+  ) {
+    return true;
+  } else if (
     filtr.paeddr &&
     typeof kandidat.t1 !== "undefined" &&
     kandidat.t1.includes("PaedDr.")
@@ -273,20 +279,12 @@ const filtrNaTituly = (kandidat, filtr) => {
   } else if (
     (filtr.jiny &&
       typeof kandidat.t1 !== "undefined" &&
-      !kandidat.t1.includes("Ing.") &&
-      !kandidat.t1.includes("Mgr.") &&
-      !kandidat.t1.includes("Bc.") &&
-      !kandidat.t1.includes("MUDr.") &&
-      !kandidat.t1.includes("JUDr.") &&
-      !kandidat.t1.includes("PhDr.") &&
-      !kandidat.t1.includes("RNDr.") &&
-      !kandidat.t1.includes("PaedDr.") &&
-      !kandidat.t1.includes("prof.") &&
-      !kandidat.t1.includes("RSDr.")) ||
-    (typeof kandidat.t2 !== "undefined" &&
-      !kandidat.t2.includes("Ph.D.") &&
-      !kandidat.t2.includes("CSc.") &&
-      !kandidat.t2.includes("MBA"))
+      !/(Ing\.)|(Mgr\.)|(Bc\.)|(MUDr\.)|(JUDr\.)|(PhDr\.)|(RNDr\.)|(MVDr\.)|(PaedDr\.)|(prof\.)|(RSDr\.)/.test(
+        kandidat.t1
+      )) ||
+    (filtr.jiny &&
+      typeof kandidat.t2 !== "undefined" &&
+      !/(Ph\.D\.)|(CSc\.)|(MBA)/.test(kandidat.t2))
   ) {
     return true;
   } else if (
@@ -396,6 +394,7 @@ function App({ defaultFiltr }) {
     filtr.judr,
     filtr.phdr,
     filtr.rndr,
+    filtr.mvdr,
     filtr.paeddr,
     filtr.phd,
     filtr.csc,

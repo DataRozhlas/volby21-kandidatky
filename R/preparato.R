@@ -67,10 +67,10 @@ summary(nchar(data$POVOLANI))
 
 data %>%
   select(TITULPRED, TITULZA) %>%
-  group_by(TITULZA) %>%
+  group_by(TITULPRED) %>%
   summarise(pocet=n()) %>%
   arrange(desc(pocet)) %>%
-  slice(1:20)
+  slice(1:30)
 
 # nej poradi na kandi
 

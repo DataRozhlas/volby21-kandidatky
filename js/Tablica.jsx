@@ -61,6 +61,7 @@ const Tablica = ({ vybarveniKandidati, classes, isMobile, ciselniky }) => {
     {
       field: "fullName",
       headerName: "Celé jméno",
+      filterable: false,
       // valueGetter: getFullName,
       // valueFormatter: getFullName,
       renderCell: getFullName,

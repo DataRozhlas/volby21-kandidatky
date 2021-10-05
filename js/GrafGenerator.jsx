@@ -1,3 +1,4 @@
+import { forceCenter } from "d3-force";
 import React from "react";
 import d3 from "./d3Importer.js";
 
@@ -7,15 +8,14 @@ const GrafGenerator = (container, kulicky, isMobile) => {
   const height = containerRect.height;
   const width = containerRect.width;
   //console.log(container, containerRect, height, width);
-
   const simulation = d3
     .forceSimulation(nodes)
+    .force("charge", d3.forceManyBody().strength(110))
     .force(
-      "charge",
-      d3.forceManyBody().strength(isMobile ? -width / 100 : -width / 95)
+      "collision",
+      d3.forceCollide().radius((d) => ((d.pocet / 2) * Math.PI) / 4.5)
     )
-    .force("x", d3.forceX())
-    .force("y", d3.forceY());
+    .force("center", forceCenter());
 
   const svg = d3
     .select(container)
@@ -25,22 +25,48 @@ const GrafGenerator = (container, kulicky, isMobile) => {
 
   const node = svg
     .append("g")
-    .attr("stroke", "#fff")
-    .attr("stroke-width", isMobile ? 1 : 2)
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", isMobile ? width / 65 : width / 115)
-    .attr("fill", (d) => d.col);
+    .attr("r", (d) => ((d.pocet / 2) * Math.PI) / 5)
+    .attr("fill", "none");
 
   simulation.on("tick", () => {
     // update node positions
     node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
   });
 
+  nodes.forEach((n) => {
+    const subnodes = Array.from({ length: n.pocet }, (v, i) => {
+      const obj = { id: i };
+      return obj;
+    });
+
+    const subsimulation = d3
+      .forceSimulation(subnodes)
+      .force("charge", d3.forceManyBody().strength(5))
+      .force(
+        "collision",
+        d3.forceCollide().radius(isMobile ? width / 65 : width / 115)
+      )
+      .force("center", forceCenter(n.x, n.y));
+
+    const subnode = svg
+      .append("g")
+      .selectAll("circle")
+      .data(subnodes)
+      .join("circle")
+      .attr("r", isMobile ? width / 65 : width / 115)
+      .attr("fill", "#000");
+
+    subsimulation.on("tick", () => {
+      subnode.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+    });
+  });
+
   return {
     destroy: () => {
-      simulation.stop();
+      return simulation.stop();
     },
     nodes: () => {
       return svg.node();

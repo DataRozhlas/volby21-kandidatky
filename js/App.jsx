@@ -331,7 +331,7 @@ function App({ defaultFiltr }) {
   const [kandidati, setKandidati] = useState([]);
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
   const [vybarveniKandidati, setVybarveniKandidati] = useState([]);
-  const [vybarveneStrany, setVybarveneStrany] = useState([]);
+  const [vybraneStrany, setVybraneStrany] = useState([]);
 
   // na zacatku nacti data do ciselniku
   useEffect(async () => {
@@ -481,13 +481,13 @@ function App({ defaultFiltr }) {
                   vybraniKandidati={vybraniKandidati}
                   vybarveniKandidati={vybarveniKandidati}
                   isMobile={isMobile}
-                  vybarveneStrany={vybarveneStrany}
-                  setVybarveneStrany={setVybarveneStrany}
+                  vybraneStrany={vybraneStrany}
+                  setVybraneStrany={setVybraneStrany}
                 />
               )}
               <Container disableGutters>
                 <Legenda
-                  vybarveneStrany={vybarveneStrany}
+                  vybraneStrany={vybraneStrany}
                   vybranychKandidatu={vybraniKandidati.length}
                 />
               </Container>
@@ -526,13 +526,13 @@ function App({ defaultFiltr }) {
                   vybraniKandidati={vybraniKandidati}
                   vybarveniKandidati={vybarveniKandidati}
                   isMobile={isMobile}
-                  vybarveneStrany={vybarveneStrany}
-                  setVybarveneStrany={setVybarveneStrany}
+                  vybraneStrany={vybraneStrany}
+                  setVybraneStrany={setVybraneStrany}
                 />
               )}
               <Container disableGutters>
                 <Legenda
-                  vybarveneStrany={vybarveneStrany}
+                  vybraneStrany={vybraneStrany}
                   vybranychKandidatu={vybraniKandidati.length}
                 />
               </Container>

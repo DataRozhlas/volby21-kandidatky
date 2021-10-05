@@ -15,27 +15,19 @@ const useStyles = makeStyles({
 
 const Graf = ({
   vybraniKandidati,
-  vybarveniKandidati,
   isMobile,
-  vybarveneStrany,
-  setVybarveneStrany,
+  vybraneStrany,
+  setVybraneStrany,
 }) => {
   const classes = useStyles();
 
   const containerRef = useRef(null);
+  const meritko = vybraniKandidati.length > 856 ? 10 : 1;
 
-  const vyrobKulicky = (
-    vybraniKandidati,
-    vybarveniKandidati,
-    barvickyZdroj,
-    setVybarveneStrany
-  ) => {
-    const meritko = vybraniKandidati.length > 621 ? 10 : 1;
+  // kolik stran, jež mají definovanou barvičku, je mezi vybranými kandidáty a které to jsou?
+  const zjistiVybraneStrany = (vybraniKandidati, barvickyZdroj) => {
     const barvicky = barvickyZdroj.map((d) => Object.assign({}, d));
-    const zobrazCelkem = Math.floor(vybraniKandidati.length / meritko);
-    const vybarviCelkem = Math.floor(vybarveniKandidati.length / meritko);
-
-    const kandidatiPodleBarev = vybarveniKandidati
+    const strany = vybraniKandidati
       .reduce((acc, curr) => {
         const barvicka = acc.filter((b) => b.vstrana === curr.v)[0];
         const index = acc.indexOf(barvicka);
@@ -53,67 +45,60 @@ const Graf = ({
         return { ...s, pocet: pocetKulicek };
       });
 
-    setVybarveneStrany(kandidatiPodleBarev);
-    // vytvor barevne
-    let kulickyVybarvene = [];
-    let counter = 0;
-    for (let i = 0; i < kandidatiPodleBarev.length; i++) {
-      for (let j = 0; j < kandidatiPodleBarev[i].pocet; j++) {
-        kulickyVybarvene.push({
-          id: counter,
-          col: kandidatiPodleBarev[i].barva,
-        });
-        counter++;
-      }
-    }
-    //dopln modre
-    const doplnitModrych = vybarviCelkem - kulickyVybarvene.length;
-    for (let i = 0; i < doplnitModrych; i++) {
-      kulickyVybarvene.push({
-        id: counter,
-        col: "#349DB2",
-      });
-      counter++;
-    }
-    // dopln sede
-    const doplnitSedych = zobrazCelkem - kulickyVybarvene.length;
-    for (let i = 0; i < doplnitSedych; i++) {
-      kulickyVybarvene.push({
-        id: counter,
-        col: "#C8C8C8",
-      });
-      counter++;
-    }
-    //console.log(kulickyVybarvene);
-    return kulickyVybarvene;
-    // return Array.apply(null, Array(zobrazCelkem)).map(function (x, i) {
-    //   return { id: i, vyb: i < vybarviCelkem ? true : false, v: x.v };
-    // });
+    const pocetVybarvenych = strany.reduce((acc, curr) => {
+      return acc + curr.pocet;
+    }, 0);
+    const result =
+      vybraniKandidati.length > pocetVybarvenych && pocetVybarvenych > 0
+        ? [
+            ...strany,
+            {
+              nazev: "Ostatní",
+              barva: "#349DB2",
+              vstrana: 0,
+              pocet: (vybraniKandidati.length - pocetVybarvenych) / meritko,
+            },
+          ]
+        : vybraneStrany;
+    //console.log(result);
+    return result;
   };
+
+  // const vyrobKulicky = (vybraniKandidati, vybraneStrany) => {
+  //   const kulicekCelkem = Math.floor(vybraniKandidati.length / meritko);
+  //   const trsuCelkem = vybraneStrany.length;
+
+  //   const trsy = Array.from({ length: trsuCelkem }, (v, i) => {
+  //     id: i;
+  //   });
+
+  //   const kulicky = Array.from({ length: kulicekCelkem }, (v, i) => {
+  //     id: i;
+  //   });
+
+  //   retu\\\      \\                Arn [trsy, kulicky];
+  // };
 
   useEffect(() => {
     d3.selectAll("#graf").remove();
     let destroyFn;
-    const kulicky = vyrobKulicky(
-      vybraniKandidati,
-      vybarveniKandidati,
-      barvickyZdroj,
-      setVybarveneStrany
-    );
-    //console.log(kulicky);
-
+    let nodesFn;
+    // const kulicky = vyrobKulicky(vybraniKandidati, vybraneStrany);
+    const vybraneStrany = zjistiVybraneStrany(vybraniKandidati, barvickyZdroj);
+    setVybraneStrany(vybraneStrany);
     if (containerRef.current) {
-      //  console.log(kulicky);
-      const { destroy } = GrafGenerator(
+      const { destroy, nodes } = GrafGenerator(
         containerRef.current,
-        kulicky,
+        vybraneStrany,
         isMobile
       );
       destroyFn = destroy;
+      nodesFn = nodes;
       // console.log(destroyFn);
     }
+    //console.log(nodesFn());
     return destroyFn;
-  }, [vybraniKandidati, vybarveniKandidati]);
+  }, [vybraniKandidati]);
 
   return <div ref={containerRef} className={classes.grafContainer}></div>;
 };

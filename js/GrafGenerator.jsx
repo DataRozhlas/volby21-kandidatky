@@ -1,6 +1,7 @@
 import d3 from "./d3Importer.js";
 
 const GrafGenerator = (container, kulicky, isMobile) => {
+  //console.log(kulicky);
   const nodes = kulicky.map((d) => Object.assign({}, d));
   const containerRect = container.getBoundingClientRect();
   const height = containerRect.height;
@@ -12,9 +13,9 @@ const GrafGenerator = (container, kulicky, isMobile) => {
     .force("y", d3.forceY())
     .force(
       "collision",
-      d3.forceCollide().radius((d) => d.pocet / 3)
+      d3.forceCollide().radius((d) => d.pocet / 2.5)
     )
-    .force("charge", d3.forceManyBody().strength(-200).distanceMax(100))
+    .force("charge", d3.forceManyBody().strength(-200).distanceMax(120))
     .stop();
 
   const svg = d3

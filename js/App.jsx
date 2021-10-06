@@ -319,7 +319,6 @@ const vyfiltrujObarveneKandidaty = (vybraniKandidati, filtr) => {
 
 function App({ defaultFiltr }) {
   const classes = useStyles();
-
   const [ciselniky, setCiselniky] = useState({
     roky: [2006, 2010, 2013, 2017, 2021],
     kraje: [],
@@ -332,6 +331,7 @@ function App({ defaultFiltr }) {
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
   const [vybarveniKandidati, setVybarveniKandidati] = useState([]);
   const [vybraneStrany, setVybraneStrany] = useState([]);
+  // console.log(vybraniKandidati);
 
   // na zacatku nacti data do ciselniku
   useEffect(async () => {

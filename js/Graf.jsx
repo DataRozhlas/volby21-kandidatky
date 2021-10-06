@@ -44,12 +44,12 @@ const Graf = ({
         const pocetKulicek = Math.floor(s.pocet / meritko);
         return { ...s, pocet: pocetKulicek };
       });
-
+    console.log(barvicky);
     const pocetVybarvenych = strany.reduce((acc, curr) => {
       return acc + curr.pocet;
     }, 0);
     const result =
-      vybraniKandidati.length > pocetVybarvenych && pocetVybarvenych > 0
+      vybraniKandidati.length > pocetVybarvenych
         ? [
             ...strany,
             {
@@ -59,34 +59,22 @@ const Graf = ({
               pocet: (vybraniKandidati.length - pocetVybarvenych) / meritko,
             },
           ]
-        : vybraneStrany;
-    //console.log(result);
+        : strany;
+    // console.log(result);
     return result;
   };
 
-  // const vyrobKulicky = (vybraniKandidati, vybraneStrany) => {
-  //   const kulicekCelkem = Math.floor(vybraniKandidati.length / meritko);
-  //   const trsuCelkem = vybraneStrany.length;
-
-  //   const trsy = Array.from({ length: trsuCelkem }, (v, i) => {
-  //     id: i;
-  //   });
-
-  //   const kulicky = Array.from({ length: kulicekCelkem }, (v, i) => {
-  //     id: i;
-  //   });
-
-  //   retu\\\      \\                Arn [trsy, kulicky];
-  // };
+  useEffect(() => {
+    const kulicky = zjistiVybraneStrany(vybraniKandidati, barvickyZdroj);
+    setVybraneStrany(kulicky);
+  }, [vybraniKandidati]);
 
   useEffect(() => {
     d3.selectAll("#graf").remove();
     let destroyFn;
     let nodesFn;
-    // const kulicky = vyrobKulicky(vybraniKandidati, vybraneStrany);
-    const vybraneStrany = zjistiVybraneStrany(vybraniKandidati, barvickyZdroj);
-    setVybraneStrany(vybraneStrany);
     if (containerRef.current) {
+      console.log(vybraneStrany);
       const { destroy, nodes } = GrafGenerator(
         containerRef.current,
         vybraneStrany,
@@ -98,7 +86,9 @@ const Graf = ({
     }
     //console.log(nodesFn());
     return destroyFn;
-  }, [vybraniKandidati]);
+  }, [vybraneStrany]);
+
+  // const kulicky = vyrobKulicky(vybraniKandidati, vybraneStrany);}, [vybraneStrany])
 
   return <div ref={containerRef} className={classes.grafContainer}></div>;
 };

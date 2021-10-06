@@ -44,8 +44,9 @@ const GrafGenerator = (container, kulicky, isMobile) => {
   node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
 
   nodes.forEach((n) => {
+    console.log(n);
     const subnodes = Array.from({ length: n.pocet }, (v, i) => {
-      const obj = { id: i };
+      const obj = { id: i, barva: n.barva };
       return obj;
     });
 
@@ -63,7 +64,7 @@ const GrafGenerator = (container, kulicky, isMobile) => {
       .data(subnodes)
       .join("circle")
       .attr("r", 3)
-      .attr("fill", "#000");
+      .attr("fill", (d) => d.barva);
 
     subsimulation.on("tick", () => {
       subnode.attr("cx", (d) => d.x).attr("cy", (d) => d.y);

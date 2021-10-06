@@ -10,12 +10,18 @@ const GrafGenerator = (container, kulicky, isMobile) => {
   const simulation = d3
     .forceSimulation(nodes)
     .force("x", d3.forceX())
-    .force("y", d3.forceY())
+    .force("y", d3.forceY().strength(0.02))
     .force(
       "collision",
-      d3.forceCollide().radius((d) => d.pocet / 2.5)
+      d3
+        .forceCollide()
+        .radius(
+          (d) =>
+            Math.sqrt(d.pocet * 100) -
+            (d.pocet < 150 ? d.pocet / 2 : d.pocet / 6)
+        )
     )
-    .force("charge", d3.forceManyBody().strength(-200).distanceMax(120))
+    .force("charge", d3.forceManyBody().strength(2)) //.distanceMax(200)) //-200 100
     .stop();
 
   const svg = d3

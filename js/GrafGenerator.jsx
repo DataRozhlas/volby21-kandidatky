@@ -1,5 +1,3 @@
-import { forceCenter } from "d3-force";
-import React from "react";
 import d3 from "./d3Importer.js";
 
 const GrafGenerator = (container, kulicky, isMobile) => {
@@ -10,12 +8,13 @@ const GrafGenerator = (container, kulicky, isMobile) => {
   //console.log(container, containerRect, height, width);
   const simulation = d3
     .forceSimulation(nodes)
-    .force("charge", d3.forceManyBody().distanceMax(0))
+    .force("x", d3.forceX())
+    .force("y", d3.forceY())
     .force(
       "collision",
-      d3.forceCollide().radius((d) => ((d.pocet / 2) * Math.PI) / 2.5)
+      d3.forceCollide().radius((d) => d.pocet / 3)
     )
-    .force("center", forceCenter())
+    .force("charge", d3.forceManyBody().strength(-200).distanceMax(100))
     .stop();
 
   const svg = d3
@@ -45,10 +44,9 @@ const GrafGenerator = (container, kulicky, isMobile) => {
 
     const subsimulation = d3
       .forceSimulation(subnodes)
-      .force("charge", d3.forceManyBody().strength(-5))
-      .force("collision", d3.forceCollide().radius(3))
       .force("x", d3.forceX(n.x))
-      .force("y", d3.forceY(n.y));
+      .force("y", d3.forceY(n.y))
+      .force("charge", d3.forceManyBody().strength(-3));
 
     //      .force("center", forceCenter(n.x, n.y));
 

@@ -10,12 +10,13 @@ const GrafGenerator = (container, kulicky, isMobile) => {
   //console.log(container, containerRect, height, width);
   const simulation = d3
     .forceSimulation(nodes)
-    .force("charge", d3.forceManyBody().strength(110))
+    .force("charge", d3.forceManyBody().distanceMax(0))
     .force(
       "collision",
-      d3.forceCollide().radius((d) => ((d.pocet / 2) * Math.PI) / 4.5)
+      d3.forceCollide().radius((d) => ((d.pocet / 2) * Math.PI) / 2.5)
     )
-    .force("center", forceCenter());
+    .force("center", forceCenter())
+    .stop();
 
   const svg = d3
     .select(container)
@@ -31,10 +32,10 @@ const GrafGenerator = (container, kulicky, isMobile) => {
     .attr("r", (d) => ((d.pocet / 2) * Math.PI) / 5)
     .attr("fill", "none");
 
-  simulation.on("tick", () => {
-    // update node positions
-    node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
-  });
+  simulation.tick(300);
+
+  // update node positions
+  node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
 
   nodes.forEach((n) => {
     const subnodes = Array.from({ length: n.pocet }, (v, i) => {
@@ -44,26 +45,25 @@ const GrafGenerator = (container, kulicky, isMobile) => {
 
     const subsimulation = d3
       .forceSimulation(subnodes)
-      .force("charge", d3.forceManyBody().strength(5))
-      .force(
-        "collision",
-        d3.forceCollide().radius(isMobile ? width / 65 : width / 115)
-      )
-      .force("center", forceCenter(n.x, n.y));
+      .force("charge", d3.forceManyBody().strength(-5))
+      .force("collision", d3.forceCollide().radius(3))
+      .force("x", d3.forceX(n.x))
+      .force("y", d3.forceY(n.y));
+
+    //      .force("center", forceCenter(n.x, n.y));
 
     const subnode = svg
       .append("g")
       .selectAll("circle")
       .data(subnodes)
       .join("circle")
-      .attr("r", isMobile ? width / 65 : width / 115)
+      .attr("r", 3)
       .attr("fill", "#000");
 
     subsimulation.on("tick", () => {
       subnode.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
     });
   });
-
   return {
     destroy: () => {
       return simulation.stop();

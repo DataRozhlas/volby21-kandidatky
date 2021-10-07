@@ -105,10 +105,12 @@ const Graf = ({
     });
 
     //ostatni
-    vybarvenych[vybarvenych.length - 1] = Math.floor(
-      vybarveniKandidati.length / meritko -
-        vybarvenych.reduce((acc, curr) => acc + curr, 0)
-    );
+    if (vybarvenych.length > 1 || vybarvenych[0] === 0) {
+      vybarvenych[vybarvenych.length - 1] = Math.floor(
+        vybarveniKandidati.length / meritko -
+          vybarvenych.reduce((acc, curr) => acc + curr, 0)
+      );
+    }
 
     //odbarvuj
     vybraneStrany.forEach((s, i) => {
@@ -124,11 +126,12 @@ const Graf = ({
 
       for (i = 0; i < odbarvit; i++) {
         kandidatikOdbarveniArray[i].style.fill = "#C8C8C8";
+        console.log(i);
       }
-      console.log(odbarvit);
+      console.log(odbarvit, s);
     });
 
-    console.log(vybarvenych, vybraneStrany);
+    console.log(vybarvenych);
   }, [vybraneStrany, vybarveniKandidati]);
 
   // const kulicky = vyrobKulicky(vybraniKandidati, vybraneStrany);}, [vybraneStrany])

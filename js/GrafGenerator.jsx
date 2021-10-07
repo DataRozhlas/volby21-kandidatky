@@ -61,7 +61,7 @@ const GrafGenerator = (container, kulicky, isMobile) => {
       .selectAll("circle")
       .data(subnodes)
       .join("circle")
-      .attr("r", 3)
+      .attr("r", 4)
       .attr("class", `kand ${n.vstrana}`)
       .attr("fill", (d) => d.barva);
 

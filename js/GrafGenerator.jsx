@@ -44,7 +44,7 @@ const GrafGenerator = (container, kulicky, isMobile) => {
   node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
 
   nodes.forEach((n) => {
-    console.log(n);
+    //console.log(n);
     const subnodes = Array.from({ length: n.pocet }, (v, i) => {
       const obj = { id: i, barva: n.barva };
       return obj;
@@ -56,14 +56,13 @@ const GrafGenerator = (container, kulicky, isMobile) => {
       .force("y", d3.forceY(n.y))
       .force("charge", d3.forceManyBody().strength(-3));
 
-    //      .force("center", forceCenter(n.x, n.y));
-
     const subnode = svg
       .append("g")
       .selectAll("circle")
       .data(subnodes)
       .join("circle")
       .attr("r", 3)
+      .attr("class", `kand ${n.vstrana}`)
       .attr("fill", (d) => d.barva);
 
     subsimulation.on("tick", () => {

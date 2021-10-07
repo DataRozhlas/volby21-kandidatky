@@ -471,7 +471,7 @@ function App({ defaultFiltr }) {
                 </Typography>
                 <Typography align="center">
                   <span style={{ color: "#C8C8C8" }}>{"\u25CF\xa0"}</span>
-                  {vybraniKandidati.length > 621
+                  {vybraniKandidati.length > 856
                     ? "1 kulička = 10 kandidátů"
                     : "1 kulička = 1 kandidát"}
                 </Typography>
@@ -516,7 +516,7 @@ function App({ defaultFiltr }) {
                 </Typography>
                 <Typography align="center">
                   <span style={{ color: "#C8C8C8" }}>{"\u25CF\xa0"}</span>
-                  {vybraniKandidati.length > 621
+                  {vybraniKandidati.length > 856
                     ? "1 kulička = 10 kandidátů"
                     : "1 kulička = 1 kandidát"}
                 </Typography>

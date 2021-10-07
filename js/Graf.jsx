@@ -15,6 +15,7 @@ const useStyles = makeStyles({
 
 const Graf = ({
   vybraniKandidati,
+  vybarveniKandidati,
   isMobile,
   vybraneStrany,
   setVybraneStrany,
@@ -44,19 +45,21 @@ const Graf = ({
         const pocetKulicek = Math.floor(s.pocet / meritko);
         return { ...s, pocet: pocetKulicek };
       });
-    console.log(barvicky);
+    //console.log(barvicky);
     const pocetVybarvenych = strany.reduce((acc, curr) => {
       return acc + curr.pocet;
     }, 0);
     const result =
-      vybraniKandidati.length > pocetVybarvenych
+      vybraniKandidati.length / meritko > pocetVybarvenych
         ? [
             ...strany,
             {
               nazev: "Ostatní",
               barva: "#349DB2",
               vstrana: 0,
-              pocet: (vybraniKandidati.length - pocetVybarvenych) / meritko,
+              pocet: Math.floor(
+                vybraniKandidati.length / meritko - pocetVybarvenych
+              ),
             },
           ]
         : strany;
@@ -74,7 +77,7 @@ const Graf = ({
     let destroyFn;
     let nodesFn;
     if (containerRef.current) {
-      console.log(vybraneStrany);
+      //console.log(vybraneStrany);
       const { destroy, nodes } = GrafGenerator(
         containerRef.current,
         vybraneStrany,
@@ -87,6 +90,46 @@ const Graf = ({
     //console.log(nodesFn());
     return destroyFn;
   }, [vybraneStrany]);
+
+  useEffect(() => {
+    //const zobrazeniKandidati = d3.selectAll(".kand")._groups;
+
+    // pro každou stranu zjisti, kolik z vybraných nemá být vybarveno
+
+    const vybarvenych = vybraneStrany.map((s) => {
+      if (s.vstrana !== 0) {
+        return Math.floor(
+          vybarveniKandidati.filter((k) => k.v === s.vstrana).length / meritko
+        );
+      } else return 0;
+    });
+
+    //ostatni
+    vybarvenych[vybarvenych.length - 1] = Math.floor(
+      vybarveniKandidati.length / meritko -
+        vybarvenych.reduce((acc, curr) => acc + curr, 0)
+    );
+
+    //odbarvuj
+    vybraneStrany.forEach((s, i) => {
+      const odbarvit = s.pocet - vybarvenych[i];
+      const kandidatikOdbarveni = document.getElementsByClassName(
+        `kand ${s.vstrana}`
+      );
+      const kandidatikOdbarveniArray = Array.from(kandidatikOdbarveni);
+      kandidatikOdbarveniArray.sort((a, b) => a.__data__.y - b.__data__.y);
+      kandidatikOdbarveniArray.forEach((k) => {
+        k.style.fill = s.barva;
+      });
+
+      for (i = 0; i < odbarvit; i++) {
+        kandidatikOdbarveniArray[i].style.fill = "#C8C8C8";
+      }
+      console.log(odbarvit);
+    });
+
+    console.log(vybarvenych, vybraneStrany);
+  }, [vybraneStrany, vybarveniKandidati]);
 
   // const kulicky = vyrobKulicky(vybraniKandidati, vybraneStrany);}, [vybraneStrany])
 

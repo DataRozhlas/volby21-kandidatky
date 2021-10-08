@@ -273,9 +273,9 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4877	14	1			Petr	Karas	30	M	obchodník HT VISUAL	178	178	0	Český Těšín	24069
 4526	14	1	RNDr.		Radoslav	Štědroň	51	M	podnikový ekolog	338	159	0	Ostrava	284982
 556	1	2	MUDr.		Marián	Hošek	55	M	náměstek ministra MPSV ČR	1	1	0	Praha	1335084
-67	1	2	PhDr.		Kateřina	Jacques	35	F	řed. sekce pro lid.p. ÚVČR	5	5	2	Praha	1335084
+67	1	2	PhDr.		Kateřina	Jacques	35	F	řed. sekce pro lid.p. ÚVČR	5	5	1	Praha	1335084
 197	1	2	Bc.		Miroslav	Svoboda	44	M	poslanec	7	7	1	Praha	1335084
-125	1	2	Ing.		Jiří	Dolejš	45	M	ekonom, poslanec PS PČR	47	47	2	Praha	1335084
+125	1	2	Ing.		Jiří	Dolejš	45	M	ekonom, poslanec PS PČR	47	47	1	Praha	1335084
 460	1	2	Ing.		Jan	Bürgermeister	58	M	náměstek primátora hl.m. Prahy	53	53	1	Praha	1335084
 366	1	2			Julius	Moravec	44	M	finan.poradce a nezáv.publ.	55	55	0	Praha	1335084
 101	1	2			Josef	Veselka	49	M	podnikatel	77	77	0	Jaroměř	12324
@@ -706,7 +706,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3069	10	3			Jaroslava	Kloboučková	43	F	učitelka	171	171	0	Jakubov u Mor.Buděj.	648
 3248	10	3			Běla	Vávrovská	43	F	obchodní zástupce	172	172	0	Třebíč	35107
 3036	10	3			Zdeněk	Šumpich	37	M	strojvedoucí	338	157	0	Číchov	227
-3309	11	3			Ladislav	Šustr	62	M	poslanec PS PČR	1	1	2	Telnice	1628
+3309	11	3			Ladislav	Šustr	62	M	poslanec PS PČR	1	1	1	Telnice	1628
 3488	11	3	Ing.		Jiří	Denk	39	M	podnikatel	5	5	0	Brno	382405
 3678	11	3	Mgr.		Michal	Hašek	30	M	poslanec	7	7	1	Drásov	2002
 3574	11	3	MUDr.		Vojtěch	Adam	55	M	starosta	47	47	0	Ivančice	9854
@@ -780,7 +780,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4541	14	3			Maxmilián	Šimek	43	M	podnikatel	338	159	0	Ostrava	284982
 202	1	4	PhDr.		Markéta	Koronthályová	54	F	klasická filoložka	1	1	0	Praha	1335084
 25	1	4			Jaroslav	Hutka	59	M	písničkář	5	5	0	Praha	1335084
-52	1	4	JUDr.		Stanislav	Křeček	68	M	poslanec	7	7	2	Praha	1335084
+52	1	4	JUDr.		Stanislav	Křeček	68	M	poslanec	7	7	1	Praha	1335084
 530	1	4	Mgr.		Marta	Semelová	46	F	učitelka	47	47	0	Praha	1335084
 284	1	4	Ing.		František	Laudát	46	M	ředitel Obecního d. hl.m.Prahy	53	53	1	Praha	1335084
 35	1	4	MUDr.		Vít	Kubias	56	M	rentgenolog	55	55	0	Praha	1335084
@@ -884,7 +884,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2239	7	4	Mgr.		Jan	Korytář	34	M	ekolog	5	5	0	Liberec	104261
 2355	7	4			Ilona	Lišková	46	F	technik	7	7	0	Liberec	104261
 2398	7	4	Doc. PhDr.	CSc.	Alena	Svobodová	58	F	středoškolská učitelka	47	47	0	Turnov	14391
-2350	7	4	Bc.		Juraj	Raninec	38	M	poradce hejtmana, asist.senát.	53	53	2	Česká Lípa	37361
+2350	7	4	Bc.		Juraj	Raninec	38	M	poradce hejtmana, asist.senát.	53	53	1	Česká Lípa	37361
 2345	7	4			Martin	Štěpánek	41	M	soukromý podnikatel	55	55	0	Vysoké nad Jizerou	1289
 2267	7	4			Soňa	Novotná	37	F	kuchařka	79	79	0	Lučany nad Nisou	1904
 2283	7	4			Martin	Kořínek	27	M	podnikatel	88	88	0	Liberec	104261

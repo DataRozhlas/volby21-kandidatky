@@ -267,7 +267,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 26	1	2	Bc.		Andrea	Kailová	29	F	podnikatel	724	724	0	Praha	1335084
 866	2	2			Karel	Kroupa	50	M	místostarosta města Vlašim	1	1	0	Vlašim	11496
 980	2	2	Ing.	CSc.	Jiří	Janata	46	M	vědecký prac., místostarosta	5	5	0	Psáry	4154
-1090	2	2	MUDr.		David	Rath	44	M	lékař	7	7	2	Hostivice	8917
+1090	2	2	MUDr.		David	Rath	44	M	lékař	7	7	1	Hostivice	8917
 847	2	2			Ljulin	Christov	68	M	podnikatel	11	11	0	Kosmonosy	5176
 991	2	2			Milan	Paumer	79	M	účas.III. odboje,taxi,živnost.	24	24	0	Poděbrady	14469
 611	2	2	Bc.		Miloslava	Vostrá	45	F	poslankyně PS PČR	47	47	1	Braškov	1098
@@ -492,7 +492,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 240	1	3	Ing.		Miroslav	Svoboda	48	M	poslanec	7	7	0	Praha	1335084
 88	1	3	MUDr.		Jan	Fořt	75	M	lékař	24	24	0	Praha	1335084
 363	1	3	Ing.	CSc.	František	Beneš	65	M	zeměměřič	47	47	0	Praha	1335084
-531	1	3	Bc.		Jana	Černochová	36	F	starostka MČ Praha 2	53	53	2	Praha	1335084
+531	1	3	Bc.		Jana	Černochová	36	F	starostka MČ Praha 2	53	53	1	Praha	1335084
 535	1	3	Mgr. Bc.		Petr	Krátký	35	M	právník, manažer	55	55	0	Praha	1335084
 571	1	3			Jiří	Wolf	58	M	spisovatel, vězněn jako polit.	98	98	0	Praha	1335084
 530	1	3			Ivona	Novomestská	27	F	PR konzultantka	100	100	0	Praha	1335084
@@ -540,7 +540,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1184	3	3			Ladislav	Loveček	67	M	živnostník - důchodce	717	717	0	České Budějovice	94229
 1351	3	3			Bohumil	Rod	44	M	starosta obce	718	718	0	Jarošov nad Nežárkou	1088
 1353	3	3	Bc.		Ingrid	Romancová	23	F	stud. přírodovědecké fakulty	720	720	0	Horní Planá	2079
-1227	3	3	Mgr.	Ph.D.	Zdeněk	Bezecný	38	M	vysokoškolský učitel, historik	721	721	2	České Budějovice	94229
+1227	3	3	Mgr.	Ph.D.	Zdeněk	Bezecný	38	M	vysokoškolský učitel, historik	721	721	1	České Budějovice	94229
 1283	3	3			Kateřina	Kozárová	26	F	úřednice	723	723	0	Vimperk	7400
 1257	3	3	JUDr.		Bohumil	Bezemek	57	M	policista v.v.	724	724	0	České Budějovice	94229
 1536	4	3			Jiří	Jukl	60	M	starosta města Hartmanice	1	1	0	Hartmanice	944
@@ -936,7 +936,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4270	13	4	Ing.		Antonín	Seďa	49	M	poslanec PS PČR	7	7	1	Uherské Hradiště	25001
 4530	13	4			Daniel	Masařík	33	M	obchodní zástupce	24	24	0	Přerov	42451
 4251	13	4	Ing.		Vítězslav	Lapčík	45	M	jednatel zeměděl. společnosti	47	47	0	Kněžpole	1110
-4497	13	4	Mgr.		Tomáš	Úlehla	45	M	poslanec PSP ČR	53	53	2	Zlín	74478
+4497	13	4	Mgr.		Tomáš	Úlehla	45	M	poslanec PSP ČR	53	53	1	Zlín	74478
 4256	13	4			Robert	Filgas	62	M	předseda OV ČSTV Vsetín	83	83	0	Lužná	616
 4435	13	4			Pavel	Gottwald	54	M	zámečník	98	98	0	Napajedla	7127
 4432	13	4			Renata	Lišková	39	F	pečovatelka	137	137	0	Martinice	804

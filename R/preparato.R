@@ -17,7 +17,10 @@ data%>%select(OBYVKAT)%>%as.factor()%>%print()
 
 roky <- c(2006, 2010, 2013, 2017, 2021)
 
-data$MANDAT2 <- ifelse((data$PORADIMAND < data$PORCISLO & data$MANDAT > 0), 2, data$MANDAT)
+data$MANDAT2 <- ifelse(((data$PORCISLO > data$POCMANDKRAJ) & data$MANDAT > 0), 2, data$MANDAT)
+
+data %>% filter ( MANDAT2 ==2) %>% filter(ROK==2017)
+
 
 for (i in roky) {
   data %>%

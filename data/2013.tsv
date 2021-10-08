@@ -260,7 +260,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 391	1	2	PhDr.		Daniela	Rázková	51	F	předsedkyně o.s. Polovina nebe	1	1	0	Praha	1335084
 402	1	2	Mgr.		Kateřina	Jechová	51	F	zástupkyně starostky MČ	5	5	0	Praha	1335084
 85	1	2	JUDr.		Štěpán	Stupčuk	37	M	místostarosta Prahy 6	7	7	1	Praha	1335084
-571	1	2	Ing.		Jiří	Dolejš	52	M	ekonom	47	47	2	Praha	1335084
+571	1	2	Ing.		Jiří	Dolejš	52	M	ekonom	47	47	1	Praha	1335084
 475	1	2	doc. MUDr.	CSc.	Bohuslav	Svoboda	69	M	lékař, vysokoškolský pedagog	53	53	1	Praha	1335084
 573	1	2	Ing. arch.		Jan	Bárta	71	M	architekt	55	55	0	Úholičky	811
 265	1	2			Jiří	Benýšek	23	M	student	98	98	0	Praha	1335084
@@ -281,7 +281,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1246	2	2	Mgr.		Jana	Horáková	35	F	sociální pracovnice, pedagožka	5	5	0	Mladá Boleslav	44506
 1135	2	2	Ing.		Milan	Urban	55	M	hutní inženýr	7	7	1	Čáslav	10350
 773	2	2	Ing.		Miloslava	Vostrá	48	F	ekonomka	47	47	1	Braškov	1098
-995	2	2	Ing.		Adolf	Beznoska	51	M	náměstek primátora, pedagog	53	53	2	Mladá Boleslav	44506
+995	2	2	Ing.		Adolf	Beznoska	51	M	náměstek primátora, pedagog	53	53	1	Mladá Boleslav	44506
 1191	2	2			Svatopluk	Novotný	37	M	podnikatel ve stavebnictví	55	55	0	Poříčany	1569
 1000	2	2			Jiřina	Černá	70	F	důchodkyně	132	132	0	Velké Popovice	3048
 1120	2	2	MUDr.		Jiří	Somberg	52	M	chirurg, vedoucí lékař	137	137	0	Kosmonosy	5176
@@ -309,7 +309,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1602	3	2			Pavel	Boček	49	M	projektant	714	714	0	Týn nad Vltavou	7887
 1472	3	2	Ing.		Milan	Kolísek	51	M	majitel kamenické dílny	716	716	0	Písek	30379
 1351	3	2	Bc.		Tomáš	Ďurčo	24	M	student ČVUT	720	720	0	Deštná	763
-1372	3	2	prof. RNDr.	Ph.D.	František	Vácha	47	M	děkan Přírodověd. fakulty JU	721	721	2	České Budějovice	94229
+1372	3	2	prof. RNDr.	Ph.D.	František	Vácha	47	M	děkan Přírodověd. fakulty JU	721	721	1	České Budějovice	94229
 1570	3	2	Mgr.		František	Pohanka	57	M	advokát	724	724	0	České Budějovice	94229
 1512	3	2			Zdeněk	Pachner	29	M	strojved. papírenských strojů	764	764	0	České Budějovice	94229
 1532	3	2	Ing.	Ph.D.	Roman	Kubíček	50	M	výrobní manažer	768	768	1	České Budějovice	94229
@@ -327,7 +327,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1946	4	2	Ing.		Jan	Zavadil	33	M	majitel sportovního centra	714	714	0	Plzeň	175219
 1665	4	2	Ing.		Jiří	Jindra	47	M	živnostník - informatik	716	716	0	Plzeň	175219
 1752	4	2	Bc.		Petr	Kopač	25	M	programátor	720	720	0	Železná Ruda	1631
-1987	4	2	Ing.		Jaroslav	Lobkowicz	71	M	podnikatel v zemědělství	721	721	2	Plzeň	175219
+1987	4	2	Ing.		Jaroslav	Lobkowicz	71	M	podnikatel v zemědělství	721	721	1	Plzeň	175219
 1931	4	2	Mgr.		Eduard	Zeman	65	M	pedagog, bývalý ministr	724	724	0	České Budějovice	94229
 1927	4	2	Ing.		Jiří	Janoušek	50	M	správce lesů	764	764	0	Měcholupy	232
 1787	4	2	Ing.		Jan	Volný	54	M	obchodní ředitel	768	768	1	Chodová Planá	1879
@@ -402,7 +402,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3297	8	2	Mgr.		Josef	Cogan	40	M	právník, místopředs. rady MAS	721	721	0	Nová Paka	9044
 3120	8	2	Ing. genmjr. v. v.		Miroslav	Štěpán	63	M	nám.min.vnit. a býv.g.ř. HSZČR	724	724	0	Trnov	755
 3017	8	2			Radek	Zmarzlák	47	M	OSVČ	764	764	0	Hradec Králové	92683
-3243	8	2	MUDr.		Pavel	Plzák	53	M	lékař	768	768	2	Trutnov	29958
+3243	8	2	MUDr.		Pavel	Plzák	53	M	lékař	768	768	1	Trutnov	29958
 3075	8	2	Ing. Bc.		Olga	Kramářová	45	F	ved. oddělení správního úřadu	771	771	0	Hradec Králové	92683
 3181	8	2	Ing.		Vítězslav	Janků	39	M	manažer	792	792	0	Černilov	2407
 3366	9	2	MUDr.	Ph.D.	Martin	Šácha	45	M	lékař, chirurg	1	1	0	Starý Mateřov	781
@@ -443,7 +443,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3845	10	2	Mgr.		Jiří	Nekovář	53	M	hasič	792	792	0	Žďár nad Sázavou	20485
 4143	11	2	Ing. arch.		Jaroslav	Klaška	51	M	starosta města Šlapanice,arch.	1	1	1	Šlapanice	7703
 4358	11	2	RNDr.		Mojmír	Vlašín	58	M	ekolog, VŠ učitel	5	5	0	Brno	382405
-4212	11	2	JUDr.		Michal	Hašek	37	M	hejtman Jihomoravského kraje	7	7	2	Brno	382405
+4212	11	2	JUDr.		Michal	Hašek	37	M	hejtman Jihomoravského kraje	7	7	1	Brno	382405
 4065	11	2	doc. PhDr.	CSc.	Miroslav	Grebeníček	66	M	historik	47	47	1	Mikulov	7479
 4116	11	2	JUDr.	Ph.D.	Pavel	Blažek	44	M	právník	53	53	1	Brno	382405
 4260	11	2	Mgr.		Petr	Šmacho	39	M	starožitník-soudní znalec	55	55	0	Brno	382405
@@ -453,7 +453,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4456	11	2	Ing.		Jan	Hlaváček	37	M	auditor	714	714	0	Brno	382405
 4419	11	2	Ing.		Radomír	Koval	52	M	jednatel společnosti	716	716	0	Slavkov u Brna	7045
 3965	11	2			Patrik	Doležal	41	M	stážista u senátora	720	720	0	Brno	382405
-4176	11	2	doc. RNDr.	Ph.D., MBA	Anna	Putnová	53	F	vysokoškolská učitelka VUT	721	721	2	Brno	382405
+4176	11	2	doc. RNDr.	Ph.D., MBA	Anna	Putnová	53	F	vysokoškolská učitelka VUT	721	721	1	Brno	382405
 4223	11	2	prim. MUDr.	Ph.D.	Martin	Pavlík	43	M	lékařský ředitel	724	724	0	Brno	382405
 4021	11	2	Mgr.		Petr	Michek	39	M	právník	764	764	0	Praha	1335084
 4240	11	2	prof. MUDr.	CSc.	Rostislav	Vyzula	60	M	přednosta kliniky MOÚ Brno	768	768	1	Brno	382405
@@ -461,7 +461,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4499	11	2			Jaroslav	Novák	46	M	spisovatel	792	792	0	Pohledy	308
 4600	12	2	RNDr.		Ladislav	Šnevajs	51	M	náměstek primátora Olomouce	1	1	0	Olomouc	100514
 4745	12	2	Ing.		Edita	Hrstková	49	F	ekonomka stavební společnosti	5	5	0	Olomouc	100514
-4856	12	2	MUDr.		Pavel	Holík	56	M	lékař	7	7	2	Prostějov	43381
+4856	12	2	MUDr.		Pavel	Holík	56	M	lékař	7	7	1	Prostějov	43381
 4669	12	2	RSDr.		Josef	Nekl	60	M	ekonom	47	47	1	Přerov	42451
 4548	12	2			Michal	Zácha	35	M	náměstek primátora	53	53	0	Přerov	42451
 4674	12	2	Mgr.		Alena	Hlaváčová	48	F	učitelka	55	55	0	Hranice	17818
@@ -510,7 +510,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 5746	14	2	Ing.		Ludmila	Bubeníková	58	F	starostka obce Velká Polom	721	721	0	Velká Polom	2065
 5370	14	2	Ing.		Martin	Schubert	43	M	ekonomický a daňový poradce	724	724	0	Bohumín	20308
 5322	14	2	Mgr.		Věra	Lasáková	60	F	ředitelka ZŠ Dolní Lhota	764	764	0	Dolní Lhota	1490
-5817	14	2			Jana	Lorencová	73	F	novinářka	768	768	2	Ostrava	284982
+5817	14	2			Jana	Lorencová	73	F	novinářka	768	768	1	Ostrava	284982
 5883	14	2	Ing.		Peter	Harvánek	39	M	manažer	771	771	0	Ostrava	284982
 5843	14	2			Olga	Havlová	60	F	referent	792	792	1	Jindřichov	1216
 635	1	3			Jan	Wolf	41	M	obch.ředitel, starosta Orla	1	1	0	Praha	1335084
@@ -554,7 +554,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 755	2	3			Georgi	Bidenko	35	M	ředitel ekologické firmy	792	792	0	Tuchoměřice	1586
 1325	3	3	Bc.		Šimon	Heller	25	M	učitel,stud. akt. proti komun.	1	1	0	České Budějovice	94229
 1586	3	3	Mgr.		Jiří	Guth Jarkovský	48	M	ekolog	5	5	0	Borovany	210
-1469	3	3	Mgr.		Vítězslav	Jandák	66	M	herec	7	7	2	Chlum u Třeboně	1918
+1469	3	3	Mgr.		Vítězslav	Jandák	66	M	herec	7	7	1	Chlum u Třeboně	1918
 1571	3	3			Alena	Nohavová	53	F	učitelka	47	47	2	Třeboň	8150
 1425	3	3	doc. MUDr.	CSc.	Jaroslav	Zvěřina	70	M	psychiatr, sexuolog	53	53	0	Tábor	34119
 1504	3	3			Vladimír	Krejčí	66	M	řídící letového provozu	55	55	0	Praha	1335084
@@ -696,7 +696,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3923	10	3			Jan	Sobotka	35	M	podnikatel	768	768	0	Žďár nad Sázavou	20485
 3713	10	3	Ing.		Tomáš	Blažek	46	M	vedoucí pracovník občan. sdr.	771	771	0	Nové Město na Moravě	10006
 3830	10	3	Ing.		Vladimír	Havlíček	62	M	důchodce	792	792	0	Jihlava	51125
-4171	11	3	Ing.		Josef	Uhlík	50	M	starosta obce Ratíškovice	1	1	2	Ratíškovice	4001
+4171	11	3	Ing.		Josef	Uhlík	50	M	starosta obce Ratíškovice	1	1	1	Ratíškovice	4001
 4276	11	3	Ing.		Jana	Drápalová	50	F	starostka MČ Brno-N.Lístkovec	5	5	0	Brno	382405
 4011	11	3	JUDr.		Jeroným	Tejc	36	M	advokát	7	7	1	Brno	382405
 4208	11	3	Mgr.		Věra	Křivánková	51	F	učitelka	47	47	0	Slavkov u Brna	7045
@@ -875,7 +875,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2674	6	4	Bc.		Irena	Skálová	35	F	oční optik,optometrista,zastup	721	721	0	Ústí nad Labem	91982
 2554	6	4	PhDr. Mgr.		Leoš	Moravec	34	M	ředitel DD v Lipové,zastupitel	724	724	0	Varnsdorf	15117
 2638	6	4			František	Štván	57	M	bankovní policista ČNB	764	764	0	Ústí nad Labem	91982
-2442	6	4	Ing.		Vlastimil	Vozka	59	M	primátor	768	768	2	Most	65341
+2442	6	4	Ing.		Vlastimil	Vozka	59	M	primátor	768	768	1	Most	65341
 2598	6	4	Ing.		Jiří	Tyšer	56	M	koordinátor projektů EU-ÚP ČR	771	771	0	Most	65341
 2652	6	4	PaedDr.		Marie	Kindermannová	65	F	speciální pedagog - etoped	792	792	0	Chomutov	48349
 2960	7	4			Jan	Dušánek	29	M	konstruktér	1	1	0	Česká Lípa	37361
@@ -1006,7 +1006,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 5707	14	4	Ing.		Petr	Kudela	44	M	zástupce ředitele televize NOE	1	1	2	Ostrava	284982
 5694	14	4	Mgr.		Martina	Wolna	39	F	ředitelka knihovny	5	5	0	Třinec	34778
 5617	14	4	Ing.		Pavlína	Nytrová	45	F	ekonom	7	7	1	Frýdek-Místek	55006
-5820	14	4	Ing.		Kateřina	Konečná	32	F	ekonomka	47	47	2	Nový Jičín	23151
+5820	14	4	Ing.		Kateřina	Konečná	32	F	ekonomka	47	47	1	Nový Jičín	23151
 5852	14	4			Jakub	Janda	35	M	reprezentant skoky na lyžích	53	53	0	Frenštát pod Radhoštěm	10766
 5529	14	4	Mgr.		Dagmar	Molinová	48	F	finanční poradce	55	55	0	Frýdek-Místek	55006
 5633	14	4			Mária	Vavrincová	45	F	regresní psychoterapeutka	137	137	0	Havířov	70165

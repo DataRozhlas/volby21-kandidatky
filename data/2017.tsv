@@ -694,7 +694,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 793	1	3		M.A., M.S.	Petr	Kutílek	41	M	VŠ učitel, zastup. Prahy 4, místopředseda Zelených	5	5	0	Praha	1335084
 819	1	3	JUDr.	Ph.D.	Lenka	Teska Arnoštová	42	F	náměstkyně ministra	7	7	0	Praha	1335084
 103	1	3	PhDr.	CSc.	Josef	Skála	65	M	místopředseda Ústředního výboru KSČM	47	47	0	Praha	1335084
-811	1	3	Mgr.		Václav	Klaus	48	M	učitel, publicista	53	53	2	Praha	1335084
+811	1	3	Mgr.		Václav	Klaus	48	M	učitel, publicista	53	53	1	Praha	1335084
 163	1	3			Mirko	Horáček	60	M	podnikatel a obchodní manažer	98	98	0	Praha	1335084
 182	1	3	Mgr.		František	Němec	41	M	podnikatel	137	137	0	Praha	1335084
 548	1	3			Eva	Prokopová	50	F	grafička, středoškolská pedagožka	155	155	0	Praha	1335084
@@ -850,7 +850,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3432	7	3	Ing.		Tomáš	Martínek	31	M	univerzitní lektor, podnikatel v online marketingu	720	720	2	Česká Lípa	37361
 3742	7	3	MUDr.		Miloš	Rejmont	60	M	lékař Nemocnice Jablonec nad Nisou, p.o.	721	721	0	Turnov	14391
 3433	7	3			Jaromír	Červenka	36	M	provozní hotelu	724	724	0	Jablonec nad Nisou	45317
-3540	7	3	Mgr.		Jana	Pastuchová	52	F	zdravotnický záchranář, poslankyně	768	768	2	Jablonec nad Nisou	45317
+3540	7	3	Mgr.		Jana	Pastuchová	52	F	zdravotnický záchranář, poslankyně	768	768	1	Jablonec nad Nisou	45317
 3488	7	3			Jiří	Hromada	59	M	podnikatel	769	769	0	Chrastava	6279
 3632	7	3			Bronislav	Kalvoda	42	M	ředitel cestovní kanceláře	1114	1114	0	Jilemnice	5417
 3439	7	3			Robert	Srnka	44	M	řidič	1125	1125	0	Turnov	14391
@@ -1034,7 +1034,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 13	1	4	prof. PhDr.	CSc.	Milena	Bartlová	59	F	historička umění, vysokoškolská pedagožka	5	5	0	Praha	1335084
 550	1	4			Roman	Petrus	39	M	starosta městské části Praha 8	7	7	0	Praha	1335084
 503	1	4	JUDr.		Ivan	Hrůza	63	M	podnikový právník	47	47	0	Praha	1335084
-91	1	4	doc. MUDr.	CSc.	Bohuslav	Svoboda	73	M	lékař, vysokoškolský pedagog	53	53	2	Praha	1335084
+91	1	4	doc. MUDr.	CSc.	Bohuslav	Svoboda	73	M	lékař, vysokoškolský pedagog	53	53	1	Praha	1335084
 213	1	4	MUDr.		Zbyhněv	Zientek	57	M	zubní lékař	98	98	0	Třinec	34778
 209	1	4			Pavel	Opl	46	M	odborník na vnitřní bezpečnost	137	137	0	Praha	1335084
 511	1	4	JUDr.		Tomáš	Kaiser	61	M	advokát	155	155	0	Praha	1335084
@@ -1072,7 +1072,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1132	2	4			Petr	Procházka	36	M	vlakvedoucí mezinárodních vlaků, promotér	720	720	0	Nymburk	15106
 873	2	4	MVDr.	MBA	Petr	Matušina	62	M	soukromý veterinární lékař	721	721	0	Lysá nad Labem	9825
 1117	2	4	Mgr.		Anna	Čurdová	55	F	učitelka	724	724	0	Odolena Voda	6200
-1185	2	4	Ing.		Jaroslava	Pokorná Jermanová	47	F	hejtmanka Středočeského kraje	768	768	2	Benešov	16804
+1185	2	4	Ing.		Jaroslava	Pokorná Jermanová	47	F	hejtmanka Středočeského kraje	768	768	1	Benešov	16804
 942	2	4	Ing.		Karel	Hanzálek	44	M	voják	769	769	0	Samopše	173
 1355	2	4		BA (Hons)	Julie	Bakošová	44	F	ekonom	1114	1114	0	Zásmuky	2007
 1204	2	4			Stanislava	Novosádová	51	F	zdravotnice	1125	1125	0	Brandýs nad Labem-Stará Boleslav	19420
@@ -1236,7 +1236,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4556	9	4	Mgr.		Filip	Sedlák	33	M	pedagog, trenér atletiky, zastupitel MO Pce I	720	720	0	Pardubice	91755
 4422	9	4	Ing.	Ph.D.	Petr	Mareš	38	M	starosta Červené Vody	721	721	0	Červená Voda	2990
 4337	9	4	Mgr. Bc.		Zdeněk	Štengl	52	M	OSVČ, zastupitel obce Vysočina	724	724	0	Vysočina	696
-4523	9	4	MUDr.		David	Kasal	48	M	primář Děts. a novoroz. odd., poslanec Parl. ČR	768	768	2	Chrudim	23140
+4523	9	4	MUDr.		David	Kasal	48	M	primář Děts. a novoroz. odd., poslanec Parl. ČR	768	768	1	Chrudim	23140
 4326	9	4	JUDr.		Jaroslava	Zusková	65	F	důchodkyně	769	769	0	Ostřetín	928
 4402	9	4			Antonín	Šurýn	56	M	technik	1114	1114	0	Mladkov	519
 4533	9	4			Oto	Balcárek	54	M	chemik	1125	1125	0	Hluboká	190

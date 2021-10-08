@@ -8,7 +8,7 @@ data <- read_csv("../data/data.csv")
 
 
 
-# rozděl podle roku a ulož jako JSON
+# rozděl podle roku a ulož jako TSV
 
 data %>% filter(ROK==2021)
 

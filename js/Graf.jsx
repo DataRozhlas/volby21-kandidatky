@@ -8,7 +8,7 @@ import GrafGenerator from "./GrafGenerator.jsx";
 
 const useStyles = makeStyles({
   grafContainer: {
-    width: "100%",
+    width: "50%",
     minHeight: window.innerHeight / 1.7,
   },
 });
@@ -88,7 +88,7 @@ const Graf = ({
       // console.log(destroyFn);
     }
     //console.log(nodesFn());
-    return destroyFn;
+    return [destroyFn, nodesFn];
   }, [vybraneStrany]);
 
   useEffect(() => {
@@ -136,7 +136,12 @@ const Graf = ({
 
   // const kulicky = vyrobKulicky(vybraniKandidati, vybraneStrany);}, [vybraneStrany])
 
-  return <div ref={containerRef} className={classes.grafContainer}></div>;
+  return (
+    <div ref={containerRef} style={{ display: "flex", flexWrap: "wrap" }}>
+      <div className={classes.grafContainer}></div>
+      <div className={classes.grafContainer}></div>
+    </div>
+  );
 };
 
 export default Graf;

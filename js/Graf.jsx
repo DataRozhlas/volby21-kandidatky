@@ -8,8 +8,7 @@ import GrafGenerator from "./GrafGenerator.jsx";
 
 const useStyles = makeStyles({
   grafContainer: {
-    width: "50%",
-    minHeight: window.innerHeight / 1.7,
+    width: "100%",
   },
 });
 
@@ -73,7 +72,7 @@ const Graf = ({
   }, [vybraniKandidati]);
 
   useEffect(() => {
-    d3.selectAll("#graf").remove();
+    d3.selectAll(".graf").remove();
     let destroyFn;
     let nodesFn;
     if (containerRef.current) {
@@ -126,21 +125,28 @@ const Graf = ({
 
       for (i = 0; i < odbarvit; i++) {
         kandidatikOdbarveniArray[i].style.fill = "#C8C8C8";
-        console.log(i);
+        // console.log(i);
       }
-      console.log(odbarvit, s);
+      //  console.log(odbarvit, s);
     });
 
-    console.log(vybarvenych);
+    //  console.log(vybarvenych);
   }, [vybraneStrany, vybarveniKandidati]);
 
   // const kulicky = vyrobKulicky(vybraniKandidati, vybraneStrany);}, [vybraneStrany])
 
   return (
-    <div ref={containerRef} style={{ display: "flex", flexWrap: "wrap" }}>
-      <div className={classes.grafContainer}></div>
-      <div className={classes.grafContainer}></div>
-    </div>
+    <div
+      ref={containerRef}
+      className={classes.grafContainer}
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        minHeight: isMobile
+          ? window.innerHeight / 1.3
+          : window.innerHeight / 1.7,
+      }}
+    ></div>
   );
 };
 

@@ -326,12 +326,12 @@ function App({ defaultFiltr }) {
     vstrany: [],
   });
   const [filtr, setFiltr] = useState(defaultFiltr);
-  const [rok, setRok] = useState(2021);
+  const [rok, setRok] = useState(2017);
   const [kandidati, setKandidati] = useState([]);
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
   const [vybarveniKandidati, setVybarveniKandidati] = useState([]);
   const [vybraneStrany, setVybraneStrany] = useState([]);
-  // console.log(vybraniKandidati);
+  //console.log(vybraniKandidati);
 
   // na zacatku nacti data do ciselniku
   useEffect(async () => {
@@ -353,15 +353,15 @@ function App({ defaultFiltr }) {
     const vsichni = await getData(rok);
     setKandidati(vsichni);
     // fix pro případy, kdy z předchozích let zůstane nastavený filtr na mandáty
-    const settings =
-      rok === 2021
-        ? { mandatAno: true, mandatNe: true, mandatPref: true }
-        : {
-            mandatAno: filtr.mandatAno,
-            mandatNe: filtr.mandatNe,
-            mandatPref: filtr.mandatPref,
-          };
-    setFiltr({ ...filtr, nactenyRok: rok, ...settings });
+    //   const settings =
+    //     rok === 2021
+    //       ? { mandatAno: true, mandatNe: true, mandatPref: true }
+    //       : {
+    //           mandatAno: filtr.mandatAno,
+    //           mandatNe: filtr.mandatNe,
+    //           mandatPref: filtr.mandatPref,
+    //         };
+    //   setFiltr({ ...filtr, nactenyRok: rok, ...settings });
   }, [rok]);
 
   // kdyz se zmeni horni filtr, vyfiltruj kandidáty a aktualizuj s nimi vybrane kandidaty

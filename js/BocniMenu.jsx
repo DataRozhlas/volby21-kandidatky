@@ -347,7 +347,7 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
                   size="small"
                 />
               }
-              label="získali díky preferenčním hlasům"
+              label="preferenčními hlasy"
             />
             <FormControlLabel
               className={classes.bocniCheckBox}

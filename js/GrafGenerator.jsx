@@ -1,12 +1,12 @@
 import d3 from "./d3Importer.js";
 
 const GrafGenerator = (container, kulicky, isMobile) => {
-  console.log(kulicky);
+  //console.log(kulicky);
   const containerRect = container.getBoundingClientRect();
   const height = containerRect.height;
   const width = containerRect.width;
 
-  console.log(container, containerRect, height, width);
+  //console.log(container, containerRect, height, width);
 
   if (kulicky.length > 1) {
     // rozděl kuličky na obarvené podle strany a ostatní

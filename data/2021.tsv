@@ -9,7 +9,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 221	1	1	Ing. Mgr.		Pynelopi	Cimprichová	63	F	podnikatelka v Praze, lékárnice, ekonomka	752	752	0	Ostrava	284982
 39	1	1	Ing.		Jana	Bobošíková	57	F	manažerka, moderátorka	759	759	0	Praha	1335084
 429	1	1			Jana	Peterková	45	F	předsedkyně platformy NEOČKOVANÍ, novinářka	762	762	0	Praha	1335084
-594	1	1	Ing.		Patrik	Nacher	46	M	poslanec PSP ČR, provozovatel serveru www.bankovnipoplatky.com	768	768	0	Praha	1335084
+594	1	1	Ing.		Patrik	Nacher	46	M	poslanec PSP ČR, provozovatel serveru www.bankovnipoplatky.com	768	768	1	Praha	1335084
 621	1	1	Ing.		Jan	Kubín	57	M	podnikatel, předseda hnutí CESTA	1007	1007	0	Praha	1335084
 533	1	1	Mgr.		Josef	Nerušil	35	M	člen Rady Českého rozhlasu, odborný pracovník Arcibiskupství pražského, scénárista, dokumentarista	1114	1114	0	Praha	1335084
 150	1	1	Ing.		Pavel	Sehnal	57	M	předseda Aliance pro budoucnost	1173	1173	0	Praha	1335084
@@ -18,8 +18,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 229	1	1			Jakub	Olbert	48	M	majitel Šeberáku, zakladatel Chcípl pes	1244	1244	0	Praha	1335084
 482	1	1	RNDr.		Jiří	Hynek	60	M	prezident Asociace obranného a bezpečnostního průmyslu České republiky	1245	1245	0	Jesenice	9997
 22	1	1			Martin	Urza	34	M	anarchokapitalista	1250	1250	0	Praha	1335084
-609	1	1	Ing.		Markéta	Pekarová Adamová	37	F	předsedkyně TOP 09, poslankyně	1327	721	0	Praha	1335084
-600	1	1	PhDr.	Ph.D.	Olga	Richterová	36	F	1. místopředsedkyně Pirátů, poslankyně, odbornice na sociální politiku, překladatelka	1350	720	0	Praha	1335084
+609	1	1	Ing.		Markéta	Pekarová Adamová	37	F	předsedkyně TOP 09, poslankyně	1327	721	1	Praha	1335084
+600	1	1	PhDr.	Ph.D.	Olga	Richterová	36	F	1. místopředsedkyně Pirátů, poslankyně, odbornice na sociální politiku, překladatelka	1350	720	1	Praha	1335084
 639	2	1	Mgr.	Ph.D.	Magdaléna	Davis	45	F	starostka	5	5	0	Mníšek pod Brdy	6085
 812	2	1			Jan	Hamáček	42	M	ministr vnitra	7	7	0	Mladá Boleslav	44506
 875	2	1	JUDr.		Stanislav	Grospič	57	M	právník	47	47	0	Mladá Boleslav	44506
@@ -27,17 +27,17 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 749	2	1	MUDr.	Ph.D.	Soňa	Peková	47	F	vedoucí laboratoře TILIA LABORATORIES	752	752	0	Pchery	1957
 697	2	1	Mgr.		Jana	Volfová	63	F	předsedkyně VOLNÝ blok, středoškolská učitelka	759	759	0	Praha	1335084
 894	2	1	PhDr.	Ph.D.	Vladimíra	Vítová	58	F	předsedkyně ALIANCE NÁRODNÍCH SIL, politolog	762	762	0	Praha	1335084
-786	2	1	doc. Ing.	Ph.D., MBA	Karel	Havlíček	52	M	místopředseda vlády ČR, ministr	768	768	0	Mníšek pod Brdy	6085
+786	2	1	doc. Ing.	Ph.D., MBA	Karel	Havlíček	52	M	místopředseda vlády ČR, ministr	768	768	1	Mníšek pod Brdy	6085
 1080	2	1			Aleš	Svoboda	55	M	jednatel společnosti	1007	1007	0	Kralupy nad Vltavou	18485
-629	2	1			Radek	Rozvoral	54	M	poslanec, místostarosta obce	1114	1114	0	Všechlapy	799
+629	2	1			Radek	Rozvoral	54	M	poslanec, místostarosta obce	1114	1114	1	Všechlapy	799
 992	2	1	Bc.		Jan	Krištofiak	41	M	ředitel stavební společnosti	1173	1173	0	Mladá Boleslav	44506
 848	2	1			Radomil	Bábek	60	M	předseda výboru Podnikatelských odborů	1227	1227	0	Praha	1335084
 699	2	1			Miroslav	Pitrof	56	M	invalidní důchodce	1240	1240	0	Kladno	68896
 1015	2	1			Jiří	Janeček	47	M	pivovarník Malý Janek z Jinec a zakladatel Chcípl PES	1244	1244	0	Jince	2301
 755	2	1	Mgr.		Tomáš	Sochr	41	M	1. místopředseda Hnutí Přísaha	1245	1245	0	Nenačovice	278
 671	2	1			Jana	Urzová	50	F	anarchokapitalistka	1250	1250	0	Kladno	68896
-825	2	1	Ing. et Ing.	Ph.D.	Jan	Skopeček	40	M	ekonom a vysokoškolský pedagog, poslanec PČR	1327	53	0	Hořovice	6939
-892	2	1	Mgr.		Vít	Rakušan	43	M	poslanec, středoškolský učitel, bývalý starosta města Kolína	1350	166	0	Kolín	32490
+825	2	1	Ing. et Ing.	Ph.D.	Jan	Skopeček	40	M	ekonom a vysokoškolský pedagog, poslanec PČR	1327	53	1	Hořovice	6939
+892	2	1	Mgr.		Vít	Rakušan	43	M	poslanec, středoškolský učitel, bývalý starosta města Kolína	1350	166	1	Kolín	32490
 1195	3	1	Mgr.		Dana	Kuchtová	60	F	ředitelka dětského domova	5	5	0	Český Krumlov	12788
 1396	3	1	JUDr.		Ondřej	Veselý	45	M	poslanec Parlamentu České republiky, místostarosta města Písek	7	7	0	Písek	30379
 1220	3	1			Alena	Nohavová	61	F	osoba samostatně výdělečně činná, učitelka mateřské školy	47	47	0	Třeboň	8150
@@ -46,15 +46,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1326	3	1			Soňa	Michálková	54	F	fyzioterapeut	752	752	0	Tábor	34119
 1435	3	1	Mgr.		Eliška	Hartlová	69	F	sociálně právní poradenství	759	759	0	České Budějovice	94229
 1265	3	1	Mgr.		Marek	Adam	36	M	učitel gymnázia, 1. místopředseda ANS	762	762	0	Tábor	34119
-1282	3	1	Mgr.		Richard	Brabec	55	M	ministr	768	768	0	Malíč	186
+1282	3	1	Mgr.		Richard	Brabec	55	M	ministr	768	768	1	Malíč	186
 1276	3	1			Jaroslav	Kugler	29	M	generální ředitel železniční, autobusové a poštovní společnosti	1007	1007	0	Chotoviny	1783
-1310	3	1	MUDr.		Iveta	Štefanová	37	F	lékařka	1114	1114	0	Prachatice	10706
+1310	3	1	MUDr.		Iveta	Štefanová	37	F	lékařka	1114	1114	1	Prachatice	10706
 1196	3	1	Ing.		Libuše Eva	Hulcová	53	F	podnikatelka, majitelka kočičí kavárny v Písku, předsedkyně spolku Písecké kočky	1173	1173	0	Borek	1603
 1170	3	1	Mgr.		Libor	Vondráček	27	M	předseda Svobodných, právník - ústavní právo	1227	1227	0	Jindřichův Hradec	21169
 1213	3	1			Ladislav	Vrabel	44	M	podnikatel	1244	1244	0	České Budějovice	94229
 1392	3	1	Bc.		Ivana	Kerlesová	43	F	jednatelka mediální agentury	1245	1245	0	České Budějovice	94229
 1352	3	1	Mgr.		Klára	Kárníková	36	F	anarchokapitalistka	1250	1250	0	Dobřany	6169
-1414	3	1	Ing.		Jan	Bauer	52	M	poslanec Parlamentu ČR	1327	53	0	Prachatice	10706
+1414	3	1	Ing.		Jan	Bauer	52	M	poslanec Parlamentu ČR	1327	53	1	Prachatice	10706
 1409	3	1			Lukáš	Kolářík	37	M	poslanec, člen výboru pro bezpečnost a výboru pro sociální politiku, expert na dluhovou problematiku	1350	720	0	Katovice	1338
 1518	4	1	Mgr.		Svatava	Štěrbová	50	F	právnička, zastupitelka města Kladruby, členka Finančního výboru Zastupitelstva Plzeňského kraje	5	5	0	Kladruby	1638
 1654	4	1	MUDr. Ing.	Ph.D., MBA	Robin	Šín	39	M	lékař a vysokoškolský pedagog	7	7	0	Stříbro	7687
@@ -63,17 +63,17 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1627	4	1			Věra	Soldánová	57	F	manažer prodeje	752	752	0	Chodská Lhota	401
 1726	4	1			Miroslav	Kleisner	37	M	zastupitel města, asistent poslance, autor zákona proti ubytovnám	759	759	0	Holýšov	5152
 1657	4	1	Mgr.		Jan	Sedláček	26	M	přírodovědec, živnostník	762	762	0	Rokycany	14313
-1629	4	1	PhDr.	Ph.D., MBA	Ivana	Mádlová	55	F	ředitelka Alzheimer home	768	768	0	Plzeň	175219
+1629	4	1	PhDr.	Ph.D., MBA	Ivana	Mádlová	55	F	ředitelka Alzheimer home	768	768	1	Plzeň	175219
 1546	4	1			Miroslav	Seko	47	M	transformativní kouč, organizátor, vizionář, člen platformy SVÉPOMOC	1007	1007	0	Horní Bříza	4136
-1745	4	1	Ing.		Marie	Pošarová	41	F	finanční analytička, krajská zastupitelka	1114	1114	0	Klatovy	22140
+1745	4	1	Ing.		Marie	Pošarová	41	F	finanční analytička, krajská zastupitelka	1114	1114	1	Klatovy	22140
 1587	4	1	Ing.	MBA	Pavel	Šrámek	56	M	ekonom a výrobce regionálních potravin, předseda ADS	1173	1173	0	Plzeň	175219
 1512	4	1			Jan	Dočekal	57	M	manažer v autoprůmyslu	1227	1227	0	Praha	1335084
 1678	4	1			Olga	Petrásková	62	F	inspektor	1240	1240	0	Mirošov	2274
 1485	4	1			Jaroslav	Dolhý	54	M	hospodský, Chcípl PES	1244	1244	0	Babylon	327
 1537	4	1	Mgr.		Nicole	Fryčová	26	F	právnička, expertka na práva lidí se zdravotním postižením, česká paralympionička	1245	1245	0	Plzeň	175219
 1475	4	1	MUDr.		Tereza	Urzová	28	F	anarchokapitalistka	1250	1250	0	Praha	1335084
-1583	4	1	Mgr.		Martin	Baxa	46	M	primátor města Plzně, středoškolský učitel, poslanec PS PČR	1327	53	0	Plzeň	175219
-1656	4	1	Ing.		Josef	Bernard	56	M	krajský náměstek pro oblast životního prostředí, zemědělství, evropských záležitostí a regionálního rozvoje, ekonom	1350	166	0	Štěnovický Borek	614
+1583	4	1	Mgr.		Martin	Baxa	46	M	primátor města Plzně, středoškolský učitel, poslanec PS PČR	1327	53	1	Plzeň	175219
+1656	4	1	Ing.		Josef	Bernard	56	M	krajský náměstek pro oblast životního prostředí, zemědělství, evropských záležitostí a regionálního rozvoje, ekonom	1350	166	1	Štěnovický Borek	614
 1856	5	1	Ing.		Jitka	Nesrstová	46	F	datová analytička	5	5	0	Praha	1335084
 1849	5	1	Ing.		Tomáš	Svoboda	57	M	starosta města Kynšperk nad Ohří	7	7	0	Kynšperk nad Ohří	4739
 1911	5	1	Ing.		Pavel	Hojda	68	M	poradce	47	47	0	Cheb	31920
@@ -81,15 +81,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1925	5	1	PharmDr.		Ivan	Cimprich	56	M	podnikatel - lékárník	752	752	0	Karlovy Vary	48319
 1899	5	1	JUDr.		Josef	Kvasnička	71	M	pracující důchodce	759	759	0	Plesná	1969
 1846	5	1		DiS.	Slavomír	Randis	43	M	učitel hudby	762	762	0	Hazlov	1532
-1767	5	1	Mgr.		Jana	Mračková Vildumetzová	48	F	poslankyně Parlamentu ČR	768	768	0	Karlovy Vary	48319
+1767	5	1	Mgr.		Jana	Mračková Vildumetzová	48	F	poslankyně Parlamentu ČR	768	768	1	Karlovy Vary	48319
 1895	5	1			Alena	Flašková	40	F	na mateřské dovolené	1007	1007	0	Karlovy Vary	48319
-1831	5	1			Karla	Maříková	40	F	poslankyně, zdravotní sestra	1114	1114	0	Ostrov	16491
+1831	5	1			Karla	Maříková	40	F	poslankyně, zdravotní sestra	1114	1114	1	Ostrov	16491
 1821	5	1			Michaela	Rojtová	32	F	OSVČ, manažerka provozu	1173	1173	0	Sokolov	22924
 1763	5	1	PhDr.		Marcel	Kučera	52	M	hlasový pedagog, zastupitel obce Velký Luh	1227	1227	0	Velký Luh	163
 1792	5	1	Bc.		Martin	Prokop	39	M	jednatel ve spol. Prokop nábytek a zakladatel Chcípl PES	1244	1244	0	Karlovy Vary	48319
 1922	5	1		DiS.	Miroslav	Haindl	55	M	řidič	1245	1245	0	Lomnice	1358
 1795	5	1			Veronika	Löbelová	29	F	anarchokapitalistka	1250	1250	0	Liberec	104261
-1837	5	1	Ing.	DBA	Jan	Bureš	47	M	statutární zástupce hejtmana Karlovarského kraje, starosta města Ostrov	1327	53	0	Ostrov	16491
+1837	5	1	Ing.	DBA	Jan	Bureš	47	M	statutární zástupce hejtmana Karlovarského kraje, starosta města Ostrov	1327	53	1	Ostrov	16491
 1805	5	1	Ing.		Petr	Třešňák	38	M	poslanec, místopředseda výboru pro zdravotnictví, jaderný inženýr	1350	720	0	Mariánské Lázně	12752
 2026	6	1	PhDr.		Lenka	Simerská	45	F	socioložka, expertka na trh práce, zastupitelka	5	5	0	Litoměřice	23623
 2123	6	1	PhDr. Ing.	Ph.D., MBA	Zdeněk	Matouš	57	M	starosta	7	7	0	Krupka	12547
@@ -98,16 +98,16 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2062	6	1			Josef	Voborník	46	M	OSVČ	752	752	0	Ústí nad Labem	91982
 1985	6	1			Iva	Vrbová	51	F	zdravotní sestra	759	759	0	Ústí nad Labem	91982
 1962	6	1			Adam Benjamin	Bartoš	41	M	předseda Národní demokracie	762	762	0	Kadaň	18133
-2124	6	1	Ing.		Andrej	Babiš	67	M	předseda vlády ČR	768	768	0	Průhonice	2902
+2124	6	1	Ing.		Andrej	Babiš	67	M	předseda vlády ČR	768	768	1	Průhonice	2902
 2274	6	1	Mgr.		David	Kovář	35	M	průvodce na cestě vědomého přístupu k rodičovství, aktivní ve straně Vědomí	1007	1007	0	Mikulášovice	2111
-2029	6	1			Jaroslav	Foldyna	61	M	poslanec	1114	1114	0	Děčín	47951
+2029	6	1			Jaroslav	Foldyna	61	M	poslanec	1114	1114	1	Děčín	47951
 1994	6	1	Mgr.	MBA	Richard	Matiašek	39	M	pedagog, fotograf, zastupitel	1173	1173	0	Ústí nad Labem	91982
 1974	6	1	Mgr.		Tereza	Hyťhová	26	F	poslankyně Parlamentu ČR, učitelka	1227	1227	0	Krupka	12547
 2232	6	1	Ing.	MBA	Radek	Žďárecký	51	M	majitel restaurace Veranda a zakladatel Chcípl PES	1244	1244	0	Ústí nad Labem	91982
 2181	6	1	Mgr.		Jaroslav	Pelc	50	M	místopředseda hnutí	1245	1245	0	Kladno	68896
 2003	6	1			Anna	Honzíková	26	F	anarchokapitalistka	1250	1250	0	Česká Kamenice	5196
-2224	6	1	Mgr.		Karel	Krejza	53	M	místostarosta města Litoměřice, poslanec	1327	53	0	Litoměřice	23623
-2261	6	1	PhDr.	Ph.D.	Ivan	Bartoš	41	M	poslanec, předseda Výboru pro veřejnou správu a regionální rozvoj, specialista na informační technologie	1350	720	0	Praha	1335084
+2224	6	1	Mgr.		Karel	Krejza	53	M	místostarosta města Litoměřice, poslanec	1327	53	1	Litoměřice	23623
+2261	6	1	PhDr.	Ph.D.	Ivan	Bartoš	41	M	poslanec, předseda Výboru pro veřejnou správu a regionální rozvoj, specialista na informační technologie	1350	720	1	Praha	1335084
 2411	7	1	PhDr.	Ph.D.	Jaromír	Baxa	39	M	ekonom, vysokoškolský učitel a vědecký pracovník Univerzity Karlovy, zastupitel Liberce	5	5	0	Liberec	104261
 2442	7	1		MBA	Josef	Jadrný	64	M	zastupitel obce Janův Důl, podnikatel, jednatel neziskové organizace AZDE, z.s.	7	7	0	Janův Důl	170
 2532	7	1	Bc.		Jan	Koros	24	M	učitel základní školy	47	47	0	Česká Lípa	37361
@@ -115,16 +115,16 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2471	7	1	Bc.		Igor	Čech	58	M	úředník	752	752	0	Staré Město	1465
 2540	7	1	MUDr.		Monika	Waksmundská	47	F	lékařka	759	759	0	Praha	1335084
 2400	7	1	Mgr.	DiS.	Karel	Redlich	42	M	předseda krajského klubu ANS Liberec, tlumočník a lektor znakového jazyka	762	762	0	Semily	8311
-2463	7	1	Mgr.		Jana	Pastuchová	56	F	poslankyně PS PČR, zastupitelka města Jablonec nad Nisou, zdravotnický záchranář	768	768	0	Jablonec nad Nisou	45317
+2463	7	1	Mgr.		Jana	Pastuchová	56	F	poslankyně PS PČR, zastupitelka města Jablonec nad Nisou, zdravotnický záchranář	768	768	1	Jablonec nad Nisou	45317
 2332	7	1			Petr	Machala	53	M	řemeslník stavebních činností, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Jablonec nad Nisou	45317
-2520	7	1	Ing.		Radovan	Vích	56	M	poslanec, voják, plukovník v záloze	1114	1114	0	Liberec	104261
+2520	7	1	Ing.		Radovan	Vích	56	M	poslanec, voják, plukovník v záloze	1114	1114	1	Liberec	104261
 2450	7	1			Pavlína	Dohnalová	49	F	OSVČ	1173	1173	0	Benešov u Semil	846
 2360	7	1	RNDr.	CSc.	Otto	Jarolímek	60	M	fyzik, vysokoškolský pedagog a podnikatel	1227	1227	0	Turnov	14391
 2337	7	1	Ing.		Josef	Lank	36	M	podnikatel, člen iniciativy Chcípl PES	1244	1244	0	Liberec	104261
 2448	7	1	Bc.		Jaroslava	Pauchová	30	F	sociální pracovnice v DOZP	1245	1245	0	Frýdlant	7478
 2522	7	1			Jitka	Nyklová	21	F	pracovnice spolku Svobodný přístav propagující anarchokapitalismus	1250	1250	0	Kladno	68896
-2460	7	1	Ing.		Petr	Beitl	54	M	poslanec Parlamentu ČR	1327	53	0	Jablonec nad Nisou	45317
-2437	7	1	Mgr.		Jan	Farský	42	M	poslanec, právník, bývalý starosta města Semily	1350	166	0	Semily	8311
+2460	7	1	Ing.		Petr	Beitl	54	M	poslanec Parlamentu ČR	1327	53	1	Jablonec nad Nisou	45317
+2437	7	1	Mgr.		Jan	Farský	42	M	poslanec, právník, bývalý starosta města Semily	1350	166	1	Semily	8311
 2650	8	1	Mgr.		Martin	Hanousek	38	M	krajinný ekolog a zastupitel Hradce Králové a Královéhradeckého kraje	5	5	0	Hradec Králové	92683
 2708	8	1			Jan	Birke	52	M	starosta města Náchod, poslanec Parlamentu ČR	7	7	0	Náchod	19688
 2624	8	1	JUDr. PhDr.	Ph.D.	Zdeněk	Ondráček	52	M	poslanec Parlamentu České republiky	47	47	0	Trutnov	29958
@@ -132,15 +132,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2799	8	1			Michal	Havlíček	59	M	projektový manažer	752	752	0	Hradec Králové	92683
 2618	8	1			Luďka	Tomešová	52	F	ředitelka tiskárny	759	759	0	Trutnov	29958
 2688	8	1			Michal	Biegl	46	M	předseda krajského klubu ALIANCE NÁRODNÍCH SIL, truhlář	762	762	0	Hradec Králové	92683
-2675	8	1	Ing.		Klára	Dostálová	50	F	ministryně pro místní rozvoj	768	768	0	Hořice	8439
+2675	8	1	Ing.		Klára	Dostálová	50	F	ministryně pro místní rozvoj	768	768	1	Hořice	8439
 2766	8	1			Oldřich	Zima	60	M	projektový a obchodní manažer, člen Předsednictva hnutí CESTA	1007	1007	0	Hradec Králové	92683
-2667	8	1	Ing.		Vladimíra	Lesenská	57	F	ředitelka kontaktního pracoviště Úřadu práce ČR, stavební inženýrka	1114	1114	0	Týniště nad Orlicí	6050
+2667	8	1	Ing.		Vladimíra	Lesenská	57	F	ředitelka kontaktního pracoviště Úřadu práce ČR, stavební inženýrka	1114	1114	1	Týniště nad Orlicí	6050
 2710	8	1	Mgr.		Petr	Hannig	75	M	bývalý prezidentský kandidát, předseda strany	1173	1173	0	Praha	1335084
 2685	8	1	MUDr.		Miroslav	Havrda	57	M	neurolog a podiatr, místopředseda strany Svobodní	1227	1227	0	Hradec Králové	92683
 2607	8	1			Roman	Komeda	49	M	pokladník hospitálu Kuks	1244	1244	0	Dvůr Králové nad Labem	15471
 2802	8	1			Tomáš	Jarkovský	49	M	podnikatel	1245	1245	0	Záměl	612
 2656	8	1	Mgr.		Jiří	Lžičař	31	M	data scientist	1250	1250	0	Praha	1335084
-2777	8	1	Mgr.		Ivan	Adamec	61	M	poslanec Parlamentu ČR, starosta města Trutnov	1327	53	0	Trutnov	29958
+2777	8	1	Mgr.		Ivan	Adamec	61	M	poslanec Parlamentu ČR, starosta města Trutnov	1327	53	1	Trutnov	29958
 2574	8	1	Ing.		Martin	Jiránek	43	M	poslanec, podnikatel, marketingový specialista	1350	720	0	Trutnov	29958
 2937	9	1			Tereza	Hýblová	25	F	obchodní referentka železničního dopravce, studentka právnické fakulty, zastupitelka města	5	5	0	Česká Třebová	15267
 3082	9	1			Alena	Šírová	53	F	předsedkyně odborové organizace	7	7	0	Hlinsko	9602
@@ -150,15 +150,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2871	9	1			Božena	Dvořáková	61	F	pečovatelka	752	752	0	Pardubice	91755
 3099	9	1	Ing.	Ph.D.	Hana	Lipovská	30	F	akademická pracovnice, členka Rady ČT	759	759	0	Blansko	20306
 2971	9	1	MVDr.		Miroslav	Šafář	59	M	veterinární lékař	762	762	0	Svitavy	16601
-2914	9	1	MUDr.	MHA	David	Kasal	52	M	poslanec Parlamentu České republiky, primář dětského a novorozeneckého oddělení, NPK a.s., Chrudimská nemocnice	768	768	0	Chrudim	23140
+2914	9	1	MUDr.	MHA	David	Kasal	52	M	poslanec Parlamentu České republiky, primář dětského a novorozeneckého oddělení, NPK a.s., Chrudimská nemocnice	768	768	1	Chrudim	23140
 2939	9	1	Mgr.		Lenka	Zimmermannová Bolcková	41	F	oblastní manažerka finanční skupiny, OSVČ	1007	1007	0	Svitavy	16601
-2940	9	1			Jaroslav	Bašta	73	M	diplomat	1114	1114	0	Praha	1335084
+2940	9	1			Jaroslav	Bašta	73	M	diplomat	1114	1114	1	Praha	1335084
 2890	9	1	MUDr.	Ph.D.	Vítězslav	Novohradský	62	M	lékař	1173	1173	0	Pardubice	91755
 2999	9	1			Petr	Bajer	54	M	předseda Soukromníků, podnikatel, zastupitel města	1227	1227	0	Holice	6603
 2994	9	1			Jindřich	Čeněk	49	M	podnikatel	1244	1244	0	Pardubice	91755
 3050	9	1	Mgr.		Zdeňka	Víchová	53	F	úřednice	1245	1245	0	Litomyšl	10240
 2954	9	1			Jana Isabella	Růžičková	32	F	kuchařka	1250	1250	0	Praha	1335084
-2901	9	1	MgA.	Ph.D.	Pavel	Svoboda	33	M	pedagog, ředitel Komorní filharmonie Pardubice	1327	721	0	Pardubice	91755
+2901	9	1	MgA.	Ph.D.	Pavel	Svoboda	33	M	pedagog, ředitel Komorní filharmonie Pardubice	1327	721	1	Pardubice	91755
 3036	9	1	Bc.		Mikuláš	Ferjenčík	34	M	místopředseda rozpočtového výboru Poslanecké sněmovny Parlamentu ČR, lektor kroužků zábavné logiky, překladatel	1350	720	0	Praha	1335084
 3378	10	1	Mgr.		Jakub	Vaníček	40	M	knihkupec, redaktor	5	5	0	Modlíkov	154
 3309	10	1	MUDr.		Jiří	Běhounek	69	M	lékař, poslanec	7	7	0	Pelhřimov	16012
@@ -168,16 +168,16 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3415	10	1	Mgr.		Jana	Svobodová	47	F	učitelka	752	752	0	Kyjov	11105
 3315	10	1	Mgr.		Luděk	Růžička	49	M	advokát, soukromý zemědělec	759	759	0	Jaroměřice nad Rokytnou	4140
 3288	10	1			Zdeněk	Kocman	49	M	předseda krajského klubu ALIANCE NÁRODNÍCH SIL, realitní makléř	762	762	0	Česká Třebová	15267
-3165	10	1	Ing.		Drahoslav	Ryba	58	M	bývalý generální ředitel Hasičského záchranného sboru ČR	768	768	0	Radostín nad Oslavou	935
+3165	10	1	Ing.		Drahoslav	Ryba	58	M	bývalý generální ředitel Hasičského záchranného sboru ČR	768	768	1	Radostín nad Oslavou	935
 3420	10	1			Zdeněk	Sedláček	50	M	OSVČ, osvěta proti nastupující totalitě	1007	1007	0	Budišov	1205
-3313	10	1			Radek	Koten	56	M	poslanec, předseda výboru pro bezpečnost	1114	1114	0	Vojnův Městec	775
+3313	10	1			Radek	Koten	56	M	poslanec, předseda výboru pro bezpečnost	1114	1114	1	Vojnův Městec	775
 3406	10	1	Ing.		Josef	Pelikán	45	M	stavební inženýr	1173	1173	0	Přibyslav	3989
 3125	10	1			Zdeněk	Kučírek	66	M	důchodce	1190	1190	0	Jihlava	51125
 3373	10	1			Jan	Tesař	43	M	obchodník s kávou a kávovary, místopředseda Trikolory	1227	1227	0	Jihlava	51125
 3321	10	1	Ing.		Petr	Denk	45	M	projektový specialista, šachista	1244	1244	0	Polná	5201
 3163	10	1	Ing.		Karolína	Kubisková	36	F	podnikatelka	1245	1245	0	Kamenice nad Lipou	3742
 3149	10	1			Radka	Mužíková	36	F	anarchokapitalistka	1250	1250	0	Květnice	1802
-3394	10	1	MUDr.		Vít	Kaňkovský	51	M	ortoped, poslanec	1327	1	0	Třešť	5682
+3394	10	1	MUDr.		Vít	Kaňkovský	51	M	ortoped, poslanec	1327	1	1	Třešť	5682
 3354	10	1	Bc.		Blanka	Lednická	40	F	podnikatelka v oboru Genealogie, zastupitelka Kraje Vysočina, předsedkyně komise pro životní prostředí	1350	720	0	Olešná	380
 3726	11	1	Mgr.		Matouš	Vencálek	32	M	religionista, publicista, spolupředseda Zelených v Jihomoravském kraji	5	5	0	Brno	382405
 3601	11	1	Bc.	MBA	Roman	Onderka	55	M	poslanec PSP ČR	7	7	0	Brno	382405
@@ -188,9 +188,9 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3920	11	1	Ing.		Peter	Kvanďúch	55	M	obchodní manažer	752	752	0	Kyjov	11105
 3863	11	1			Ilona	Csáková	51	F	zpěvačka	759	759	0	Praha	1335084
 4002	11	1	prim. MUDr.	Ph.D., MBA	Vladimír	Kotek	61	M	lékař	762	762	0	Brno	382405
-3707	11	1	JUDr.	Ph.D.	Alena	Schillerová	57	F	ministryně financí, místopředsedkyně vlády ČR	768	768	0	Brno	382405
+3707	11	1	JUDr.	Ph.D.	Alena	Schillerová	57	F	ministryně financí, místopředsedkyně vlády ČR	768	768	1	Brno	382405
 3671	11	1	MUDr.		Andrea	Málková	52	F	praktická lékařka, celostní medicína	1007	1007	0	Kanice	1056
-3589	11	1	PhDr. Ing. Mgr.	MBA, LL.M.	Jan	Hrnčíř	44	M	poslanec, vysokoškolský pedagog	1114	1114	0	Blansko	20306
+3589	11	1	PhDr. Ing. Mgr.	MBA, LL.M.	Jan	Hrnčíř	44	M	poslanec, vysokoškolský pedagog	1114	1114	1	Blansko	20306
 3470	11	1	doc. MUDr.	CSc. FRCS(T)	Petr	Svoboda	71	M	lékař, vědecký pracovník	1173	1173	0	Brno	382405
 3967	11	1	Mgr.	Ph.D.	Ondřej	Hýsek	41	M	zástupce ředitele gymnázia	1190	1190	0	Brno	382405
 3808	11	1	Mgr. et Mgr.		David	Hanák	49	M	obchodní ředitel	1227	1227	0	Brno	382405
@@ -198,7 +198,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3940	11	1			Jiří	Hanuš	42	M	podnikatel	1244	1244	0	Břeclav	24554
 3993	11	1	Mgr.		Róbert	Šlachta	50	M	předseda politického hnutí PŘÍSAHA - občanské hnutí Roberta Šlachty	1245	1245	0	Pohořelice	5251
 3628	11	1			Rosalie	Stříbrná	28	F	anarchokapitalistka	1250	1250	0	Kladno	68896
-3818	11	1	prof. PhDr.	Ph.D., LL.M.	Petr	Fiala	57	M	předseda ODS, vysokoškolský učitel, emeritní rektor Masarykovy univerzity	1327	53	0	Brno	382405
+3818	11	1	prof. PhDr.	Ph.D., LL.M.	Petr	Fiala	57	M	předseda ODS, vysokoškolský učitel, emeritní rektor Masarykovy univerzity	1327	53	1	Brno	382405
 3434	11	1	Mgr.		Radek	Holomčík	36	M	poslanec PČR, místopředseda zemědělského výboru, člen volebního výboru	1350	720	0	Strážnice	5467
 4364	12	1	Mgr.		Hana	Vacková	67	F	učitelka na gymnáziu, krajská zastupitelka	5	5	0	Olomouc	100514
 4099	12	1			Ladislav	Hynek	53	M	místostarosta města Kostelec na Hané	7	7	0	Kostelec na Hané	2897
@@ -209,17 +209,17 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4119	12	1	Ing.		Luděk	Šarman	62	M	krizový manažer	752	752	0	Bruntál	15908
 4207	12	1	pplk. vz. MUDr.		Marek	Obrtel	54	M	lékař, velitel Národní domobrany	759	759	0	Rokytnice	1527
 4030	12	1			Milan	Gybas	49	M	organizátor jízd za svobodu, elektrotechnik	762	762	0	Přerov	42451
-4275	12	1			Ladislav	Okleštěk	60	M	poslanec PSP ČR	768	768	0	Prostějov	43381
+4275	12	1			Ladislav	Okleštěk	60	M	poslanec PSP ČR	768	768	1	Prostějov	43381
 4345	12	1	Bc.		Antonín	Baudyš	48	M	astrolog, předseda Regionálního centra hnutí CESTA	1007	1007	0	Šumperk	25452
-4088	12	1	Ing.		Radim	Fiala	52	M	poslanec, místopředseda hnutí	1114	1114	0	Prostějov	43381
+4088	12	1	Ing.		Radim	Fiala	52	M	poslanec, místopředseda hnutí	1114	1114	1	Prostějov	43381
 4287	12	1	Bc.		Ivo	Baláš	47	M	ředitel BALUS Innovation	1173	1173	0	Olomouc	100514
 4136	12	1			Jan	Rapant	59	M	přípravář stavební akce	1190	1190	0	Olomouc	100514
 4188	12	1	Ing.	CSc.	Antonín	Fryč	68	M	podnikatel ve výrobě ocelových konstrukcí	1227	1227	0	Psáry	4154
 4106	12	1			Bohumil	Zoufalík	22	M	student vysoké školy	1244	1244	0	Praha	1335084
 4158	12	1	Mgr. et Mgr.		Václav	Vévoda	45	M	právník, podnikatel	1245	1245	0	Přemyslovice	1280
 4011	12	1			Lucie	Komárková	21	F	anarchokapitalistka	1250	1250	0	Vikýřovice	2342
-4024	12	1	Ing.		Marian	Jurečka	40	M	poslanec a zemědělec	1327	1	0	Rokytnice	1527
-4171	12	1	Ing.		Tomáš	Müller	55	M	starosta obce Nová Hradečná, krajský zastupitel	1350	166	0	Nová Hradečná	760
+4024	12	1	Ing.		Marian	Jurečka	40	M	poslanec a zemědělec	1327	1	1	Rokytnice	1527
+4171	12	1	Ing.		Tomáš	Müller	55	M	starosta obce Nová Hradečná, krajský zastupitel	1350	166	1	Nová Hradečná	760
 4444	13	1	BcA.		Michal	Berg	41	M	spolupředseda Zelených, zastupitel Vsetína	5	5	0	Vsetín	25782
 4624	13	1	PaedDr.		Alena	Gajdůšková	67	F	pedagog, poslankyně Parlamentu ČR	7	7	0	Želechovice nad Dřevnicí	1851
 4602	13	1	Ing.		Marie	Pěnčíková	41	F	poslankyně Parlamentu České republiky	47	47	0	Morkovice-Slížany	2959
@@ -228,15 +228,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4484	13	1			Jiří	Fojtík	36	M	technický poradce	752	752	0	Tichá	1854
 4432	13	1			Josef	Novosad	63	M	řidič, zastupitel města Vsetín	759	759	0	Vsetín	25782
 4494	13	1	Bc.		Zdeněk	Cekota	67	M	soudní znalec	762	762	0	Zlín	74478
-4571	13	1	Mgr.		Radek	Vondráček	47	M	předseda Poslanecké sněmovny Parlamentu České republiky	768	768	0	Kroměříž	28360
+4571	13	1	Mgr.		Radek	Vondráček	47	M	předseda Poslanecké sněmovny Parlamentu České republiky	768	768	1	Kroměříž	28360
 4639	13	1			Luděk	Haškovec	53	M	OSVČ, tajemník SNS	1007	1007	0	Zlín	74478
-4424	13	1	MUDr.		Vladimír	Zlínský	57	M	lékař, krajský zastupitel	1114	1114	0	Zlín	74478
+4424	13	1	MUDr.		Vladimír	Zlínský	57	M	lékař, krajský zastupitel	1114	1114	1	Zlín	74478
 4478	13	1	PhDr.		Svatava	Cekotová	58	F	sociální pedagog	1173	1173	0	Zlín	74478
 4516	13	1	Bc.		Libor	Lukáš	60	M	manažer, bývalý hejtman Zlínského kraje	1227	1227	0	Pitín	901
 4695	13	1	Mgr.		Andrea	Navrátilová	47	F	právník	1244	1244	0	Jankovice	401
 4654	13	1	Ing.		Zbyněk	Schaffer	57	M	stavební technik	1245	1245	0	Kroměříž	28360
 4519	13	1	Ing.		Igor	Bogdanov	34	M	stavitel kosmodromů	1250	1250	0	Praha	1335084
-4690	13	1	Mgr.		Ondřej	Benešík	45	M	poslanec PČR	1327	1	0	Strání	3456
+4690	13	1	Mgr.		Ondřej	Benešík	45	M	poslanec PČR	1327	1	1	Strání	3456
 4593	13	1	Bc.	DiS.	František	Elfmark	42	M	poslanec PČR, zastupitel Uherského Hradiště, podnikatel, propagátor oběhového hospodářství	1350	720	0	Uherské Hradiště	25001
 4724	14	1	Mgr.		Martina	Dušková	42	F	překladatelka, koordinátorka projektů Institutu aktivního občanství	5	5	0	Trojanovice	2687
 5025	14	1	PhDr.		Lubomír	Zaorálek	65	M	ministr kultury	7	7	0	Ostrava	284982
@@ -246,16 +246,16 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4813	14	1	Ing.		Tomáš	Raždík	39	M	stavební inženýr	752	752	0	Ostrava	284982
 5089	14	1	Mgr.		Lubomír	Volný	48	M	poslanec Parlamentu ČR	759	759	0	Ostrava	284982
 5129	14	1			Zdeňka	Tymlová	57	F	předsedkyně krajského klubu ALIANCE NÁRODNÍCH SIL, účetní	762	762	0	Studénka	9466
-5192	14	1	prof. Ing.	CSc.	Ivo	Vondrák	62	M	hejtman	768	768	0	Velká Polom	2065
+5192	14	1	prof. Ing.	CSc.	Ivo	Vondrák	62	M	hejtman	768	768	1	Velká Polom	2065
 5238	14	1			Jiří	Sapeta	46	M	podnikatel, zakladatel spolku E-koruna z.s.	1007	1007	0	Ostrava	284982
-4979	14	1			Tomio	Okamura	49	M	poslanec, předseda hnutí SPD	1114	1114	0	Praha	1335084
+4979	14	1			Tomio	Okamura	49	M	poslanec, předseda hnutí SPD	1114	1114	1	Praha	1335084
 5171	14	1	Mgr.		René	Lakomý	51	M	místostarosta	1173	1173	0	Kopřivnice	21657
 5200	14	1	JUDr.		Alfréd	Šrámek	44	M	advokát	1227	1227	0	Ostrava	284982
 4800	14	1			Jaromír	Fojtík	73	M	důchodce	1240	1240	0	Ostrava	284982
 4845	14	1	PhDr.	MBA	Martin	Vacek	49	M	psychoterapeut	1244	1244	0	Třinec	34778
 4751	14	1	Mgr.		Jiří	Komárek	50	M	bezpečnostní specialista	1245	1245	0	Tovéř	620
 4810	14	1			Kateřina	Přibylová	29	F	anarchokapitalistka	1250	1250	0	Kladno	68896
-4737	14	1	Ing.		Zbyněk	Stanjura	57	M	poslanec	1327	53	0	Opava	55996
+4737	14	1	Ing.		Zbyněk	Stanjura	57	M	poslanec	1327	53	1	Opava	55996
 4911	14	1	Ing.		Lukáš	Černohorský	36	M	poslanec, místopředseda poslaneckého klubu, informatik	1350	720	0	Ostrava	284982
 107	1	2	Mgr.		Vít	Masare	34	M	poradce pro udržitelnou politiku ve městech, terénní sociální pracovník, spolupředseda Zelených v Praze	5	5	0	Praha	1335084
 244	1	2	PhDr.		Matěj	Stropnický	38	M	novinář	7	7	0	Praha	1335084
@@ -267,7 +267,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 376	1	2	RNDr.		Tomáš	Nekvapil	55	M	manažer	752	752	0	Praha	1335084
 400	1	2	Mgr.	MBA	David Tygr	Ploc	48	M	bezpečnostní expert, trenér bojových sportů	759	759	0	Praha	1335084
 252	1	2	Lic.	LL.M.	Daniel	Solis	53	M	politolog	762	762	0	Praha	1335084
-226	1	2	prof. MUDr.	CSc.	Věra	Adámková	66	F	lékařka	768	768	0	Praha	1335084
+226	1	2	prof. MUDr.	CSc.	Věra	Adámková	66	F	lékařka	768	768	1	Praha	1335084
 506	1	2			Viktor	Jablonský	53	M	řidič MKD, divadelní herec, člen Aliance Kulatého Stolu, z.s.	1007	1007	0	Přerov	42451
 591	1	2			Jan	Čížek	45	M	vydavatel, prezident baseballového klubu, iniciátor občanské aktivity 10.000 podpisů pro Desítku	1114	1114	0	Praha	1335084
 40	1	2	Mgr.		Hana	Janišová	59	F	předsedkyně Pražského spolku ochránců zvířat, povoláním redaktorka	1173	1173	0	Praha	1335084
@@ -275,8 +275,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 247	1	2			Andrea	Hrubá	53	F	ekonom	1240	1240	0	Praha	1335084
 97	1	2	Mgr.		Radek	Suchý	46	M	advokát a právní expert OT - ČE	1244	1244	0	Praha	1335084
 141	1	2	Mgr.		David	Červenka	39	M	státní úředník	1245	1245	0	Praha	1335084
-576	1	2	Mgr.		Jana	Černochová	47	F	starostka MČ Praha 2	1327	53	0	Praha	1335084
-311	1	2	Mgr. et Mgr.		Jakub	Michálek	32	M	předseda poslaneckého klubu Pirátů, právník se zaměřením na otevřenost veřejné správy a justice	1350	720	0	Praha	1335084
+576	1	2	Mgr.		Jana	Černochová	47	F	starostka MČ Praha 2	1327	53	1	Praha	1335084
+311	1	2	Mgr. et Mgr.		Jakub	Michálek	32	M	předseda poslaneckého klubu Pirátů, právník se zaměřením na otevřenost veřejné správy a justice	1350	720	1	Praha	1335084
 729	2	2	Ing.		Martin	Mach	53	M	ekonom, starosta	5	5	0	Mšeno	1447
 661	2	2	Ing.		Milan	Urban	62	M	bývalý ministr a specialista na čistou mobilitu	7	7	0	Čáslav	10350
 777	2	2	Ing. Bc.		Miloslava	Vostrá	56	F	ekonomka	47	47	0	Braškov	1098
@@ -284,16 +284,16 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1116	2	2	Mgr. Ing.		Jarmila	Stašová	65	F	právnička, ekonomka	752	752	0	Markvartovice	2128
 769	2	2			Pavel	Havránek	46	M	podnikatel, místopředseda VOLNÝ blok	759	759	0	Ptice	935
 707	2	2			Blanka	Čejková	54	F	kadeřnice	762	762	0	Čáslav	10350
-1073	2	2	prof. MUDr.	CSc.	Julius	Špičák	69	M	poslanec PSP ČR, lékař	768	768	0	Ptice	935
+1073	2	2	prof. MUDr.	CSc.	Julius	Špičák	69	M	poslanec PSP ČR, lékař	768	768	1	Ptice	935
 696	2	2			Jiří	Janata	54	M	geometr, předseda SNS, člen Aliance Kulatého Stolu, z.s.	1007	1007	0	Kutná Hora	20828
-736	2	2			Oldřich	Černý	56	M	živnostník, zastupitel města	1114	1114	0	Kladno	68896
+736	2	2			Oldřich	Černý	56	M	živnostník, zastupitel města	1114	1114	1	Kladno	68896
 781	2	2	MUDr.		Jiří	Landa	65	M	lékař fytoterapie	1173	1173	0	Kladno	68896
 887	2	2	Mgr.		Luboš	Zálom	40	M	programátor, městský zastupitel, místopředseda strany Svobodní	1227	1227	0	Beroun	19988
 1006	2	2			Jaroslav	Pollák	70	M	důchodce	1240	1240	0	Kaplice	7241
 746	2	2	MUDr.		Veronika	Vaštová	49	F	ortoped	1244	1244	0	Tuchlovice	2689
 1084	2	2	Ing.	Ph.D.	Jana	Chaloupková	51	F	diplomatka	1245	1245	0	Praha	1335084
-885	2	2	Mgr.		Helena	Langšádlová	57	F	poslankyně PČR	1327	721	0	Černošice	7382
-977	2	2			Klára	Kocmanová	28	F	OSVČ, předsedkyně místního sdružení Pirátů	1350	720	0	Kutná Hora	20828
+885	2	2	Mgr.		Helena	Langšádlová	57	F	poslankyně PČR	1327	721	1	Černošice	7382
+977	2	2			Klára	Kocmanová	28	F	OSVČ, předsedkyně místního sdružení Pirátů	1350	720	1	Kutná Hora	20828
 1247	3	2	Ing.		Tereza	Müllerová	40	F	průvodkyně dětí Montessori Prachatice	5	5	0	Hracholusky	496
 1167	3	2			Milan	Štěch	67	M	konzultant, emeritní předseda Senátu Parlamentu České republiky	7	7	0	Lišov	4503
 1390	3	2	JUDr.		Vojtěch	Filip	66	M	poslanec Parlamentu České republiky	47	47	0	České Budějovice	94229
@@ -302,15 +302,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1431	3	2	Mgr.		Dagmar	Klásková	39	F	středoškolská učitelka	752	752	0	Vřesina	1660
 1460	3	2			Monika	Slavíková	33	F	specialistka pro zahraniční obchod	759	759	0	Budíškovice	699
 1297	3	2	Ing.		Ivan	Cícha	59	M	stavbyvedoucí	762	762	0	Tábor	34119
-1237	3	2	Ing.	Ph.D.	Roman	Kubíček	58	M	poslanec, radní statutárního města České Budějovice	768	768	0	České Budějovice	94229
+1237	3	2	Ing.	Ph.D.	Roman	Kubíček	58	M	poslanec, radní statutárního města České Budějovice	768	768	1	České Budějovice	94229
 1421	3	2			David	Plíšek	34	M	prodavač, člen SNS a AKS	1007	1007	0	Písek	30379
 1171	3	2			Miloslav	Rozner	44	M	poslanec, živnostník	1114	1114	0	Týn nad Vltavou	7887
 1427	3	2	Mgr. Bc.	MBA	Martin	Muchka	54	M	starosta obce Vráto	1173	1173	0	Vráto	425
 1272	3	2	Ing.		Štěpán	Tampír	44	M	ekonom, manažer, rybář	1227	1227	0	Vrábče	813
 1141	3	2			Gabriela	Prokopová	50	F	živnostník - masérka	1244	1244	0	Velešín	3878
 1154	3	2	Ing.		Vladimír	Nakládal	56	M	dělník	1245	1245	0	České Budějovice	94229
-1408	3	2	Ing.		Jan	Bartošek	49	M	poslanec Parlamentu ČR, terapeut	1327	1	0	Dačice	7192
-1355	3	2	Ing.	Ph.D.	Viktor	Vojtko	43	M	náměstek primátora, vysokoškolský pedagog	1350	166	0	České Budějovice	94229
+1408	3	2	Ing.		Jan	Bartošek	49	M	poslanec Parlamentu ČR, terapeut	1327	1	1	Dačice	7192
+1355	3	2	Ing.	Ph.D.	Viktor	Vojtko	43	M	náměstek primátora, vysokoškolský pedagog	1350	166	1	České Budějovice	94229
 1550	4	2			Matěj	Frouz	22	M	student politologie na Univerzitě Karlově v Praze, občanský aktivista	5	5	0	Bor	4488
 1641	4	2	Bc.		Michal	Chalupný	52	M	předseda kontrolního výboru ZMO Plzeň 4, 2010-2018 starosta MO Plzeň 4	7	7	0	Plzeň	175219
 1749	4	2	RSDr.		Josef	Švarcbek	66	M	velitel zásahové jednotky hasičů	47	47	0	Planá	5385
@@ -318,7 +318,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1665	4	2	RNDr.		František	Stíbal	65	M	exstarosta Kašperských Hor	752	752	0	Kašperské Hory	1404
 1562	4	2			Daniel	Šváb	57	M	krajský velitel Národní domobrany	759	759	0	Plzeň	175219
 1635	4	2			Daniel	Albrecht	44	M	analytik	762	762	0	Trnová	930
-1671	4	2	Ing.		Jan	Volný	62	M	poslanec PSP ČR	768	768	0	Chodová Planá	1879
+1671	4	2	Ing.		Jan	Volný	62	M	poslanec PSP ČR	768	768	1	Chodová Planá	1879
 1483	4	2			Daniel	Květoň	42	M	logistik, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Kyšice	1083
 1598	4	2	PaedDr.		Vladislav	Krumer	79	M	pedagog, lektor obnovy venkova	1114	1114	0	Plzeň	175219
 1713	4	2			Tomáš	Bršlica	46	M	ekonom	1173	1173	0	Nové Mitrovice	345
@@ -327,7 +327,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1644	4	2	Mgr. Ing.		Robert	Bochníček	59	M	advokát	1244	1244	0	Plzeň	175219
 1680	4	2	Mgr.		Petr	Denk	30	M	středoškolský učitel, spisovatel	1245	1245	0	Plzeň	175219
 1638	4	2			Miroslav	Suchý	34	M	anarchokapitalista	1250	1250	0	Plzeň	175219
-1643	4	2	PhDr.	Ph.D.	Marek	Ženíšek	42	M	náměstek hejtmanky Plzeňského kraje	1327	721	0	Plzeň	175219
+1643	4	2	PhDr.	Ph.D.	Marek	Ženíšek	42	M	náměstek hejtmanky Plzeňského kraje	1327	721	1	Plzeň	175219
 1681	4	2	Mgr.		Daniel	Kůs	47	M	zastupitel města Plzně, internetový podnikatel, právník	1350	720	0	Plzeň	175219
 1852	5	2	Mgr.		Jaroslav	Staněk	53	M	učitel	5	5	0	Aš	13105
 1918	5	2	Ing.		Tibor	Dobrovolný	57	M	učitel	7	7	0	Cheb	31920
@@ -344,7 +344,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1773	5	2			Viktor	Holec	56	M	letecký mechanik	1244	1244	0	Nejdek	7790
 1943	5	2	Mgr.		Pavel	Rybář	62	M	advokát	1245	1245	0	Sokolov	22924
 1866	5	2	Bc.	MBA	Lukáš	Otys	36	M	provozovatel cukrárny, podnikatel, místopředseda TOP 09	1327	721	0	Karlovy Vary	48319
-1889	5	2			Jan	Kuchař	47	M	starosta Františkových Lázní, předseda Sdružení lázeňských míst České republiky	1350	166	0	Františkovy Lázně	5412
+1889	5	2			Jan	Kuchař	47	M	starosta Františkových Lázní, předseda Sdružení lázeňských míst České republiky	1350	166	2	Františkovy Lázně	5412
 2263	6	2	Ing.		Vladimír	Buřt	57	M	starosta	5	5	0	Horní Jiřetín	2242
 1970	6	2	MUDr.		Vladimír	Emingr	65	M	lékař	7	7	0	Louny	18156
 2024	6	2	Ing.		Hana	Aulická Jírovcová	40	F	poslankyně Parlamentu České republiky	47	47	0	Most	65341
@@ -352,14 +352,14 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2128	6	2	RNDr.		Radoslav	Štědroň	66	M	praktický filosof	752	752	0	Ostrava	284982
 2068	6	2			Ota	Dračka	66	M	důchodce	759	759	0	Benešov nad Ploučnicí	3659
 2150	6	2			Ivo	Novák	44	M	IT specialista	762	762	0	Račice	339
-2067	6	2	Mgr.		Jan	Richter	53	M	poslanec	768	768	0	Chomutov	48349
+2067	6	2	Mgr.		Jan	Richter	53	M	poslanec	768	768	1	Chomutov	48349
 2077	6	2			Martin	Pitner	52	M	řidič, zakladatel spolku E-koruna z.s.	1007	1007	0	Ústí nad Labem	91982
-2317	6	2	Mgr.		Zdeněk	Kettner	47	M	učitel, krajský zastupitel	1114	1114	0	Teplice	49705
+2317	6	2	Mgr.		Zdeněk	Kettner	47	M	učitel, krajský zastupitel	1114	1114	1	Teplice	49705
 2104	6	2	Mgr.		Petr	Šmíd	57	M	pedagog, ředitel školy, bývalý náměstek hejtmana ÚK	1173	1173	0	Varnsdorf	15117
 2000	6	2	doc. Ing.	Ph.D.	Zdeněk	Říha	47	M	vysokoškolský učitel	1227	1227	0	Děčín	47951
 2139	6	2			Marcel	Huml	47	M	živnostník a zakladatel Chcípl PES	1244	1244	0	Všestudy	191
 2252	6	2	Mgr. Bc.		Roman	Krojidlo	52	M	pojišťovací poradce	1245	1245	0	Dolní Zálezly	582
-2084	6	2	Ing.	Ph.D.	Libor	Turek	50	M	výkonný ředitel společnosti Dopravní podnik města Ústí nad Labem a. s.	1327	53	0	Ústí nad Labem	91982
+2084	6	2	Ing.	Ph.D.	Libor	Turek	50	M	výkonný ředitel společnosti Dopravní podnik města Ústí nad Labem a. s.	1327	53	1	Ústí nad Labem	91982
 2293	6	2			Lukáš	Blažej	25	M	zastupitel města Ústí nad Labem, student Právnické fakulty UK	1350	720	0	Ústí nad Labem	91982
 2500	7	2	Mgr.		Anna	Hudská	46	F	majitelka Farmy Klokočí a Půjčovny lodí a koloběžek Klokočí, zakladatelka spolku ZAzemí Turnov, zastupitelka obce Klokočí	5	5	0	Klokočí	196
 2445	7	2			David	Rašín	30	M	vedoucí logistiky	7	7	0	Jablonec nad Nisou	45317
@@ -368,7 +368,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2353	7	2			Jaromír	Klásek	70	M	důchodce	752	752	0	Vřesina	2906
 2422	7	2	Ing.		Lucie	Šídová	34	F	odborný pracovník - Úřad práce ČR	759	759	0	Zlatá Olešnice	494
 2338	7	2	JUDr.		Marie	Nedvědová	65	F	advokátka	762	762	0	Česká Lípa	37361
-2367	7	2			David	Pražák	42	M	poslanec PS PČR, neuvolněný člen rady města Semily, podnikatel v zemědělské prvovýrobě	768	768	0	Semily	8311
+2367	7	2			David	Pražák	42	M	poslanec PS PČR, neuvolněný člen rady města Semily, podnikatel v zemědělské prvovýrobě	768	768	1	Semily	8311
 2514	7	2	Bc.		Vojtěch	Drahoňovský	42	M	zemědělský hospodář	1007	1007	0	Železnice	1318
 2327	7	2	Mgr.		Michal	Švarc	49	M	zástupce ředitele městské policie, krajský zastupitel	1114	1114	0	Jablonec nad Nisou	45317
 2467	7	2			Renata	Sajdlová	54	F	administrativní pracovnice, ochránce práv zvířat	1173	1173	0	Zásada	902
@@ -384,15 +384,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2747	8	2	Ing.		Jan	Piroutek	64	M	inženýr kybernetiky	752	752	0	Praskačka	1085
 2819	8	2	PhDr.		Jolana	Matějková	61	F	jednatelka společnosti	759	759	0	Chrudim	23140
 2754	8	2			Robert	Peovský	34	M	OSVČ	762	762	0	Česká Skalice	5017
-2745	8	2	MUDr.		Jiří	Mašek	63	M	lékař, poslanec PSP ČR	768	768	0	Hradec Králové	92683
+2745	8	2	MUDr.		Jiří	Mašek	63	M	lékař, poslanec PSP ČR	768	768	1	Hradec Králové	92683
 2589	8	2			Stanislav	Rudolfský	62	M	předseda Hnutí Prameny, člen Rady města Jaroměř	1007	1007	0	Jaroměř	12324
 2813	8	2			Zdeněk	Podal	68	M	poslanec, krajský zastupitel, elektrotechnik	1114	1114	0	Hradec Králové	92683
 2622	8	2			Petr	Hornig	63	M	starosta obce	1173	1173	0	Mladějov	520
 2687	8	2	Mgr. Ing.		Zdeněk	Cvejn	40	M	advokát, předseda krajské organizace Trikolora Svobodní Soukromníci	1227	1227	0	Hradec Králové	92683
 2569	8	2			Jakub	Pavelec	44	M	asistent pedagoga	1244	1244	0	Jaroměř	12324
 2718	8	2	Mgr.	Ph.D.	Miroslav	Behan	41	M	podnikatel	1245	1245	0	Hradec Králové	92683
-2743	8	2	MVDr.	Ph.D., MPA	Pavel	Bělobrádek	44	M	poslanec Parlamentu ČR, 2. náměstek hejtmana	1327	1	0	Náchod	19688
-2740	8	2	Mgr.		Josef	Cogan	48	M	starosta města Nová Paka, právník	1350	166	0	Nová Paka	9044
+2743	8	2	MVDr.	Ph.D., MPA	Pavel	Bělobrádek	44	M	poslanec Parlamentu ČR, 2. náměstek hejtmana	1327	1	1	Náchod	19688
+2740	8	2	Mgr.		Josef	Cogan	48	M	starosta města Nová Paka, právník	1350	166	1	Nová Paka	9044
 3034	9	2	Ing.		Vojtěch	Weisbauer	29	M	učitel matematiky a fyziky na základní škole, instruktor lezení, odborník na zemědělské dotace	5	5	0	Pardubice	91755
 3042	9	2	Ing.		Markéta	Juchelková	52	F	finanční ředitelka, členka představenstva Rozvojového fondu Pardubice a.s.	7	7	0	Pardubice	91755
 3112	9	2	Bc.		Otakar	Kovařík	36	M	vývojář software	47	47	0	Pardubice	91755
@@ -401,7 +401,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2929	9	2	Ing.		Ladislav	Kryl	64	M	analytik	752	752	0	Praha	1335084
 2943	9	2	Bc.		Jana	Bulisová	42	F	speciální pedagožka, OSVČ	759	759	0	Slatiňany	4178
 2882	9	2	Ing.	MSc.	Pavel	Křivka	61	M	lingvista, vysokoškolský pedagog	762	762	0	Pardubice	91755
-2918	9	2	Mgr.		Jana	Hanzlíková	55	F	náměstkyně Ministerstva pro místní rozvoj	768	768	0	Pardubice	91755
+2918	9	2	Mgr.		Jana	Hanzlíková	55	F	náměstkyně Ministerstva pro místní rozvoj	768	768	1	Pardubice	91755
 3009	9	2			Jana	Klicperová	46	F	opravář PC, člen Aliance Kulatého Stolu, z.s.	1007	1007	0	Pardubice	91755
 2923	9	2	Ing.		Marcel	Dlask	47	M	správní ředitel	1114	1114	0	Chvaletice	2934
 2960	9	2			Jana	Johanidesová	42	F	prodavačka, ochránce zvířat, členka Tlapky bez domova, Nebelvira's help for animals, z. s., HeRo pomoc rumunským pejskům, SOS Animal Rescue	1173	1173	0	Lanškroun	9800
@@ -409,7 +409,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2964	9	2			Rudolf	Štiegler	62	M	živnostník	1244	1244	0	Pardubice	91755
 3029	9	2			Simona	Hanušová	50	F	úředník	1245	1245	0	Ústí nad Orlicí	14209
 3024	9	2	Ing.	MBA, LL.M.	Radim	Jirout	50	M	generální ředitel vodohospodářské společnosti, člen zastupitelstva města, trenér karate	1327	53	0	Ústí nad Orlicí	14209
-2836	9	2	Ing.		Jiří	Hájek	60	M	stavební inženýr, zastupitel MO Pardubice V, města Pardubic a Pardubického kraje	1350	166	0	Pardubice	91755
+2836	9	2	Ing.		Jiří	Hájek	60	M	stavební inženýr, zastupitel MO Pardubice V, města Pardubic a Pardubického kraje	1350	166	1	Pardubice	91755
 3298	10	2	Mgr.		Silvie	Čermáková	45	F	pedagožka, ředitelka školy	5	5	0	Jihlava	51125
 3279	10	2			Michal	Šmarda	46	M	starosta	7	7	0	Nové Město na Moravě	10006
 3198	10	2			Kamil	Vejvoda	49	M	administrativní pracovník	47	47	0	Nížkov	971
@@ -418,7 +418,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3411	10	2	Ing.		Eva	Appeltová	64	F	manažerka	752	752	0	Herálec	1343
 3359	10	2			Šárka	Broklová	24	F	rodičovská dovolená	759	759	0	Sázavka	330
 3272	10	2			Kamil	Fiedler	37	M	OSVČ	762	762	0	Česká Bělá	1084
-3266	10	2	Ing.		Monika	Oborná	32	F	poslankyně PSP ČR	768	768	0	Březník	698
+3266	10	2	Ing.		Monika	Oborná	32	F	poslankyně PSP ČR	768	768	1	Březník	698
 3328	10	2			Jan	Olišar	67	M	starobní důchodce, zakladatel spolku E-koruna z.s.	1007	1007	0	Jihlava	51125
 3296	10	2	JUDr.		Petr	Paul	72	M	učitel, zastupitel města	1114	1114	0	Jihlava	51125
 3177	10	2			Hana	Šroufková	46	F	dělnice, ochránce zvířat	1173	1173	0	Počátky	2518
@@ -426,8 +426,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3360	10	2	Ing.		Zida	Kůsová	40	F	produktový manažer ve stavebnictví	1227	1227	0	Bystřice nad Pernštejnem	7982
 3136	10	2			Miroslav	Vacek	46	M	podnikatel	1244	1244	0	Polná	5201
 3392	10	2	Mgr.		Blanka	Hedbávná	52	F	učitelka	1245	1245	0	Velká Bíteš	5227
-3404	10	2		MBA	Eva	Decroix	39	F	advokátka, zapsaná mediátorka, podnikatelka	1327	53	0	Jihlava	51125
-3399	10	2	Ing.		Lukáš	Vlček	39	M	náměstek hejtmana Kraje Vysočina pro lesní a vodní hospodářství, zemědělství, životní prostředí, zastupitel města Pacov, držitel titulu Nejlepší starosta 2014-2018 v Kraji Vysočina, před. mikroregionu	1350	166	0	Pacov	4667
+3404	10	2		MBA	Eva	Decroix	39	F	advokátka, zapsaná mediátorka, podnikatelka	1327	53	1	Jihlava	51125
+3399	10	2	Ing.		Lukáš	Vlček	39	M	náměstek hejtmana Kraje Vysočina pro lesní a vodní hospodářství, zemědělství, životní prostředí, zastupitel města Pacov, držitel titulu Nejlepší starosta 2014-2018 v Kraji Vysočina, před. mikroregionu	1350	166	2	Pacov	4667
 3644	11	2	Ing.		Jana	Drápalová	58	F	starostka MČ Brno-Nový Lískovec	5	5	0	Brno	382405
 3670	11	2	Mgr.	Ph.D.	Kateřina	Valachová	45	F	právnička, poslankyně PSP ČR	7	7	0	Brno	382405
 3552	11	2	Ing.		Bohumil	Smutný	42	M	manažer mikroregionu	47	47	0	Ivančice	9854
@@ -437,17 +437,17 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3919	11	2			Vojtěch	Fila	69	M	předseda zemědělského družstva	752	752	0	Brno	382405
 3814	11	2			Roman	Horký	57	M	frontman kapely Kamelot	759	759	0	Brno	382405
 3606	11	2	MUDr.		Klára	Černá	35	F	lékařka	762	762	0	Brno	382405
-3447	11	2	prof. Ing.	CSc., MBA, dr. h. c.	Karel	Rais	71	M	emeritní rektor VUT, poslanec PSP ČR	768	768	0	Brno	382405
+3447	11	2	prof. Ing.	CSc., MBA, dr. h. c.	Karel	Rais	71	M	emeritní rektor VUT, poslanec PSP ČR	768	768	1	Brno	382405
 3849	11	2			Michal	Jurnečka	42	M	stavbyvedoucí, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Brno	382405
-3538	11	2	Bc.		Lucie	Šafránková	34	F	poslankyně, zastupitelka města	1114	1114	0	Brno	382405
+3538	11	2	Bc.		Lucie	Šafránková	34	F	poslankyně, zastupitelka města	1114	1114	1	Brno	382405
 3966	11	2	Ing.		Jan	Šalamoun	65	M	agronom	1173	1173	0	Dobšice	2418
 3583	11	2		MA	Pavel	Trčala	43	M	horolezec a podnikatel	1190	1190	0	Brno	382405
 3569	11	2	doc. JUDr.	Ph.D.	Zdeněk	Koudelka	52	M	vysokoškolský učitel, právník	1227	1227	0	Brno	382405
 3901	11	2	Ing.		Josef	Gregorovič	72	M	důchodce	1240	1240	0	Šardice	2191
 3978	11	2			Lukáš	Němec	37	M	podnikatel	1244	1244	0	Brno	382405
 3852	11	2	Mgr.		Miloš	Rouzek	50	M	OSVČ, zastupitel města Pohořelice	1245	1245	0	Pohořelice	5251
-3692	11	2	PhDr.	Ph.D.	Jiří	Horák	37	M	starosta města Bučovice	1327	1	0	Bučovice	6491
-3887	11	2	Ing.		Jana	Krutáková	59	F	poslankyně, členka zemědělského výboru a výboru pro životní prostředí	1350	166	0	Moravská Nová Ves	2613
+3692	11	2	PhDr.	Ph.D.	Jiří	Horák	37	M	starosta města Bučovice	1327	1	1	Bučovice	6491
+3887	11	2	Ing.		Jana	Krutáková	59	F	poslankyně, členka zemědělského výboru a výboru pro životní prostředí	1350	166	1	Moravská Nová Ves	2613
 4294	12	2		M.A.	Daniel	Řezníček	29	M	předseda Komise pro životní prostředí Olomouckého kraje, krajský zastupitel	5	5	0	Bouzov	1522
 4038	12	2	MUDr.	Ph.D.	Dana	Galuszková	62	F	primářka FN Olomouc	7	7	0	Olomouc	100514
 4311	12	2	Bc.	DiS.	Vladimír	Urbánek	44	M	fyzioterapeut	47	47	0	Uničov	11281
@@ -457,7 +457,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4133	12	2	Ing.		Petr	Šlézar	54	M	technolog	752	752	0	Olomouc	100514
 4043	12	2	JUDr.	Ph.D.	Jan	Rytíř	53	M	právník	759	759	0	Olomouc	100514
 4320	12	2	Bc.		Aleš	Velim	39	M	trenér fitness	762	762	0	Olomouc	100514
-4077	12	2	Ing.		Jaroslav	Faltýnek	59	M	poslanec PSP ČR	768	768	0	Prostějov	43381
+4077	12	2	Ing.		Jaroslav	Faltýnek	59	M	poslanec PSP ČR	768	768	1	Prostějov	43381
 4109	12	2			Barbora	Haškovcová	47	F	obchodník, místopředseda SNS	1007	1007	0	Zlín	74478
 4312	12	2	Ing.	PhD.	Pavel	Jelínek	58	M	poslanec	1114	1114	0	Olomouc	100514
 4204	12	2	MUDr.		Dajana	Dvorská	54	F	lékařka, ochránce zvířat	1173	1173	0	Litovel	9651
@@ -465,7 +465,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4130	12	2	Mgr.		Bohuslav	Coufal	53	M	ředitel společnosti ONYX engineering	1227	1227	0	Olomouc	100514
 4026	12	2			Ivo	Lorenc	38	M	elektromechanik	1244	1244	0	Olomouc	100514
 4359	12	2	RNDr.		Václav	Dvořák	70	M	středoškolský pedagog	1245	1245	0	Olomouc	100514
-4084	12	2	JUDr.	MBA	Martin	Major	42	M	náměstek primátora města Olomouce	1327	53	0	Olomouc	100514
+4084	12	2	JUDr.	MBA	Martin	Major	42	M	náměstek primátora města Olomouce	1327	53	1	Olomouc	100514
 4375	12	2	Bc.		Vojtěch	Pikal	34	M	místopředseda Poslanecké sněmovny PČR, informatik, autor dobrodružných her	1350	720	0	Olomouc	100514
 4453	13	2	Mgr.		Jana	Slovenčíková	58	F	vedoucí odd. produkce MKS Holešov, radní Holešova	5	5	0	Holešov	11509
 4443	13	2	Mgr.	MBA	Karel	Holík	47	M	místostarosta města Kroměříž, místopředseda hokejového svazu	7	7	0	Kroměříž	28360
@@ -475,15 +475,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4521	13	2			Šimon	Holub	28	M	přijímací technik	752	752	0	Vražné	853
 4653	13	2	Mgr.		Eva	Gajdošík	64	F	podnikatelka	759	759	0	Březnice	1353
 4531	13	2			Bořek	Lacina	31	M	elektrotechnik	762	762	0	Rožnov pod Radhoštěm	16280
-4556	13	2		MBA	Marek	Novák	45	M	poslanec Poslanecké sněmovny Parlamentu České republiky	768	768	0	Zlín	74478
+4556	13	2		MBA	Marek	Novák	45	M	poslanec Poslanecké sněmovny Parlamentu České republiky	768	768	1	Zlín	74478
 4449	13	2			Miroslav	Zeťák	44	M	poštovní doručovatel, člen Strany národní svobody, místopředseda	1007	1007	0	Vsetín	25782
-4545	13	2	MUDr.		Jaroslav	Dvořák	63	M	lékař, poslanec	1114	1114	0	Valašské Meziříčí	22149
+4545	13	2	MUDr.		Jaroslav	Dvořák	63	M	lékař, poslanec	1114	1114	1	Valašské Meziříčí	22149
 4671	13	2	Ing.		Robert	Vychytil	52	M	provozní technik	1173	1173	0	Kroměříž	28360
 4527	13	2	Ing.	MBA	Michal	Dvouletý	41	M	ředitel společnosti, zastupitel Zlínského kraje a města Uherské Hradiště	1227	1227	0	Uherské Hradiště	25001
 4439	13	2			Lukáš	Pazdera	34	M	obchodní zástupce	1244	1244	0	Zlín	74478
 4635	13	2			David	Ruman	45	M	OSVČ	1245	1245	0	Luhačovice	5077
-4448	13	2	Ing.		Stanislav	Blaha	51	M	poslanec PČR, starosta města	1327	53	0	Uherské Hradiště	25001
-4425	13	2	Mgr.		Petr	Gazdík	47	M	učitel, poslanec PČR, místopředseda Mandátového a imunitního výboru	1350	166	0	Suchá Loz	1151
+4448	13	2	Ing.		Stanislav	Blaha	51	M	poslanec PČR, starosta města	1327	53	1	Uherské Hradiště	25001
+4425	13	2	Mgr.		Petr	Gazdík	47	M	učitel, poslanec PČR, místopředseda Mandátového a imunitního výboru	1350	166	1	Suchá Loz	1151
 4753	14	2	Mgr.		Dennis	Hennhofer	28	M	učitel na gymnáziu	5	5	0	Ostrava	284982
 4947	14	2			Tomáš	Hanzel	45	M	místopředseda Poslanecké sněmovny	7	7	0	Karviná	50902
 4740	14	2	Bc.		Jana	Chorobinská	41	F	vedoucí finančního odboru	47	47	0	Fulnek	5561
@@ -492,15 +492,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4745	14	2	Ing.		Valéria	Valsamisová	62	F	elektro projektantka	752	752	0	Ostrava	284982
 4866	14	2			Marian	Bojko	58	M	poslanec Parlamentu ČR	759	759	0	Karviná	50902
 4820	14	2			Iveta	Stejskalová	55	F	odborná referentka ve zdravotnictví	762	762	0	Havířov	70165
-4853	14	2	Mgr.		Lubomír	Metnar	54	M	ministr obrany	768	768	0	Frýdlant nad Ostravicí	9926
+4853	14	2	Mgr.		Lubomír	Metnar	54	M	ministr obrany	768	768	1	Frýdlant nad Ostravicí	9926
 4802	14	2	Bc.		Simona	Šnajdrová	47	F	učitelka, zakladatelka komunitní školy	1007	1007	0	Ostrava	284982
-5139	14	2	MUDr.		Jan	Síla	71	M	neurochirurg	1114	1114	0	Ostrava	284982
+5139	14	2	MUDr.		Jan	Síla	71	M	neurochirurg	1114	1114	1	Ostrava	284982
 5038	14	2	Mgr.		Barbora	Tocauerová	45	F	tlumočník a lektor cizích jazyků, předsedkyně Moravskoslezského spolku ochránců zvířat	1173	1173	0	Opava	55996
 4865	14	2	Ing.		Radomír	Klein	54	M	manažer	1227	1227	0	Odry	7286
 4849	14	2			Jaroslav	Baroň	69	M	důchodce	1240	1240	0	Ostrava	284982
 5176	14	2			Marek	Ťapal	43	M	živnostník	1244	1244	0	Orlová	28330
 5098	14	2	Ing.		Pavel	Novotný	42	M	odborný konzultant	1245	1245	0	Chlebičov	1181
-5033	14	2	Mgr. Bc.	DiS.	Pavla	Golasowská	57	F	poslankyně	1327	1	0	Třinec	34778
+5033	14	2	Mgr. Bc.	DiS.	Pavla	Golasowská	57	F	poslankyně	1327	1	1	Třinec	34778
 5252	14	2	Ing.		Ondřej	Polanský	37	M	poslanec, vedoucí resortního týmu Doprava a logistika	1350	720	0	Ostrava	284982
 299	1	3	Mgr.		Jana	Jebavá	38	F	grafička a editorka, členka Komise životního prostředí a péče o veřejný prostor Prahy 7, spolupředsedkyně Zelených v Praze	5	5	0	Praha	1335084
 13	1	3	doc. JUDr. Ing.	Ph.D.	Milan	Hrdý	54	M	vysokoškolský pedagog	7	7	0	Praha	1335084
@@ -512,7 +512,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 309	1	3	Ing.		Bohumil	Vejtasa	71	M	bývalý zastupitel Prahy 1	752	752	0	Praha	1335084
 68	1	3			Radek	Nováček	54	M	místopředseda VOLNÝ blok, podnikatel	759	759	0	Praha	1335084
 416	1	3	Mgr.		Jan	Kozák	70	M	nakladatel, překladatel ze sanskrtu	762	762	0	Praha	1335084
-159	1	3			Robert	Králíček	44	M	poslanec PSP ČR	768	768	0	Praha	1335084
+159	1	3			Robert	Králíček	44	M	poslanec PSP ČR	768	768	1	Praha	1335084
 259	1	3			Michala	Cvrčková	40	F	finanční účetní, zakladatelka spolku E-koruna z.s.	1007	1007	0	Praha	1335084
 371	1	3			Vítězslav	Novák	48	M	oblastní ředitel realitní kanceláře	1114	1114	0	Praha	1335084
 317	1	3	Ing.		Van Sang	Tran	36	M	ředitel integračního centra, místopředseda Zdraví Sport Prosperita	1173	1173	0	Most	65341
@@ -520,8 +520,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 468	1	3			Jaroslav	Sequardt	73	M	důchodce	1240	1240	0	Praha	1335084
 196	1	3			Jaroslav	Dvořák	46	M	živnostník	1244	1244	0	Praha	1335084
 20	1	3			Martina	Vrublová	43	F	mediální konzultantka	1245	1245	0	Praha	1335084
-615	1	3			Marek	Benda	52	M	politik	1327	53	0	Praha	1335084
-526	1	3	Mgr.		Jan	Lacina	51	M	místostarosta MČ Praha 6, producent, scenárista, režisér, místopředseda představenstva v Obecním domě	1350	166	0	Praha	1335084
+615	1	3			Marek	Benda	52	M	politik	1327	53	1	Praha	1335084
+526	1	3	Mgr.		Jan	Lacina	51	M	místostarosta MČ Praha 6, producent, scenárista, režisér, místopředseda představenstva v Obecním domě	1350	166	1	Praha	1335084
 694	2	3	Bc.		Zdeňka	Perglová	40	F	členka předsednictva Zelených, manažerka	5	5	0	Velké Přílepy	3556
 745	2	3	MUDr.		Radek	Poláček	42	M	primář gynekologicko-porodního oddělení	7	7	0	Kladno	68896
 820	2	3	Mgr.		Jan	Klán	38	M	sociolog, analytik	47	47	0	Kutná Hora	20828
@@ -529,7 +529,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1054	2	3	JUDr.	MPH	Rostislav	Žák	67	M	právník	752	752	0	Praha	1335084
 688	2	3			Zdeňka	Hlavničková	68	F	úřednice	759	759	0	Lužce	123
 1051	2	3	Ing.		Alena	Drvotová	66	F	soudní znalec oceňování podniků	762	762	0	Kladno	68896
-633	2	3	Ing.		Jaroslava	Pokorná Jermanová	51	F	ekonom, krajský zastupitel	768	768	0	Benešov	16804
+633	2	3	Ing.		Jaroslava	Pokorná Jermanová	51	F	ekonom, krajský zastupitel	768	768	1	Benešov	16804
 908	2	3	Mgr.		Jaroslav	Kuchař	58	M	podnikatel, zakladatel hnutí CESTA	1007	1007	0	Přišimasy	830
 642	2	3			Robert	Nedvěd	57	M	mistr ve výrobě	1114	1114	0	Obříství	1570
 1028	2	3	Ing.		Oľga	Bruncková	64	F	důchodce, aktivní dočaskářka, ochránce zvířat	1173	1173	0	Rpety	488
@@ -537,7 +537,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 666	2	3			Miroslav	Kabát	71	M	důchodce	1240	1240	0	Praha	1335084
 1040	2	3	Mgr.		Lenka	Záhorková	44	F	právník	1244	1244	0	Kolín	32490
 719	2	3	Mgr.		Libor	Žofka	50	M	výkonný manažer Hnutí Přísaha	1245	1245	0	Český Brod	7066
-895	2	3	Mgr.		Martin	Kupka	45	M	starosta, poslanec PČR	1327	53	0	Líbeznice	3056
+895	2	3	Mgr.		Martin	Kupka	45	M	starosta, poslanec PČR	1327	53	1	Líbeznice	3056
 1126	2	3			František	Kopřiva	25	M	poslanec, místopředseda sněmovního výboru pro evropské záležitosti, laboratorní specialista	1350	720	0	Mladá Boleslav	44506
 1181	3	3	JUDr.	Ph.D.	Helena	Nutilová	38	F	advokátka	5	5	0	České Budějovice	94229
 1240	3	3	Mgr.		Ivana	Stráská	69	F	pedagog, bývalá hejtmanka Jihočeského kraje	7	7	0	Milevsko	8185
@@ -547,14 +547,14 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1204	3	3			Růžena	Raždíková	60	F	OSVČ	752	752	0	Ostrava	284982
 1212	3	3			Vladislava	Šímová	55	F	veterinární technička	759	759	0	České Budějovice	94229
 1397	3	3			Václav	Kupilík	48	M	obchodní zástupce	762	762	0	České Budějovice	94229
-1241	3	3	Ing.		Karel	Tureček	50	M	poslanec, zastupitel města Chýnov	768	768	0	Chýnov	2472
+1241	3	3	Ing.		Karel	Tureček	50	M	poslanec, zastupitel města Chýnov	768	768	1	Chýnov	2472
 1162	3	3			Karel	Všední	30	M	zakladatel spolku E-koruna z.s.	1007	1007	0	Strašice	188
 1206	3	3			Václav	Mikeš	43	M	protipožární technik	1114	1114	0	Kaplice	7241
 1268	3	3	Ing.		Marie	Paukejová	66	F	předsedkyně spolku Jihočeské RŮŽE, sociální poradkyně	1173	1173	0	České Budějovice	94229
 1298	3	3	Mgr.	MBA	Pavel	Matoušek	53	M	jednatel společnosti, myslivec	1227	1227	0	České Budějovice	94229
 1199	3	3			Tomáš	Postl	34	M	ředitel cestovní kanceláře	1244	1244	0	České Budějovice	94229
 1356	3	3			Ladislav	Malec	42	M	strážník městské policie	1245	1245	0	Skočice	240
-1153	3	3	Ing.		Václav	Král	41	M	předseda představenstva Teplárna České Budějovice	1327	53	0	Borek	1603
+1153	3	3	Ing.		Václav	Král	41	M	předseda představenstva Teplárna České Budějovice	1327	53	1	Borek	1603
 1261	3	3			Josef	Soumar	36	M	zastupitel Jihočeského kraje, místopředseda hospodářského výboru, Wealth manager, podnikatel, expert na finanční trhy	1350	720	0	Písek	30379
 1549	4	3	Bc.		Radka	Hronková	41	F	studentka ČZU PEF-obor Veřejná správa a regionální rozvoj, obchodní manager	5	5	0	Nepomuk	3730
 1533	4	3			Jan	Látka	67	M	elektroprojektant, 2012-2018 senátor	7	7	0	Domažlice	11056
@@ -563,7 +563,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1626	4	3	Ing.		Magda	Netíková	63	F	učitelka	752	752	0	Klatovy	22140
 1664	4	3	JUDr. Bc.		Norbert	Naxera	36	M	advokát specializovaný na žaloby proti vládním covidovým opatřením	759	759	0	Přeštice	7049
 1666	4	3			Anna	Kostková	64	F	živnostnice	762	762	0	Rokycany	14313
-1553	4	3	MUDr.		Kamal	Farhan	52	M	lékař	768	768	0	Plzeň	175219
+1553	4	3	MUDr.		Kamal	Farhan	52	M	lékař	768	768	1	Plzeň	175219
 1586	4	3			Filip	Grznár	36	M	OSVČ, sportovec a trenér, influencer	1007	1007	0	Plzeň	175219
 1521	4	3			Pavel	Bezucha	58	M	živnostník	1114	1114	0	Plzeň	175219
 1601	4	3			Blanka	Filipová	44	F	vedoucí útulku pro týrané koně S.O.S. - Život pro koně	1173	1173	0	Mířkov	307
@@ -571,7 +571,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1741	4	3			Hana	Kolářová	59	F	soustružník	1240	1240	0	Mirošov	2274
 1746	4	3			Martin	Jánský	46	M	obchodní ředitel	1244	1244	0	Klatovy	22140
 1579	4	3			František	Riška	63	M	OSVČ	1245	1245	0	Klatovy	22140
-1523	4	3	Mgr.		Rudolf	Salvetr	57	M	starosta města Klatovy	1327	53	0	Klatovy	22140
+1523	4	3	Mgr.		Rudolf	Salvetr	57	M	starosta města Klatovy	1327	53	1	Klatovy	22140
 1557	4	3	Ing.	Ph.D.	Lukáš	Bartoň	40	M	poslanec se specializací na oblast školství, místopředseda Výboru pro vědu, vzdělání, kulturu, mládež a tělovýchovu, vědec	1350	720	0	Plzeň	175219
 1762	5	3	Mgr.		Zdenka	Kopecká	41	F	učitelka	5	5	0	Sokolov	22924
 1817	5	3	Bc.		Josef	Šesták	38	M	vodárenský technik, zastupitel města	7	7	0	Nejdek	7790
@@ -579,7 +579,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1892	5	3			Václav	Houška	49	M	profesionální hasič	55	55	0	Plzeň	175219
 1929	5	3	JUDr.		Josef	Vaněk	72	M	pracující důchodce	759	759	0	Hazlov	1532
 1834	5	3			Robert	Rolínek	53	M	řidič	762	762	0	Aš	13105
-1790	5	3			Renata	Oulehlová	53	F	starostka města Sokolov	768	768	0	Sokolov	22924
+1790	5	3			Renata	Oulehlová	53	F	starostka města Sokolov	768	768	2	Sokolov	22924
 1935	5	3			Lukáš	Trabach	28	M	dělník, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Sokolov	22924
 1854	5	3			Michal	Šťovíček	40	M	živnostník, krajský zastupitel	1114	1114	0	Ostrov	16491
 1808	5	3	Ing.		Pavel	Klepáček	53	M	místostarosta města Aš	1173	1173	0	Aš	13105
@@ -595,15 +595,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2110	6	3			Stanislav	Šarman	60	M	strážník MP	752	752	0	Ústí nad Labem	91982
 2120	6	3			David	Štěpán	57	M	gymnazijní učitel matematiky	759	759	0	Teplice	49705
 2189	6	3			Jan	Mrázek	28	M	operátor ve výrobě	762	762	0	Jirkov	19200
-2207	6	3	Mgr.		Jaroslav	Bžoch	37	M	poslanec	768	768	0	Teplice	49705
+2207	6	3	Mgr.		Jaroslav	Bžoch	37	M	poslanec	768	768	1	Teplice	49705
 2204	6	3	Bc.		Jan	Dubanič	47	M	konzultant a lektor, člen Předsednictva hnutí CESTA	1007	1007	0	Ústí nad Labem	91982
 2285	6	3			Monika	Jarošová	50	F	zdravotní sestra, poslankyně	1114	1114	0	Brozany nad Ohří	1350
 2083	6	3	MUDr.		František	Kandel	66	M	gynekolog, porodník	1173	1173	0	Kadaň	18133
 2027	6	3			Vladimír	Brožek	62	M	podnikatel v oboru stavitelství	1227	1227	0	Most	65341
 2237	6	3	Bc.	MBA	Michal	Rožec	55	M	živnostník	1244	1244	0	Ústí nad Labem	91982
 2187	6	3			Karel	Hajdina	54	M	dispečer	1245	1245	0	Ústí nad Labem	91982
-2283	6	3	Ing.		Michal	Kučera	53	M	radní Ústeckého kraje, ekonom a báňský inženýr	1327	721	0	Louny	18156
-1956	6	3	Ing.		Petr	Liška	51	M	starosta obce Malé Žernoseky, projektant pozemních staveb, místopředseda mikroregionu Porta Bohemica	1350	166	0	Malé Žernoseky	733
+2283	6	3	Ing.		Michal	Kučera	53	M	radní Ústeckého kraje, ekonom a báňský inženýr	1327	721	1	Louny	18156
+1956	6	3	Ing.		Petr	Liška	51	M	starosta obce Malé Žernoseky, projektant pozemních staveb, místopředseda mikroregionu Porta Bohemica	1350	166	2	Malé Žernoseky	733
 2410	7	3	Mgr.		Jakub	Varvařovský	33	M	expert na komunikaci a protikorupční opatření, zakladatel MNOHA SVĚTŮ v Jilemnici	5	5	0	Jilemnice	5417
 2505	7	3			Tomáš	Hudec	50	M	živnostník	7	7	0	Turnov	14391
 2427	7	3	Ing.		František	Pešek	75	M	konstruktér sklářských strojů, důchodce	47	47	0	Jablonec nad Nisou	45317
@@ -611,15 +611,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2561	7	3			Markéta	Vlhová	33	F	zahradnice	752	752	0	Město Albrechtice	3481
 2324	7	3			Vladimír	Mareš	47	M	správce externích provozů	759	759	0	Stráž pod Ralskem	3899
 2539	7	3			Aleš	Švejkovský	56	M	prodavač	762	762	0	Jablonec nad Nisou	45317
-2554	7	3	prof. Ing.	CSc.	Ivan	Jáč	65	M	poslanec PS PČR	768	768	0	Všelibice	601
+2554	7	3	prof. Ing.	CSc.	Ivan	Jáč	65	M	poslanec PS PČR	768	768	1	Všelibice	601
 2563	7	3			Martin	Zeman	51	M	projektant elektro, zakladatel spolku E-koruna, z.s.	1007	1007	0	Jesenný	479
 2418	7	3			Pavel	Kotěborský	30	M	majitel truhlářské dílny	1114	1114	0	Cvikov	4503
 2470	7	3			Alena	Bartoňová	63	F	OSVČ, kadeřnice, spisovatelka	1173	1173	0	Jilemnice	5417
 2504	7	3			Stanislav	Kuchař	52	M	elektrotechnik	1227	1227	0	Jablonec nad Nisou	45317
 2319	7	3	Ing.		Václav	Havlíček	46	M	podnikatel	1244	1244	0	Liberec	104261
 2550	7	3			Noel	Bernal	57	M	stavební dozor	1245	1245	0	Dlouhý Most	916
-2443	7	3	Ing.	MBA	Vít	Vomáčka	61	M	starosta obce Kravaře	1327	53	0	Kravaře	789
-2483	7	3	Mgr.	Ph.D.	Jan	Berki	40	M	vysokoškolský pedagog, zastupitel města Liberce	1350	166	0	Liberec	104261
+2443	7	3	Ing.	MBA	Vít	Vomáčka	61	M	starosta obce Kravaře	1327	53	2	Kravaře	789
+2483	7	3	Mgr.	Ph.D.	Jan	Berki	40	M	vysokoškolský pedagog, zastupitel města Liberce	1350	166	2	Liberec	104261
 2651	8	3			Daniel	Rufer	27	M	poradce europoslance, textař, ciderový hybatel, spolupředseda krajské organizace Zelených	5	5	0	Náchod	19688
 2615	8	3	Mgr.		Jana	Frőhlichová	36	F	koordinátorka projektu Senioři v krajích	7	7	0	Hradec Králové	92683
 2834	8	3	Mgr.		Táňa	Šormová	65	F	učitelka	47	47	0	Hradec Králové	92683
@@ -627,14 +627,14 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2587	8	3	Ing.		Jiří	Vebr	64	M	zemědělský inženýr a občanský aktivista	752	752	0	Hradec Králové	92683
 2568	8	3			Petr	Pistorius	57	M	vedoucí kuchyně	759	759	0	Janské Lázně	682
 2655	8	3	MUDr.	CSc.	Jiřina	Baudyšová	79	F	lékařka	762	762	0	Hradec Králové	92683
-2709	8	3	Lic.	MBA	Petr	Sadovský	52	M	poslanec PSP ČR, místostarosta města Dobruška	768	768	0	Dobruška	6651
+2709	8	3	Lic.	MBA	Petr	Sadovský	52	M	poslanec PSP ČR, místostarosta města Dobruška	768	768	1	Dobruška	6651
 2832	8	3			Jan	Trčka	43	M	OSVČ, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Hořice	8439
 2596	8	3	Ing.		Jiří	Motyčka	44	M	vedoucí provozu	1114	1114	0	Nová Ves	218
 2595	8	3			Dana	Doškářová	57	F	podnikatelka, dobrovolník v útulku, dočaskář	1173	1173	0	Jičín	16551
 2627	8	3	JUDr.		Denis	Mitrović	42	M	advokát, místopředseda krajské organizace Trikolora Svobodní Soukromníci	1227	1227	0	Kostelec nad Orlicí	6188
 2625	8	3			Jiří	Dvořák	45	M	jednatel společnosti	1244	1244	0	Trutnov	29958
 2781	8	3			Rostislav	Holý	49	M	podnikatel	1245	1245	0	Choustníkovo Hradiště	577
-2628	8	3	JUDr.	MBA	Pavel	Staněk	48	M	právník, podnikatel, filantrop	1327	53	0	Předměřice nad Labem	1926
+2628	8	3	JUDr.	MBA	Pavel	Staněk	48	M	právník, podnikatel, filantrop	1327	53	1	Předměřice nad Labem	1926
 2593	8	3	MgA.		Michal	Čepelka	35	M	kreativec, grafik, univerzitní pedagog	1350	720	0	Broumov	7272
 3094	9	3			Veronika	Filáčková	36	F	technička kvality	5	5	0	Dolní Čermná	1334
 2955	9	3	MUDr.		Pavel	Havíř	66	M	lékař, ředitel nemocnice	7	7	0	Svitavy	16601
@@ -644,14 +644,14 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2957	9	3	Bc.		Markéta	Vašatová	41	F	podnikatelka	752	752	0	Hřibiny-Ledská	355
 3027	9	3			Ladislav	Příhonský	37	M	nástrojař, zastupitel obce	759	759	0	Janůvky	59
 3001	9	3			Eliška	Honková	59	F	asistentka v mateřské škole	762	762	0	Pardubice	91755
-2950	9	3	Ing.		Martin	Kolovratník	46	M	poslanec Parlamentu České republiky	768	768	0	Pardubice	91755
+2950	9	3	Ing.		Martin	Kolovratník	46	M	poslanec Parlamentu České republiky	768	768	1	Pardubice	91755
 2844	9	3			Lenka	Fibikarová	40	F	mateřská dovolená, aktivní v občanském hnutí Nesahejte nám na děti!	1007	1007	0	Chrudim	23140
 3002	9	3	PhDr. Ing.	MBA	Václav	Jiruška	49	M	obchodní manažer	1114	1114	0	Hnátnice	825
 3011	9	3	Ing.		Marek	Zastoupil	26	M	VŠ pedagog	1173	1173	0	Svatý Jiří	291
 2866	9	3			Petr	Lichtenberg	62	M	místostarosta města Chrudim	1227	1227	0	Chrudim	23140
 3053	9	3			Ondřej	Trylč	28	M	technik	1244	1244	0	Pardubice	91755
 3108	9	3			Petr	Pittner	51	M	pracovník v zemědělství	1245	1245	0	Trstěnice	529
-3063	9	3	Mgr.		Marek	Výborný	45	M	poslanec PSP ČR, pedagog	1327	1	0	Heřmanův Městec	4807
+3063	9	3	Mgr.		Marek	Výborný	45	M	poslanec PSP ČR, pedagog	1327	1	1	Heřmanův Městec	4807
 3084	9	3	Mgr.		Libuše	Vévodová	64	F	středoškolská učitelka matematiky, zastupitelka Svitav a Pardubického kraje	1350	720	0	Svitavy	16601
 3261	10	3	Mgr.	Ph.D.	Lenka	Malinová	38	F	překladatelka	5	5	0	Havlíčkův Brod	23255
 3141	10	3	Mgr. Bc.		Bohuslav	Kůrka	50	M	psycholog	7	7	0	Havlíčkův Brod	23255
@@ -661,7 +661,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3190	10	3			Tomáš	Šimko	36	M	podnikatel	752	752	0	Ostrava	284982
 3210	10	3			Jaroslav	Zeisberger	30	M	řidič, bývalý zastupitel města Jihlava	759	759	0	Jihlava	51125
 3265	10	3			Dana	Havlátová	54	F	recepční	762	762	0	Počátky	2518
-3324	10	3	Ing.		Martin	Kukla	38	M	zkušební inženýr, zastupitel Kraje Vysočina	768	768	0	Počátky	2518
+3324	10	3	Ing.		Martin	Kukla	38	M	zkušební inženýr, zastupitel Kraje Vysočina	768	768	1	Počátky	2518
 3234	10	3			Kateřina	Vašáková	43	F	manažerka, koordinátorka, básnířka, účetní	1007	1007	0	Jihlava	51125
 3154	10	3	Ing.		David	Mészáros	42	M	bezpečnostní technik	1114	1114	0	Jihlava	51125
 3214	10	3	Mgr. Ing.		David	Veselý	39	M	advokát	1173	1173	0	Kněžice	1363
@@ -669,7 +669,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3367	10	3	Mgr.	CSc.	Jiří	Strachota	74	M	fyzik, krotitel zdivočelé legislativy, předseda Svobodných Vysočiny	1227	1227	0	Golčův Jeníkov	2706
 3138	10	3			Kryštof	Bradáč	26	M	živnostník, sportovec	1244	1244	0	Polná	5201
 3145	10	3	Ing. Bc.	DiS.	Jindra	Sázavská	57	F	účetní	1245	1245	0	Březník	698
-3316	10	3	MUDr.		Romana	Bělohlávková	56	F	dětská lékařka, místostarostka města	1327	1	0	Žďár nad Sázavou	20485
+3316	10	3	MUDr.		Romana	Bělohlávková	56	F	dětská lékařka, místostarostka města	1327	1	1	Žďár nad Sázavou	20485
 3350	10	3	Bc.		Jan	Pošvář	36	M	poslanec PSP ČR, člen zemědělského a kontrolního výboru, programátor, malíř	1350	720	0	Mnich	396
 3728	11	3	Mgr.	Ph.D.	Irena	Ferčíková Konečná	43	F	mezinárodní konzultantka a analytička, expertka v oblasti lidských práv	5	5	0	Valtice	3582
 3443	11	3	Ing.		Pavel	Trojan	54	M	starosta města	7	7	0	Valtice	3582
@@ -680,7 +680,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3922	11	3	Ing.		Jana	Vařečková	78	F	ekonomka	752	752	0	Telnice	1628
 3817	11	3			Světlana	Václavíková	51	F	jednatelka společnosti, insolvenční poradkyně	759	759	0	Brno	382405
 3892	11	3	Ing.		Lubomír	Bouše	64	M	projektový manažer	762	762	0	Brno	382405
-3694	11	3	MUDr.		Miloslav	Janulík	59	M	soukromý gynekolog, poslanec PSP ČR	768	768	0	Valtice	3582
+3694	11	3	MUDr.		Miloslav	Janulík	59	M	soukromý gynekolog, poslanec PSP ČR	768	768	1	Valtice	3582
 3860	11	3			Libuše	Boháčková	64	F	odborný poradce pro pohybovou aktivitu a zdravý životní styl	1007	1007	0	Nemotice	422
 4000	11	3	Mgr.	MBA	Petra	Svedíková Vávrová	42	F	právnička, krajská zastupitelka	1114	1114	0	Znojmo	33775
 3999	11	3			Sylva	Dvořáková	54	F	jednatelka společnosti	1173	1173	0	Brno	382405
@@ -689,7 +689,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3859	11	3			Irena	Dobšíková	61	F	referentka	1240	1240	0	Brno	382405
 3473	11	3			Aleš	Knitl	54	M	ředitel moštárny	1244	1244	0	Popovice	354
 3761	11	3		MBA	Lenka	Jadrná	51	F	asistentka pedagoga	1245	1245	0	Mikulov	7479
-3936	11	3	prof. MUDr.	CSc., MBA, EBIR	Vlastimil	Válek	61	M	lékař - radiolog, poslanec	1327	721	0	Brno	382405
+3936	11	3	prof. MUDr.	CSc., MBA, EBIR	Vlastimil	Válek	61	M	lékař - radiolog, poslanec	1327	721	1	Brno	382405
 3861	11	3			Tomáš	Vymazal	31	M	poslanec PČR, člen petičního výboru a výboru pro bezpečnost	1350	720	0	Brno	382405
 4337	12	3	Ing.		Jana	Jaňourová	63	F	zemědělská inženýrka	5	5	0	Prostějov	43381
 4249	12	3	Bc.	DiS.	Pavel	Šoltys	56	M	OSVČ	7	7	0	Lipník nad Bečvou	7953
@@ -700,7 +700,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4215	12	3	Ing. Bc.		Jaroslav	Smékal	65	M	předseda spolku Ekojóga ČR	752	752	0	Bělá pod Pradědem	1753
 4310	12	3	Mgr. Bc.		Karel	Světnička	61	M	právník a nezávislý publicista	759	759	0	Havířov	70165
 4103	12	3			Alena	Březinová	58	F	zdravotní sestra	762	762	0	Prostějov	43381
-4079	12	3	Mgr.		Milan	Feranec	57	M	právník, poslanec PSP ČR	768	768	0	Olomouc	100514
+4079	12	3	Mgr.		Milan	Feranec	57	M	právník, poslanec PSP ČR	768	768	1	Olomouc	100514
 4323	12	3			Hana	Pavlová	63	F	starobní důchodce, zakladatelka spolku E-koruna z.s	1007	1007	0	Zlaté Hory	3711
 4124	12	3			Dan	Chromec	50	M	zdravotnický pracovník, krajský zastupitel	1114	1114	0	Přerov	42451
 4177	12	3	MUDr.	Ph.D.	Ivo	Klementa	57	M	lékař - chirurg FN Olomouc	1173	1173	0	Olomouc	100514
@@ -718,14 +718,14 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4694	13	3	Ing.		Lukáš	Wludyka	39	M	area sales manager	752	752	0	Brno	382405
 4707	13	3	doc. JUDr. Ing.	Ph.D., MBA	Karel	Nedbálek	64	M	šéfredaktor vědeckého časopisu	759	759	0	Zlín	74478
 4502	13	3			Miroslava	Svojsíková	53	F	účetní	762	762	0	Hluk	4338
-4696	13	3	Mgr.		Robert	Stržínek	52	M	starosta města Valašské Meziříčí	768	768	0	Valašské Meziříčí	22149
+4696	13	3	Mgr.		Robert	Stržínek	52	M	starosta města Valašské Meziříčí	768	768	1	Valašské Meziříčí	22149
 4413	13	3			Luděk	Bolcek	56	M	jednatel, výkonný ředitel, 1. místopředseda hnutí CESTA	1007	1007	0	Machová	661
 4591	13	3	Ing.		Jaroslav	Holík	68	M	poslanec	1114	1114	0	Březůvky	707
 4605	13	3	Ing.		Vladimír	Vaculík	55	M	stavební inženýr, znalec	1173	1173	0	Uherský Brod	16409
 4678	13	3	Ing. Mgr.		Libuše	Bídová	45	F	starostka obce Nezdenice	1227	1227	0	Nezdenice	710
 4504	13	3			Jana	Slováková	50	F	účetní	1244	1244	0	Provodov	780
 4409	13	3			Zuzana	Manellari	42	F	hotelová recepční, OSVČ	1245	1245	0	Zlín	74478
-4566	13	3	MUDr.		Róbert	Teleky	54	M	lékař, radní města	1327	1	0	Vsetín	25782
+4566	13	3	MUDr.		Róbert	Teleky	54	M	lékař, radní města	1327	1	1	Vsetín	25782
 4698	13	3			Zdeněk	Třos	39	M	majitel franšízového gastronomického konceptu, předseda dozorčí rady Komerční domy Rožnov	1350	720	0	Rožnov pod Radhoštěm	16280
 4729	14	3	MUDr.		Gabriela	Jahůdka Vaníková	49	F	lékařka v oboru dětská a dorostová psychiatrie	5	5	0	Ostrava	284982
 4838	14	3	Ing.		Jiří	Vzientek	43	M	náměstek ministra kultury	7	7	0	Frýdek-Místek	55006
@@ -735,15 +735,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4867	14	3	PhDr.		Antonín	Barcuch	64	M	archivář, historik	752	752	0	Ostrava	284982
 4786	14	3			Radovan	Maxner	51	M	OSVČ-cestovní ruch	759	759	0	Hlučín	13805
 4904	14	3			Kamil	Graf	51	M	zdravotník, řidič sanitárního vozidla	762	762	0	Ostrava	284982
-5239	14	3	Ing.		Aleš	Juchelka	45	M	poslanec Parlamentu ČR	768	768	0	Ostrava	284982
+5239	14	3	Ing.		Aleš	Juchelka	45	M	poslanec Parlamentu ČR	768	768	1	Ostrava	284982
 5226	14	3			Miroslav	Sapeta	50	M	podnikatel, zakladatel spolku E-koruna z.s.	1007	1007	0	Ostrava	284982
-4899	14	3	Mgr.		Karel	Sládeček	58	M	živnostník, ředitel společnosti	1114	1114	0	Kunčice pod Ondřejníkem	2416
+4899	14	3	Mgr.		Karel	Sládeček	58	M	živnostník, ředitel společnosti	1114	1114	1	Kunčice pod Ondřejníkem	2416
 4794	14	3	Bc.		Pavel	Gazda	50	M	hlavní trenér SCM Frýdek-Místek	1173	1173	0	Morávka	1219
 4854	14	3			Libor	Hřivnáč	61	M	galerista, developer	1227	1227	0	Holasovice	1354
 5062	14	3			Drahoslav	Ruppenthal	64	M	důchodce	1240	1240	0	Ostrava	284982
 5049	14	3			Radek	Velička	42	M	publicista	1244	1244	0	Příbor	8428
 5147	14	3	prof. PhDr.	CSc.	Ivo	Barteček	68	M	univerzitní profesor	1245	1245	0	Ostrava	284982
-4972	14	3	Bc.		Jakub	Janda	43	M	poslanec, předseda českého skoku na lyžích	1327	53	0	Frenštát pod Radhoštěm	10766
+4972	14	3	Bc.		Jakub	Janda	43	M	poslanec, předseda českého skoku na lyžích	1327	53	1	Frenštát pod Radhoštěm	10766
 5243	14	3	Bc.		Daniel	Galuszka	26	M	zastupitel města Bohumína	1350	720	0	Bohumín	20308
 191	1	4	Mgr.	M.EM	Ondřej	Mirovský	42	M	radní Prahy 7 pro dopravu, bezpečnost a integraci cizinců, ekolog, podnikatel, odborník na družicové systémy pro dálkový průzkum Země	5	5	0	Praha	1335084
 360	1	4	JUDr. Ing.	MBA	Miloslav	Ludvík	58	M	ředitel Fakultní nemocnice v Motole	7	7	0	Praha	1335084
@@ -755,15 +755,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 281	1	4	Ing.		Martin	Vozňák	56	M	obchodní manažer	752	752	0	Praha	1335084
 486	1	4			Robert	Kurka	48	M	profesionální mistr Evropy v Thajském boxu, podnikatel, trenér bojových sportů, majitel fitness, hypoteční makléř	759	759	0	Malíkovice	369
 250	1	4			Věra	Čavdarova Bouřová	48	F	sociální pracovnice	762	762	0	Kladno	68896
-606	1	4	Ing.		Lubomír	Brož	55	M	místostarosta MČ Praha 5	768	768	0	Praha	1335084
+606	1	4	Ing.		Lubomír	Brož	55	M	místostarosta MČ Praha 5	768	768	1	Praha	1335084
 231	1	4	Bc.	MBA	Martin	Másílko	50	M	manažer, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Praha	1335084
-586	1	4	Mgr.		Jiří	Kobza	65	M	poslanec, diplomat	1114	1114	0	Praha	1335084
+586	1	4	Mgr.		Jiří	Kobza	65	M	poslanec, diplomat	1114	1114	2	Praha	1335084
 188	1	4	doc. Ing.	Ph.D.	Vlastimil	Hart	40	M	univerzitní pedagog a vědecko-výzkumný pracovník, vedoucí katedry	1173	1173	0	Kostelec nad Černými lesy	3804
 200	1	4	Bc.		Bedřich	Laube	52	M	zastupitel MČ Praha 9, předseda bezpečnostní komise, podnikatel	1227	1227	0	Praha	1335084
 529	1	4			Milan	Brož	74	M	důchodce	1240	1240	0	Praha	1335084
 147	1	4			Zdeněk	Střížek	51	M	podnikatel	1244	1244	0	Praha	1335084
 541	1	4	RNDr.	Ph.D.	Jiřina	Hofmanová	69	F	vysokoškolský pedagog	1245	1245	0	Praha	1335084
-54	1	4	Mgr.		Ondřej	Kolář	37	M	starosta MČ Praha 6	1327	721	0	Praha	1335084
+54	1	4	Mgr.		Ondřej	Kolář	37	M	starosta MČ Praha 6	1327	721	1	Praha	1335084
 11	1	4			Ondřej	Profant	33	M	poslanec, programátor, odborník na digitalizaci veřejné správy a otevřený software	1350	720	0	Praha	1335084
 660	2	4	Ing.	Ph.D.	Kateřina	Pazderů	48	F	vysokoškolský pedagog	5	5	0	Zákolany	575
 686	2	4	Ing.		Karolína	Stařecká	46	F	uvolněná radní města Lysá nad Labem	7	7	0	Lysá nad Labem	9825
@@ -772,7 +772,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 675	2	4	Ing.	CSc.	Vít	Tuček	63	M	vedoucí oddělení apl. tech.	752	752	0	Zadní Třebaň	936
 932	2	4	MUDr.		Petr	Kuchař	70	M	lékař	759	759	0	Úhonice	1139
 641	2	4			Pavel	Kostka	48	M	strojník úpravny vody	762	762	0	Křesetice	691
-1099	2	4	prof. JUDr.	CSc.	Helena	Válková	70	F	poslankyně PSP ČR, profesorka trestního práva, zmocněnkyně vlády pro lidská práva	768	768	0	Praha	1335084
+1099	2	4	prof. JUDr.	CSc.	Helena	Válková	70	F	poslankyně PSP ČR, profesorka trestního práva, zmocněnkyně vlády pro lidská práva	768	768	1	Praha	1335084
 710	2	4			Michal	Oliva	48	M	OSVČ tesař, člen SPR-RSČ	1007	1007	0	Kladno	68896
 1007	2	4	Ing. Mgr.		Tomáš	Doležal	48	M	ekonom, politolog	1114	1114	0	Kamenice	4707
 832	2	4	MUDr.		Jiří	Somberg	60	M	lékař chirurgie	1173	1173	0	Kosmonosy	5176
@@ -780,8 +780,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 628	2	4			Antonín	Dvořák	68	M	důchodce	1240	1240	0	Slaný	16010
 792	2	4			Leoš	Fiala	31	M	stavitel a ekonom	1244	1244	0	Zruč nad Sázavou	4834
 869	2	4	Mgr.		Michal	Vojíř	45	M	OSVČ	1245	1245	0	Újezd	672
-774	2	4	Ing.		Vojtěch	Munzar	44	M	poslanec PČR, ekonom	1327	53	0	Kladno	68896
-793	2	4	Mgr.	Ph.D.	Ondřej	Lochman	40	M	starosta města Mnichova Hradiště, pedagog	1350	166	0	Mnichovo Hradiště	8858
+774	2	4	Ing.		Vojtěch	Munzar	44	M	poslanec PČR, ekonom	1327	53	1	Kladno	68896
+793	2	4	Mgr.	Ph.D.	Ondřej	Lochman	40	M	starosta města Mnichova Hradiště, pedagog	1350	166	1	Mnichovo Hradiště	8858
 1159	3	4	Ing.		Edvard	Sequens	55	M	energetický konzultant, předseda Calla - Sdružení pro záchranu prostředí	5	5	0	Borovany	4166
 1186	3	4	Ing.		Olga	Bastlová	51	F	místostarostka města Tábor, radní Jihočeského kraje	7	7	0	Tábor	34119
 1244	3	4			Radek	Nejezchleb	47	M	zaměstnanec Českých drah	47	47	0	Kunžak	1473
@@ -789,14 +789,14 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1399	3	4			Roman	Mikulášek	42	M	místostarosta obce	83	83	0	Pasohlávky	743
 1347	3	4			Bohumil	Pidrman	52	M	majitel pojízdné prodejny	759	759	0	Dešná	595
 1158	3	4			Pavlína	Kubálová	42	F	koordinátor distribuce tisku	762	762	0	Mladá Vožice	2709
-1444	3	4	Ing.		Jan	Kubík	42	M	poslanec, starosta obce Loučovice	768	768	0	Loučovice	1559
+1444	3	4	Ing.		Jan	Kubík	42	M	poslanec, starosta obce Loučovice	768	768	1	Loučovice	1559
 1189	3	4			Alena	Teplická	69	F	OSVČ	1007	1007	0	Rudolfov	2572
 1239	3	4			Pavel	Baránek	53	M	instalatér - topenář	1114	1114	0	Jindřichův Hradec	21169
 1307	3	4			Jana	Červáková	64	F	ekonomka, účetní	1173	1173	0	Homole	1621
 1317	3	4			Zora	Mlčáková	65	F	účetní	1227	1227	0	Dubné	1654
 1439	3	4	Ing.		Milan	Chotaš	47	M	projektový manažer	1244	1244	0	Praha	1335084
 1207	3	4			Jiří	Sosna	54	M	soudní znalec	1245	1245	0	Sezimovo Ústí	7176
-1420	3	4	Mgr.		Pavel	Klíma	50	M	náměstek hejtmana	1327	721	0	Malšice	1850
+1420	3	4	Mgr.		Pavel	Klíma	50	M	náměstek hejtmana	1327	721	1	Malšice	1850
 1291	3	4			Zuzana	Kudláčková	37	F	zastupitelka města České Budějovice, asistentka v Poslanecké sněmovně PČR, OSVČ	1350	720	0	České Budějovice	94229
 1495	4	4	Mgr.		Jakub	Kurc	31	M	středoškolský učitel, Církevní gymnázium Plzeň	5	5	0	Nepomuk	3730
 1602	4	4	Ing.		Milena	Stárková	59	F	ekonomka	7	7	0	Sušice	10957
@@ -804,7 +804,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1607	4	4			Jan	Drnek	60	M	spisovatel	55	55	0	Plzeň	175219
 1548	4	4	Bc.		Lukáš	Brych	38	M	koordinátor Bloku proti islamizaci	759	759	0	Kamenný Újezd	859
 1751	4	4			Petr	Strádal	66	M	automechanik	762	762	0	Přehýšov	468
-1649	4	4	Mgr. Bc.		Hubert	Lang	52	M	pedagog - vychovatel	768	768	0	Bílov	79
+1649	4	4	Mgr. Bc.		Hubert	Lang	52	M	pedagog - vychovatel	768	768	1	Bílov	79
 1474	4	4			Robert	Fiala	39	M	účetní, člen platformy SVÉPOMOC	1007	1007	0	Plzeň	175219
 1481	4	4			Jan	Kůrka	78	M	sportovní trenér ve střelbě, olympijský vítěz	1114	1114	0	Plzeň	175219
 1482	4	4	Mgr.		Jitka	Dolívková	57	F	učitelka ZŠ	1173	1173	0	Klatovy	22140
@@ -835,7 +835,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2226	6	4			Josef	Nekola	61	M	podnikatel	55	55	0	Osek	4670
 2154	6	4	Ing.		Markéta	Iránková	44	F	jednatel firmy	759	759	0	Podbořany	6392
 2091	6	4	Mgr.		Petra	Kotyzová	56	F	středoškolská učitelka	762	762	0	Chomutov	48349
-2235	6	4	Ing.		Pavel	Růžička	51	M	poslanec	768	768	0	Postoloprty	4705
+2235	6	4	Ing.		Pavel	Růžička	51	M	poslanec	768	768	1	Postoloprty	4705
 2045	6	4			Radek	Čurda	54	M	OSVČ, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Háj u Duchcova	1318
 2185	6	4	Ing. Bc.		Dominik	Hanko	42	M	předseda finančního výboru - krajský zastupitel, včelař	1114	1114	0	Litoměřice	23623
 2312	6	4	Ing.		Jiří	Macháček	54	M	starosta města Osek, trenér lyžařského klubu	1173	1173	0	Osek	4670
@@ -865,14 +865,14 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2590	8	4			Darja	Zoubková	64	F	důchodce	55	55	0	Praha	1335084
 2578	8	4			Lenka	Chrobáková	61	F	vedoucí prodejny	759	759	0	Hradec Králové	92683
 2829	8	4			Alena	Brabcová	67	F	učitelka	762	762	0	Hradec Králové	92683
-2774	8	4	Mgr.		Jana	Berkovcová	51	F	vedoucí metodička pro vzdělávání, krajská zastupitelka	768	768	0	Nové Město nad Metují	9317
+2774	8	4	Mgr.		Jana	Berkovcová	51	F	vedoucí metodička pro vzdělávání, krajská zastupitelka	768	768	1	Nové Město nad Metují	9317
 2666	8	4			Miroslav	Hejl	66	M	důchodce, místopředseda SNS	1007	1007	0	Vamberk	4579
 2749	8	4			Eva	Kotyzová	49	F	učitelka v mateřské škole	1114	1114	0	Jičín	16551
 2668	8	4	Mgr.		Václav	Makalouš	43	M	jednatel společnosti, odborník na mezinárodní vztahy	1173	1173	0	Lhota pod Libčany	979
 2801	8	4			Pavel	Dohnal	52	M	odborný poradce v telekomunikacích, předseda krajské organizace Strany soukromníků České republiky, předseda TJ Jiskra Nový Bydžov	1227	1227	0	Nový Bydžov	6924
 2684	8	4			Milan	Thorn	42	M	administrativní pracovník	1244	1244	0	Vysoké Veselí	866
 2611	8	4	Ing.	Ph.D.	Libuše	Čekanová	67	F	OSVČ	1245	1245	0	Nové Město nad Metují	9317
-2691	8	4	Mgr.	Ph.D.	Matěj Ondřej	Havel	34	M	ředitel Gymnázia J. K. Tyla Hradec Králové	1327	721	0	Hradec Králové	92683
+2691	8	4	Mgr.	Ph.D.	Matěj Ondřej	Havel	34	M	ředitel Gymnázia J. K. Tyla Hradec Králové	1327	721	1	Hradec Králové	92683
 2814	8	4	PhDr. Mgr.		Filip	Jiroušek	26	M	učitel na gymnáziu, historik	1350	720	0	Studnice	1152
 2913	9	4	Ing.		Jakub	Kutílek	35	M	dopravní specialista, zastupitel města, člen spolku Město na kole a Iniciativy Přírodní park Červeňák	5	5	0	Pardubice	91755
 2993	9	4	JUDr.		Jan	Chvojka	40	M	právník, předseda poslaneckého klubu ČSSD	7	7	0	Chrudim	23140
@@ -888,7 +888,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2905	9	4	Mgr.		Stanislav	Hykyš	43	M	advokát a sociální pracovník	1227	1227	0	Pardubice	91755
 2934	9	4			Pavlína	Svobodová	56	F	účetní	1244	1244	0	Pardubice	91755
 2908	9	4			Pavlína	Vyčítalová	44	F	úřednice	1245	1245	0	Hnátnice	825
-2879	9	4	Mgr.		Karel	Haas	48	M	právník, člen zastupitelstva města, sportovní trenér mládeže	1327	53	0	Pardubice	91755
+2879	9	4	Mgr.		Karel	Haas	48	M	právník, člen zastupitelstva města, sportovní trenér mládeže	1327	53	1	Pardubice	91755
 3013	9	4	Ing. arch.	Ph.D.	Jitka	Bidlová	43	F	architektka, zastupitelka Poličky	1350	720	0	Polička	8808
 3180	10	4	Bc.	DiS.	Patrik	Priesol	42	M	sociální pracovník	5	5	0	Jihlava	51125
 3142	10	4	Mgr.		Jana	Nováková Hotařová	57	F	ředitelka ZŠ	7	7	0	Jihlava	51125
@@ -897,7 +897,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3355	10	4			Danuška	Zvoníčková	70	F	knihovnice	83	83	0	Brumov-Bylnice	5545
 3323	10	4			Miloš	Komínek	56	M	podnikatel v pohostinství a ubytování	759	759	0	Velké Meziříčí	11452
 3197	10	4			Miroslav	Losenický	59	M	výrobce dřevařských polotovarů	762	762	0	Ždírec nad Doubravou	3135
-3325	10	4	Ing.		Josef	Kott	50	M	poslanec PSP ČR	768	768	0	Olešná	563
+3325	10	4	Ing.		Josef	Kott	50	M	poslanec PSP ČR	768	768	1	Olešná	563
 3431	10	4	Ing.		Michal	Galbavý	39	M	jednatel realitní kanceláře	1114	1114	0	Třebíč	35107
 3166	10	4	Ing.		Jana	Kouřilová	60	F	podnikatelka	1173	1173	0	Havlíčkův Brod	23255
 3186	10	4			Jana	Pokorná	34	F	prodavačka	1190	1190	0	Luka nad Jihlavou	3028
@@ -915,7 +915,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3793	11	4			Lada	Střeštíková	45	F	zdravotní sestra	752	752	0	Násedlovice	853
 3528	11	4	Ing.		Jan	Mašek	36	M	analytik datových sítí	759	759	0	Moravany	3394
 3915	11	4			Pavel	Grepl	69	M	bezpečnostní expert	762	762	0	Brno	382405
-3677	11	4	Mgr. Ing.		Taťána	Malá	40	F	poslankyně PSP ČR, mediátorka, právnička	768	768	0	Lelekovice	1915
+3677	11	4	Mgr. Ing.		Taťána	Malá	40	F	poslankyně PSP ČR, mediátorka, právnička	768	768	1	Lelekovice	1915
 3732	11	4	Ing.		Jaroslav	Nahodil	65	M	kouč, předseda Regionálního centra hnutí CESTA	1007	1007	0	Brno	382405
 3893	11	4			Lubomír	Španěl	66	M	poslanec	1114	1114	0	Šardice	2191
 3725	11	4			František	Uher	57	M	účetní, lidový vypravěč a zpěvák TV Šlágr	1173	1173	0	Lanžhot	3710
@@ -924,7 +924,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3873	11	4	PhDr.		Marie	Vignatiová	74	F	psycholog	1240	1240	0	Brno	382405
 3878	11	4	Ing.		Vladimír	Pelc	41	M	ekonom a finanční ředitel	1244	1244	0	Brno	382405
 3927	11	4	Ing.		Lukáš	Horský	46	M	manažer krizového řízení	1245	1245	0	Brno	382405
-3436	11	4	JUDr.	Ph.D.	Pavel	Blažek	52	M	poslanec	1327	53	0	Brno	382405
+3436	11	4	JUDr.	Ph.D.	Pavel	Blažek	52	M	poslanec	1327	53	1	Brno	382405
 3749	11	4	Mgr.		Michal	Marciniszyn	42	M	manažer	1350	720	0	Brno	382405
 4361	12	4	Mgr.		Eva	Zatloukalová	63	F	učitelka a předsedkyně Českého svazu ochránců přírody v Prostějově - RS Iris	5	5	0	Prostějov	43381
 4048	12	4	Bc.		Lada	Cinegrová	47	F	hygienička	7	7	0	Libina	3238
@@ -935,7 +935,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4150	12	4			Oldřich	Jaroš	63	M	manažer	752	752	0	Olomouc	100514
 4239	12	4	MUDr.		Jana	Mathonová	63	F	lékařka	759	759	0	Olomouc	100514
 4219	12	4	Ing.		Pavel	Mužný	69	M	předseda SPR RSČ, ekonom	762	762	0	Olomouc	100514
-4205	12	4	Ing.		Petr	Vrána	46	M	manažer	768	768	0	Přerov	42451
+4205	12	4	Ing.		Petr	Vrána	46	M	manažer	768	768	1	Přerov	42451
 4184	12	4			Ivana	Týrová	55	F	pečovatelka v sociálních službách, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Sobotín	1142
 4370	12	4	Ing.		Tomáš	Hauzner	58	M	vedoucí pracovník Správy železnic s.o. Šumperk a Jeseník	1114	1114	0	Dolní Studénky	1378
 4295	12	4			Jiří	Kudláček	62	M	starosta města Hranic	1173	1173	0	Hranice	17818
@@ -943,7 +943,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4116	12	4	Ing.		František Jan	Hrabina	60	M	učitel	1227	1227	0	Přerov	42451
 4367	12	4			Milan	Mach	28	M	operátor výroby Škoda auto	1244	1244	0	Svojkov	259
 4091	12	4	Bc.		Pavel	Unzeitig	41	M	projektový manažer, finanční služby	1245	1245	0	Třeština	399
-4291	12	4	Ing.		Karel	Smetana	33	M	ředitel Arcibiskupského zámeckého vinařství v Kroměříži	1327	1	0	Haňovice	450
+4291	12	4	Ing.		Karel	Smetana	33	M	ředitel Arcibiskupského zámeckého vinařství v Kroměříži	1327	1	1	Haňovice	450
 4301	12	4			Jaromír	Horký	23	M	PR a marketingový specialista, krajský zastupitel, pořadatel kulturních akcí	1350	720	0	Přerov	42451
 4520	13	4	Mgr.		Kristýna	Kosová	38	F	místostarostka Rožnova pod Radhoštěm	5	5	0	Rožnov pod Radhoštěm	16280
 4650	13	4	Ing.		Ladislav	Kryštof	63	M	ředitel Střední školy - Centrum odborné přípravy technické Uherský Brod, zastupitel města Uherský Brod	7	7	0	Uherský Brod	16409
@@ -961,7 +961,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4471	13	4			Pavlína	Nevřalová	42	F	provozovatel fitness centra	1244	1244	0	Přerov	42451
 4559	13	4	Bc.		Petr	Zourek	38	M	konstruktér	1245	1245	0	Březolupy	1694
 4568	13	4	Ing.		Radovan	Macháček	54	M	ředitel společnosti	1327	53	0	Chropyně	4850
-4464	13	4	Mgr.		Eliška	Olšáková	53	F	starostka Valašských Klobouk, vedoucí pracovnice veřejné správy	1350	166	0	Valašské Klobouky	4918
+4464	13	4	Mgr.		Eliška	Olšáková	53	F	starostka Valašských Klobouk, vedoucí pracovnice veřejné správy	1350	166	2	Valašské Klobouky	4918
 4754	14	4	Mgr.		Veronika	Urbánková	38	F	středoškolská učitelka	5	5	0	Nový Jičín	23151
 5088	14	4	Mgr.		Dana	Váhalová	55	F	OSVČ	7	7	0	Starý Jičín	2910
 5103	14	4			David	Stibor	46	M	dělník	47	47	0	Frýdek-Místek	55006
@@ -970,7 +970,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4944	14	4	MUDr.		Eva	Chýlová	62	F	lékařka	752	752	0	Ostrava	284982
 5251	14	4			Petr	Hajduček	43	M	OSVČ-mezinárodní doprava, ekonom	759	759	0	Frýdek-Místek	55006
 4958	14	4	Mgr.		Karel	Mašlík	54	M	učitel	762	762	0	Bruntál	15908
-4922	14	4	Ing.	MBA	Josef	Bělica	43	M	poslanec Parlamentu ČR	768	768	0	Havířov	70165
+4922	14	4	Ing.	MBA	Josef	Bělica	43	M	poslanec Parlamentu ČR	768	768	1	Havířov	70165
 5082	14	4			Jan	Jedlička	48	M	invalidní důchodce, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Nový Jičín	23151
 5072	14	4	Ing.		Peter	Harvánek	47	M	regionální ředitel finanční instituce	1114	1114	0	Ostrava	284982
 4993	14	4	Mgr.		Pavel	Bittner	54	M	pojišťovací makléř	1173	1173	0	Opava	55996
@@ -978,8 +978,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4943	14	4			Petr	Kalous	70	M	důchodce	1240	1240	0	Opava	55996
 5093	14	4		DiS.	Lenka	Karásková	24	F	podnikatelka	1244	1244	0	Třinec	34778
 4771	14	4	MgA.		Lukáš	Dvorský	30	M	středoškolský učitel	1245	1245	0	Ostrava	284982
-4725	14	4	Ing.		Jiří	Carbol	62	M	starosta obce Dobrá	1327	1	0	Dobrá	3233
-5026	14	4			Petr	Letocha	37	M	podnikatel, zastupitel města Karviná	1350	166	0	Karviná	50902
+4725	14	4	Ing.		Jiří	Carbol	62	M	starosta obce Dobrá	1327	1	1	Dobrá	3233
+5026	14	4			Petr	Letocha	37	M	podnikatel, zastupitel města Karviná	1350	166	2	Karviná	50902
 565	1	5	Mgr.	LL.M.	Petra	Urbanová	30	F	environmentální právnička	5	5	0	Praha	1335084
 544	1	5	Ing.		Michal	Pícl	35	M	náměstek na Ministerstvu práce a sociálních věcí	7	7	0	Praha	1335084
 112	1	5	PhDr.	CSc.	Josef	Skála	69	M	publicista, vydavatel	47	47	0	Praha	1335084
@@ -990,7 +990,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 98	1	5	Mgr.		Taťána	Ságlová	58	F	gestor grantů	752	752	0	Praha	1335084
 74	1	5			Renáta	Kratochvílová	52	F	poradkyně, investiční makléřka	759	759	0	Praha	1335084
 343	1	5			Jan	Panocha	39	M	rentier	762	762	0	Praha	1335084
-556	1	5			Milan	Wenzl	62	M	starosta MČ Praha 15	768	768	0	Praha	1335084
+556	1	5			Milan	Wenzl	62	M	starosta MČ Praha 15	768	768	1	Praha	1335084
 14	1	5	Ing.		Jan	Hrdina	47	M	podnikatel	1007	1007	0	Praha	1335084
 33	1	5			Lenka	Zumrová	31	F	administrativní pracovnice	1114	1114	0	Praha	1335084
 134	1	5	JUDr.		Monika	Hášová	58	F	advokátka, bývalá reprezentantka ve sportovním potápění	1173	1173	0	Praha	1335084
@@ -998,7 +998,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 385	1	5	Ing.		Ivana	Švarcová	79	F	jednatel VTS	1240	1240	0	Praha	1335084
 121	1	5	PhDr.		Jana	Vlčkovová	47	F	všeobecná sestra	1244	1244	0	Praha	1335084
 418	1	5	Bc.		Karel	Tichý	63	M	živnostník	1245	1245	0	Praha	1335084
-447	1	5	MUDr.	Ph.D., MBA	Tom	Philipp	52	M	lékař, přednosta Kliniky revmatologie a rehabilitace 3. LF UK a FTN	1327	1	0	Praha	1335084
+447	1	5	MUDr.	Ph.D., MBA	Tom	Philipp	52	M	lékař, přednosta Kliniky revmatologie a rehabilitace 3. LF UK a FTN	1327	1	1	Praha	1335084
 307	1	5	Bc.		Jan	Lipavský	36	M	poslanec, analytik, IT manažer	1350	720	0	Praha	1335084
 1001	2	5	Ing.	MSc.	Jana	Krumpholcová	41	F	učitelka, koučka, krajská zastupitelka	5	5	0	Mladá Boleslav	44506
 937	2	5	doc. PhDr.	Ph.D.	Václav	Drška	59	M	profesor na VŠ	7	7	0	Kolín	32490
@@ -1007,7 +1007,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 920	2	5	PharmDr.		Marcela	Freiová	64	F	překladatelka, terapeutka	752	752	0	Praha	1335084
 988	2	5	Mgr.		Hana	Sentenská	52	F	středoškolská učitelka	759	759	0	Příbram	32248
 823	2	5			Petr	Semerád	36	M	jednatel s.r.o.	762	762	0	Praha	1335084
-857	2	5	Mgr.		Stanislav	Berkovec	65	M	poslanec PSP ČR, novinář, výtvarník	768	768	0	Slaný	16010
+857	2	5	Mgr.		Stanislav	Berkovec	65	M	poslanec PSP ČR, novinář, výtvarník	768	768	1	Slaný	16010
 738	2	5	Ing.		Jitka	Černá	46	F	překladatelka, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Kralupy nad Vltavou	18485
 800	2	5	Ing.		Antonín	Dušek	65	M	ministerský rada	1114	1114	0	Malešov	1023
 865	2	5	JUDr. Ing. Mgr.		Petr	Měchura	71	M	novinář, právník, ekonom	1173	1173	0	Praha	1335084
@@ -1015,7 +1015,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 770	2	5			Karel	Mařatka	75	M	důchodce	1240	1240	0	Praha	1335084
 1096	2	5	JUDr.		Ilona	Veselá	58	F	právník	1244	1244	0	Horoměřice	4653
 1123	2	5			Michaela	Talašová	44	F	elektrotechnik	1245	1245	0	Doksy	1708
-905	2	5			Jan	Jakob	38	M	starosta, poslanec PČR	1327	721	0	Roztoky	8783
+905	2	5			Jan	Jakob	38	M	starosta, poslanec PČR	1327	721	1	Roztoky	8783
 844	2	5			Patrick	Zandl	47	M	zastupitel města Brandýsa nad Labem – Staré Boleslavi, IT manager	1350	720	0	Brandýs nad Labem-Stará Boleslav	19420
 1169	3	5	Bc.		Petr	Mikuláš	25	M	student, učitel na základní škole	5	5	0	Tábor	34119
 1365	3	5		BBus	Stanislav	Jindra	53	M	předseda ZO OS KOVO v automobilovém průmyslu v Českých Budějovicích	7	7	0	Mydlovary	307
@@ -1024,7 +1024,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1255	3	5			Zdeněk	Kronus	42	M	ředitel hotelu	83	83	0	Hodonín	77
 1419	3	5			Bohumil	Kočovský	52	M	obchodní manager	759	759	0	Protivín	4760
 1341	3	5	Mgr. et Mgr.	DiS.	Jiří	Táborský	30	M	pravoslavný kněz, středoškolský učitel, publicista, politolog	762	762	0	Tábor	34119
-1368	3	5	Ing.		Ondřej	Babka	27	M	poslanec, radní města Husinec	768	768	0	Husinec	1439
+1368	3	5	Ing.		Ondřej	Babka	27	M	poslanec, radní města Husinec	768	768	1	Husinec	1439
 1363	3	5			Pavel	Hakr	67	M	důchodce, bývalý stavbyvedoucí, místopředseda SNS	1007	1007	0	Osek	135
 1447	3	5			Jana	Pupavová	37	F	lektorka v mezinárodní společnosti	1114	1114	0	Nové Hrady	2512
 1293	3	5			Jiří	Karvánek	66	M	člen rady města, dobrovolný hasič	1173	1173	0	Hluboká nad Vltavou	5451
@@ -1032,7 +1032,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1143	3	5			Lukáš	Slavík	38	M	provozovatel kavárny	1244	1244	0	České Budějovice	94229
 1443	3	5			Jitka	Legátová Bártů	60	F	administrativní pracovnice	1245	1245	0	Veselí nad Lužnicí	6334
 1348	3	5			Hana	Dufková Spoladore	39	F	ředitelka domova pro seniory	1327	53	0	Český Krumlov	12788
-1379	3	5	Mgr. Ing.		Pavla	Pivoňka Vaňková	44	F	ekonom, pedagog, vedoucí odboru vnitřních věcí, zakladatelka občanské iniciativy Pivoňka	1350	166	0	Lišov	4503
+1379	3	5	Mgr. Ing.		Pavla	Pivoňka Vaňková	44	F	ekonom, pedagog, vedoucí odboru vnitřních věcí, zakladatelka občanské iniciativy Pivoňka	1350	166	2	Lišov	4503
 1686	4	5	Bc.		Jitka	Kylišová	48	F	sociální pracovnice, členka Zastupitelstva Plzeňského kraje, předsedkyně Výboru pro sociální věci Zastupitelstva Plzeňského kraje	5	5	0	Plzeň	175219
 1528	4	5			Zdeněk	Hanzlíček	61	M	starosta města Plasy	7	7	0	Plasy	2770
 1614	4	5			Vladimír	Hitman	59	M	zdravotnický pracovník	47	47	0	Mýto	1526
@@ -1047,7 +1047,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1516	4	5		DiS.	Jaroslav	Martinec	37	M	dokumentarista	1244	1244	0	Horšovský Týn	4987
 1663	4	5			Alena	Křížková	55	F	invalidní důchodce	1245	1245	0	Klatovy	22140
 1698	4	5	Ing.		Helena	Řežábová	61	F	starostka městského obvodu Plzeň 1	1327	53	0	Plzeň	175219
-1532	4	5	Ing.		Michaela	Opltová	36	F	starostka Kozolup, předsedkyně krajského Výboru pro regionální rozvoj	1350	166	0	Kozolupy	1079
+1532	4	5	Ing.		Michaela	Opltová	36	F	starostka Kozolup, předsedkyně krajského Výboru pro regionální rozvoj	1350	166	2	Kozolupy	1079
 1770	5	5	Mgr.		Pavel	Matala	42	M	učitel	5	5	0	Aš	13105
 1916	5	5			Petr	Jordán	36	M	rozpočtář	7	7	0	Karlovy Vary	48319
 1919	5	5	Ing.		Eliška	Stránská	63	F	starostka obce Dolní Žandov	47	47	0	Dolní Žandov	1234
@@ -1069,7 +1069,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2223	6	5			Roman	Vimer	50	M	analytik	55	55	0	Praha	1335084
 2269	6	5			Alexandr	Straka	57	M	starosta obce Janská	759	759	0	Janská	214
 2157	6	5			Petr	Žák	68	M	živnostník	762	762	0	Arnoltice	412
-2304	6	5	Ing.		Eva	Fialová	39	F	poslankyně	768	768	0	Ústí nad Labem	91982
+2304	6	5	Ing.		Eva	Fialová	39	F	poslankyně	768	768	1	Ústí nad Labem	91982
 2239	6	5			Jaroslav	Vavřík	48	M	OSVČ, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Chomutov	48349
 2069	6	5	Ing.		Bohumil	Ježek	45	M	strojní inženýr, krajský zastupitel	1114	1114	0	Ústí nad Labem	91982
 2151	6	5			Gabriela	Hubáčková	46	F	pedagog, bývalá poslankyně Parlamentu ČR, specialista na sociální politiku	1173	1173	0	Ústí nad Labem	91982
@@ -1123,7 +1123,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2851	9	5			Jaromír	Vacek	54	M	technik	1244	1244	0	Studené	184
 2838	9	5			Lukáš	Hoza	44	M	automechanik	1245	1245	0	Lubník	370
 3117	9	5	Ing.	MBA	Erik	Jahnický	37	M	obchodní manažer	1327	53	0	Chrudim	23140
-2841	9	5			Tomáš	Dubský	48	M	starosta Vysočiny, člen předsednictva Sdružení místních samospráv ČR, dobrovolný hasič	1350	166	0	Vysočina	696
+2841	9	5			Tomáš	Dubský	48	M	starosta Vysočiny, člen předsednictva Sdružení místních samospráv ČR, dobrovolný hasič	1350	166	2	Vysočina	696
 3301	10	5	Mgr.		Hana	Houzarová	60	F	botanička, zastupitelka Třebíč	5	5	0	Třebíč	35107
 3273	10	5			Vladimír	Malý	57	M	místostarosta	7	7	0	Třebíč	35107
 3432	10	5			Pavel	Hodáč	52	M	jednatel firmy	47	47	0	Pelhřimov	16012
@@ -1139,7 +1139,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3262	10	5			Miroslav	Stehno	68	M	důchodce, bývalý autodopravce	1227	1227	0	Žďár nad Sázavou	20485
 3340	10	5			Pavel	Nešpor	47	M	kulisák v divadle, člen fajn stěhovací party	1244	1244	0	Dolní Cerekev	1270
 3170	10	5			Miroslava	Palánová	49	F	podnikatelka	1245	1245	0	Vyskytná nad Jihlavou	914
-3425	10	5	Mgr.		Martina	Lisová	37	F	starostka městyse	1327	721	0	Větrný Jeníkov	634
+3425	10	5	Mgr.		Martina	Lisová	37	F	starostka městyse	1327	721	2	Větrný Jeníkov	634
 3329	10	5		DiS.	Miroslav	Vácha	37	M	zdravotnický záchranář, lektor, člen bezpečnostní a zdravotní komise Kraje Vysočina	1350	720	0	Třeštice	157
 3690	11	5	Mgr.		Jasna	Flamiková	52	F	zastupitelka MČ Brno-střed, ekoložka, koučka	5	5	0	Brno	382405
 3444	11	5	PhDr.		Jan	Košíček	50	M	ředitel školy	7	7	0	Moravský Krumlov	5688
@@ -1150,7 +1150,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3586	11	5			Robin	Rajsigl	33	M	výkonný ředitel	752	752	0	Sobůlky	849
 3899	11	5			David	Umscheidt	46	M	bankovní úředník	759	759	0	Hodonín	24385
 3746	11	5			Petr	Skácel	75	M	důchodce	762	762	0	Rájec-Jestřebí	3745
-3858	11	5	Mgr.	MBA	Lenka	Dražilová	58	F	poslankyně PSP ČR	768	768	0	Blansko	20306
+3858	11	5	Mgr.	MBA	Lenka	Dražilová	58	F	poslankyně PSP ČR	768	768	1	Blansko	20306
 3509	11	5	Ing.		Dagmar	Jursová	58	F	astroložka, masérka	1007	1007	0	Babice nad Svitavou	1373
 3997	11	5	Mgr.	MBA	Libor	Bláha	41	M	vysokoškolský pedagog, zastupitel města	1114	1114	0	Vyškov	20676
 3975	11	5			Vladimír	Kulíšek	40	M	technik	1173	1173	0	Brno	382405
@@ -1159,7 +1159,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3838	11	5			Miloslav	Kozel	68	M	důchodce	1240	1240	0	Znojmo	33775
 3773	11	5			Kateřina	Hanušová	37	F	majitelka Katy Kafé, Břeclav	1244	1244	0	Břeclav	24554
 3616	11	5			Daniel	Schmied	43	M	provozní ředitel	1245	1245	0	Moravské Bránice	973
-3680	11	5	Ing.		Antonín	Tesařík	61	M	ředitel Nemocnice TGM Hodonín, příspěvková organizace	1327	1	0	Hodonín	24385
+3680	11	5	Ing.		Antonín	Tesařík	61	M	ředitel Nemocnice TGM Hodonín, příspěvková organizace	1327	1	1	Hodonín	24385
 3492	11	5	Mgr.		Pavel	Nevrkla	35	M	advokát	1350	720	0	Znojmo	33775
 4191	12	5	Mgr.	Ph.D.	Martin	Hájek	35	M	knihovník-katalogizátor, historik, zastupitel města Prostějova	5	5	0	Prostějov	43381
 4020	12	5	Mgr.		Šárka	Zapletalová	38	F	advokátka	7	7	0	Velká Kraš	718
@@ -1179,7 +1179,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4168	12	5			Gabriela	Uličná	40	F	pokojská	1244	1244	0	Chrast	3148
 4161	12	5			Marcel	Kunert	40	M	pedagogický pracovník	1245	1245	0	Úsov	1168
 4010	12	5			Radovan	Auer	46	M	ředitel veletrhu Svět knihy	1327	721	0	Šumperk	25452
-4223	12	5	Ing.	MBA	Hana	Naiclerová	49	F	ekonomka, zastupitelka města Prostějova, protikorupční bojovnice	1350	166	0	Prostějov	43381
+4223	12	5	Ing.	MBA	Hana	Naiclerová	49	F	ekonomka, zastupitelka města Prostějova, protikorupční bojovnice	1350	166	2	Prostějov	43381
 4546	13	5	Ing.		Vilém	Jurek	36	M	krajinný ekolog, člen krajského výboru pro ŽP	5	5	0	Šumice	1639
 4410	13	5	Mgr.		Taťána	Valentová Nersesjan	54	F	pedagog, zastupitelka města Vsetín	7	7	0	Vsetín	25782
 4561	13	5			Pavlína	Procházková	45	F	starostka obce	47	47	0	Počenice-Tetětice	707
@@ -1204,7 +1204,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 5211	14	5	Mgr.		Klára	Hinterreiter	45	F	lékárnice	752	752	0	Ostrava	284982
 5020	14	5			Martin	Šatný	44	M	OSVČ, zastupitel města Opavy	759	759	0	Opava	55996
 4768	14	5	Ing.		Aleš	Stebel	52	M	auditor	762	762	0	Vělopolí	298
-4752	14	5	Ing.		Stanislav	Fridrich	64	M	sadař, poslanec Parlamentu ČR	768	768	0	Nižní Lhoty	297
+4752	14	5	Ing.		Stanislav	Fridrich	64	M	sadař, poslanec Parlamentu ČR	768	768	1	Nižní Lhoty	297
 4906	14	5			Helena	Farkašová	61	F	důchodkyně, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Kopřivnice	21657
 4860	14	5	Ing.		Pavel	Staněk	54	M	místostarosta města, krajský zastupitel	1114	1114	0	Rychvald	7572
 5234	14	5			Petr	Rabas	68	M	trenér JUDO	1173	1173	0	Karviná	50902
@@ -1212,7 +1212,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 5150	14	5	Ing.		Libor	David	72	M	důchodce	1240	1240	0	Opava	55996
 5232	14	5			Dalibor	Fajkoš	34	M	živnostník	1244	1244	0	Sviadnov	2189
 4738	14	5			Radmila	Kocúrková	43	F	účetní	1245	1245	0	Mankovice	560
-5101	14	5	MUDr.	MBA	Zdenka	Němečková Crkvenjaš	45	F	primářka popáleninového centra FN Ostrava	1327	53	0	Ostrava	284982
+5101	14	5	MUDr.	MBA	Zdenka	Němečková Crkvenjaš	45	F	primářka popáleninového centra FN Ostrava	1327	53	1	Ostrava	284982
 5223	14	5			Veronika	Murzynová	35	F	výzkumnice v týmu europoslance, zastupitelka města Ostrava	1350	720	0	Ostrava	284982
 42	1	6	JUDr.		Martin	Rozumek	46	M	ředitel Organizace pro pomoc uprchlíkům, právník	5	5	0	Praha	1335084
 603	1	6	PhDr.		Petr	Balla	36	M	vysokoškolský pedagog	7	7	0	Praha	1335084
@@ -1232,7 +1232,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 348	1	6			Martin	Kheil	31	M	programátor	1240	1240	0	Praha	1335084
 401	1	6			Anežka	Janečková	23	F	grafik	1244	1244	0	Praha	1335084
 381	1	6	Bc.		Jiří	Matulík	45	M	strážník MP	1245	1245	0	Praha	1335084
-1	1	6	doc. MUDr.	CSc.	Bohuslav	Svoboda	77	M	lékař	1327	53	0	Praha	1335084
+1	1	6	doc. MUDr.	CSc.	Bohuslav	Svoboda	77	M	lékař	1327	53	1	Praha	1335084
 26	1	6	RNDr.	Ph.D.	Daniel	Mazur	43	M	zastupitel MČ Praha 5, projektový manažer v oblasti vědy, výzkumu, vzdělávání a inovací	1350	720	0	Praha	1335084
 1089	2	6	MUDr.		Jaroslav	Smutný	66	M	lékař	5	5	0	Příbram	32248
 1064	2	6	JUDr.		Petr	Kowanda	58	M	právník	7	7	0	Mělník	19579
@@ -1241,7 +1241,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 709	2	6	Ing.		Zdeňka	Pavlická	45	F	ekonomka	752	752	0	Praha	1335084
 1045	2	6			Hana	Lounová	67	F	zpěvačka	759	759	0	Nučice	2288
 864	2	6			Martin	Žejdlík	50	M	OSVČ	762	762	0	Žáky	351
-737	2	6	Ing.		František	Petrtýl	62	M	poslanec PSP ČR	768	768	0	Mladá Boleslav	44506
+737	2	6	Ing.		František	Petrtýl	62	M	poslanec PSP ČR	768	768	1	Mladá Boleslav	44506
 918	2	6			Jiří	Filinger	52	M	stavbyvedoucí, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Vodochody	722
 990	2	6	Bc.		Jiří	Novotný	45	M	vrchní rada Úřadu práce	1114	1114	0	Příbram	32248
 810	2	6	Ing.	MBA	Alena	Nováková	42	F	obchodní manažerka	1173	1173	0	Lány	2291
@@ -1249,7 +1249,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 814	2	6			Ladislav	Kačín	76	M	důchodce	1240	1240	0	Praha	1335084
 1002	2	6			Pavel	Škanta	56	M	podnikatel	1244	1244	0	Praha	1335084
 955	2	6	Ing.		Vlastimil	Kůt	49	M	zdravotník	1245	1245	0	Kladno	68896
-897	2	6	Ing.		Jiří	Havránek	28	M	živnostník, vysokoškolský učitel	1327	53	0	Bratčice	385
+897	2	6	Ing.		Jiří	Havránek	28	M	živnostník, vysokoškolský učitel	1327	53	1	Bratčice	385
 802	2	6	Mgr.		Štěpán	Drtina	27	M	radní pro kulturu a památkovou péči města Kutná Hora, historik	1350	720	0	Kutná Hora	20828
 1149	3	6			Kateřina	Wagnerová	40	F	rodičovská dovolená, občanská aktivistka	5	5	0	Prachatice	10706
 1152	3	6	Ing.		Václav	Valhoda	62	M	místostarosta města Volyně	7	7	0	Volyně	3000
@@ -1303,7 +1303,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1986	6	6			Petr	Hynek	50	M	podnikatel	55	55	0	Přezletice	1948
 1954	6	6			Rostislav	Kubíček	58	M	OSVČ	759	759	0	Chomutov	48349
 2064	6	6			Petr	Kotáb	45	M	lamelář	762	762	0	Kadaň	18133
-2153	6	6	Mgr.	MBA	Tomáš	Kohoutek	38	M	poslanec	768	768	0	Děčín	47951
+2153	6	6	Mgr.	MBA	Tomáš	Kohoutek	38	M	poslanec	768	768	1	Děčín	47951
 2206	6	6			Tomáš	Vosyka	52	M	Coach Captain, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Bžany	896
 2053	6	6	Ing.		Karel	Müller	63	M	emeritní ředitel nemocnice	1114	1114	0	Chomutov	48349
 2108	6	6	MUDr.		Klára	Pohanková	34	F	oční lékařka Masarykovy nemocnice v Ústí nad Labem	1173	1173	0	Ústí nad Labem	91982
@@ -1354,7 +1354,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2974	9	6	Ing. Mgr.	MBA	Petr	Máca	50	M	jednatel zdravotnického zařízení, předseda Grémia ambulantní radiologie	1227	1227	0	Červená Voda	2990
 3120	9	6			Petr	Felkl	53	M	obráběč	1244	1244	0	Chrast	3148
 2878	9	6			Vojtěch	Klembara	64	M	důchodce	1245	1245	0	Chvaletice	2934
-2848	9	6	Mgr. Bc.	MBA	David	Šimek	44	M	starosta města Svitavy, krajský zastupitel	1327	1	0	Svitavy	16601
+2848	9	6	Mgr. Bc.	MBA	David	Šimek	44	M	starosta města Svitavy, krajský zastupitel	1327	1	2	Svitavy	16601
 2951	9	6	Ing.		Aleš	Nunvář	42	M	místostarosta Chrudimi, projektový manažer, lektor jógy	1350	720	0	Chrudim	23140
 3302	10	6			Kristýna	Dobrianská	25	F	studentka práv	5	5	0	Jihlava	51125
 3160	10	6	Ing.		Karel	Pačiska	64	M	starosta	7	7	0	Bystřice nad Pernštejnem	7982
@@ -1382,7 +1382,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3871	11	6			Pavel	Jedovnický	54	M	podnikatel	752	752	0	Brno	382405
 3960	11	6			Andréa	Komárková	61	F	invalidní důchodkyně	759	759	0	Brno	382405
 3678	11	6			Jiří	Pospíšil	57	M	řidič kamionu	762	762	0	Hrušovany u Brna	3567
-3886	11	6	Mgr. Ing.		Lubomír	Wenzl	53	M	ředitel nemocnice	768	768	0	Drnovice	2387
+3886	11	6	Mgr. Ing.		Lubomír	Wenzl	53	M	ředitel nemocnice	768	768	1	Drnovice	2387
 3906	11	6	PharmDr.		Marcela	Koupilová	66	F	důchodkyně	1007	1007	0	Brno	382405
 3543	11	6	Bc.	LL.M.	Karel	Kříž	70	M	majitel bezpečnostní agentury, zastupitel města	1114	1114	0	Břeclav	24554
 3989	11	6			Lenka	Němcová	50	F	dispečer mezinárodní kamionové dopravy, ochránce zvířat	1173	1173	0	Boskovice	11726
@@ -1391,7 +1391,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3971	11	6			Zdeněk	Duda	73	M	důchodce	1240	1240	0	Ivančice	9854
 3982	11	6			Jana	Vašíčková	57	F	podnikatelka	1244	1244	0	Brno	382405
 3908	11	6			Pavel	Černý	47	M	OSVČ	1245	1245	0	Loděnice	530
-3837	11	6	JUDr.		Pavel	Kašník	57	M	právník, podnikatel	1327	53	0	Hlohovec	1307
+3837	11	6	JUDr.		Pavel	Kašník	57	M	právník, podnikatel	1327	53	1	Hlohovec	1307
 3912	11	6			Miroslav	Bárta	48	M	podnikatel	1350	720	0	Brno	382405
 4132	12	6	Mgr.		Lukáš	Morávek	46	M	OSVČ, radní města Jeseník	5	5	0	Jeseník	10977
 4040	12	6	Mgr.		Adam	Fritscher	45	M	tiskový mluvčí Fakultní nemocnice Olomouc	7	7	0	Olomouc	100514
@@ -1401,7 +1401,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4261	12	6			Michal	Šmýd	39	M	OSVČ ve stavebnictví	83	83	0	Litovel	9651
 4183	12	6			Yveta	Holušová	51	F	vedoucí pobočky	759	759	0	Prostějov	43381
 4082	12	6	Mgr.		Lucie	Nováková	39	F	podnikový právník	762	762	0	Olomouc	100514
-4041	12	6	MUDr.		Milan	Brázdil	58	M	lékař záchranné služby Olomouckého kraje, poslanec PSP ČR	768	768	0	Olomouc	100514
+4041	12	6	MUDr.		Milan	Brázdil	58	M	lékař záchranné služby Olomouckého kraje, poslanec PSP ČR	768	768	2	Olomouc	100514
 4140	12	6	Bc.		Kateřina	Bílková	48	F	zdravotně sociální pracovník	1007	1007	0	Mohelnice	9255
 4264	12	6	Ing.	LL.M., MBA	Pavel	Dopita	57	M	IT specialista, vysokoškolský učitel	1114	1114	0	Prostějov	43381
 4241	12	6	PaedDr.		Hana	Sekaninová	58	F	archivářka	1173	1173	0	Olomouc	100514
@@ -1425,7 +1425,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4510	13	6		MBA	Petr	Matoušek	47	M	starosta Stříbrnic	1227	1227	0	Stříbrnice	423
 4483	13	6			Martin	Ševčík	46	M	programátor robotiky	1244	1244	0	Valašské Klobouky	4918
 4609	13	6			Jan	Janků	27	M	brusič kovů	1245	1245	0	Starý Hrozenkov	873
-4663	13	6	Mgr.		Aleš	Dufek	47	M	advokát, náměstek primátora města	1327	1	0	Zlín	74478
+4663	13	6	Mgr.		Aleš	Dufek	47	M	advokát, náměstek primátora města	1327	1	2	Zlín	74478
 4597	13	6	Ing.		Tomáš	Pifka	40	M	místostarosta Vsetína, ekonom	1350	166	0	Vsetín	25782
 5204	14	6	Ing.		Jindřich	Víšek	41	M	obchodní ředitel ve strojírenství	5	5	0	Ostrava	284982
 5102	14	6	Ing.		Petr	Kajnar	65	M	radní Moravskoslezského kraje	7	7	0	Frýdlant nad Ostravicí	9926
@@ -1435,7 +1435,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4987	14	6	Ing.		Jan	Koutný	66	M	podnikatel	752	752	0	Ostrava	284982
 4847	14	6	Bc.		Katarína	Žabenská	47	F	mezinárodní sportovní porotce	759	759	0	Rychvald	7572
 5220	14	6			Robert	Bittmann	59	M	OSVČ-stavební činnost	762	762	0	Nový Jičín	23151
-5059	14	6	PhDr.	Ph.D.	Igor	Hendrych	53	M	1. náměstek primátora statutárního města Opava, vysokoškolský pedagog	768	768	0	Opava	55996
+5059	14	6	PhDr.	Ph.D.	Igor	Hendrych	53	M	1. náměstek primátora statutárního města Opava, vysokoškolský pedagog	768	768	1	Opava	55996
 4742	14	6			Aleš	Bystrianský	41	M	referent pro památkovou péči	1007	1007	0	Opava	55996
 4953	14	6			Marie	Malcharová	57	F	lektor - instruktor	1114	1114	0	Ostrava	284982
 5001	14	6	Ing.		Josef	Petrík	55	M	OSVČ	1173	1173	0	Bruntál	15908
@@ -1463,15 +1463,15 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 491	1	7	Ing.	CSc.	Zdenek	Zahradník	77	M	důchodce	1240	1240	0	Praha	1335084
 444	1	7			Josef	Roušal	44	M	zahradník a majitel Krtkova světa	1244	1244	0	Průhonice	2902
 124	1	7	Ing.		Jaromír	Fűle	57	M	řidič	1245	1245	0	Praha	1335084
-255	1	7	PhDr.	Ph.D.	Pavel	Žáček	52	M	historik, vysokoškolský pedagog, zakladatel a první ředitel Ústavu pro studium totalitních režimů	1327	53	0	Praha	1335084
-315	1	7	doc. JUDr.	CSc.	Vladimír	Balaš	62	M	právník, vysokoškolský učitel	1350	166	0	Praha	1335084
+255	1	7	PhDr.	Ph.D.	Pavel	Žáček	52	M	historik, vysokoškolský pedagog, zakladatel a první ředitel Ústavu pro studium totalitních režimů	1327	53	1	Praha	1335084
+315	1	7	doc. JUDr.	CSc.	Vladimír	Balaš	62	M	právník, vysokoškolský učitel	1350	166	2	Praha	1335084
 841	2	7			Jana	Vidímová	58	F	podnikatelka v ubytovacích službách, radní	5	5	0	Jesenice	9997
 1075	2	7	Mgr.		Luboš	Doleček	49	M	ředitel domova seniorů	7	7	0	Petrovice	1347
 1011	2	7	MVDr.		Luboš	Kudrna	60	M	veterinární lékař	47	47	0	Hostivice	8917
 838	2	7			Svatopluk	Novotný	45	M	majitel stavební firmy	55	55	0	Poříčany	1569
 846	2	7	Ing. arch.		Petr	Šrom	51	M	architekt	759	759	0	Tuchoměřice	1586
 965	2	7			Pavel	Tobiáš	52	M	brusič skla	762	762	0	Nymburk	15106
-646	2	7			Romana	Fischerová	52	F	místostarostka města Lysá nad Labem, manažerka	768	768	0	Lysá nad Labem	9825
+646	2	7			Romana	Fischerová	52	F	místostarostka města Lysá nad Labem, manažerka	768	768	1	Lysá nad Labem	9825
 733	2	7			Monika	Jonášová	54	F	manažer obchodu, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Horní Bezděkov	708
 1026	2	7			Miloslav	Hess	47	M	živnostník	1114	1114	0	Vlašim	11496
 970	2	7			Sabina	Friedrichová	41	F	provozní vedoucí kočičího útulku Felix Klecany	1173	1173	0	Klecany	3671
@@ -1479,8 +1479,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1031	2	7	PhDr.		Karel	Valášek	75	M	důchodce	1240	1240	0	Praha	1335084
 665	2	7			Květuše	Mentová	48	F	jednatel pivovaru Malý Janek z Jinec	1244	1244	0	Praha	1335084
 731	2	7			Vladimír	Havlík	33	M	starosta obce Zaječov	1245	1245	0	Zaječov	1439
-942	2	7	Ing.		Petr	Bendl	55	M	poslanec PČR, OSVČ	1327	53	0	Bratronice	936
-1036	2	7	Ing.		Věra	Kovářová	57	F	poslankyně, překladatelka, lektorka německého jazyka	1350	166	0	Chýně	4114
+942	2	7	Ing.		Petr	Bendl	55	M	poslanec PČR, OSVČ	1327	53	1	Bratronice	936
+1036	2	7	Ing.		Věra	Kovářová	57	F	poslankyně, překladatelka, lektorka německého jazyka	1350	166	2	Chýně	4114
 1406	3	7	Mgr.		Jiří	Guth Jarkovský	55	M	ekolog, soukromý zemědělec	5	5	0	Borovany	4166
 1233	3	7	PaedDr.		Jan	Klimeš	65	M	místostarosta města Prachatice	7	7	0	Prachatice	10706
 1327	3	7	Ing.	Ph.D.	Hana	Tůmová	40	F	osoba samostatně výdělečně činná	47	47	0	Osek	135
@@ -1495,7 +1495,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1400	3	7	Ing.		Ivo	Machálek	56	M	starosta města, ředitel polikliniky	1227	1227	0	Týn nad Vltavou	7887
 1155	3	7			Alena	Květoňová	42	F	vedoucí pošty	1244	1244	0	Český Krumlov	12788
 1398	3	7	Ing.		Jiří	Michal	59	M	realitní makléř	1245	1245	0	České Budějovice	94229
-1422	3	7	Mgr.		Šimon	Heller	33	M	učitel na gymnáziu	1327	1	0	České Budějovice	94229
+1422	3	7	Mgr.		Šimon	Heller	33	M	učitel na gymnáziu	1327	1	2	České Budějovice	94229
 1160	3	7			Václav	Vostradovský	50	M	starosta obce Kvilda, předseda Klubu vojenské historie Gabreta, z.s.	1350	166	0	Kvilda	143
 1615	4	7			Iva	Polášková	65	F	důchodkyně	5	5	0	Bor	4488
 1462	4	7			Božena	Vaňková	53	F	ředitelka městského kulturního střediska	7	7	0	Tachov	13072
@@ -1510,7 +1510,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1568	4	7	Bc.		Marie	Setikovská	44	F	vedoucí kanceláře	1227	1227	0	Plzeň	175219
 1522	4	7	Ing.		Josef	Novák	67	M	živnostník	1244	1244	0	Plzeň	175219
 1497	4	7	Ing.		František	Maier	62	M	důchodce	1245	1245	0	Klatovy	22140
-1707	4	7	Ing. et Ing.		Miloš	Nový	61	M	ekonom, vysokoškolský pedagog, emeritní děkan FEK ZČU	1327	721	0	Plzeň	175219
+1707	4	7	Ing. et Ing.		Miloš	Nový	61	M	ekonom, vysokoškolský pedagog, emeritní děkan FEK ZČU	1327	721	2	Plzeň	175219
 1717	4	7	Ing.		Jan	Bostl	46	M	starosta Kvíčovic, předseda Krajské sítě Místních akčních skupin pro rozvoj venkova, IT specialista	1350	166	0	Kvíčovice	406
 1803	5	7	Mgr.		Martin	Flaška	40	M	učitel	5	5	0	Aš	13105
 1876	5	7	Mgr.		Jiří	Hrubý	58	M	právník a tiskový mluvčí	7	7	0	Kynšperk nad Ohří	4739
@@ -1531,7 +1531,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2282	6	7			Aleš	Beran	43	M	vysokoškolský pedagog	55	55	0	Praha	1335084
 2115	6	7			Viktor	Fürst	64	M	technik BOZP	759	759	0	Louny	18156
 1980	6	7			Viktor	Táborský	25	M	OSVČ	762	762	0	Ústí nad Labem	91982
-2116	6	7	Ing.	Ph.D.	Berenika	Peštová	50	F	náměstkyně ministra	768	768	0	Most	65341
+2116	6	7	Ing.	Ph.D.	Berenika	Peštová	50	F	náměstkyně ministra	768	768	1	Most	65341
 2022	6	7			Lenka	Gýnová	43	F	pohybová terapeutka, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Most	65341
 2222	6	7	Ing.		Jarmila	Fuchsová	42	F	technik městské policie	1114	1114	0	Most	65341
 2028	6	7			Zdeněk	Hlinovský	59	M	OSVČ, trenér volejbalu, předseda sportovního klubu	1173	1173	0	Jirkov	19200
@@ -1567,7 +1567,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 2577	8	7			Robert	Dekov	46	M	automatizační technik	1244	1244	0	Očelice	228
 2583	8	7	Ing. Bc.		Zdeněk	Kudrnáč	67	M	podnikatel	1245	1245	0	Brzice	246
 2594	8	7	Mgr.		Jana	Drejslová	58	F	místostarostka města Rychnov nad Kněžnou, zastupitelka Královéhradeckého kraje	1327	53	0	Rychnov nad Kněžnou	10899
-2694	8	7	Mgr.		Lucie	Potůčková	46	F	starostka městyse Mladé Buky, právnička	1350	166	0	Mladé Buky	2313
+2694	8	7	Mgr.		Lucie	Potůčková	46	F	starostka městyse Mladé Buky, právnička	1350	166	2	Mladé Buky	2313
 2959	9	7			Ivana	Brodská	41	F	projektová manažerka v oboru realizace expozic, operní a koncertní pěvkyně Ivana Milek, pedagožka a organizátorka vzdělávacích akcí	5	5	0	Praha	1335084
 2894	9	7	Mgr. Ing.	MBA	Renata	Petružálková	53	F	ředitelka střední školy	7	7	0	Pardubice	91755
 2917	9	7	Ing. Bc.	DiS.	Jaromír	Vojtěch	44	M	referent odboru životního prostředí	47	47	0	Dašice	2365
@@ -1609,7 +1609,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3762	11	7	Mgr.		Robert	Keprt	53	M	historik	83	83	0	Brno	382405
 3865	11	7			Monika	Gaszczyková	52	F	provozní restaurace	759	759	0	Šumná	642
 3902	11	7			Tobiáš	Nguyen	29	M	chemik	762	762	0	Lomnice	1459
-3519	11	7			David	Štolpa	38	M	poslanec PSP ČR, živnostník	768	768	0	Znojmo	33775
+3519	11	7			David	Štolpa	38	M	poslanec PSP ČR, živnostník	768	768	1	Znojmo	33775
 3880	11	7			Tomáš	Marek	44	M	OSVČ, člen Aliance Kulatého Stolu, z.s.	1007	1007	0	Ratíškovice	4001
 3540	11	7			Martin	Stloukal	50	M	sportovní trenér	1114	1114	0	Brno	382405
 3798	11	7			Radana	Lišková	46	F	projektant	1173	1173	0	Prušánky	2235
@@ -1618,8 +1618,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3882	11	7	Ing.		Vlastislav	Smutný	71	M	daňový poradce	1240	1240	0	Brno	382405
 3760	11	7			Kateřina	Šanderová	46	F	podnikatelka	1244	1244	0	Moravský Žižkov	1471
 3455	11	7			Alena	Stará	66	F	důchodkyně	1245	1245	0	Újezd u Brna	3371
-3699	11	7	Ing.		Miroslav	Zborovský	41	M	starosta obce Těšany, ekonom	1327	1	0	Těšany	1281
-3763	11	7	Mgr.		Martin	Hájek	51	M	starosta, cimbalista	1350	166	0	Radějov	842
+3699	11	7	Ing.		Miroslav	Zborovský	41	M	starosta obce Těšany, ekonom	1327	1	1	Těšany	1281
+3763	11	7	Mgr.		Martin	Hájek	51	M	starosta, cimbalista	1350	166	2	Radějov	842
 4342	12	7	Bc.		Michaela	Štefková	45	F	péče o firemní gastrozónu a stravování zaměstnanců ve společnosti věnující se aditivní výrobě	5	5	0	Mohelnice	9255
 4281	12	7			Petr	Kudláček	45	M	správce sportovního areálu	7	7	0	Prostějov	43381
 4340	12	7	Ing.		Liběna	Večeřová	54	F	dopravní náměstkyně Správy železnic, státní organizace	47	47	0	Olomouc	100514
@@ -1635,7 +1635,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4022	12	7			Petr	Žurek	52	M	obchodní ředitel	1227	1227	0	Hranice	17818
 4224	12	7			František	Čech	32	M	kuchař	1244	1244	0	Děčín	47951
 4121	12	7			Iveta	Štetinová	53	F	podnikatel - vzdělávací činnost	1245	1245	0	Olomouc	100514
-4362	12	7	doc. JUDr.	Ph.D.	Michael	Kohajda	40	M	proděkan Právnické fakulty UP, radní města Šumperka	1327	1	0	Šumperk	25452
+4362	12	7	doc. JUDr.	Ph.D.	Michael	Kohajda	40	M	proděkan Právnické fakulty UP, radní města Šumperka	1327	1	2	Šumperk	25452
 4315	12	7	Mgr.		Eva	Machová	64	F	ředitelka domova pro seniory v Pavlovicích u Přerova, ambasadorka dobrovolných hasičů	1350	166	0	Olomouc	100514
 4629	13	7	MUDr.		Tomáš	Husa	44	M	lékař, zastupitel Vsetína	5	5	0	Vsetín	25782
 4702	13	7	Ing.		Věra	Sigmundová	46	F	starostka města Chropyně	7	7	0	Chropyně	4850
@@ -1660,7 +1660,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4788	14	7	Mgr.		Marta	Vítková	66	F	učitelka	752	752	0	Ostrava	284982
 5148	14	7	Mgr. Bc.		Klára	Mokrošová	42	F	finanční kontrolor	759	759	0	Ostrava	284982
 5203	14	7			Jindřich	Galda	68	M	stavbyvedoucí	762	762	0	Třemešná	898
-4829	14	7	Ing.		Jiří	Strýček	62	M	poslanec Parlamentu ČR	768	768	0	Nový Jičín	23151
+4829	14	7	Ing.		Jiří	Strýček	62	M	poslanec Parlamentu ČR	768	768	1	Nový Jičín	23151
 4995	14	7			Jiří	Majcher	43	M	podnikatel, zakladatel spolku E-koruna z.s.	1007	1007	0	Havířov	70165
 4961	14	7			Petr	Gawlas	59	M	projektový manažer	1114	1114	0	Jablunkov	5445
 4733	14	7	Mgr.		Lumír	Pospěch	62	M	radní	1173	1173	0	Kopřivnice	21657
@@ -1687,7 +1687,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 265	1	8			Jana	Šilhánková	76	F	důchodce	1240	1240	0	Praha	1335084
 312	1	8	Mgr.		Michaela	Havlanová	35	F	deputy manager	1244	1244	0	Praha	1335084
 387	1	8	Ing.		Petr	Kotaška	57	M	živnostník	1245	1245	0	Praha	1335084
-459	1	8	Mgr.		Renáta	Zajíčková	54	F	starostka MČ Praha 5, pedagog	1327	53	0	Praha	1335084
+459	1	8	Mgr.		Renáta	Zajíčková	54	F	starostka MČ Praha 5, pedagog	1327	53	1	Praha	1335084
 18	1	8	Mgr.		Adam	Zábranský	27	M	radní hl. m. Prahy pro bydlení a transparentnost	1350	720	0	Praha	1335084
 784	2	8	Ing.		Daricha	Moravčíková	58	F	inženýr ve strojírenství	5	5	0	Lešany	813
 727	2	8			Jiří	Bezděk	30	M	hotelový manažer	7	7	0	Praha	1335084
@@ -1695,7 +1695,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1050	2	8	Ing.		Martina	Čemusová	56	F	lektorka jazyků	55	55	0	Kostelec nad Labem	4224
 743	2	8	Ing.		Luděk	Fořtík	46	M	operátor energobloku	759	759	0	Stochov	5401
 656	2	8			Zuzana	Štainerová	62	F	operátor provozu	762	762	0	Čáslav	10350
-1071	2	8	Mgr.		Tomáš	Helebrant	47	M	ředitel společnosti	768	768	0	Dobříš	8828
+1071	2	8	Mgr.		Tomáš	Helebrant	47	M	ředitel společnosti	768	768	1	Dobříš	8828
 704	2	8			Zdeňka	Šťastná	52	F	OSVČ, aktivní v občanské iniciativě Život s činnou kompetencí	1007	1007	0	Votice	4547
 915	2	8			Vladimíra	Štefcová	58	F	administrativní pracovnice	1114	1114	0	Církvice	1328
 986	2	8	Ing.		Jiří	Janů	67	M	soudní znalec, odborný lesní hospodář	1173	1173	0	Kosova Hora	1357
@@ -1703,7 +1703,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1122	2	8			Božena	Jiříková	57	F	operátorka	1240	1240	0	Frýdek-Místek	55006
 654	2	8			Hana	Míková	30	F	provozní v Malý Janek z Jinec	1244	1244	0	Jince	2301
 676	2	8			Jaroslava	Burianová	65	F	administrativní pracovnice	1245	1245	0	Mníšek pod Brdy	6085
-940	2	8	Mgr.		Nina	Nováková	67	F	středoškolský pedagog	1327	1	0	Brandýs nad Labem-Stará Boleslav	19420
+940	2	8	Mgr.		Nina	Nováková	67	F	středoškolský pedagog	1327	1	1	Brandýs nad Labem-Stará Boleslav	19420
 1021	2	8	Mgr. Bc. et Bc.		Matouš	Vanča	31	M	parlamentář, historik, zastupitel obce Čestlice, tajemník poslaneckého klubu Pirátů	1350	720	0	Čestlice	704
 1417	3	8	Mgr.		Petra	Pixová	36	F	lektorka a překladatelka	5	5	0	Hrdějovice	1558
 1145	3	8	Mgr. Bc.		Antonín	Krák	55	M	náměstek hejtmana Jihočeského kraje, starosta města Větřní	7	7	0	Větřní	3824
@@ -1830,7 +1830,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3748	11	8	Ing.		Rafael	Schwarzenegger	28	M	Ph.D. student	83	83	0	Brno	382405
 3800	11	8			Radek	Maláč	36	M	vedoucí plánování	759	759	0	Blansko	20306
 3894	11	8			David	Peruth	44	M	technik	762	762	0	Ketkovice	610
-3520	11	8			Lenka	Knechtová	46	F	OSVČ	768	768	0	Tišnov	9267
+3520	11	8			Lenka	Knechtová	46	F	OSVČ	768	768	1	Tišnov	9267
 3570	11	8	MVDr.		Petra	Grimová	43	F	veterinární pedagog	1007	1007	0	Brno	382405
 3881	11	8			Karel	Cholek	61	M	strojní technolog, živnostník	1114	1114	0	Brno	382405
 3750	11	8			Jitka	Nahodilová	49	F	OSVČ	1173	1173	0	Znojmo	33775
@@ -1839,7 +1839,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3850	11	8			Oldřich	Hrdina	77	M	důchodce	1240	1240	0	Němčičky	706
 3735	11	8			Radek	Zbožínek	44	M	živnostník	1244	1244	0	Brno	382405
 3933	11	8			Tomáš	Pitrun	53	M	OSVČ	1245	1245	0	Horní Věstonice	491
-3469	11	8	Ing.	MBA	Jana	Bačíková	52	F	starostka obce Vacenovice	1327	53	0	Vacenovice	2194
+3469	11	8	Ing.	MBA	Jana	Bačíková	52	F	starostka obce Vacenovice	1327	53	1	Vacenovice	2194
 3903	11	8	Ing.		Adam	Vyplel	27	M	projektant vodohospodářských staveb	1350	720	0	Říčany	2093
 4144	12	8		M.Sc.	Radek	Ocelák	33	M	nakladatel, genealog	5	5	0	Šumperk	25452
 4273	12	8			Miroslav	Janeček	39	M	živnostník	7	7	0	Litovel	9651
@@ -1881,7 +1881,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 5106	14	8			Zdeněk	Moša	61	M	podnikatel	752	752	0	Bruntál	15908
 5230	14	8			Petr	Timčák	55	M	OSVČ	759	759	0	Karviná	50902
 5067	14	8			Helena	Pavlovcová	64	F	zdravotní sestra	762	762	0	Karviná	50902
-5037	14	8	Mgr.	MBA	Andrea	Babišová	49	F	poslankyně Parlamentu ČR	768	768	0	Bohumín	20308
+5037	14	8	Mgr.	MBA	Andrea	Babišová	49	F	poslankyně Parlamentu ČR	768	768	1	Bohumín	20308
 5149	14	8			Milan	Hrúz	64	M	revizní technik, zakladatel spolku E-koruna z.s.	1007	1007	0	Český Těšín	24069
 5138	14	8			Radomil	Bodzsar	65	M	starosta obce	1114	1114	0	Mošnov	750
 5071	14	8	Ing.		Zdeněk	Wilček	31	M	vědecko-výzkumný pracovník	1173	1173	0	Kopřivnice	21657
@@ -1889,7 +1889,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4726	14	8			Bedřiška	Dvořanová	66	F	důchodce	1240	1240	0	Ostrava	284982
 5083	14	8			Kamil	Sedláček	50	M	podnikatel	1244	1244	0	Bohumín	20308
 4986	14	8	Mgr.		Lukáš	Závodník	29	M	referent	1245	1245	0	Krnov	23130
-5011	14	8	Bc.	MBA	Jiří	Navrátil	44	M	náměstek hejtmana MSK, místostarosta obce Mořkov	1327	1	0	Mořkov	2497
+5011	14	8	Bc.	MBA	Jiří	Navrátil	44	M	náměstek hejtmana MSK, místostarosta obce Mořkov	1327	1	2	Mořkov	2497
 4942	14	8	Ing.		Jan	Lipner	56	M	starosta obce Horní Suchá	1350	166	0	Horní Suchá	4367
 290	1	9	Ing.		Pavla	Setničková Nováková	52	F	IT manažerka, fundraiserka Extinction Rebellion, dobrovolnice Hnutí DUHA pro ochranu velkých šelem	5	5	0	Praha	1335084
 76	1	9	Mgr. et Mgr.		Jiří	Nosek	36	M	garant odborného vzdělávání pro ICT a pro podporu digitálních kompetencí-Národní pedagogický institut ČR	7	7	0	Praha	1335084
@@ -1908,7 +1908,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 355	1	9			Vladislav	Valenta	70	M	důchodce	1240	1240	0	Praha	1335084
 143	1	9			Alena	Olšanová	35	F	terapeutka	1244	1244	0	Praha	1335084
 25	1	9	Mgr. Bc.		Tomáš	Grmela	44	M	živnostník	1245	1245	0	Praha	1335084
-16	1	9			Michal	Zuna	39	M	radní pro oblast bezpečnosti MČ Praha 2	1327	721	0	Praha	1335084
+16	1	9			Michal	Zuna	39	M	radní pro oblast bezpečnosti MČ Praha 2	1327	721	1	Praha	1335084
 428	1	9	Mgr.		Ondřej	Chrást	41	M	zastupitel MČ Praha 6, projektový manažer v kultuře a vzdělávání	1350	720	0	Praha	1335084
 1029	2	9			Martina	Chmelová	30	F	zakladatelka Náboru hrdinů	5	5	0	Dobrovice	3455
 791	2	9	PhDr.		Miroslava	Měchurová	69	F	ředitelka Speciálně pedagogického centra	7	7	0	Odolena Voda	6200
@@ -1923,7 +1923,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 1106	2	9			Pavel	Jehlička	56	M	jednatel stavební společnosti	1227	1227	0	Zdiby	3874
 871	2	9	Bc.		Jan	Bořil	32	M	výtvarník a umělec	1244	1244	0	Kladno	68896
 1086	2	9		DiS.	Iveta	Urbanová	26	F	administrativní asistentka	1245	1245	0	Nenačovice	278
-880	2	9			Jan	Hofmann	36	M	technolog ve strojírenství, podnikatel, zastupitel obce	1327	53	0	Kněžmost	2183
+880	2	9			Jan	Hofmann	36	M	technolog ve strojírenství, podnikatel, zastupitel obce	1327	53	1	Kněžmost	2183
 767	2	9	MgA.		Dominika	Poživilová Michailidu	41	F	výtvarník, zemědělec, zastupitelka obce Krnsko	1350	720	0	Krnsko	572
 1229	3	9			Ondřej	Šanda	43	M	kuchař, ekolog	5	5	0	Kaplice	7241
 1410	3	9	Mgr.		Lubomír	Francl	61	M	místopředseda Odborového svazu zdravotnictví a sociální péče České republiky	7	7	0	Dolní Bukovsko	1765
@@ -2099,7 +2099,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 5197	14	9			Gina	Horylová	63	F	veterinární technička	752	752	0	Čeladná	2868
 5140	14	9			Vladimír	Sabol	53	M	technik výroby	759	759	0	Rychvald	7572
 4731	14	9			Vasil	Gašpar	71	M	restauratér	762	762	0	Bruntál	15908
-5184	14	9			Michal	Ratiborský	39	M	poslanec parlamentu ČR	768	768	0	Krnov	23130
+5184	14	9			Michal	Ratiborský	39	M	poslanec parlamentu ČR	768	768	1	Krnov	23130
 4824	14	9			Blanka	Zamazalová	38	F	učitelka, zakladatelka spolku E-koruna z.s.	1007	1007	0	Blíževedly	605
 4983	14	9			Michal	Pořízka	56	M	vedoucí gastronomického zařízení, zastupitel města	1114	1114	0	Nový Jičín	23151
 5245	14	9	Bc.		Ludmila	Dobiašová	27	F	ekonom	1173	1173	0	Hodslavice	1738
@@ -2125,7 +2125,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 251	1	10			Jiří	Nol	76	M	důchodce	1240	1240	0	Praha	1335084
 367	1	10			Jiří	Havel	43	M	podnikatel	1244	1244	0	Praha	1335084
 127	1	10	Mgr. Ing.		Martin	Husa	47	M	právník	1245	1245	0	Praha	1335084
-7	1	10	PharmDr.		Petr	Fifka	54	M	farmaceut, zastupitel hlavního města Prahy	1327	53	0	Praha	1335084
+7	1	10	PharmDr.		Petr	Fifka	54	M	farmaceut, zastupitel hlavního města Prahy	1327	53	1	Praha	1335084
 56	1	10	Ing.		Eva	Tylová	61	F	místostarostka MČ Praha 12, ekoložka	1350	720	0	Praha	1335084
 995	2	10	Ing.		Ondřej	Novák	39	M	státní zaměstnanec	5	5	0	Kladno	68896
 879	2	10	Ing.		David	Grunt	39	M	vedoucí odboru výstavby a životního prostředí	7	7	0	Hořovice	6939
@@ -2140,8 +2140,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 994	2	10	Bc.		Martin	Reiser	52	M	IT specialista	1227	1227	0	Chýně	4114
 1043	2	10			Jakub	Krška	24	M	řidič	1244	1244	0	Pátek	742
 809	2	10	Ing. Mgr.	MBA	Ľubomír	Augustín	49	M	právník, ekonom	1245	1245	0	Senohraby	1246
-1022	2	10			Jiří	Slavík	53	M	starosta	1327	721	0	Votice	4547
-948	2	10			Martin	Exner	57	M	starosta obce Nová Ves, obchodník v zahraničním obchodu	1350	166	0	Nová Ves	1096
+1022	2	10			Jiří	Slavík	53	M	starosta	1327	721	1	Votice	4547
+948	2	10			Martin	Exner	57	M	starosta obce Nová Ves, obchodník v zahraničním obchodu	1350	166	2	Nová Ves	1096
 1450	3	10	Mgr.		Eva	Valachová	44	F	vedoucí oddělení důchodového pojištění	5	5	0	Český Krumlov	12788
 1290	3	10	Mgr.	Ph.D.	Jana	Mazáčková	42	F	odborná pracovnice ve výzkumu Ústavu archeologie a muzeologie MU Brno	7	7	0	Prachatice	10706
 1172	3	10			Bedřich	Mašík	51	M	vodohospodářský pracovník	47	47	0	Dobev	971
@@ -2275,8 +2275,8 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3869	11	10			Alena	Janečková	78	F	důchodce	1240	1240	0	Brno	382405
 3495	11	10			Miroslava	Petruchová	49	F	poštovní doručovatelka	1244	1244	0	Podivín	3009
 3474	11	10			Bohdan	Ohera	52	M	manažer technologie	1245	1245	0	Pohořelice	5251
-3826	11	10	Mgr.		Marie	Jílková	44	F	radní MČ Brno-střed	1327	1	0	Brno	382405
-3867	11	10	Mgr.		Josef	Flek	33	M	zdravotník, včelař	1350	166	0	Tišnov	9267
+3826	11	10	Mgr.		Marie	Jílková	44	F	radní MČ Brno-střed	1327	1	2	Brno	382405
+3867	11	10	Mgr.		Josef	Flek	33	M	zdravotník, včelař	1350	166	2	Tišnov	9267
 4114	12	10	Mgr.		Pavel	Bednařík	41	M	předseda Asociace pro filmovou a audiovizuální výchovu, lektor, konzultant	5	5	0	Olomouc	100514
 4126	12	10	Ing.		Ján	Babnič	71	M	důchodce	7	7	0	Libina	3238
 4349	12	10	MUDr.		Ivan	Sumara	64	M	lékař	47	47	0	Hranice	17818
@@ -2315,7 +2315,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4843	14	10	Bc.		Zdeňka	Slívová	52	F	referent správního odboru	83	83	0	Orlová	28330
 4874	14	10			Jiřina	Kratochvílová	51	F	OSVČ-reality	759	759	0	Kunín	1849
 4837	14	10			Pavel	Blahuš	47	M	stavební inženýr	762	762	0	Žlutava	1204
-4732	14	10	Ing.		Zuzana	Ožanová	51	F	starostka městského obvodu Moravská Ostrava a Přívoz	768	768	0	Ostrava	284982
+4732	14	10	Ing.		Zuzana	Ožanová	51	F	starostka městského obvodu Moravská Ostrava a Přívoz	768	768	1	Ostrava	284982
 4938	14	10			Jan	Veselý	58	M	podnikatel, zakladatel spolku E-koruna z.s.	1007	1007	0	Paskov	3909
 5183	14	10			Petr	Stuchlík	53	M	IT manažer, zastupitel města	1114	1114	0	Orlová	28330
 4914	14	10			Renáta	Sikorová	55	F	pracovnice v sociálních službách, členka spolku Společně pro Ostravu	1173	1173	0	Ostrava	284982
@@ -2323,7 +2323,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 5007	14	10			Ján	Tomeš	57	M	živnostník	1244	1244	0	Karviná	50902
 4770	14	10			Radomíra	Vargová	51	F	referent	1245	1245	0	Frýdek-Místek	55006
 4954	14	10	Bc.		Matěj	Blažek	24	M	student	1327	53	0	Frýdlant nad Ostravicí	9926
-5003	14	10	PhDr.	Ph.D.	Michael	Rataj	52	M	starosta obce Branka u Opavy	1350	166	0	Branka u Opavy	1076
+5003	14	10	PhDr.	Ph.D.	Michael	Rataj	52	M	starosta obce Branka u Opavy	1350	166	2	Branka u Opavy	1076
 318	1	11	Mgr.		Ondřej	Rut	39	M	místostarosta Prahy 3 pro sociální a bytovou politiku, dopravu a energetiku, sociální ekolog	5	5	0	Praha	1335084
 493	1	11	MUDr.		Jana	Trková	68	F	lékařka	7	7	0	Praha	1335084
 104	1	11	JUDr.		Ivan	Hrůza	67	M	podnikový právník	47	47	0	Praha	1335084
@@ -2341,7 +2341,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 82	1	11			Lukáš	Kratochvíl	35	M	obchodní specialista	1244	1244	0	Praha	1335084
 132	1	11			Irena	Svátková	58	F	distributorka tisku PNS	1245	1245	0	Praha	1335084
 339	1	11	prof. Ing. Mgr.	Dr., MSc.	Martin	Dlouhý	51	M	vysokoškolský učitel	1327	721	0	Praha	1335084
-583	1	11	Ing.		Roman	Bělor	63	M	ředitel festivalu Pražské jaro	1350	166	0	Praha	1335084
+583	1	11	Ing.		Roman	Bělor	63	M	ředitel festivalu Pražské jaro	1350	166	2	Praha	1335084
 764	2	11			Alena	Šálová	62	F	OSVČ - majitelka CK A.Ša s.r.o.	5	5	0	Příbram	32248
 1000	2	11			Miroslav	Polák	59	M	manažer, elektrotechnik	7	7	0	Věšín	704
 1030	2	11	Ing.		Josef	Dovolil	64	M	podnikatel	47	47	0	Mladá Boleslav	44506
@@ -2568,7 +2568,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 703	2	12			Radovan	Tögel	51	M	podnikatel	1244	1244	0	Psáry	4154
 1127	2	12	Ing.		Nikola	Pšeničková	28	F	referent bezpečnosti práce	1245	1245	0	Nalžovice	613
 896	2	12	Mgr.		Jan	Pleskač	32	M	úředník	1327	53	0	Sadská	3221
-878	2	12	Ing.		Barbora	Urbanová	30	F	zastupitelka obce Dolní Břežany, ředitelka institutu a spolupracovnice Víta Rakušana	1350	166	0	Dolní Břežany	4399
+878	2	12	Ing.		Barbora	Urbanová	30	F	zastupitelka obce Dolní Břežany, ředitelka institutu a spolupracovnice Víta Rakušana	1350	166	2	Dolní Břežany	4399
 1425	3	12			Kateřina	Kuchtová	22	F	studentka Akademie výtvarných umění v Praze	5	5	0	Český Krumlov	12788
 1418	3	12	Bc.		Miroslav	Kadeřábek	65	M	místostarosta města Jindřichův Hradec	7	7	0	Jindřichův Hradec	21169
 1275	3	12	MUDr.	DiS.	Kateřina	Jirousová	34	F	lékařka	47	47	0	Praha	1335084
@@ -2698,7 +2698,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 3926	11	12			René	Čeman	32	M	instalatér	1244	1244	0	Dolní Dunajovice	1690
 3666	11	12			Milan	Záleský	37	M	pracovník bezpečnostní agentury	1245	1245	0	Hodonín	24385
 3785	11	12	Bc.		Hynek	Julínek	47	M	vedoucí Centra informačních a komunikačních technologií, Ekonomicko-správní fakulta Masarykovy univerzity	1327	53	0	Brno	382405
-3950	11	12	Bc.		Petra	Quittová	49	F	starostka MČ Brno-Černovice	1350	166	0	Brno	382405
+3950	11	12	Bc.		Petra	Quittová	49	F	starostka MČ Brno-Černovice	1350	166	2	Brno	382405
 4060	12	12	Mgr.		Miloš	Holec	34	M	specialista digitálního obchodu, učitel	5	5	0	Olomouc	100514
 4297	12	12	Ing.		Roman	Váňa	54	M	živnostník	7	7	0	Olomouc	100514
 4366	12	12	PaedDr.		Jaroslav	Šlambor	72	M	důchodce, zastupitel města Prostějova	47	47	0	Prostějov	43381
@@ -3150,7 +3150,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 5173	14	14			Tomáš	Soukup	35	M	živnostník	1244	1244	0	Křišťanovice	250
 4962	14	14			Petr	Illéš	63	M	důchodce	1245	1245	0	Opava	55996
 5097	14	14	Mgr.	DiS.	Štěpánka	Křehlíková	35	F	sociální pracovnice	1327	1	0	Krnov	23130
-5017	14	14	Mgr.		Michaela	Šebelová	39	F	starostka obce Kunčice pod Ondřejníkem, fyzioterapeutka	1350	166	0	Kunčice pod Ondřejníkem	2416
+5017	14	14	Mgr.		Michaela	Šebelová	39	F	starostka obce Kunčice pod Ondřejníkem, fyzioterapeutka	1350	166	2	Kunčice pod Ondřejníkem	2416
 341	1	15	Mgr.		Barbora	Kosíková	61	F	inovátorka vzdělávání nadaných dětí, administrativní pracovnice na Univerzitě Karlově	5	5	0	Praha	1335084
 21	1	15	Ing.		Ladislav	Kubizňák	71	M	jednatel	7	7	0	Praha	1335084
 354	1	15	RNDr.	CSc.	Milan	Macek	64	M	ředitel střední školy	47	47	0	Praha	1335084
@@ -3167,7 +3167,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 100	1	15			Radovan	Koutský	63	M	radní MČ Praha 22	1227	1227	0	Praha	1335084
 384	1	15			Jan	Boháč	25	M	makléř	1244	1244	0	Praha	1335084
 239	1	15	Mgr. Bc.		Marian	Janoušek	44	M	úředník MČ Prahy 3	1245	1245	0	Praha	1335084
-402	1	15	Mgr.		Hayato	Okamura	54	M	tlumočník a průvodce	1327	1	0	Praha	1335084
+402	1	15	Mgr.		Hayato	Okamura	54	M	tlumočník a průvodce	1327	1	2	Praha	1335084
 222	1	15	Ing.		Štěpán	Rattay	44	M	zastupitel MČ Praha 5, ekonom, předseda kontrolního výboru, expert na hospodárnost veřejných financí	1350	720	0	Praha	1335084
 819	2	15	Mgr. Ing.		Iva	Kofroňová	56	F	vedoucí daňové kanceláře	5	5	0	Maršovice	755
 830	2	15	Mgr.		Štefan	Klíma	50	M	ředitel střední školy	7	7	0	Bakov nad Jizerou	5141
@@ -3357,7 +3357,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 423	1	16	Ing.		Pavel	Bílek	52	M	technik	1244	1244	0	Praha	1335084
 302	1	16			Jiří	Dědič	75	M	důchodce	1245	1245	0	Praha	1335084
 272	1	16	Ing. Bc.	Ph.D., ING-PAED IGIP	Simona	Nesvadbová	42	F	ředitelka SŠ, zastupitelka MČ Praha 6	1327	53	0	Praha	1335084
-392	1	16	Mgr.		Milada	Voborská	49	F	starostka MČ Praha-Satalice, editorka	1350	166	0	Praha	1335084
+392	1	16	Mgr.		Milada	Voborská	49	F	starostka MČ Praha-Satalice, editorka	1350	166	2	Praha	1335084
 827	2	16	Ing.		Jiří	Čejka	67	M	aplikační specialista ve zdravotnictví	5	5	0	Semčice	776
 909	2	16	doc. PhDr.	CSc.	Emil	Vašíček	90	M	pedagog	7	7	0	Praha	1335084
 640	2	16			Karel	Brich	45	M	operátor výroby	47	47	0	Mladá Boleslav	44506
@@ -4426,7 +4426,7 @@ id	k	c	t1	t2	j	p	a	s	z	v	n	m	b	o
 4408	13	22			Tomáš	Kvapil	82	M	stavbyvedoucí	55	55	0	Olomouc	100514
 4486	13	22			Martin	Lukeštík	32	M	kuchař	83	83	0	Jalubí	1820
 4659	13	22			Marie	Sušková	58	F	úřednice	759	759	0	Vsetín	25782
-4458	13	22	Ing.		Radim	Holiš	46	M	hejtman Zlínského kraje	768	768	0	Rožnov pod Radhoštěm	16280
+4458	13	22	Ing.		Radim	Holiš	46	M	hejtman Zlínského kraje	768	768	2	Rožnov pod Radhoštěm	16280
 4600	13	22			Michaela	Kadlecová	42	F	pojišťovací poradkyně	1114	1114	0	Bojkovice	4369
 4536	13	22			Marian	Cekota	32	M	špičkový kuchař penzionu u Johana	1173	1173	0	Zlín	74478
 4670	13	22			Ivo	Valenta	65	M	podnikatel, zakladatel nadace, bývalý senátor	1227	1227	0	Zlín	74478

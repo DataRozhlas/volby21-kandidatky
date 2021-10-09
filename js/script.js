@@ -13,7 +13,7 @@ ReactDOM.render(
       vybranyKraj: 0,
       vybranaNstrana: 0,
       vybranaVstrana: 0,
-      nactenyRok: 2017,
+      nactenyRok: 2021,
       muzi: true,
       zeny: true,
       ing: true,

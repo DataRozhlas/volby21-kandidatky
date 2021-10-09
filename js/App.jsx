@@ -326,7 +326,7 @@ function App({ defaultFiltr }) {
     vstrany: [],
   });
   const [filtr, setFiltr] = useState(defaultFiltr);
-  const [rok, setRok] = useState(2017);
+  const [rok, setRok] = useState(2021);
   const [kandidati, setKandidati] = useState([]);
   const [vybraniKandidati, setVybraniKandidati] = useState([]);
   const [vybarveniKandidati, setVybarveniKandidati] = useState([]);

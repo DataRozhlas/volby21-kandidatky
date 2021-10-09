@@ -313,57 +313,57 @@ const BocniMenu = ({ filtr, setFiltr, classes }) => {
           ></Slider>
         </FormGroup>
       </FormControl>
-      {filtr.nactenyRok != 2021 && (
-        <FormControl component="fieldset" className={classes.bocniFieldset}>
-          <InputLabel className={classes.bocniLabel}>
-            MANDÁT V ROCE {filtr.nactenyRok}
-          </InputLabel>
-          <VybratVse
-            items={["mandatAno", "mandatPref", "mandatNe"]}
-            filtr={filtr}
-            setFiltr={setFiltr}
-            classes={classes}
+
+      <FormControl component="fieldset" className={classes.bocniFieldset}>
+        <InputLabel className={classes.bocniLabel}>
+          MANDÁT V ROCE {filtr.nactenyRok}
+        </InputLabel>
+        <VybratVse
+          items={["mandatAno", "mandatPref", "mandatNe"]}
+          filtr={filtr}
+          setFiltr={setFiltr}
+          classes={classes}
+        />
+        <FormGroup className={classes.bocniCheckBoxGroup}>
+          <FormControlLabel
+            className={classes.bocniCheckBox}
+            control={
+              <Checkbox
+                checked={filtr.mandatAno}
+                onChange={handleChange}
+                name="mandatAno"
+                size="small"
+              />
+            }
+            label="získali standardně"
           />
-          <FormGroup className={classes.bocniCheckBoxGroup}>
-            <FormControlLabel
-              className={classes.bocniCheckBox}
-              control={
-                <Checkbox
-                  checked={filtr.mandatAno}
-                  onChange={handleChange}
-                  name="mandatAno"
-                  size="small"
-                />
-              }
-              label="získali standardně"
-            />
-            <FormControlLabel
-              className={classes.bocniCheckBox}
-              control={
-                <Checkbox
-                  checked={filtr.mandatPref}
-                  onChange={handleChange}
-                  name="mandatPref"
-                  size="small"
-                />
-              }
-              label="preferenčními hlasy"
-            />
-            <FormControlLabel
-              className={classes.bocniCheckBox}
-              control={
-                <Checkbox
-                  checked={filtr.mandatNe}
-                  onChange={handleChange}
-                  name="mandatNe"
-                  size="small"
-                />
-              }
-              label="nezískali"
-            />
-          </FormGroup>
-        </FormControl>
-      )}
+          <FormControlLabel
+            className={classes.bocniCheckBox}
+            control={
+              <Checkbox
+                checked={filtr.mandatPref}
+                onChange={handleChange}
+                name="mandatPref"
+                size="small"
+              />
+            }
+            label="preferenčními hlasy"
+          />
+          <FormControlLabel
+            className={classes.bocniCheckBox}
+            control={
+              <Checkbox
+                checked={filtr.mandatNe}
+                onChange={handleChange}
+                name="mandatNe"
+                size="small"
+              />
+            }
+            label="nezískali"
+          />
+        </FormGroup>
+      </FormControl>
+
       <FormControl component="fieldset" className={classes.bocniFieldset}>
         <InputLabel className={classes.bocniLabel}>
           VELIKOST BYDLIŠTĚ

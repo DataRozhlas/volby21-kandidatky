@@ -107,7 +107,7 @@ const Graf = ({
         vybarveniKandidati.length -
         vybarvenych.reduce((acc, curr) => acc + curr, 0);
     }
-    console.log(vybarvenych);
+    //console.log(vybarvenych);
     //odbarvuj
     vybraneStrany.forEach((s, i) => {
       const odbarvit = s.pocet - Math.floor(vybarvenych[i] / meritko);

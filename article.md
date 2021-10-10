@@ -1,4 +1,4 @@
-title: "Analýza: kroužkování kromě Starostů posílilo i lidovce, hlavně na úkor ODS. A pomohlo ženám"
+title: "Analýza: kroužkování kromě starostů posílilo i lidovce, hlavně na úkor ODS. A pomohlo ženám"
 perex: "Obě koalice motivovaly voliče k nejmasivnějšímu použití preferenčních hlasů od roku 2010. O mandát takto přišlo 22 pirátů a pět občanských demokratů. Prohlédněte si úspěšné skokany i historické rekordmany."
 coverimg: https://interaktivni.rozhlas.cz/brexit/media/cover.jpg
 coverimg_note: "Foto <a href='https://ctk.cz'>ČTK</a>"
@@ -16,13 +16,13 @@ Tentokrát ovšem preferenční hlasy zamíchaly nejen jmény, ale i samotným r
 
 Nejvíc na kroužkování vydělaly STAN a KDU-ČSL, které mají lokálně známé lídry a v případě lidovců i disciplinované voliče.
 
-Doplatili na ně naopak Piráti, kterým bude ve sněmovně chybět řada známých jmen, například místopředseda strany Radek Holomčík nebo ex-místopředseda Mikuláš Ferjenčík. V druhé koalici preference nejčastěji obraly o mandáty politiky ODS.
+Doplatili na ně naopak Piráti, kterým bude ve sněmovně chybět řada známých jmen, například místopředseda strany Radek Holomčík nebo exmístopředseda Mikuláš Ferjenčík. V druhé koalici preference nejčastěji obraly o mandáty politiky ODS.
 
 <div id="krouzkovani-stan-pirati"></div>
 
-„Piráti nemají na lokální úrovni mnoho politiků,“ vysvětlil pro iROZHLAS.cz politolog Jakub Lysek z Univerzity Palackého. „Jsou strukturálně slabá strana, v krajích nemají silné kandidáty. Nejsou zakořenění v regionech.
+„Piráti nemají na lokální úrovni mnoho politiků,“ vysvětluje pro iROZHLAS.cz politolog Jakub Lysek z Univerzity Palackého. „Jsou strukturálně slabá strana, v krajích nemají silné kandidáty. Nejsou zakořenění v regionech.“
 
-„Že lidé znali mnoho lokálních lídrů koalice SPOLU nebo STAN, rozhodlo v neprospěch Pirátů víc než negativní kampaň Andreje Babiše,“ dodává.
+„Že lidé znali mnoho lokálních lídrů koalice Spolu nebo STAN, rozhodlo v neprospěch Pirátů víc než negativní kampaň Andreje Babiše,“ dodává.
 
 <div id="krouzkovani-spolu"></div>
 

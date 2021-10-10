@@ -179,12 +179,12 @@ const getData = async (nazev) => {
     const result = await d3.tsvParse(text, (d) => dataFormat(nazev, d));
     return result;
   } catch (error) {
-    console.log(error);
+    //console.log(error);
   }
 };
 
 const vyfiltrujKandidaty = (kandidati, filtr) => {
-  console.log("filtruju");
+  //console.log("filtruju");
   return kandidati
     .filter((k) => filtr.vybranyKraj === 0 || k.k === filtr.vybranyKraj)
     .filter((k) => filtr.vybranaVstrana === 0 || k.v === filtr.vybranaVstrana)
@@ -299,7 +299,7 @@ const filtrNaTituly = (kandidat, filtr) => {
 };
 
 const vyfiltrujObarveneKandidaty = (vybraniKandidati, filtr) => {
-  console.log("obarvuju");
+  //console.log("obarvuju");
   const result = vybraniKandidati
     .filter((k) => filtr.zeny === true || k.s === "M")
     .filter((k) => filtr.muzi === true || k.s === "F")
@@ -349,7 +349,7 @@ function App({ defaultFiltr }) {
 
   // kdyz se zmeni rok, nacti data
   useEffect(async () => {
-    console.log("načítám");
+    //console.log("načítám");
     const vsichni = await getData(rok);
     setKandidati(vsichni);
     // fix pro případy, kdy z předchozích let zůstane nastavený filtr na mandáty

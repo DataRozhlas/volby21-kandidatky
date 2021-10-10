@@ -46,3 +46,42 @@ ReactDOM.render(
   />,
   document.getElementById("app")
 );
+
+const device = window.innerWidth < 600 ? "mob" : "des";
+const path = "https://data.irozhlas.cz/datavis-2021-volby-krouzkovani/";
+const alt1 = "Triumf starostů, masakr Pirátů";
+const alt2 = "Kroužky přidaly šest poslanců lidovcům, ODS o pět připravily";
+const alt3 = "Opakovaní skokani a smolaři v letech 2006–2021";
+const alt4 = "Největší skokani v letech 2006–2021";
+document.getElementById("krouzkovani-stan-pirati").innerHTML =
+  "<img src=" +
+  path +
+  "krouzkovani-stan-pirati-" +
+  device +
+  '.svg alt="' +
+  alt1 +
+  '">';
+document.getElementById("krouzkovani-spolu").innerHTML =
+  "<img src=" +
+  path +
+  "krouzkovani-spolu-" +
+  device +
+  '.svg alt="' +
+  alt2 +
+  '">';
+document.getElementById("krouzkovani-opakovani").innerHTML =
+  "<img src=" +
+  path +
+  "krouzkovani-opakovani-" +
+  device +
+  '.svg alt="' +
+  alt3 +
+  '">';
+document.getElementById("krouzkovani-top-skoky").innerHTML =
+  "<img src=" +
+  path +
+  "krouzkovani-top-skoky-" +
+  device +
+  '.svg alt="' +
+  alt4 +
+  '">';
